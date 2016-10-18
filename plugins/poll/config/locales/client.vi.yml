@@ -41,7 +41,7 @@ vi:
           x_options:
             one: "Chọn <strong>1</strong> lựa chọn"
             other: "Chọn <strong>%{count}</strong> lựa chọn"
-between_min_and_max_options: "Chọn giữa <strong>%{min}</strong> và <strong>%{max}</strong> lựa chọn"
+          between_min_and_max_options: "Chọn giữa <strong>%{min}</strong> và <strong>%{max}</strong> lựa chọn"
 
       cast-votes:
         title: "Bình chọn của bạn"
