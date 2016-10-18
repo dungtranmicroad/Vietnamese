@@ -261,61 +261,82 @@ vi:
         unbookmark: "Chọn để xoá toàn bộ đánh dấu trong chủ đề này"
         
     bookmarks:
-      not_logged_in: "rất tiếc, bạn phải đăng nhập để có thể đánh dấu bài viết"
-      created: "bạn đã đánh dấu bài viết này"
-      not_bookmarked: "bạn đã đọc bài viết này; nhấp chuột để đánh dấu"
-      last_read: "đây là bài viết cuối cùng bạn đã đọc; nhấp chuột để đánh dấu"
+      not_logged_in: "Rất tiếc, bạn phải đăng nhập để đánh dấu bài viết"
+      created: "Bạn đã đánh dấu bài viết này"
+      not_bookmarked: "Bạn đã đọc bài viết, nhấp chuột để đánh dấu"
+      last_read: "Đây là bài viết cuối cùng bạn đã đọc, nhấp chuột để đánh dấu"
       remove: "Xóa đánh dấu"
-      confirm_clear: "Bạn có chắc muốn xóa tất cả đánh dấu ở topic này?"
+      confirm_clear: "Bạn có chắc muốn xóa tất cả các đánh dấu ở chủ đề này?"
+      
     topic_count_latest:
-      other: "{{count}} chủ đề mới hoặc đã cập nhật."
+      one: "{{count}} chủ đề mới hoặc đã được cập nhật."
+      other: "{{count}} chủ đề mới hoặc đã được cập nhật."
+      
     topic_count_unread:
+      one: "{{count}} chủ đề chưa đọc."
       other: "{{count}} chủ đề chưa đọc."
+      
     topic_count_new:
+      one: "{{count}} chủ đề mới."
       other: "{{count}} chủ đề mới."
-    click_to_show: "Nhấp chuột để hiển thị."
+      
+    click_to_show: "Click để xem."
     preview: "xem trước"
     cancel: "hủy"
+    
     save: "Lưu thay đổi"
     saving: "Đang lưu ..."
     saved: "Đã lưu!"
+    
     upload: "Tải lên"
     uploading: "Đang tải lên..."
     uploading_filename: "Đang tải lên {{filename}}..."
     uploaded: "Đã tải lên!"
+    
     enable: "Kích hoạt"
     disable: "Vô hiệu hóa"
     undo: "Hoàn tác"
     revert: "Phục hồi"
     failed: "Thất bại"
+    
+    switch_to_anon: "Chuyển sang chế độ ẩn danh"
+    switch_from_anon: "Thoát khỏi chế độ ẩn danh"
+
     banner:
-      close: "Xóa biểu ngữ này."
+      close: "Xóa banner này."
       edit: "Sửa banner này >>"
+      
     choose_topic:
       none_found: "Không tìm thấy chủ đề nào"
       title:
         search: "Tìm kiếm chủ đề dựa vào tên, url hoặc id:"
-        placeholder: "viết tiêu đề của chủ đề thảo luận ở đây"
+        placeholder: "nhập tiêu đề chủ đề ở đây"
+        
     queue:
       topic: "Chủ đề"
       approve: 'Phê duyệt'
       reject: 'Từ chối'
       delete_user: 'Xóa tài khoản'
       title: "Cần phê duyệt"
-      none: "Không có bài viết nào để xem trước"
-      edit: "Sửa"
-      cancel: "Hủy"
+      none: "Không có bài viết nào để xem xét"
+      edit: "Chỉnh sửa"
+      cancel: "Hủy bỏ"
       view_pending: "xem bài viết đang chờ xử lý"
       has_pending_posts:
-        other: "Chủ đề này có <b>{{count}}</b> bài viết cần phê chuẩn"
+        one: "Chủ đề này có <b>1</b> bài viết đang chờ duyệt"
+        other: "Chủ đề này có <b>{{count}}</b> bài viết đang chờ duyệt"
+        
       confirm: "Lưu thay đổi"
-      delete_prompt: "Bạn có chắc chắn muốn xóa <b>%{username}</b>? Thao tác này sẽ loại bỏ tất cả các bài viết của họ kèm theo khóa địa chỉ IP và email của họ."
+      delete_prompt: "Bạn có chắc chắn muốn xóa <b>%{username}</b>? Thao tác này sẽ xóa tất cả các bài viết, khóa địa chỉ IP và email của người dùng này."
+      
       approval:
         title: "Bài viết cần phê duyệt"
-        description: "Chúng tôi đã nhận được bài viết mới của bạn, nhưng nó cần phải được phê duyệt bởi admin trước khi được hiện. Xin hãy kiên nhẫn."
+        description: "Chúng tôi đã nhận được bài viết mới của bạn, nhưng nó cần phải được ban quản trị phê duyệt trước khi đăng công khai. Xin hãy kiên nhẫn và chờ."
         pending_posts:
+          one: "Bạn có <strong>1</strong> bài viết đang chờ xử lý."
           other: "Bạn có <strong>{{count}}</strong> bài viết đang chờ xử lý."
         ok: "OK"
+        
     user_action:
       user_posted_topic: "<a href='{{userUrl}}'>{{user}}</a> đăng <a href='{{topicUrl}}'>chủ đề</a>"
       you_posted_topic: "<a href='{{userUrl}}'>Bạn</a> đã đăng <a href='{{topicUrl}}'>chủ đề</a>"
