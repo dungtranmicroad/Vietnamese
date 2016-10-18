@@ -1,34 +1,65 @@
 # encoding: utf-8
+# This file contains content for the server portion of the poll plugin used by Ruby
 #
-# Never edit this file. It will be overwritten when translations are pulled from Transifex.
-#
-# To work with us on translations, join this project:
+# To work with us on translations, see:
 # https://www.transifex.com/projects/p/discourse-org/
+#
+# This is a "source" file, which is used by Transifex to get translations for other languages.
+# After this file is changed, it needs to be pushed by a maintainer to Transifex:
+#
+#   tx push -s
+#
+# Read more here: https://meta.discourse.org/t/contribute-a-translation-to-discourse/14882
+#
+# To validate this YAML file after you change it, please paste it into
+# http://yamllint.com/
 
 vi:
   site_settings:
     poll_enabled: "Cho phép người dùng tạo các cuộc thăm dò?"
     poll_maximum_options: "Số lượng tối đa tùy chọn trong một cuộc thăm dò."
+    poll_edit_window_mins: "Số phút được chỉnh sửa sau khi đăng các cuộc thăm dò"
+    
   poll:
-    multiple_polls_without_name: "Có nhiều cuộc thăm dò mà không có tên. Sử dụng thuộc tính '<code>name</code>' để xác định cuộc thăm dò của bạn."
-    multiple_polls_with_same_name: "Có nhiều cuộc thăm dò có cùng tên: <strong>%{name}</strong>. Sử dụng thuộc tính '<code>name</code>' để xác định cuộc thăm dò của bạn."
-    default_poll_must_have_at_least_2_options: "Thăm dò ý kiến ​​phải có ít nhất 2 lựa chọn."
-    named_poll_must_have_at_least_2_options: "Thăm dò có tên <strong>%{name}</strong> phải có ít nhất 2 lựa chọn."
+    multiple_polls_without_name: "Có nhiều cuộc thăm dò không tên. Sử dụng thuộc tính '<code>name</code>' để xác định cuộc thăm dò của bạn."
+    multiple_polls_with_same_name: "Có nhiều cuộc thăm dò cùng tên: <strong>%{name}</strong>. Sử dụng thuộc tính '<code>name</code>' để xác định cuộc thăm dò của bạn."
+    
+    default_poll_must_have_at_least_2_options: "Thăm dò phải có ít nhất 2 lựa chọn."
+    named_poll_must_have_at_least_2_options: "Thăm dò <strong>%{name}</strong> phải có ít nhất 2 lựa chọn."
+    
     default_poll_must_have_less_options:
+      one: "Thăm dò phải có ít hơn 1 lựa chọn."
       other: "Thăm dò phải có ít hơn %{count} lựa chọn."
     named_poll_must_have_less_options:
-      other: "Thăm dò <strong>%{name}</strong> phải có ít hơn %{count} tùy chọn."
-    default_poll_must_have_different_options: "Thăm dò ý kiến ​​phải có các tùy chọn khác nhau."
-    named_poll_must_have_different_options: "Thăm dò <strong>%{name}</strong> ​​phải có các tùy chọn khác nhau."
-    default_poll_with_multiple_choices_has_invalid_parameters: "Thăm dò ý kiến ​​với nhiều sự lựa chọn có các tham số không hợp lệ."
-    named_poll_with_multiple_choices_has_invalid_parameters: "Thăm dò <strong>%{name}</strong> ​​với nhiều sự lựa chọn có các tham số không hợp lệ. "
+      one: "Thăm dò <strong>%{name}</strong> phải có ít hơn 1 lựa chọn."
+      other: "Thăm dò <strong>%{name}</strong> phải có ít hơn %{count} lựa chọn."
+      
+    default_poll_must_have_different_options: "Thăm dò phải có các lựa chọn khác nhau."
+    named_poll_must_have_different_options: "Thăm dò <strong>%{name}</strong> phải có các lựa chọn khác nhau."
+    
+    default_poll_with_multiple_choices_has_invalid_parameters: "Thăm dò với nhiều lựa chọn có các tham số không hợp lệ."
+    named_poll_with_multiple_choices_has_invalid_parameters: "Thăm dò <strong>%{name}</strong> với nhiều lựa chọn có các tham số không hợp lệ."
+    
     requires_at_least_1_valid_option: "Bạn phải chọn ít nhất 1 lựa chọn hợp lệ."
-    no_polls_associated_with_this_post: "Không có cuộc thăm dò được liên kết với bài này."
-    no_poll_with_this_name: "Không có thăm dò có tên <strong>%{name}</strong> liên kết với bài viết này."
+    
+    default_cannot_be_made_public: "Cuộc thăm dò với bình chọn không được công khai."
+    named_cannot_be_made_public: "Cuộc thăm dò <strong>%{name}</strong> với bình chọn không được công khai."
+
+    edit_window_expired:
+      cannot_change_polls: "Bạn không thể thêm, xóa hoặc đổi tên cuộc thăm dò sau %{minutes} phút đầu tiên."
+      op_cannot_edit_options: "Bạn không thể thêm hoặc xóa cuộc thăm dò sau %{minutes} phút đầu tiên. Vui lòng liên hệ ban quản trị nếu bạn muốn chỉnh sửa cuộc thăm dò."
+      staff_cannot_add_or_remove_options: "Bạn không thể thêm hoặc xóa cuộc thăm dò sau %{minutes} phút đầu tiên. Bạn nên đóng chủ đề này và tạo mới để thay thế."
+
+    no_polls_associated_with_this_post: "Không có cuộc thăm dò nào liên quan đến bài này."
+    no_poll_with_this_name: "Không có thăm dò tên <strong>%{name}</strong> liên quan đến bài viết này."
+    
     post_is_deleted: "Không thể thực hiện trên bài viết đã xóa."
-    topic_must_be_open_to_vote: "Các chủ đề phải được mở để bầu chọn."
-    poll_must_be_open_to_vote: "Thăm dò ý kiến ​​phải được mở để bầu chọn."
-    topic_must_be_open_to_toggle_status: "Các chủ đề phải được mở để chuyển trạng thái."
-    only_staff_or_op_can_toggle_status: "Chỉ có một BQT hoặc các người đăng bài có thể chuyển đổi một trạng thái thăm dò ý kiến"
+    
+    topic_must_be_open_to_vote: "Chủ đề phải được mở để bầu chọn."
+    poll_must_be_open_to_vote: "Thăm dò phải được mở để bầu chọn."
+    
+    topic_must_be_open_to_toggle_status: "Chủ đề phải được mở để chuyển trạng thái."
+    only_staff_or_op_can_toggle_status: "Chỉ có ban quản trị hoặc người đăng bài mới có thể chuyển đổi trạng thái cuộc thăm dò"
+    
     email:
       link_to_poll: "Nhấn để hiển thị."
