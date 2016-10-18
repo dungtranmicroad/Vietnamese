@@ -1,53 +1,89 @@
 # encoding: utf-8
+# This file contains content for the client portion of the poll plugin, sent out
+# to the Javascript app.
 #
-# Never edit this file. It will be overwritten when translations are pulled from Transifex.
-#
-# To work with us on translations, join this project:
+# To work with us on translations, see:
 # https://www.transifex.com/projects/p/discourse-org/
+#
+# This is a "source" file, which is used by Transifex to get translations for other languages.
+# After this file is changed, it needs to be pushed by a maintainer to Transifex:
+#
+#   tx push -s
+#
+# Read more here: https://meta.discourse.org/t/contribute-a-translation-to-discourse/14882
+#
+# To validate this YAML file after you change it, please paste it into
+# http://yamllint.com/
 
 vi:
   js:
     poll:
       voters:
+        one: "người bình chọn"
         other: "người bình chọn"
       total_votes:
+        one: "tổng số bình chọn"
         other: "tổng số bình chọn"
+        
       average_rating: "Đánh giá trung bình: <strong>%{average}</strong>."
+      
       public:
         title: "Bình chọn công khai."
+        
       multiple:
         help:
           at_least_min_options:
-            other: "Chọn ít nhất <strong>%{count}</strong> tùy chọn"
+            one: "Chọn ít nhất <strong>1</strong> lựa chọn"
+            other: "Chọn ít nhất <strong>%{count}</strong> lựa chọn"
           up_to_max_options:
-            other: "Chọn tối đa <strong>%{count}</strong> tùy chọn"
+            one: "Chọn tối đa <strong>1</strong> lựa chọn"
+            other: "Chọn tối đa <strong>%{count}</strong> lựa chọn"
           x_options:
-            other: "Chọn <strong>%{count}</strong> tùy chọn"
+            one: "Chọn <strong>1</strong> lựa chọn"
+            other: "Chọn <strong>%{count}</strong> lựa chọn"
+between_min_and_max_options: "Chọn giữa <strong>%{min}</strong> và <strong>%{max}</strong> lựa chọn"
+
       cast-votes:
-        title: "Bỏ phiếu của bạn"
+        title: "Bình chọn của bạn"
         label: "Bình chọn ngay!"
+        
       show-results:
         title: "Hiển thị kết quả cuộc thăm dò"
         label: "Hiện kết quả"
+        
       hide-results:
         title: "Trở lại bình chọn của bạn"
         label: "Ẩn kết quả"
+        
       open:
         title: "Mở bình chọn"
         label: "Mở"
         confirm: "Bạn có chắc bạn muốn mở bình chọn này?"
+        
       close:
         title: "Đóng bình chọn"
         label: "Đóng lại"
         confirm: "Bạn có chắc chắn muốn đóng bình chọn này?"
+        
+      error_while_toggling_status: "Rất tiếc, có lỗi bật tắt trạng thái của cuộc bình chọn này."
+      error_while_casting_votes: "Rất tiếc, có lỗi bình chọn của bạn."
+      error_while_fetching_voters: "Rất tiếc, có lỗi hiển thị người bầu chọn."
+
       ui_builder:
+        title: Tạo bình chọn
+        insert: Chèn bình chọn
         help:
-          options_count: Nhập vào ít nhất 2 tùy chọn
+          options_count: Nhập ít nhất 2 lựa chọn
         poll_type:
           label: Loại
+          regular: Một lựa chọn
+          multiple: Nhiều lựa chọn
+          number: Số Rating
         poll_config:
           max: Tối đa
           min: Tối thiểu
           step: Bước
         poll_public:
-          label: Hiển thị ai đã bình chọn
+          label: Hiển thị người đã bình chọn
+        poll_options:
+          label: Nhập mỗi lựa chọn trên một dòng
