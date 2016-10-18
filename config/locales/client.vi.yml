@@ -1,21 +1,33 @@
 # encoding: utf-8
 #
-# Never edit this file. It will be overwritten when translations are pulled from Transifex.
+# This file contains content for the client portion of Discourse, sent out
+# to the Javascript app.
 #
-# To work with us on translations, join this project:
-# https://www.transifex.com/projects/p/discourse-org/
+# To work with us on translations, see: https://www.transifex.com/projects/p/discourse-org/
+#
+# This is a "source" file, which is used by Transifex to get translations for other languages.
+# After this file is changed, it needs to be pushed by a maintainer to Transifex:
+#
+#   tx push -s
+#
+# Read more here: https://meta.discourse.org/t/contribute-a-translation-to-discourse/14882
+#
+# To validate this YAML file after you change it, please paste it into http://yamllint.com/
 
 vi:
   js:
     number:
       format:
+        # symbol used to separate the integer part from the fractional part of a number
         separator: "."
+        # symbol for the thousands separator used in digit grouping
         delimiter: ","
       human:
         storage_units:
           format: '%n %u'
           units:
             byte:
+              one: Byte
               other: Byte
             gb: GB
             kb: KB
@@ -25,94 +37,140 @@ vi:
         thousands: "{{number}}k"
         millions: "{{number}}M"
     dates:
+      # Use Moment.js format string: http://momentjs.com/docs/#/displaying/format/
       time: "h:mm a"
+      # Use Moment.js format string: http://momentjs.com/docs/#/displaying/format/
+      timeline_date: "MMM YYYY"
+      # Use Moment.js format string: http://momentjs.com/docs/#/displaying/format/
       long_no_year: "MMM D h:mm a"
+      # Use Moment.js format string: http://momentjs.com/docs/#/displaying/format/
       long_no_year_no_time: "MMM D"
+      # Use Moment.js format string: http://momentjs.com/docs/#/displaying/format/
       full_no_year_no_time: "MMMM Do"
+      # Use Moment.js format string: http://momentjs.com/docs/#/displaying/format/
       long_with_year: "MMM D, YYYY h:mm a"
+      # Use Moment.js format string: http://momentjs.com/docs/#/displaying/format/
       long_with_year_no_time: "MMM D, YYYY"
+      # Use Moment.js format string: http://momentjs.com/docs/#/displaying/format/
       full_with_year_no_time: "MMMM Do, YYYY"
+      # Use Moment.js format string: http://momentjs.com/docs/#/displaying/format/
       long_date_with_year: "MMM D, 'YY LT"
+      # Use Moment.js format string: http://momentjs.com/docs/#/displaying/format/
       long_date_without_year: "MMM D, LT"
+      # Use Moment.js format string: http://momentjs.com/docs/#/displaying/format/
       long_date_with_year_without_time: "MMM D, 'YY"
+      # Use Moment.js format string: http://momentjs.com/docs/#/displaying/format/
       long_date_without_year_with_linebreak: "MMM D <br/>LT"
+      # Use Moment.js format string: http://momentjs.com/docs/#/displaying/format/
       long_date_with_year_with_linebreak: "MMM D, 'YY <br/>LT"
+      
+      wrap_ago: "%{date} trước"
+      
       tiny:
         half_a_minute: "< 1m"
         less_than_x_seconds:
+          one: "< 1s"
           other: "< %{count}s"
         x_seconds:
+          one: "1s"
           other: "%{count}s"
         x_minutes:
+          one: "1m"
           other: "%{count}m"
         about_x_hours:
+          one: "1h"
           other: "%{count}h"
         x_days:
+          one: "1d"
           other: "%{count}d"
         about_x_years:
+          one: "1y"
           other: "%{count}y"
         over_x_years:
+          one: "> 1y"
           other: "> %{count}y"
         almost_x_years:
+          one: "1y"
           other: "%{count}y"
         date_month: "MMM D"
         date_year: "MMM 'YY"
       medium:
         x_minutes:
+          one: "1 phút"
           other: "%{count} phút"
         x_hours:
+          one: "1 giờ"
           other: "%{count} giờ"
         x_days:
+          one: "1 ngày"
           other: "%{count} ngày"
         date_year: "MMM D, 'YY"
       medium_with_ago:
         x_minutes:
+          one: "1 phút trước"
           other: " %{count} phút trước"
         x_hours:
+          one: "1 giờ trước"
           other: "%{count} giờ trước"
         x_days:
+          one: "1 ngày trước"
           other: "%{count} ngày trước"
       later:
         x_days:
+          one: "còn 1 ngày"
           other: "còn %{count} ngày"
         x_months:
+          one: "còn 1 tháng"
           other: "còn %{count} tháng"
         x_years:
+          one: "còn 1 năm"
           other: "còn %{count} năm"
       previous_month: 'Tháng Trước'
       next_month: 'Tháng Sau'
     share:
-      topic: 'chia sẻ chủ đề này'
-      post: 'đăng #%{Bài đăng số}'
-      close: 'đóng lại'
-      twitter: 'chia sẻ lên Twitter'
-      facebook: 'chia sẻ lên Facebook'
-      google+: 'chia sẻ lên Google+'
-      email: 'Gửi liên kết này qua thư điện tử'
+      topic: 'Chia sẻ chủ đề này'
+      post: 'Bài đăng số %{postNumber}'
+      close: 'Đóng lại'
+      twitter: 'Chia sẻ lên Twitter'
+      facebook: 'Chia sẻ lên Facebook'
+      google+: 'Chia sẻ lên Google+'
+      email: 'Gửi Email cho bạn bè'
+      
     action_codes:
-      split_topic: "chìa chủ đề này lúc %{when}"
-      invited_user: "đã mời bởi %{who} %{when}"
-      removed_user: "loại bỏ bởi %{who} %{when}"
+      public_topic: "Tạo chủ đề công khai lúc %{when}"
+      private_topic: "Tạo chủ đề riêng tư lúc %{when}"
+      split_topic: "Chia chủ đề này lúc %{when}"
+      invited_user: "Được mời bởi %{who} %{when}"
+      invited_group: "Được mời bởi %{who} %{when}"
+      removed_user: "Loại bỏ bởi %{who} %{when}"
+      removed_group: "Loại bỏ bởi %{who} %{when}"
       autoclosed:
-        enabled: 'đóng lúc %{when}'
-        disabled: 'mở lúc %{when}'
+        enabled: 'Đóng lúc %{when}'
+        disabled: 'Mở lúc %{when}'
       closed:
-        enabled: 'đóng lúc %{when}'
-        disabled: 'mở lúc %{when}'
+        enabled: 'Đóng lúc %{when}'
+        disabled: 'Mở lúc %{when}'
       archived:
-        enabled: 'lưu trữ %{when}'
-        disabled: 'bỏ lưu trữ %{when}'
+        enabled: 'Lưu trữ lúc %{when}'
+        disabled: 'Bỏ lưu trữ lúc %{when}'
       pinned:
-        enabled: 'gắn lúc %{when}'
-        disabled: 'bỏ gim %{when}'
+        enabled: 'Ghim lúc %{when}'
+        disabled: 'Gỡ bỏ ghim lúc %{when}'
       pinned_globally:
-        enabled: 'đã gắn toàn trang %{when}'
-        disabled: 'đã bỏ gắn %{when}'
+        enabled: 'Ghim toàn trang lúc %{when}'
+        disabled: 'Gỡ bỏ ghim lúc %{when}'
       visible:
-        enabled: 'đã lưu %{when}'
-        disabled: 'bỏ lưu %{when}'
+        enabled: 'Đã lưu lúc %{when}'
+        disabled: 'Bỏ lưu lúc %{when}'
+        
     topic_admin_menu: "quản lí chủ đề."
-    emails_are_disabled: "Ban quản trị đã chặn mọi email đang gửi. Sẽ không có bắt kỳ thông báo nào về email được gửi đi."
+    
+    wizard_required: "Cấu hình nhanh diễn đàn! <a href='%{url}' data-auto-route='true'>Bắt đầu thiết lập Wizard</a>!"
+    emails_are_disabled: "Ban quản trị đã chặn và vô hiệu hóa mọi Email. Sẽ không có bất kỳ thông báo nào về email được gửi đi."
+    
+    bootstrap_mode_enabled: "Để trang web mới của bạn chạy dễ dàng hơn, bạn đang ở trong chế độ bootstrap. Tất cả thành viên ở cấp độ tin cậy 1 và Email thông báo hằng ngày được kích hoạt. Nó sẽ tự động tắt khi tổng số người sử dụng vượt quá %{min_users} thành viên."
+    bootstrap_mode_disabled: "Chế độ Bootstrap sẽ bị vô hiệu hóa trong 24h tới."
+
     s3:
       regions:
         us_east_1: "US East (N. Virginia)"
@@ -123,36 +181,40 @@ vi:
         eu_central_1: "EU (Frankfurt)"
         ap_southeast_1: "Asia Pacific (Singapore)"
         ap_southeast_2: "Asia Pacific (Sydney)"
+        ap_south_1: "Asia Pacific (Mumbai)"
         ap_northeast_1: "Asia Pacific (Tokyo)"
         ap_northeast_2: "Asia Pacific (Seoul)"
         sa_east_1: "South America (Sao Paulo)"
-    edit: 'thay đổi tiêu đề và chuyên mục của chủ đề'
-    not_implemented: "Tính năng này chưa được hoàn thiện hết, xin lỗi!"
+        cn_north_1: "China (Beijing)"
+        
+    edit: 'Chỉnh sửa tiêu đề và chuyên mục của chủ đề'
+    not_implemented: "Tính năng này chưa được thực hiện, xin lỗi!"
     no_value: "Không"
     yes_value: "Có"
     generic_error: "Rất tiếc, đã có lỗi xảy ra."
     generic_error_with_reason: "Đã xảy ra lỗi: %{error}"
     sign_up: "Đăng ký"
     log_in: "Đăng nhập"
-    age: "Độ tuổi"
+    age: "Tuổi"
     joined: "Đã tham gia"
     admin_title: "Quản trị"
-    flags_title: "Báo cáo"
+    flags_title: "Flag"
     show_more: "hiện thêm"
     show_help: "lựa chọn"
     links: "Liên kết"
     links_lowercase:
+      one: "liên kết"
       other: "liên kết"
     faq: "FAQ"
     guidelines: "Hướng dẫn"
     privacy_policy: "Chính sách riêng tư"
-    privacy: "Sự riêng tư"
-    terms_of_service: "Điều khoản dịch vụ"
-    mobile_view: "Xem ở chế độ di động"
-    desktop_view: "Xem ở chế độ máy tính"
+    privacy: "Riêng tư"
+    terms_of_service: "Điều khoản và dịch vụ"
+    mobile_view: "Mobile View"
+    desktop_view: "Desktop View"
     you: "Bạn"
     or: "hoặc"
-    now: "ngay lúc này"
+    now: "ngay bây giờ"
     read_more: 'đọc thêm'
     more: "Nhiều hơn"
     less: "Ít hơn"
@@ -162,37 +224,42 @@ vi:
     daily: "hàng ngày"
     weekly: "hàng tuần"
     every_two_weeks: "mỗi hai tuần"
-    every_three_days: "ba ngày một"
+    every_three_days: "mỗi ba ngày"
     max_of_count: "tối đa của {{count}}"
     alternation: "hoặc"
     character_count:
+      one: "{{count}} ký tự"
       other: "{{count}} ký tự"
+      
     suggested_topics:
-      title: "Chủ đề tương tự"
+      title: "Có thể bạn quan tâm"
       pm_title: "Tin nhắn gợi ý"
+      
     about:
       simple_title: "Giới thiệu"
       title: "Giới thiệu về %{title}"
       stats: "Thống kê của trang"
-      our_admins: "Các quản trị viên"
-      our_moderators: "Các điều hành viên"
+      our_admins: "Quản trị viên"
+      our_moderators: "Điều hành viên"
       stat:
         all_time: "Từ trước tới nay"
         last_7_days: "7 ngày qua"
-        last_30_days: "30 ngày vừa qua"
+        last_30_days: "30 ngày qua"
       like_count: "Lượt thích"
-      topic_count: "Các chủ đề"
-      post_count: "Các bài viết"
+      topic_count: "Chủ đề"
+      post_count: "Bài viết"
       user_count: "Thành viên mới"
       active_user_count: "Thành viên tích cực"
-      contact: "Contact Us"
-      contact_info: "Trong trường hợp có bất kỳ sự cố nào ảnh hưởng tới trang này, xin vui lòng liên hệ với chúng tôi theo địa chỉ %{contact_info}."
+      contact: "Liên hệ với chúng tôi"
+      contact_info: "Trong trường hợp quan trọng hoặc khẩn cấp ảnh hưởng đến trang web, xin vui lòng liên hệ với chúng tôi theo địa chỉ %{contact_info}."
+    
     bookmarked:
-      title: "Bookmark"
-      clear_bookmarks: "Clear Bookmarks"
+      title: "Đánh dấu"
+      clear_bookmarks: "Xóa đánh dấu"
       help:
-        bookmark: "Chọn bài viết đầu tiên của chủ đề cho vào bookmark"
-        unbookmark: "Chọn để xoá toàn bộ bookmark trong chủ đề này"
+        bookmark: "Chọn để đánh đấu bài viết đầu tiên trong chủ đề này"
+        unbookmark: "Chọn để xoá toàn bộ đánh dấu trong chủ đề này"
+        
     bookmarks:
       not_logged_in: "rất tiếc, bạn phải đăng nhập để có thể đánh dấu bài viết"
       created: "bạn đã đánh dấu bài viết này"
