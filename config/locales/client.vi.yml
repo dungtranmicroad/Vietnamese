@@ -763,6 +763,7 @@ vi:
         reinvite: "Gửi lại lời mời"
         reinvite_all: "Gửi lại tất cả lời mời"
         reinvited: "Đã gửi lại lời mời"
+        reinvited_all: "Đã gửi lại tất cả lời mời!"
         time_read: "Thời gian đọc"
         days_visited: "Số ngày ghé thăm"
         account_age_days: "Số ngày của tài khoản"
