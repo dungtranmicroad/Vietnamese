@@ -769,196 +769,241 @@ vi:
         account_age_days: "Số ngày của tài khoản"
         create: "Gửi một lời mời"
         generate_link: "Sao chép liên kết mời"
-        generated_link_message: '<p>Liên kết thư mời được tạo thành công!</p><p><input class="invite-link-input" style="width: 75%;" type="text" value="%{inviteLink}"></p><p>Liên kết thư mời chỉ hợp lệ cho email này: <b>%{invitedEmail}</b></p>'
+        generated_link_message: '<p>Tạo liên kết mời thành công!</p><p><input class="invite-link-input" style="width: 75%;" type="text" value="%{inviteLink}"></p><p>Liên kết chỉ hợp lệ với email: <b>%{invitedEmail}</b></p>'
         bulk_invite:
-          none: "Bạn đã mời ai ở đây chưa. Bạn có thể mời một hoặc một nhóm bằng <a href='https://meta.discourse.org/t/send-bulk-invites/16468'>tải lên hàng loạt file mời</a>."
-          text: "Mời hàng loạt bằng file"
-          uploading: "Uploading..."
+          none: "Bạn chưa mời ai. Bạn có thể gửi lời mời cá nhân hoặc nhóm, xem cách <a href='https://disrum.com/t/gui-hang-loat-thu-moi/24'>tải lên hàng loạt thư mời</a>."
+          text: "Tải lên File Mời"
+          uploading: "Đang tải lên..."
           success: "Tải lên thành công, bạn sẽ được thông báo qua tin nhắn khi quá trình hoàn tất."
-          error: "Có lỗi xảy ra khi upload '{{filename}}': {{message}}"
+          error: "Có lỗi xảy ra khi tải lên '{{filename}}': {{message}}"
+          
       password:
         title: "Mật khẩu"
         too_short: "Mật khẩu của bạn quá ngắn."
-        common: "Mật khẩu quá đơn giản, rất dễ bị đoán ra"
+        common: "Mật khẩu quá đơn giản."
         same_as_username: "Mật khẩu của bạn trùng với tên đăng nhập."
-        same_as_email: "Mật khẩu của bạn trùng với email của bạn."
-        ok: "Mật khẩu của bạn có vẻ ổn."
+        same_as_email: "Mật khẩu trùng với email của bạn."
+        ok: "Mật khẩu của bạn có vẻ tốt."
         instructions: "Ít nhất %{count} ký tự"
+        
       summary:
         title: "Tóm tắt"
         stats: "Thống kê"
         time_read: "thời gian đọc"
         topic_count:
-          other: "Chủ đề đã được tạo"
+          one: "Chủ đề đã tạo"
+          other: "Chủ đề đã tạo"
         post_count:
-          other: "Bài viết đã được tạo"
+          one: "Bài viết đã tạo"
+          other: "Bài viết đã tạo"
+        likes_given:
+          one: "<i class='fa fa-heart'></i> cho Like"
+          other: "<i class='fa fa-heart'></i> cho Like"
+        likes_received:
+          one: "<i class='fa fa-heart'></i> nhận Like"
+          other: "<i class='fa fa-heart'></i> nhận Like"
         days_visited:
-          other: "Ngày đã ghé thăm"
+          one: "Ngày ghé thăm"
+          other: "Ngày ghé thăm"
         posts_read:
+          one: "Bài viết đã đọc"
           other: "Bài viết đã đọc"
+        bookmark_count:
+          one: "Đánh dấu"
+          other: "Đánh dấu"
         top_replies: "Top trả lời"
         no_replies: "Chưa có trả lời."
         more_replies: "Thêm trả lời"
         top_topics: "Top chủ đề"
-        no_topics: "Chưa có chủ đề nào."
+        no_topics: "Chưa có chủ đề."
         more_topics: "Thêm chủ đề"
         top_badges: "Top huy hiệu"
-        no_badges: "Chưa có huy hiệu nào."
+        no_badges: "Chưa có huy hiệu."
         more_badges: "Thêm huy hiệu"
+        top_links: "Top liên kết"
+        no_links: "Chưa có liên kết."
+        most_liked_by: "Like nhiều nhất bởi"
+        most_liked_users: "Like nhiều nhất"
+        most_replied_to_users: "Trả lời nhiều nhất đến"
+        no_likes: "Chưa có Like."
+
+
       associated_accounts: "Đăng nhập"
       ip_address:
-        title: "Địa chỉ IP cuối cùng"
+        title: "Địa chỉ IP lần cuối"
       registration_ip_address:
         title: "Địa chỉ IP đăng ký"
       avatar:
         title: "Ảnh đại diện"
-        header_title: "hồ sơ cá nhân, tin nhắn, đánh dấu và sở thích"
+        header_title: "thông tin cá nhân, tin nhắn, đánh dấu và sở thích"
       title:
         title: "Tiêu đề"
+        
       filters:
-        all: "All"
+        all: "Tất cả"
+        
       stream:
         posted_by: "Đăng bởi"
         sent_by: "Gửi bởi"
         private_message: "tin nhắn"
         the_topic: "chủ đề"
+        
     loading: "Đang tải..."
     errors:
-      prev_page: "trong khi cố gắng để tải"
+      prev_page: "trong khi cố gắng tải"
       reasons:
-        network: "Mạng Internet bị lỗi"
-        server: "Máy chủ đang có vấn đề"
-        forbidden: "Bạn không thể xem được"
+        network: "Mạng bị lỗi"
+        server: "Lỗi máy chủ"
+        forbidden: "Truy cập bị từ chối"
         unknown: "Lỗi"
-        not_found: "Không Tìm Thấy Trang"
+        not_found: "Không tìm thấy trang"
       desc:
-        network: "Hãy kiểm tra kết nối của bạn"
-        network_fixed: "Hình như nó trở lại."
-        server: "Mã lỗi :  {{status}}"
-        forbidden: "Bạn không được cho phép để xem mục này"
-        not_found: "Oops, ứng dụng đang tải đường dẫn không tồn tại"
-        unknown: "Có một lỗi gì đó đang xảy ra"
+        network: "Vui lòng kiểm tra kết nối của bạn."
+        network_fixed: "Hình như đang trở lại."
+        server: "Mã lỗi: {{status}}"
+        forbidden: "Bạn không được xem mục này."
+        not_found: "Rất tiếc, ứng dụng đã cố gắng tải một URL không tồn tại."
+        unknown: "Có lỗi gì đó đã xảy ra"
       buttons:
         back: "Quay trở lại"
         again: "Thử lại"
-        fixed: "Load lại trang"
+        fixed: "Tải lại trang"
     close: "Đóng lại"
-    assets_changed_confirm: "Website đã được cập nhật bản mới. Bạn có thể làm mới lại trang để có thể sử dụng bản mới được cập nhật"
+    assets_changed_confirm: "Website đã được cập nhật. Refresh (F5) lại trang để cập nhật phiên bản mới."
     logout: "Bạn đã đăng xuất"
-    refresh: "Tải lại"
+    refresh: "Refresh"
     read_only_mode:
-      enabled: "Website đang ở chế độ chỉ đọc, bạn có thể duyệt xem nhưng không thể trả lời, likes, hay thực hiện các hành động khác."
-      login_disabled: "Chức năng Đăng nhập đã bị tắt khi website trong trạng thái chỉ đọc"
-      logout_disabled: "Chức năng đăng xuất đã bị tắt khi website đang trong trạng thái chỉ đọc."
-    too_few_topics_and_posts_notice: "Hãy <a href='http://blog.discourse.org/2014/08/building-a-discourse-community/'>bắt đầu thảo luận!</a> Hiện có <strong>%{currentTopics} / %{requiredTopics}</strong> chủ đề và <strong>%{currentPosts} / %{requiredPosts}</strong> bài viết. Khách ghé thăm cần một số chủ đề để đọc và trả lời."
-    too_few_topics_notice: "Hãy <a href='http://blog.discourse.org/2014/08/building-a-discourse-community/'>bắt đầu thảo luận!</a> Hiện có <strong>%{currentTopics} / %{requiredTopics}</strong> chủ đề. Khách ghé thăm cần một số chủ đề để đọc và trả lời."
-    too_few_posts_notice: "Hãy <a href='http://blog.discourse.org/2014/08/building-a-discourse-community/'>bắt đầu thảo luận!</a> Hiện có <strong>%{currentPosts} / %{requiredPosts}</strong> bài viết. Khách ghé thăm cần một số chủ đề để đọc và trả lời."
+      enabled: "Website đang ở chế độ đọc. Xin hãy tiếp tục duyệt, nhưng trả lời, thích, và các hành động khác đã bị vô hiệu hóa."
+      login_disabled: "Đăng nhập đã bị khóa, website đang ở chế độ đọc"
+      logout_disabled: "Đăng xuất đã bị khóa, website đang ở chế độ đọc"
+    too_few_topics_and_posts_notice: "Hãy bắt đầu thảo luận! Hiện có <strong>%{currentTopics} / %{requiredTopics}</strong> chủ đề và <strong>%{currentPosts} / %{requiredPosts}</strong> bài viết. Khách ghé thăm cần một số chủ đề để đọc và trả lời."
+    too_few_topics_notice: "Hãy bắt đầu thảo luận! Hiện có <strong>%{currentTopics} / %{requiredTopics}</strong> chủ đề. Khách ghé thăm cần một số chủ đề để đọc và trả lời."
+    too_few_posts_notice: "Hãy bắt đầu thảo luận! Hiện có <strong>%{currentPosts} / %{requiredPosts}</strong> bài viết. Khách ghé thăm cần một số chủ đề để đọc và trả lời."
     logs_error_rate_notice:
+      reached: "<b>%{relativeAge}</b> – <a href='%{url}' target='_blank'>%{rate}</a> đạt tới giới hạn thiết lập %{siteSettingRate}."
+      exceeded: "<b>%{relativeAge}</b> – <a href='%{url}' target='_blank'>%{rate}</a> vượt quá giới hạn thiết lập %{siteSettingRate}."
       rate:
+        one: "1 lỗi/%{duration}"
         other: "%{count} lỗi/%{duration}"
+        
     learn_more: "tìm hiểu thêm..."
+    
+    all_time: 'tổng số'
+    all_time_desc: 'tổng số chủ đề đã tạo'
     year: 'năm'
-    year_desc: 'chủ đề được tạo ra trong 365 ngày qua'
+    year_desc: 'chủ đề đã tạo trong 365 ngày qua'
     month: 'tháng'
-    month_desc: 'chủ đề được tạo ra trong 30 ngày qua'
+    month_desc: 'chủ đề đã tạo trong 30 ngày qua'
     week: 'tuần'
-    week_desc: 'chủ đề được tạo ra trong 7 ngày qua'
+    week_desc: 'chủ đề đã tạo trong 7 ngày qua'
     day: 'ngày'
-    first_post: Bài viết đầu tiên
-    mute: Im lặng
-    unmute: Bỏ im lặng
+    
+    first_post: Bài đăng đầu tiên
+    mute: Không theo dõi
+    unmute: Bỏ không theo dõi
     last_post: Bài viết cuối cùng
     last_reply_lowercase: trả lời cuối cùng
     replies_lowercase:
+      one: trả lời
       other: trả lời
+      
     signup_cta:
       sign_up: "Đăng ký"
-      hide_session: "Nhắc vào ngày mai"
+      hide_session: "Nhắc tôi vào ngày mai"
       hide_forever: "không, cảm ơn"
-      hidden_for_session: "OK, Tôi sẽ hỏi bạn vào ngày mai. Bạn có thể luôn luôn sử dụng chức năng đăng nhập để tạo tài khoản."
-      intro: "Xin chào! :heart_eyes: Có vẻ như bạn đang thích thú để thảo luận, nhưng bạn chưa đăng nhập."
-      value_prop: "Khi bạn tạo tài khoản, website nhớ chính xác những gì bạn đã đọc, vì vậy bạn sẽ luôn trở lại đúng nơi đã rời đi. Bạn cũng có thể nhận thông báo ở đây hoặc qua email mỗi khi có bài viết mới. Bạn cũng có thể like bài viết để chia sẻ cảm xúc của mình. :heartbeat:"
+      hidden_for_session: "OK, Tôi sẽ hỏi bạn vào ngày mai. Bạn có thể sử dụng chức năng đăng nhập để tạo tài khoản."
+      intro: "Hey! :heart_eyes: Có vẻ như bạn đang thích thảo luận, nhưng bạn chưa đăng nhập."
+      value_prop: "Khi tạo tài khoản, website nhớ chính xác những gì bạn đã đọc, vì vậy bạn sẽ luôn trở lại đúng nơi đã rời đi. Bạn cũng có thể nhận thông báo ở đây hoặc qua email mỗi khi có bài viết mới. Bạn cũng có thể like bài viết để chia sẻ cảm xúc của mình. :heartbeat:"
+    
     summary:
-      enabled_description: "Bạn đang xem một bản tóm tắt của chủ đề này: các bài viết thú vị nhất được xác định bởi cộng đồng."
+      enabled_description: "Bạn đang xem bản tóm tắt của chủ đề này: những bài viết hay nhất được cộng đồng bình chọn."
       description: "Có <b>{{replyCount}}</b> trả lời."
-      description_time: "Có <b>{{replyCount}}</b> trả lời với thời gian đọc ước tính khoảng <b>{{readingTime}} phút</b>."
-      enable: 'Tóm tắt lại chủ đề'
-      disable: 'HIển thị tất cả các bài viết'
+      description_time: "Có <b>{{replyCount}}</b> trả lời với thời gian đọc khoảng <b>{{readingTime}} phút</b>."
+      enable: 'Tóm tắt chủ đề'
+      disable: 'Hiện tất cả bài viết'
+    
     deleted_filter:
-      enabled_description: "Chủ để này có chứa các bài viết bị xoá, chúng đã bị ẩn đi"
-      disabled_description: "Xoá các bài viết trong các chủ để được hiển thị"
-      enable: "Ẩn các bài viết bị xoá"
-      disable: "Xem các bài viết bị xoá"
+      enabled_description: "Chủ để này có bài bị xoá, đã bị ẩn. "
+      disabled_description: "Bài bị xóa trong chủ đề được hiển thị"
+      enable: "Ẩn bài viết bị xoá"
+      disable: "Hiện bài viết bị xoá"
+    
     private_message_info:
       title: "Tin nhắn"
       invite: "Mời người khác..."
       remove_allowed_user: "Bạn thực sự muốn xóa {{name}} từ tin nhắn này?"
+      remove_allowed_group: "Bạn thực sự muốn xóa {{name}} từ tin nhắn này?"
+    
     email: 'Email'
-    username: 'Username'
+    username: 'Tên đăng nhập'
     last_seen: 'Đã xem'
-    created: 'Tạo bởi'
-    created_lowercase: 'ngày tạo'
-    trust_level: 'Độ tin tưởng'
-    search_hint: 'username, email or IP address'
+    created: 'Đã tạo'
+    created_lowercase: 'đã tạo'
+    trust_level: 'Cấp độ tin tưởng'
+    search_hint: 'tên đăng nhập, email hoặc địa chỉ IP'
+    
     create_account:
       title: "Tạo tài khoản mới"
-      failed: "Có gì đó không đúng, có thể email này đã được đăng ký, thử liên kết quên mật khẩu"
+      failed: "Rất tiếc, có thể email này đã được đăng ký, thử link quên mật khẩu"
+      
     forgot_password:
       title: "Đặt lại mật khẩu"
-      action: "Tôi đã quên mật khẩu của tôi"
-      invite: "Điền vào username của bạn hoặc địa chỉ email và chúng tôi sẽ gửi bạn email để khởi tạo lại mật khẩu"
-      reset: "Tạo lại mật khẩu"
-      complete_username: "Nếu một tài khoản phù hợp với tên thành viên <b>% {username} </ b>, bạn sẽ nhận được một email với hướng dẫn về cách đặt lại mật khẩu của bạn trong thời gian ngắn."
-      complete_email: "Nếu một trận đấu tài khoản <b>% {email} </ b>, bạn sẽ nhận được một email với hướng dẫn về cách đặt lại mật khẩu của bạn trong thời gian ngắn."
-      complete_username_found: "Chúng tôi tìm thấy một tài khoản phù hợp với tên thành viên <b>% {username} </ b>, bạn sẽ nhận được một email với hướng dẫn về cách đặt lại mật khẩu của bạn trong thời gian ngắn."
-      complete_email_found: "Chúng tôi tìm thấy một tài khoản phù hợp với <b>% {email} </ b>, bạn sẽ nhận được một email với hướng dẫn về cách đặt lại mật khẩu của bạn trong thời gian ngắn."
-      complete_username_not_found: "Không có tài khoản phù hợp với tên thành viên <b>% {username} </ b>"
-      complete_email_not_found: "Không tìm thấy tài khoản nào tương ứng với <b>%{email}</b>"
+      action: "Tôi quên mật khẩu của tôi"
+      invite: "Nhập tên đăng nhập hoặc email, hệ thống sẽ gửi bạn email để đặt lại mật khẩu"
+      reset: "Đặt lại mật khẩu"
+      complete_username: "Nếu tài khoản đúng với tên đăng nhập <b>%{username}</b>, bạn sẽ nhận được email hướng dẫn đặt lại mật khẩu."
+      complete_email: "Nếu tài khoản đúng với <b>%{email}</b>, bạn sẽ nhận được email hướng dẫn đặt lại mật khẩu."
+      complete_username_found: "Đã tìm thấy tài khoản phù hợp với tên đăng nhập <b>%{username}</b>, bạn sẽ nhận được email hướng dẫn đặt lại mật khẩu."
+      complete_email_found: "Đã tìm thấy tài khoản phù hợp với <b>%{email}</b>, bạn sẽ nhận được email hướng dẫn đặt lại mật khẩu."
+      
+      complete_username_not_found: "Không có tài khoản đúng với tên đăng nhập <b>%{username}</b>"
+      complete_email_not_found: "Không có tài khoản nào tương ứng với <b>%{email}</b>"
     login:
       title: "Đăng nhập"
       username: "Thành viên"
       password: "Mật khẩu"
       email_placeholder: "Email hoặc tên đăng nhập "
-      caps_lock_warning: "Phím Caps Lock đang được bật"
-      error: "Không xác định được lỗi"
-      rate_limit: "Xin đợi trước khi đăng nhập lại lần nữa."
-      blank_username_or_password: "Bạn phải nhập email hoặc username, và mật khẩu"
-      reset_password: 'Khởi tạo mật khẩu'
-      logging_in: "Đăng nhập..."
+      caps_lock_warning: "Phím Caps Lock đang bật"
+      error: "Lỗi không xác định"
+      rate_limit: "Hãy đợi trước khi thử đăng nhập lại."
+      blank_username_or_password: "Vui lòng nhập email hoặc tên đăng nhập, và mật khẩu"
+      reset_password: 'Đặt lại mật khẩu'
+      logging_in: "Đang đăng nhập..."
       or: "Hoặc"
       authenticating: "Đang xác thực..."
-      awaiting_confirmation: "Tài khoản của bạn đang đợi kích hoạt, sử dụng liên kết quên mật khẩu trong trường hợp kích hoạt ở 1 email khác."
-      awaiting_approval: "Tài khoản của bạn chưa được chấp nhận bới thành viên. Bạn sẽ được gửi một email khi được chấp thuận "
-      requires_invite: "Xin lỗi, bạn phải được mời để tham gia diễn đàn"
-      not_activated: "Bạn không thể đăng nhập. Chúng tôi đã gửi trước email kích hoạt cho bạn tại <b>{{sentTo}}</b>. Vui lòng làm theo hướng dẫn trong email để kích hoạt tài khoản của bạn."
-      not_allowed_from_ip_address: "Bạn không thể đăng nhập từ địa chỉ IP này"
-      admin_not_allowed_from_ip_address: "Bạn không thể đăng nhập với quyền quản trị từ địa chỉ IP đó."
-      resend_activation_email: "Bấm đây để gửi lại email kích hoạt"
-      sent_activation_email_again: "Chúng tôi gửi email kích hoạt tới cho bạn ở <b>{{currentEmail}}</b>. Nó sẽ mất vài phút để đến; bạn nhớ check cả hồm thư spam nhe. "
+      awaiting_confirmation: "Tài khoản của bạn đang chờ kích hoạt, sử dụng link quên mật khẩu trong trường hợp kích hoạt ở email khác."
+      awaiting_approval: "Tài khoản của bạn chưa được phê duyệt bởi người điều hành. Bạn sẽ nhận được email khi được chấp thuận."
+      requires_invite: "Rất tiếc, bạn phải được mời để tham gia diễn đàn."
+      not_activated: "Bạn chưa thể đăng nhập. Hệ thống đã gửi email kích hoạt đến <b>{{sentTo}}</b>. Vui lòng làm theo hướng dẫn trong email để kích hoạt tài khoản của bạn."
+      not_allowed_from_ip_address: "Bạn không thể đăng nhập từ địa chỉ IP này."
+      admin_not_allowed_from_ip_address: "Bạn không thể đăng nhập admin từ địa chỉ IP đó."
+      resend_activation_email: "Bấm đây để gửi lại email kích hoạt."
+      sent_activation_email_again: "Hệ thống đã gửi lại email kích hoạt đến <b>{{currentEmail}}</b>. Có thể sẽ mất vài phút, nếu không thấy email đến hộp thư inbox, vui lòng kiểm tra trong thư mục Spam"
       to_continue: "Vui lòng đăng nhập"
       preferences: "Bạn cần phải đăng nhập để thay đổi cài đặt tài khoản."
-      forgot: "Tôi không thể nhớ lại chi tiết tài khoản của tôi."
+      forgot: "Tôi không nhớ chi tiết tài khoản của tôi"
       google:
         title: "với Google "
-        message: "Chứng thực với Google (Bạn hãy chắc chắn là chặn popup không bật)"
+        message: "Đang xác thực với Google (Bạn hãy chắc chắn là không bật Chặn Popup)"
       google_oauth2:
         title: "với Google"
-        message: "Chứng thực với Google (chắc chắn rằng cửa sổ pop up blocker không được kích hoạt)"
+        message: "Đang xác thực với Google (Bạn hãy chắc chắn là không bật Chặn Popup)"
       twitter:
         title: "với Twitter"
-        message: "Chứng thực với Twitter(hãy chắc chắn là chăn pop up không bật)"
+        message: "Đang xác thực với Twitter(Bạn hãy chắc chắn là không bật Chặn Popup)"
       instagram:
         title: "với Instagram"
-        message: "Chứng thực với Instagram (chăc chắn rằng chặn pop-up không bật)"
+        message: "Đang xác thực với Instagram (Bạn hãy chắc chắn là không bật Chặn Popup)"
       facebook:
         title: "với Facebook"
-        message: "Chứng thực với Facebook(chắc chắn là chặn pop up không bật)"
+        message: "Đang xác thực với Facebook(Bạn hãy chắc chắn là không bật Chặn Popup)"
       yahoo:
         title: "với Yahoo"
-        message: "Chứng thực với Yahoo (Chắc chắn chặn pop up không bật)"
+        message: "Đang xác thực với Yahoo (Bạn hãy chắc chắn là không bật Chặn Popup)"
       github:
         title: "với GitHub"
-        message: "Chứng thực với GitHub (chắc chắn chặn popup không bật)"
+        message: "Đang xác thực với GitHub (Bạn hãy chắc chắn là không bật Chặn Popup)"
+        
     shortcut_modifier_key:
       shift: 'Shift'
       ctrl: 'Ctrl'
