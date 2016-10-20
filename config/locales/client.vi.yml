@@ -937,8 +937,8 @@ vi:
     email: 'Email'
     username: 'Tên đăng nhập'
     last_seen: 'Đã xem'
-    created: 'Đã tạo'
-    created_lowercase: 'đã tạo'
+    created: 'Tạo bởi'
+    created_lowercase: 'Tạo bởi'
     trust_level: 'Cấp độ tin tưởng'
     search_hint: 'tên đăng nhập, email hoặc địa chỉ IP'
     
@@ -1004,93 +1004,129 @@ vi:
         title: "với GitHub"
         message: "Đang xác thực với GitHub (Bạn hãy chắc chắn là không bật Chặn Popup)"
         
+    emoji_set:
+      apple_international: "Apple/Quốc tế"
+      google: "Google"
+      twitter: "Twitter"
+      emoji_one: "Emoji"
+      win10: "Win10"
+
+    category_page_style:
+      categories_only: "Chỉ danh mục"
+      categories_with_featured_topics: "Danh mục với chủ đề nổi bật"
+      categories_and_latest_topics: "Danh mục và chủ đề mới nhất"
+
     shortcut_modifier_key:
       shift: 'Shift'
       ctrl: 'Ctrl'
       alt: 'Alt'
+    
     composer:
       emoji: "Emoji :)"
       more_emoji: "thêm..."
       options: "Lựa chọn"
-      whisper: "nói chuyện"
-      add_warning: "Đây là một cảnh báo chính thức"
-      toggle_whisper: "Chuyển chế độ Nói chuyện"
-      posting_not_on_topic: "Bài viết nào bạn muốn trả lời "
+      whisper: "whisper"
+      unlist: "unlisted"
+      
+      add_warning: "Đây là một cảnh báo chính thức."
+      toggle_whisper: "Chuyển chế độ Whisper"
+      toggle_unlisted: "Chuyển chế độ Unlisted"
+      posting_not_on_topic: "Chủ đề nào bạn muốn trả lời?"
       saving_draft_tip: "đang lưu..."
-      saved_draft_tip: "Đã lưu"
+      saved_draft_tip: "đã lưu"
       saved_local_draft_tip: "Đã lưu locally"
-      similar_topics: "Bài viết của bạn tương tự với "
+      similar_topics: "Chủ đề của bạn tương tự như..."
       drafts_offline: "Nháp offline"
+      
+      group_mentioned:
+        one: "Bằng cách đề cập đến {{group}}, bạn muốn thông báo <a href='{{group_link}}'>1 người</a> – bạn có chắc không?"
+        other: "By mentioning {{group}}, bạn muốn thông báo <a href='{{group_link}}'>{{count}} người</a> – bạn có chắc không?"
+        duplicate_link: "Dường như Link <b>{{domain}}</b> đã được đăng trong chủ đề bởi <b>@{{username}}</b> trong <a href='{{post_url}}'>một trả lời {{ago}}</a> – Bạn có chắc muốn đăng một lần nữa?"
+
       error:
         title_missing: "Tiêu đề là bắt buộc"
-        title_too_short: "Tiêu để phải có ít nhất {{min}} ký tự"
-        title_too_long: "Tiêu đề có tối đa {{max}}  ký tự"
-        post_missing: "Bài viết không được bỏ trắng"
+        title_too_short: "Tiêu đề phải có ít nhất {{min}} ký tự"
+        title_too_long: "Tiêu đề có tối đa {{max}} ký tự"
+        post_missing: "Bài viết không được để trống"
         post_length: "Bài viết phải có ít nhất {{min}} ký tự"
-        try_like: 'Các bạn đã thử các nút <i class="fa fa-heart"></i>?'
-        category_missing: "Bạn phải chọn một phân loại"
+        try_like: 'Bạn đã thử nút <i class="fa fa-heart"></i>?'
+        category_missing: "Bạn phải chọn một danh mục"
+        
       save_edit: "Lưu chỉnh sửa"
-      reply_original: "Trả lời cho bài viết gốc"
-      reply_here: "Trả lời đây "
+      reply_original: "Trả lời cho chủ đề gốc"
+      reply_here: "Trả lời tại đây"
       reply: "Trả lời "
-      cancel: "Huỷ"
+      cancel: "Huỷ bỏ"
       create_topic: "Tạo chủ đề"
       create_pm: "Tin nhắn"
-      title: "Hoặc nhất Ctrl+Enter"
-      users_placeholder: "Thêm thành viên "
-      title_placeholder: "Tóm tắt lại thảo luận này trong một câu ngắn gọn"
-      edit_reason_placeholder: "Tại sao bạn sửa"
-      show_edit_reason: "(thêm lý do sửa)"
-      reply_placeholder: "Gõ ở đây. Sử dụng Markdown, BBCode, hoặc HTML để định dạng. Kéo hoặc dán ảnh."
-      view_new_post: "Xem bài đăng mới của bạn. "
+      title: "Hoặc nhấn Ctrl+Enter"
+      
+      users_placeholder: "Thêm thành viên"
+      title_placeholder: "Nhập tiêu đề bài viết tại đây..."
+      edit_reason_placeholder: "Tại sao bạn chỉnh sửa?"
+      show_edit_reason: "(thêm lý do chỉnh sửa)"
+      reply_placeholder: "Nhập ở đây. Sử dụng Markdown, BBCode, hoặc HTML để định dạng. Kéo hoặc dán ảnh."
+      view_new_post: "Xem bài đăng mới của bạn."
       saving: "Đang lưu"
-      saved: "Đã lưu"
-      saved_draft: "Bài nháp đang lưu. Chọn để tiếp tục."
-      uploading: "Đang đăng "
-      show_preview: 'Xem trước &raquo;'
-      hide_preview: '&laquo;ẩn xem trước'
+      saved: "Đã lưu!"
+      saved_draft: "Bài nháp đang xử lý. Chọn để khôi phục lại."
+      uploading: "Đang tải lên..."
+      show_preview: 'Hiện xem trước &raquo;'
+      hide_preview: '&laquo; ẩn xem trước'
+      
       quote_post_title: "Trích dẫn cả bài viết"
+      bold_label: "B"
       bold_title: "In đậm"
-      bold_text: "chữ in đậm"
-      italic_title: "Nhấn mạnh"
-      italic_text: "văn bản nhấn mạnh"
-      link_title: "Liên kết"
+      bold_text: "Chữ in đậm"
+      italic_label: "I"
+      italic_title: "Chữ nghiêng"
+      italic_text: "văn bản chữ nghiêng"      
+      link_title: "Hyperlink"
       link_description: "Nhập mô tả liên kết ở đây"
-      link_dialog_title: "Chèn liên kết"
+      link_dialog_title: "Chèn link"
       link_optional_text: "tiêu đề tùy chọn"
-      link_url_placeholder: "http://example.com"
+      link_url_placeholder: "https://example.com"
       quote_title: "Trích dẫn"
       quote_text: "Trích dẫn"
-      code_title: "Văn bản định dạng trước"
+      code_title: "Văn bản định dạng sẵn"
       code_text: "lùi đầu dòng bằng 4 dấu cách"
+      paste_code_text: "nhập hoặc dán code tại đây"
       upload_title: "Tải lên"
       upload_description: "Nhập mô tả tải lên ở đây"
-      olist_title: "Danh sách kiểu số"
-      ulist_title: "Danh sách kiểu ký hiệu"
-      list_item: "Danh sách các mục"
-      heading_title: "Tiêu đề"
-      heading_text: "Tiêu đề"
-      hr_title: "Căn ngang"
+      olist_title: "List kiểu số"
+      ulist_title: "List kiểu dấu chấm"
+      list_item: "List item"
+      heading_label: "H"
+      heading_title: "Heading"
+      heading_text: "Heading"
+      hr_title: "Horizontal - Căn ngang"
       help: "Trợ giúp soạn thảo bằng Markdown"
-      toggler: "ẩn hoặc hiển thị bảng điều khiển soạn thảo"
+      toggler: "ẩn hoặc hiện trình soạn thảo"
       modal_ok: "OK"
-      modal_cancel: "Hủy"
-      cant_send_pm: "Xin lỗi, bạn không thể gởi tin nhắn đến %{username}."
-      admin_options_title: "Tùy chọn quản trị viên cho chủ đề này"
+      modal_cancel: "Hủy bỏ"
+      cant_send_pm: "Rất tiếc, bạn không thể gởi tin nhắn đến %{username}."
+      yourself_confirm:
+        title: "Bạn có quên thêm người nhận?"
+        body: "Ngay bây giờ, tin nhắn chỉ được gửi cho chính bạn!"
+
+      admin_options_title: "Tùy chọn thiết lập quản trị viên cho chủ đề này"
       auto_close:
-        label: "Thời gian tự khóa chủ đề:"
+        label: "Tự đóng chủ đề lúc:"
         error: "Vui lòng nhập một giá trị hợp lệ."
-        based_on_last_post: "Không đóng cho đến khi bài viết cuối cùng trong chủ đề này trở thành bài cũ"
+        based_on_last_post: "Không đóng cho đến khi bài viết cuối cùng trong chủ đề này đã cũ"
         all:
-          examples: 'Nhập giờ (định dạng 24h), thời gian chính xác ( vd: 17:30) hoặc thời gian kèm ngày tháng (2013-11-22 14:00).'
+          units: ""
+          examples: 'Nhập số giờ (24), thời gian chính xác (17:30) hoặc ngày tháng kèm với thời gian (2013-11-22 14:00).'
         limited:
-          units: "(# của giờ)"
-          examples: 'Nhập số giờ ( theo định dạng 24h)'
+          units: "(# giờ)"
+          examples: 'Nhập số giờ (24).'
+          
     notifications:
-      title: "thông báo của @name nhắc đến, trả lời bài của bạn và chủ đề, tin nhắn, vv"
-      none: "Không thể tải các thông báo tại thời điểm này."
-      more: "xem thông báo cũ hơn"
-      total_flagged: "tổng số bài viết gắn cờ"
+      title: "Thông báo của @name đề cập, trả lời bạn, nhắn tin, v.v...."
+      none: "Không thể tải thông báo tại thời điểm này."
+      empty: "Không tìm thấy thông báo."
+      more: "Xem thông báo cũ hơn"
+      total_flagged: "Tổng số bài viết gắn Flag"
       mentioned: "<i title='mentioned' class='fa fa-at'></i><p><span>{{username}}</span> {{description}}</p>"
       group_mentioned: "<i title='group mentioned' class='fa fa-at'></i><p><span>{{username}}</span> {{description}}</p>"
       quoted: "<i title='quoted' class='fa fa-quote-right'></i><p><span>{{username}}</span> {{description}}</p>"
@@ -1100,13 +1136,16 @@ vi:
       liked: "<i title='liked' class='fa fa-heart'></i><p><span>{{username}}</span> {{description}}</p>"
       liked_2: "<i title='liked' class='fa fa-heart'></i><p><span>{{username}}, {{username2}}</span> {{description}}</p>"
       liked_many:
+        one: "<i title='liked' class='fa fa-heart'></i><p><span>{{username}}, {{username2}} và 1 người khác</span> {{description}}</p>"
         other: "<i title='liked' class='fa fa-heart'></i><p><span>{{username}}, {{username2}} và {{count}} người khác</span> {{description}}</p>"
       private_message: "<i title='private message' class='fa fa-envelope-o'></i><p><span>{{username}}</span> {{description}}</p>"
       invited_to_private_message: "<i title='private message' class='fa fa-envelope-o'></i><p><span>{{username}}</span> {{description}}</p>"
       invited_to_topic: "<i title='invited to topic' class='fa fa-hand-o-right'></i><p><span>{{username}}</span> {{description}}</p>"
       invitee_accepted: "<i title='accepted your invitation' class='fa fa-user'></i><p><span>{{username}}</span> chấp nhận lời mời của bạn</p>"
-      moved_post: "<i title='moved post' class='fa fa-sign-out'></i><p><span>{{username}}</span> chuyển {{description}}</p>"
+      moved_post: "<i title='moved post' class='fa fa-sign-out'></i><p><span>{{username}}</span> moved {{description}}</p>"
+      linked: "<i title='linked post' class='fa fa-link'></i><p><span>{{username}}</span> {{description}}</p>"
       granted_badge: "<i title='badge granted' class='fa fa-certificate'></i><p>Thu được '{{description}}'</p>"
+      
       group_message_summary:
         other: "<i title='messages in group inbox' class='fa fa-group'></i><p> {{count}} tin nhắn trong {{group_name}} của bạn</p>"
       alt:
