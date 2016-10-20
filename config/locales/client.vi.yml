@@ -1127,100 +1127,152 @@ vi:
       empty: "Không tìm thấy thông báo."
       more: "Xem thông báo cũ hơn"
       total_flagged: "Tổng số bài viết gắn Flag"
-      mentioned: "<i title='mentioned' class='fa fa-at'></i><p><span>{{username}}</span> {{description}}</p>"
-      group_mentioned: "<i title='group mentioned' class='fa fa-at'></i><p><span>{{username}}</span> {{description}}</p>"
-      quoted: "<i title='quoted' class='fa fa-quote-right'></i><p><span>{{username}}</span> {{description}}</p>"
-      replied: "<i title='replied' class='fa fa-reply'></i><p><span>{{username}}</span> {{description}}</p>"
-      posted: "<i title='posted' class='fa fa-reply'></i><p><span>{{username}}</span> {{description}}</p>"
-      edited: "<i title='edited' class='fa fa-pencil'></i><p><span>{{username}}</span> {{description}}</p>"
-      liked: "<i title='liked' class='fa fa-heart'></i><p><span>{{username}}</span> {{description}}</p>"
-      liked_2: "<i title='liked' class='fa fa-heart'></i><p><span>{{username}}, {{username2}}</span> {{description}}</p>"
+      mentioned: "<i title='Đề cập' class='fa fa-at'></i><p><span>{{username}}</span> {{description}}</p>"
+      group_mentioned: "<i title='Đề cập nhóm' class='fa fa-at'></i><p><span>{{username}}</span> {{description}}</p>"
+      quoted: "<i title='Trích dẫn' class='fa fa-quote-right'></i><p><span>{{username}}</span> {{description}}</p>"
+      replied: "<i title='Trả lời' class='fa fa-reply'></i><p><span>{{username}}</span> {{description}}</p>"
+      posted: "<i title='Đã đăng' class='fa fa-reply'></i><p><span>{{username}}</span> {{description}}</p>"
+      edited: "<i title='Chỉnh sửa' class='fa fa-pencil'></i><p><span>{{username}}</span> {{description}}</p>"
+      liked: "<i title='Like' class='fa fa-heart'></i><p><span>{{username}}</span> {{description}}</p>"
+      liked_2: "<i title='Like' class='fa fa-heart'></i><p><span>{{username}}, {{username2}}</span> {{description}}</p>"
       liked_many:
-        one: "<i title='liked' class='fa fa-heart'></i><p><span>{{username}}, {{username2}} và 1 người khác</span> {{description}}</p>"
-        other: "<i title='liked' class='fa fa-heart'></i><p><span>{{username}}, {{username2}} và {{count}} người khác</span> {{description}}</p>"
-      private_message: "<i title='private message' class='fa fa-envelope-o'></i><p><span>{{username}}</span> {{description}}</p>"
-      invited_to_private_message: "<i title='private message' class='fa fa-envelope-o'></i><p><span>{{username}}</span> {{description}}</p>"
-      invited_to_topic: "<i title='invited to topic' class='fa fa-hand-o-right'></i><p><span>{{username}}</span> {{description}}</p>"
-      invitee_accepted: "<i title='accepted your invitation' class='fa fa-user'></i><p><span>{{username}}</span> chấp nhận lời mời của bạn</p>"
-      moved_post: "<i title='moved post' class='fa fa-sign-out'></i><p><span>{{username}}</span> moved {{description}}</p>"
-      linked: "<i title='linked post' class='fa fa-link'></i><p><span>{{username}}</span> {{description}}</p>"
-      granted_badge: "<i title='badge granted' class='fa fa-certificate'></i><p>Thu được '{{description}}'</p>"
+        one: "<i title='Like' class='fa fa-heart'></i><p><span>{{username}}, {{username2}} và 1 người khác</span> {{description}}</p>"
+        other: "<i title='Like' class='fa fa-heart'></i><p><span>{{username}}, {{username2}} và {{count}} người khác</span> {{description}}</p>"
+      private_message: "<i title='Tin nhắn riêng tư' class='fa fa-envelope-o'></i><p><span>{{username}}</span> {{description}}</p>"
+      invited_to_private_message: "<i title='Tin nhắn riêng tư' class='fa fa-envelope-o'></i><p><span>{{username}}</span> {{description}}</p>"
+      invited_to_topic: "<i title='Mời vào chủ đề' class='fa fa-hand-o-right'></i><p><span>{{username}}</span> {{description}}</p>"
+      invitee_accepted: "<i title='Chấp nhận lời mời' class='fa fa-user'></i><p><span>{{username}}</span> chấp nhận lời mời của bạn</p>"
+      moved_post: "<i title='Di chuyển bài đăng' class='fa fa-sign-out'></i><p><span>{{username}}</span> moved {{description}}</p>"
+      linked: "<i title='Link bài viết' class='fa fa-link'></i><p><span>{{username}}</span> {{description}}</p>"
+      granted_badge: "<i title='Cấp huy hiệu' class='fa fa-certificate'></i><p>Thu được '{{description}}'</p>"
+      
+      watching_first_post: "<i title='chủ đề mới' class='fa fa-dot-circle-o'></i><p><span>Chủ đề mới</span> {{description}}</p>"
       
       group_message_summary:
-        other: "<i title='messages in group inbox' class='fa fa-group'></i><p> {{count}} tin nhắn trong {{group_name}} của bạn</p>"
+        one: "<i title='Tin nhắn trong hộp thư đến' class='fa fa-group'></i><p> {{count}} tin nhắn trong {{group_name}} hộp thư của bạn</p>"
+        other: "<i title='Tin nhắn trong hộp thư đến' class='fa fa-group'></i><p> {{count}} tin nhắn trong {{group_name}} hộp thư của bạn</p>"
+      
       alt:
-        mentioned: "Được nhắc đến bởi"
+        mentioned: "Được đề cập bởi"
         quoted: "Trích dẫn bởi"
         replied: "Đã trả lời"
         posted: "Đăng bởi"
         edited: "Bài viết của bạn được sửa bởi"
-        liked: "Bạn đã like bài viết"
-        private_message: "Tin nhắn riêng từ"
-        invited_to_private_message: "Lời mời thảo luận riêng từ"
+        liked: "Bạn đã Like bài viết"
+        private_message: "Tin nhắn từ"
+        invited_to_private_message: "Mời nhắn tin từ"
         invited_to_topic: "Lời mời tham gia chủ đề từ"
         invitee_accepted: "Lời mời được chấp nhận bởi"
-        moved_post: "Bài viết của bạn đã được di chuyển bởi"
-        linked: "Liên kết đến bài viết của bạn"
-        granted_badge: "Cấp huy hiệu"
+        moved_post: "Bài đăng của bạn được di chuyển bởi"
+        linked: "Link đến bài viết của bạn"
+        granted_badge: "Được cấp huy hiệu"
         group_message_summary: "Tin nhắn trong hộp thư đến"
+        
       popup:
-        mentioned: '{{username}} nhắc đến bạn trong "{{topic}}" - {{site_title}}'
+        mentioned: '{{username}} đề cập đến bạn trong "{{topic}}" - {{site_title}}'
         group_mentioned: '{{username}} nhắc đến bạn trong "{{topic}}" - {{site_title}}'
-        quoted: '{{username}} trích lời bạn trong "{{topic}}" - {{site_title}}'
-        replied: '{{username}} trả lời cho bạn trong "{{topic}}" - {{site_title}}'
-        posted: '{{username}} gửi bài trong "{{topic}}" - {{site_title}}'
-        private_message: '{{username}} đã gửi cho bạn một tin nhắn trong "{{topic}}" - {{site_title}}'
-        linked: '{{username}} liên quan đến bài viết của bạn từ "{{topic}}" - {{site_title}}'
+        quoted: '{{username}} trích lời của bạn trong "{{topic}}" - {{site_title}}'
+        replied: '{{username}} trả lời bạn trong "{{topic}}" - {{site_title}}'
+        posted: '{{username}} đăng trong "{{topic}}" - {{site_title}}'
+        private_message: '{{username}} gửi cho bạn một tin nhắn trong "{{topic}}" - {{site_title}}'
+        linked: '{{username}} liên kết bài viết của bạn từ "{{topic}}" - {{site_title}}'
+    
     upload_selector:
-      title: "Thêm một ảnh"
-      title_with_attachments: "Thêm một ảnh hoặc tệp tin"
+      title: "Thêm hình ảnh"
+      title_with_attachments: "Thêm hình ảnh hoặc file"
       from_my_computer: "Từ thiết bị của tôi"
-      from_the_web: "Từ Web"
-      remote_tip: "đường dẫn tới hình ảnh"
-      remote_tip_with_attachments: "chọn ảnh hoặc file {{authorized_extensions}}"
+      from_the_web: "Từ trang web"
+      remote_tip: "liên kết đến hình ảnh"
+      remote_tip_with_attachments: "liên kết đến hình ảnh hoặc file {{authorized_extensions}}"
       local_tip: "chọn hình từ thiết bị của bạn"
-      local_tip_with_attachments: "chọn ảnh hoặc file {{authorized_extensions}} từ thiết bị của bạn"
-      hint: "(Bạn cũng có thể kéo & thả vào trình soạn thảo để tải chúng lên)"
+      local_tip_with_attachments: "chọn hình hoặc file từ thiết bị của bạn {{authorized_extensions}}"
+      hint: "(Bạn cũng có thể kéo & thả vào trình soạn thảo để tải lên)"
       hint_for_supported_browsers: "bạn có thể kéo và thả ảnh vào trình soan thảo này"
       uploading: "Đang tải lên"
-      select_file: "Chọn Tài liệu"
-      image_link: "liên kết hình ảnh của bạn sẽ trỏ đến"
+      select_file: "Chọn file"
+      image_link: "liên kết hình ảnh sẽ trỏ đến"
+    
     search:
       sort_by: "Sắp xếp theo"
-      relevance: "Độ phù hợp"
-      latest_post: "Bài viết mới nhất"
+      relevance: "Độ liên quan"
+      latest_post: "Bài đăng mới nhất"
       most_viewed: "Xem nhiều nhất"
       most_liked: "Like nhiều nhất"
       select_all: "Chọn tất cả"
-      clear_all: "Xóa tất cả"
+      clear_all: "Bỏ chọn tất cả"
+      too_short: "Từ khóa tìm kiếm quá ngắn."
       result_count:
-        other: "{{count}} kết quả cho <span class='term'>\"{{term}}\"</span>"
-      title: "tìm kiếm chủ đề, bài viết, tài khoản hoặc các danh mục"
-      no_results: "Không tìm thấy kết quả."
-      no_more_results: "Không tìm thấy kết quả"
-      search_help: Giúp đỡ tìm kiếm
-      searching: "Đang tìm ..."
+        one: "Có 1 kết quả tìm kiếm cho <span class='term'>\"{{term}}\"</span>"
+        other: "Có {{count}} kết quả tìm kiếm cho <span class='term'>\"{{term}}\"</span>"
+      title: "Tìm kiếm chủ đề, bài viết, thành viên hoặc danh mục"
+      no_results: "Không tìm thấy kết quả nào."
+      no_more_results: "Không tìm thấy kết quả nào."
+      searching: "Đang tìm kiếm ..."
       post_format: "#{{post_number}} bởi {{username}}"
+      
       context:
-        user: "Tìm bài viết của @{{username}}"
-        topic: "Tìm trong chủ đề này"
-        private_messages: "Tìm tin nhắn"
-    hamburger_menu: "đi đến danh sách chủ đề hoặc danh mục khác"
-    new_item: "mới"
-    go_back: 'quay trở lại'
-    not_logged_in_user: 'Trang cá nhân với tóm tắt các hoạt động và cấu hình'
-    current_user: 'đi đến trang cá nhân của bạn'
+        user: "Tìm bài đăng của @{{username}}"
+        category: "Tìm kiếm trong danh mục #{{category}}"
+        topic: "Tìm kiếm trong chủ đề này"
+        private_messages: "Tìm kiếm tin nhắn"
+    
+    advanced:
+        title: Tìm kiếm nâng cao
+        posted_by:
+          label: Đăng bởi
+        in_category:
+          label: Trong danh mục
+        in_group:
+          label: Trong nhóm
+        with_badge:
+          label: Với huy hiệu
+        with_tags:
+          label: Với Tag
+        filters:
+          label: Chỉ quay lại chủ đề/bài đăng đó...
+          likes: Tôi đã Like
+          posted: Tôi đã đăng trong
+          watching: Tôi đang Luôn luôn theo dõi
+          tracking: Tôi đang theo dõi
+          private: trong tin nhắn của tôi
+          bookmarks: Tôi đã đánh dấu
+          first: những bài đầu tiên
+          pinned: đã ghim
+          unpinned: chưa ghim
+          wiki: là Wiki
+        statuses:
+          label: Ở những chủ đề
+          open: đang mở
+          closed: đã đóng
+          archived: đã lưu trữ
+          noreplies: không có trả lời nào
+          single_user: chứa một thành viên
+        post:
+          count:
+            label: Số lượng bài đăng tối thiểu
+          time:
+            label: Đã đăng
+            before: trước
+            after: sau
+
+    hamburger_menu: "Đi đến danh sách chủ đề hoặc danh mục khác"
+    new_item: "Mới"
+    go_back: 'Quay lại'
+    not_logged_in_user: 'Trang cá nhân với tóm tắt các hoạt động và thiết lập'
+    current_user: 'Đi đến trang cá nhân của bạn'
+    
     topics:
+      new_messages_marker: "lần truy cập trước"
       bulk:
         unlist_topics: "Chủ đề không công khai"
         reset_read: "Đặt lại lượt đọc"
         delete: "Xóa chủ đề"
         dismiss: "Bỏ qua"
-        dismiss_read: "Bỏ qua tất cả thư chưa đọc"
+        dismiss_read: "Bỏ qua tất cả chưa đọc"
         dismiss_button: "Bỏ qua..."
-        dismiss_tooltip: "Bỏ qua chỉ bài viết mới hoặc ngừng theo dõi chủ đề"
-        also_dismiss_topics: "Ngừng theo dõi các chủ đề này để không hiển thị lại là chủ đề chưa đọc"
-        dismiss_new: "Bỏ "
+        dismiss_tooltip: "Bỏ qua bài đăng mới hoặc ngừng theo dõi chủ đề"
+        also_dismiss_topics: "Ngừng theo dõi những chủ đề này để không hiển thị lại là chưa đọc"
+        dismiss_new: "Bỏ qua bài mới"
         toggle: "chuyển sang chọn chủ đề theo lô"
         actions: "Hành động theo lô"
         change_category: "Chuyển chuyên mục"
