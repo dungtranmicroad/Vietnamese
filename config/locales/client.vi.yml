@@ -1315,11 +1315,14 @@ vi:
         
     topic:
       unsubscribe:
-        stop_notifications: "Từ bây giờ bạn sẽ không nhận thông báo từ <strong>{{title}}</strong>"
-        change_notification_state: "Tình trạn thông báo của bạn là"
-      create: 'Chủ đề Mới'
-      create_long: 'Tạo một Chủ đề mới'
-      private_message: 'Bắt đầu một thông điệp'
+        stop_notifications: "Bạn sẽ ít nhận thông báo từ <strong>{{title}}</strong>"
+        change_notification_state: "Tình trạng thông báo của bạn là "
+      filter_to:
+        one: "1 bài viết trong chủ đề"
+      other: "{{count}} bài viết trong chủ đề"
+      create: 'Chủ đề mới'
+      create_long: 'Tạo chủ đề mới'
+      private_message: 'Bắt đầu nhắn tin'
       archive_message:
         help: 'Chuyển tin nhắn sang lưu trữ'
         title: 'Lưu trữ'
@@ -1327,79 +1330,118 @@ vi:
         title: 'Chuyển sang hộp thư'
         help: 'Chuyển tin nhắn trở lại hộp thư'
       list: 'Chủ đề'
-      new: 'chủ đề mới'
-      unread: 'chưa đọc'
+      new: 'Chủ đề mới'
+      unread: 'Chưa đọc'
       new_topics:
-        other: '{{count}} chủ đề mới.'
+        one: '1 chủ đề mới'
+        other: '{{count}} chủ đề mới'
       unread_topics:
-        other: '{{count}} chủ đề chưa đọc.'
+        one: '1 chủ đề chưa đọc'
+        other: '{{count}} chủ đề chưa đọc'
       title: 'Chủ đề'
       invalid_access:
-        title: "Chủ đề này là riêng tư"
-        description: "Xin lỗi, bạn không có quyền truy cập vào chủ đề đó!"
-        login_required: "Bạn cần phải đăng nhập để xem chủ đề đó"
+        title: "Chủ đề riêng tư"
+        description: "Rất tiếc, bạn không có quyền truy cập vào chủ đề đó!"
+        login_required: "Bạn cần phải đăng nhập để xem chủ đề đó."
       server_error:
         title: "Tải chủ đề thất bại"
-        description: "Xin lỗi, chúng tôi không thể tải chủ đề, có thể do kết nối có vấn đề. Xin hãy thử lại. Nếu vấn đề còn xuất hiện, hãy cho chúng tôi biết"
+        description: "Rất tiếc, hệ thống không thể tải chủ đề, có thể do kết nối có vấn đề. Xin hãy thử lại. Nếu vấn đề còn xuất hiện, hãy cho chúng tôi biết."
       not_found:
         title: "Không tìm thấy chủ đề"
-        description: "Xin lỗi, chúng tôi không thể tìm thấy chủ đề đó. Có lẽ nó đã bị loại bởi mod?"
+        description: "Rất tiếc, hệ thống không thể tìm thấy chủ đề đó. Có thể đã bị xóa loại bởi người điều hành?"
       total_unread_posts:
-        other: "Bạn có {{number}} bài đăng chưa đọc trong chủ đề này"
+        one: "Bạn có 1 bài đăng chưa đọc trong chủ đề này"
+        other: "Bạn có {{count}} bài đăng chưa đọc trong chủ đề này"
       unread_posts:
-        other: "bạn có {{number}} bài đăng củ chưa đọc trong chủ đề này"
+        one: "Bạn có 1 bài đăng cũ chưa đọc trong chủ đề này"
+        other: "Bạn có {{count}} bài đăng cũ chưa đọc trong chủ đề này"
       new_posts:
-        other: "có {{count}} bài đăng mới trong chủ đề này từ lần đọc cuối"
+        one: "Có 1 bài đăng mới trong chủ đề này"
+        other: "Có {{count}} bài đăng mới trong chủ đề này"
       likes:
-        other: "có {{count}} thích trong chủ để này"
+        one: "Có 1 Like trong chủ đề này"
+        other: "Có {{count}} Like trong chủ đề này"
       back_to_list: "Quay lại danh sách chủ đề"
-      options: "Các lựa chọn chủ đề"
-      show_links: "Hiển thị liên kết trong chủ đề này"
-      toggle_information: "chuyển đổi các chi tiết chủ để"
-      read_more_in_category: "Muốn đọc nữa? Xem qua các chủ đề khác trong {{catLink}} hoặc {{latestLink}}"
-      read_more: "Muốn đọc nữa? {{catLink}} hoặc {{latestLink}}"
-      read_more_MF: "Có { UNREAD, plural, =0 {} one { is <a href='/unread'>1 unread</a> } other { are <a href='/unread'># unread</a> } } { NEW, plural, =0 {} one { {BOTH, select, true{and } false {is } other{}} <a href='/new'>1 new</a> topic} other { {BOTH, select, true{and } false {are } other{}} <a href='/new'># new</a> topics} } remaining, or {CATEGORY, select, true {browse other topics in {catLink}} false {{latestLink}} other {}}"
-      browse_all_categories: Duyệt tất cả các hạng mục
-      view_latest_topics: xem các chủ đề mới nhất
-      suggest_create_topic: Tại sao không tạo một chủ đề mới?
-      jump_reply_up: nhảy đến những trả lời trước đó
-      jump_reply_down: nhảy tới những trả lời sau đó
+      options: "Tùy chọn chủ đề"
+      show_links: "Hiển thị Link trong chủ đề này"
+      toggle_information: "chuyển sang chi tiết chủ đề"
+      read_more_in_category: "Bạn có muốn xem thêm? Xem các chủ đề khác trong {{catLink}} hoặc {{latestLink}}."
+      read_more: "Bạn có muốn xem thêm? {{catLink}} hoặc {{latestLink}}."
+      
+      # keys ending with _MF use message format, see https://meta.discourse.org/t/message-format-support-for-localization/7035 for details
+      read_more_MF: "Có {
+        UNREAD, plural,
+        =0 {}
+        one {
+          <a href='/unread'>1 chủ đề chưa đọc</a>
+        } other {
+          <a href='/unread'># chủ đề chưa đọc</a>
+        }
+        } và {
+          NEW, plural,
+            =0 {}
+            one { {BOTH, select, true{and } false {is } other{}} <a href='/new'>1 chủ đề mới</a>}
+            other { {BOTH, select, true{and } false {are } other{}} <a href='/new'># chủ đề mới</a>}
+        } còn lại, hoặc {CATEGORY, select, true {xem chủ đề khác trong {catLink}} false {{latestLink}} other {}}"
+        
+      browse_all_categories: Duyệt tất cả Danh mục
+      
+      view_latest_topics: xem chủ đề mới nhất
+      suggest_create_topic: Tại sao không tạo được chủ đề?
+      jump_reply_up: nhảy lên trả lời trước đó
+      jump_reply_down: nhảy tới trả lời kế tiếp
       deleted: "Chủ đề này đã bị xóa"
-      auto_close_notice: "Chủ đề này sẽ tự động đóng %{timeLeft}."
+      
+      auto_close_notice: "Chủ đề này sẽ tự động đóng trong %{timeLeft}."
       auto_close_notice_based_on_last_post: "Chủ đề này sẽ đóng %{duration} sau trả lời cuối cùng."
-      auto_close_title: 'Tự động-Đóng các Cài đặt'
+      auto_close_title: 'Tự Động Đóng Cài Đặt'
       auto_close_save: "Lưu"
-      auto_close_remove: "Đừng Tự Động-Đóng Chủ Đề Này"
+      auto_close_remove: "Không Tự Động Đóng Chủ Đề Này"      
+      auto_close_immediate:
+        one: "Bài đăng cuối cùng trong chủ đề đã được 1 giờ, do đó chủ đề sẽ được đóng lại ngay lập tức."
+        other: "Bài đăng cuối cùng trong chủ đề đã được %{count} giờ, do đó chủ đề sẽ được đóng lại ngay lập tức."
+
+      timeline:
+        back: "Quay lại"
+        back_description: "Quay lại bài đăng cuối chưa đọc"
+        replies_short: "%{current} / %{total}"
+
       progress:
         title: tiến trình của chủ đề
-        go_top: "trên cùng"
-        go_bottom: "dưới cùng"
+        go_top: "lên trên"
+        go_bottom: "xuống dưới"
         go: "đi tới"
-        jump_bottom: "nhảy tới bài viết cuối cùng"
-        jump_bottom_with_number: "nhảy tới bài viết %{post_number}"
+        jump_bottom: "nhảy tới bài đăng cuối"
+        jump_prompt: "nhảy bài"
+        jump_prompt_long: "Bạn muốn nhảy tới bài nào?"
+        jump_bottom_with_number: "nhảy tới bài đăng %{post_number}"
         total: tổng số bài viết
         current: bài viết hiện tại
+        
       notifications:
+        title: thay đổi bao lâu bạn sẽ nhận được thông báo về chủ đề này
         reasons:
-          '3_6': 'Bạn sẽ nhận được các thông báo bởi vì bạn đang xem chuyên mục nàyotification'
-          '3_5': 'Bạn sẽ nhận được các thông báo bởi vì bạn đã bắt đầu xem chủ đề này một cách tự động'
-          '3_2': 'Bạn sẽ nhận được các thông báo bởi vì bạn đang xem chủ đề này'
-          '3_1': 'Bạn sẽ được nhận thông báo bởi bạn đã tạo chủ để này.'
-          '3': 'Bạn sẽ nhận được các thông báo bởi vì bạn đang xem chủ đề này'
-          '2_8': 'Bạn sẽ nhận được thông báo bởi vì bạn đang theo dõi chuyên mục này.'
-          '2_4': 'Bạn sẽ nhận được các thông báo bởi vì bạn đã đăng một trả lời vào chủ đề này'
-          '2_2': 'Bạn sẽ nhận được các thông báo bởi vì bạn đang theo dõi chủ đề này.'
-          '2': 'Bạn sẽ nhận được các thông báo bởi vì bạn <a href="/users/{{username}}/preferences"> đọc chủ đề này </a>'
-          '1_2': 'Bạn sẽ được thông báo nếu ai đó đề cập đến @tên bạn hoặc trả lời bạn'
-          '1': 'Bạn sẽ được thông báo nếu ai đó đề cập đến @tên bạn hoặc trả lời bạn'
-          '0_7': 'Bạn đang bỏ qua tất cả các thông báo trong chuyên mục này'
-          '0_2': 'Bạn đang bỏ qua tất cả các thông báo trong chủ đề này'
-          '0': 'Bạn đang bỏ qua tất cả các thông báo trong chủ đề này'
+          mailing_list_mode: "Đã bật chế độ gửi thư theo danh sách, bạn sẽ được thông báo trả lời cho chủ đề này qua email."
+          "3_10": 'Bạn sẽ nhận được thông báo vì bạn đang theo dõi một tag trong chủ đề này.'
+          "3_6": 'Bạn sẽ nhận được thông báo vì bạn đang theo dõi danh mục này.'
+          "3_5": 'Bạn sẽ nhận được thông báo vì bạn đã theo dõi chủ đề này tự động.'
+          "3_2": 'Bạn sẽ nhận được thông báo vì bạn đang theo dõi chủ đề'
+          "3_1": 'Bạn sẽ nhận được thông báo vì bạn đã tạo chủ đề này.'
+          "3": 'Bạn sẽ nhận được thông báo vì bạn đang theo dõi chủ đề này.'
+          "2_8": 'Bạn sẽ nhận được thông báo vì bạn đang theo dõi danh mục này.'
+          "2_4": 'Bạn sẽ nhận được thông báo vì bạn đã trả lời trong chủ đề này.'
+          "2_2": 'Bạn sẽ nhận được thông báo vì bạn đang theo dõi chủ đề này.'
+          "2": 'Bạn sẽ nhận được thông báo vì bạn <a href="/users/{{username}}/preferences">đọc chủ đề này</a>.'
+          "1_2": 'Bạn sẽ được thông báo nếu ai đó đề cập đến @tên bạn hoặc trả lời bạn.'
+          "1": 'Bạn sẽ được thông báo nếu ai đó đề cập đến @tên bạn hoặc trả lời bạn.'
+          "0_7": 'Bạn đang bỏ qua tất cả thông báo trong danh mục này.'
+          "0_2": 'Bạn đang bỏ qua tất cả thông báo trong chủ đề này.'
+          "0": 'Bạn đang bỏ qua tất cả thông báo trong chủ đề này.'
         watching_pm:
-          title: "Đang xem"
+          title: "Luôn luôn theo dõi"
           description: "Bạn sẽ được thông báo về từng trả lời mới trong tin nhắn này, và một số trả lời mới sẽ được hiển thị"
         watching:
-          title: "Dang theo dõi"
+          title: "Luôn luôn theo dõi"
           description: "Bạn sẽ được thông báo về từng trả lời mới trong tin nhắn này, và một số trả lời mới sẽ được hiển thị"
         tracking_pm:
           title: "Đang theo dõi"
@@ -1414,11 +1456,12 @@ vi:
           title: "Bình thường"
           description: "Bạn sẽ được thông báo nếu ai đó đề cập đến @tên bạn hoặc trả lời bạn"
         muted_pm:
-          title: "Im lặng"
+          title: "Không theo dõi"
           description: "Bạn sẽ không bao giờ được thông báo về bất cứ điều gì về tin nhắn này. "
         muted:
-          title: "Im lặng"
+          title: "Không theo dõi"
           description: "Bạn sẽ không nhận được bất kỳ thông báo nào trong chủ đề này, và chúng sẽ không hiển thị là mới nhất."
+      
       actions:
         recover: "Không-Xóa Chủ Đề Này"
         delete: "Xóa-Chủ Đề Này"
