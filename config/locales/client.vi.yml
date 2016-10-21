@@ -407,7 +407,7 @@ vi:
         none: "Không ai"
       notifications:
         watching:
-          title: "Luôn luôn theo dõi"
+          title: "Luôn theo dõi"
           description: "Bạn sẽ luôn được thông báo khi có trả lời mới, và đếm số trả lời mới được hiển thị."
         watching_first_post:
           title: "Theo dõi bài viết đầu tiên"
@@ -538,13 +538,13 @@ vi:
         many_per_day: "Gửi email khi có bài viết mới (khoảng {{dailyEmailEstimate}} lần mỗi ngày)"
         few_per_day: "Gửi email khi có bài viết mới (khoảng 2 lần mỗi ngày)"
       tag_settings: "Tag"
-      watched_tags: "Luôn luôn theo dõi"
+      watched_tags: "Luôn theo dõi"
       watched_tags_instructions: "Bạn sẽ tự động theo dõi các chủ đề với những tag này. Bạn sẽ được thông báo khi có bài viết hoặc chủ đề mới và được hiện ở cạnh chủ đề."
       tracked_tags: "Theo dõi"
       tracked_tags_instructions: "Bạn sẽ tự động theo dõi các chủ đề với những tag này. Một số bài viết mới được hiện ở cạnh chủ đề."
       muted_tags: "Không theo dõi"
       muted_tags_instructions: "Bạn sẽ không nhận được thông báo về bài viết và chủ đề mới với những tag này, và không xuất hiện trong phần Mới nhất."
-      watched_categories: "Luôn luôn theo dõi"
+      watched_categories: "Luôn theo dõi"
       watched_categories_instructions: "Bạn sẽ tự động theo dõi các chủ đề với những danh mục này. Bạn sẽ được thông báo khi có bài viết hoặc chủ đề mới và được hiện ỏ cạnh chủ đề."
       tracked_categories: "Theo dõi"
       tracked_categories_instructions: "Bạn sẽ tự động theo dõi các chủ đề với những danh mục này. Một số bài viết mới được hiện ở cạnh chủ đề."
@@ -1232,7 +1232,7 @@ vi:
           label: Chỉ quay lại chủ đề/bài đăng đó...
           likes: Tôi đã Like
           posted: Tôi đã đăng trong
-          watching: Tôi đang Luôn luôn theo dõi
+          watching: Tôi đang Luôn theo dõi
           tracking: Tôi đang theo dõi
           private: trong tin nhắn của tôi
           bookmarks: Tôi đã đánh dấu
@@ -1438,108 +1438,129 @@ vi:
           "0_2": 'Bạn đang bỏ qua tất cả thông báo trong chủ đề này.'
           "0": 'Bạn đang bỏ qua tất cả thông báo trong chủ đề này.'
         watching_pm:
-          title: "Luôn luôn theo dõi"
-          description: "Bạn sẽ được thông báo về từng trả lời mới trong tin nhắn này, và một số trả lời mới sẽ được hiển thị"
+          title: "Luôn theo dõi"
+          description: "Bạn sẽ luôn được thông báo khi có trả lời mới, và đếm số trả lời mới được hiển thị."
         watching:
-          title: "Luôn luôn theo dõi"
-          description: "Bạn sẽ được thông báo về từng trả lời mới trong tin nhắn này, và một số trả lời mới sẽ được hiển thị"
+          title: "Luôn theo dõi"
+          description: "Bạn sẽ luôn được thông báo khi có trả lời mới, và đếm số trả lời mới được hiển thị."
         tracking_pm:
-          title: "Đang theo dõi"
-          description: "Một số trả lời mới sẽ được hiển thị trong tin nhắn này. Bạn sẽ được thông báo nếu ai đó đề cập đến @tên của bạn hoặc trả lời bạn"
+          title: "Theo dõi"
+          description: "Bạn sẽ được thông báo khi ai đó đề cập đến @tên bạn hoặc trả lời, và đếm số trả lời mới được hiển thị."
         tracking:
-          title: "Đang theo dõi"
-          description: "Một số trả lời mới sẽ được hiển thị trong chủ đề này. Bạn sẽ được thông báo nếu ai đó đề cập đến @tên của bạn hoặc trả lời bạn"
+          title: "Theo dõi"
+          description: "Bạn sẽ được thông báo khi ai đó đề cập đến @tên bạn hoặc trả lời, và đếm số trả lời mới được hiển thị."
         regular:
           title: "Bình thường"
-          description: "Bạn sẽ được thông báo nếu ai đó đề cập đến @tên bạn hoặc trả lời bạn"
+          description: "Bạn sẽ được thông báo nếu ai đó đề cập đến @tên bạn hoặc trả lời."
         regular_pm:
           title: "Bình thường"
-          description: "Bạn sẽ được thông báo nếu ai đó đề cập đến @tên bạn hoặc trả lời bạn"
+          description: "Bạn sẽ được thông báo nếu ai đó đề cập đến @tên bạn hoặc trả lời."
         muted_pm:
           title: "Không theo dõi"
-          description: "Bạn sẽ không bao giờ được thông báo về bất cứ điều gì về tin nhắn này. "
+          description: "Bạn sẽ không nhận được bất kỳ thông báo nào về chủ đề này."
         muted:
           title: "Không theo dõi"
-          description: "Bạn sẽ không nhận được bất kỳ thông báo nào trong chủ đề này, và chúng sẽ không hiển thị là mới nhất."
+          description: "Bạn sẽ không nhận được bất kỳ thông báo nào về chủ đề này."
       
       actions:
-        recover: "Không-Xóa Chủ Đề Này"
-        delete: "Xóa-Chủ Đề Này"
-        open: "Mở Chủ Đề"
-        close: "Đóng Chủ Đề"
-        multi_select: "Chọn Bài Viết..."
-        auto_close: "Tự Động Đóng..."
-        pin: "Ghim Chủ Đề..."
-        unpin: "Bỏ-Ghim Chủ Đề..."
-        unarchive: "Chủ đề Không Lưu Trữ"
-        archive: "Chủ Đề Lưu Trữ"
-        invisible: "Make Unlisted"
-        visible: "Make Listed"
+        recover: "Không xóa chủ đề"
+        delete: "Xóa chủ đề"
+        open: "Mở chủ đề"
+        close: "Đóng chủ đề"
+        multi_select: "Chọn bài đăng..."
+        auto_close: "Tự động đóng..."
+        pin: "Ghim chủ đề..."
+        unpin: "Bỏ ghim chủ đề..."
+        unarchive: "Không lưu trữ chủ đề"
+        archive: "Chủ đề lưu trữ"
+        invisible: "Không công khai"
+        visible: "Công khai"
         reset_read: "Đặt lại dữ liệu đọc"
+        make_public: "Công khai chủ đề"
+        make_private: "Làm tin nhắn riêng"
+        
       feature:
-        pin: "Ghim Chủ Đề"
-        unpin: "Bỏ-Ghim Chủ Đề"
-        pin_globally: "Ghim Chủ Đề Tổng Thể"
+        pin: "Ghim chủ đề"
+        unpin: "Bỏ ghim chủ đề"
+        pin_globally: "Ghim lên toàn trang"
         make_banner: "Banner chủ đề"
         remove_banner: "Bỏ banner chủ đề"
+        
       reply:
         title: 'Trả lời'
-        help: 'bắt đầu soạn một trả lời mới cho chủ đề này'
+        help: 'bắt đầu trả lời cho chủ đề này'
+        
       clear_pin:
         title: "Xóa ghim"
-        help: "Xóa trạng thái ghim của chủ đề này để nó không còn xuất hiện trên cùng danh sách chủ đề của bạn"
+        help: "Xóa trạng thái ghim của chủ đề này để chặn nó xuất hiện trên Top danh sách chủ đề của bạn"
+        
       share:
         title: 'Chia sẻ'
-        help: 'Chia sẻ một liên kết đến chủ đề này'
+        help: 'Chia sẻ Link cho chủ đề này'
+        
+      print:
+        title: 'In'
+        help: 'In ra chủ đề này'
+
       flag_topic:
-        title: 'Gắn cờ'
-        help: 'đánh dấu riêng tư chủ đề này cho sự chú ý hoặc gửi một thông báo riêng về nó'
-        success_message: 'Bạn đã đánh dấu thành công chủ đề này'
+        title: 'Flag'
+        help: 'Flag riêng tư chủ đề này để chú ý hoặc gửi thông báo về nó'
+        success_message: 'Bạn đã Flag thành công chủ đề này.'
+        
       feature_topic:
-        title: "Đề cao chủ đề này"
-        pin: "Làm cho chủ đề này xuất hiện trên top của chuyên mục {{categoryLink}}"
-        confirm_pin: "Bạn đã có {{count}} chủ đề được ghim. Qúa nhiều chủ đề được ghim có thể là một trở ngại cho những thành viên mới và thành viên ẩn danh. Bạn có chắc chắn muốn ghim chủ đề khác trong chuyên mục này?"
-        unpin: "Xóa chủ đề này từ phần trên cùng của chủ đề {{categoryLink}}"
-        unpin_until: "Gỡ bỏ chủ đề này khỏi top của chuyên mục {{categoryLink}} và đợi cho đến <strong>%{until}</strong>."
-        pin_note: "Người dùng có thể bỏ ghim chủ đề riêng cho mình"
-        pin_validation: "Ngày được yêu câu để gắn chủ đề này"
-        not_pinned: "Không có chủ đề được ghim trong {{categoryLink}}."
+        title: "Làm nổi bật chủ đề này"
+        pin: "Làm cho chủ đề này xuất hiện trên Top của Danh mục {{categoryLink}}"
+        confirm_pin: "Bạn có {{count}} chủ đề đã ghim. Ghim quá nhiều chủ đề có thể gây trở ngại cho người dùng. Bạn có chắc chắn muốn ghim chủ đề trong chuyên mục này?"
+        unpin: "Gỡ bỏ chủ đề này khỏi Top của chuyên mục {{categoryLink}}"
+        unpin_until: "Gỡ bỏ chủ đề này khỏi top của chuyên mục {{categoryLink}} và đợi cho đến khi <strong>%{until}</strong>."
+        pin_note: "Người dùng có thể tự do bỏ ghim chủ đề."
+        pin_validation: "Ngày được yêu cầu để ghim chủ đề này."
+        not_pinned: "Không có chủ đề nào được ghim trong {{categoryLink}}."
         already_pinned:
-          other: "Chủ đề gần đây được ghim trong {{categoryLink}}: <strong class='badge badge-notification unread'>{{count}}</strong>"
-        pin_globally: "Làm cho chủ đề này xuất hiện trên top của tất cả các chủ đề"
-        confirm_pin_globally: "Bạn đã có {{count}} chủ đề được ghim. Ghim quá nhiều chủ đề có thể là trở ngại cho những thành viên mới và ẩn danh. Bạn có chắc chắn muốn ghim chủ đề khác?"
-        unpin_globally: "Bỏ chủ đề này khỏi phần trên cùng của danh sách tất cả các chủ đề"
-        unpin_globally_until: "Gỡ bỏ chủ đề này khỏi top của danh sách tất cả các chủ đề và đợi cho đến <strong>%{until}</strong>."
-        global_pin_note: "Người dùng có thể bỏ ghim chủ đề riêng cho mình"
+          one: "Chủ đề đang được ghim trong {{categoryLink}}: <strong class='badge badge-notification unread'>1</strong>"
+          other: "Chủ đề đang được ghim trong {{categoryLink}}: <strong class='badge badge-notification unread'>{{count}}</strong>"
+        pin_globally: "Ghim chủ đề này lên Top trang chủ"
+        confirm_pin_globally: "Bạn đã có {{count}} chủ đề đã ghim. Ghim quá nhiều chủ đề có thể gây trở ngại cho người dùng. Bạn có chắc chắn muốn ghim chủ đề?"
+        unpin_globally: "Gỡ bỏ chủ đề này khỏi Top trang chủ"
+        unpin_globally_until: "Gỡ bỏ chủ đề này khỏi top của trang chủ và đợi cho đến khi <strong>%{until}</strong>."
+        global_pin_note: "Người dùng có thể tự do bỏ ghim cho mình."
         not_pinned_globally: "Không có chủ đề nào được ghim."
         already_pinned_globally:
-          other: "Chủ đề gần đây được ghim trong: <strong class='badge badge-notification unread'>{{count}}</strong>"
+          one: "Chủ đề đang được ghim ở trang chủ: <strong class='badge badge-notification unread'>1</strong>"
+          other: "Chủ đề đang được ghim ở trang chủ: <strong class='badge badge-notification unread'>{{count}}</strong>"
         make_banner: "Đặt chủ đề này là một banner xuất hiện trên top của tất cả các trang."
         remove_banner: "Gỡ bỏ banner xuất hiện trên top của tất cả các trang."
-        banner_note: "Người dùng có thể bỏ qua banner này bằng cách đóng nó. Chỉ một chủ đề có thể được đặt là banner tại một thời điểm."
+        banner_note: "Người dùng có thể bỏ qua hoặc đóng banner. Một chủ đề chỉ có thể đặt tại một thời điểm."
         no_banner_exists: "Không có chủ đề banner nào."
-        banner_exists: "Có <strong class='badge badge-notification unread'>is</strong> đang là chủ đề banner."
+        banner_exists: "Hiện tại đang có một chủ đề <strong class='badge badge-notification unread'>là</strong> banner."
+        
       inviting: "Đang mời..."
+      automatically_add_to_groups: "Lời mời này cũng bao gồm quyền truy cập vào những nhóm này:"
+      
       invite_private:
-        title: 'Mời thảo luận'
-        email_or_username: "Email hoặc username người được mời"
-        email_or_username_placeholder: "địa chỉ thư điện tử hoặc tên người dùng"
+        title: 'Mời tham gia tin nhắn'
+        email_or_username: "Email hoặc tên đăng nhập người được mời"
+        email_or_username_placeholder: "Địa chỉ email hoặc tên đăng nhập"
         action: "Mời"
-        success: "Chúng tôi đã mời người đó tham gia thảo luận này."
-        error: "Xin lỗi, có lỗi khi mời người dùng này."
-        group_name: "Nhóm tên"
-      controls: "Topic Controls"
+        success: "Hệ thống đã mời thành viên đó tham gia thảo luận này."
+        success_group: "Hệ thống đã mời nhóm đó tham gia thảo luận này."
+        error: "Rất tiếc, có lỗi khi mời người dùng này."
+        group_name: "tên nhóm"
+        
+      controls: "Điều khiển chủ đề"
+      
       invite_reply:
         title: 'Mời'
-        username_placeholder: "tên người dùng"
+        username_placeholder: "tên đăng nhập"
         action: 'Gửi Lời Mời'
         help: 'mời người khác tham gia chủ đề thông qua email hoặc thông báo'
-        to_forum: "Chúng tôi sẽ gửi một email tóm tắt cho phép bạn của bạn gia nhập trực tiệp bằng cách nhấp chuột vào một đường dẫn, không cần phải đăng nhập."
-        sso_enabled: "Nhập tên đăng nhập hoặc địa chỉ email của người mà bạn muốn mời vào chủ đề này."
-        to_topic_blank: "Nhập tên đăng nhập hoặc địa chỉ email của người bạn muốn mời đến chủ đề này."
-        to_topic_email: "Bạn vừa điền địa chỉ email, website sẽ gửi lời mời cho phép bạn bè của bạn có thể trả lời chủ đề này."
-        to_topic_username: "Bạn vừa điền tên thành viên, website sẽ gửi thông báo kèm theo lời mời họ tham gia chủ đề này."
-        to_username: "Điền tên thành viên bạn muốn mời, website sẽ gửi thông báo kèm theo lời mời họ tham gia chủ đề này."
+        to_forum: "Hệ thống sẽ gửi một email tóm tắt cho phép người đó tham gia bằng cách click chuột vào link, không cần phải đăng nhập."
+        sso_enabled: "Nhập tên đăng nhập của người mà bạn muốn mời tham gia chủ đề này."
+        to_topic_blank: "Nhập tên đăng nhập hoặc địa chỉ email của người mà bạn muốn mời tham gia chủ đề này."
+        to_topic_email: "Bạn đã nhập địa chỉ email, hệ thống sẽ gửi lời mời cho phép người đó có thể trả lời chủ đề này."
+        to_topic_username: "Bạn đã nhập tên đăng nhập, hệ thống sẽ gửi thông báo với link lời tham gia chủ đề này."
+        to_username: "Nhập tên đăng nhập của người mà bạn muốn mời, hệ thống sẽ gửi thông báo với link lời tham gia chủ đề này."
+        
         email_placeholder: 'name@example.com'
         success_email: "Website vừa gửi lời mời tới <b>{{emailOrUsername}}</b> và sẽ thông báo cho bạn khi lời mời đó được chấp nhận. Kiểm tra tab lời mời trên trang tài khoản để theo dõi lời mời của bạn."
         success_username: "Website đã mời người đó tham gia thảo luận này."
