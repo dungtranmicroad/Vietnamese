@@ -1753,16 +1753,16 @@ vi:
           vote: "Bạn đã bầu chọn cho bài viết này"
         by_you_and_others:
           off_topic:
-            one: "You and 1 other flagged this as off-topic"
-            other: "Bạn và  {{count}}  người khác đã đánh dấu đây là chủ đề đóng"
+            one: "Bạn và 1 người khác đã flag đây là chủ đề đóng"
+            other: "Bạn và {{count}} người khác đã đánh dấu đây là chủ đề đóng"
           spam:
-            one: "You and 1 other flagged this as spam"
-            other: "Bạn và {{count}} người khác gắn cờ nó là rác"
+            one: "Bạn và 1 người khác flag đây như là spam"
+            other: "Bạn và {{count}} người flag đây như là spam"
           inappropriate:
-            one: "You and 1 other flagged this as inappropriate"
-            other: "Bạn và {{count}} other người khác đã đánh dấu nó là không phù hợp"
+            one: "Bạn và 1 người khác flag đây như là không phù hợp"
+            other: "Bạn và {{count}} người khác flag đây như là không phù hợp"
           notify_moderators:
-            one: "You and 1 other flagged this for moderation"
+            one: "Bạn và 1 người khác flag đây cho ban quản trị"
             other: "Bạn và {{count}} người khác gắn cờ nó là điều tiết"
           notify_user:
             one: "You and 1 other sent a message to this user"
@@ -1804,7 +1804,14 @@ vi:
       
       delete:
         confirm:
+          one: "Are you sure you want to delete that post?"
           other: "Bạn muốn xóa những bài viết này?"
+      
+      merge:
+        confirm:
+          one: "Are you sure you want merge those posts?"
+          other: "Are you sure you want to merge those {{count}} posts?"
+
       revisions:
         controls:
           first: "Sửa đổi đầu tiên"
@@ -1825,6 +1832,7 @@ vi:
           side_by_side_markdown:
             title: "Hiển thị nguyên bản với các điểm khác biệt cạnh nhau"
             button: '<i class="fa fa-columns"></i> Thô'
+    
     category:
       can: 'can&hellip;'
       none: '(không danh mục)'
@@ -1836,6 +1844,11 @@ vi:
       general: 'Chung'
       settings: 'Cấu hình'
       topic_template: "Mẫu Chủ đề"
+      tags: "Tags"
+      tags_allowed_tags: "Tags that can only be used in this category:"
+      tags_allowed_tag_groups: "Tag groups that can only be used in this category:"
+      tags_placeholder: "(Optional) list of allowed tags"
+      tag_groups_placeholder: "(Optional) list of allowed tag groups"
       delete: 'Xóa chuyên mục'
       create: 'Chuyên mục mới'
       create_long: 'Tạo Chủ đề mới'
@@ -1882,20 +1895,30 @@ vi:
       notifications:
         watching:
           title: "Theo dõi"
+          description: "You will automatically watch all topics in these categories. You will be notified of every new post in every topic, and a count of new replies will be shown."
+        watching_first_post:
+          title: "Watching First Post"
+          description: "You will only be notified of the first post in each new topic in these categories."
         tracking:
           title: "Đang theo dõi"
+          description: "You will automatically track all topics in these categories. You will be notified if someone mentions your @name or replies to you, and a count of new replies will be shown."
         regular:
           title: "Bình thường"
           description: "Bạn sẽ được thông báo nếu ai đó đề cập đến @tên bạn hoặc trả lời bạn"
         muted:
           title: "Im lặng"
           description: "Bạn sẽ không nhận được thông báo về bất cứ chủ đề mới nào trong các chuyên mục này, và chúng sẽ không hiển thị là mới nhất."
+    
     flagging:
       title: 'Cám ơn bạn đã giúp phát triển cộng đồng!'
       action: 'Đánh dấu Bài viết'
       take_action: "Thực hiện"
       notify_action: 'Tin nhắn'
+      official_warning: 'Official Warning'
       delete_spammer: "Xóa người Spam"
+      
+      # keys ending with _MF use message format, see https://meta.discourse.org/t/message-format-support-for-localization/7035 for details
+      delete_confirm_MF: "You are about to delete {POSTS, plural, one {<b>1</b> post} other {<b>#</b> posts}} and {TOPICS, plural, one {<b>1</b> topic} other {<b>#</b> topics}} from this user, remove their account, block signups from their IP address <b>{ip_address}</b>, and add their email address <b>{email}</b> to a permanent block list. Are you sure this user is really a spammer?"
       yes_delete_spammer: "Có, xóa người spam"
       ip_address_missing: "(N/A)"
       hidden_email_address: "(ẩn)"
