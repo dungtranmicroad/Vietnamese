@@ -938,7 +938,7 @@ vi:
     username: 'Tên đăng nhập'
     last_seen: 'Đã xem'
     created: 'Tạo bởi'
-    created_lowercase: 'Tạo bởi'
+    created_lowercase: 'Ngày tạo'
     trust_level: 'Cấp độ tin tưởng'
     search_hint: 'tên đăng nhập, email hoặc địa chỉ IP'
     
