@@ -1650,122 +1650,158 @@ vi:
         
       unread: "Bài viết chưa đọc"
       has_replies:
+        one: "{{count}} Trả lời"
         other: "{{count}} Trả lời"
       has_likes:
-        other: "{{count}} Thích"
+        one: "{{count}} Like"
+        other: "{{count}} Like"
+      
       has_likes_title:
-        other: "{{count}} người thích bài viết này"
-      has_likes_title_only_you: "bạn đã like bài viết này"
+        one: "1 người Like bài viết này"
+        other: "{{count}} người Like bài viết này"
+      
+      has_likes_title_only_you: "Bạn đã Like bài viết này"
       has_likes_title_you:
-        other: "bạn và {{count}} người khác đã like bài viết này"
+        one: "Bạn và 1 người khác đã Like bài viết này"
+        other: "Bạn và {{count}} người khác đã Like bài viết này"
+      
       errors:
-        create: "Xin lỗi, có lỗi xảy ra khi tạo bài viết của bạn. Vui lòng thử lại."
-        edit: "Xin lỗi, có lỗi xảy ra khi sửa bài viết của bạn. Vui lòng thử lại."
-        upload: "Xin lỗi, có lỗi xảy ra khi tải lên tập tin này. Vui lòng thử lại."
-        too_many_uploads: "Xin lỗi, bạn chỉ có thể tải lên 1 file cùng 1 lúc."
-        upload_not_authorized: "Xin lỗi, tập tin của bạn tải lên chưa được cho phép (định dạng cho phép: {{authorized_extensions}})."
-        image_upload_not_allowed_for_new_user: "Xin lỗi, tài khoản mới không thể tải lên ảnh."
-        attachment_upload_not_allowed_for_new_user: "Xin lỗi, tài khoản mới không thể tải lên đính kèm."
-        attachment_download_requires_login: "Xin lỗi, bạn cần đăng nhập để tải về đính kèm."
+        create: "Rất tiếc, có lỗi khi tạo bài viết. Vui lòng thử lại."
+        edit: "Rất tiếc, có lỗi khi chỉnh sửa bài viết. Vui lòng thử lại."
+        upload: "Rất tiếc, có lỗi khi tải lên tập tin này. Vui lòng thử lại."
+        file_too_large: "Rất tiếc, File quá lớn (dung lượng tối đa {{max_size_kb}}kb). Bạn có thể up file lên các dịch vụ lưu trữ như Dropbox, sau đó chia sẻ Link?"
+        too_many_uploads: "Rất tiếc, bạn chỉ có thể tải lên 1 file cùng một lúc."
+        too_many_dragged_and_dropped_files: "Rất tiếc, bạn chỉ có thể tải lên 10 file cùng một lúc."
+        upload_not_authorized: "Rất tiếc, tập tin của bạn tải lên chưa được cho phép (định dạng cho phép: {{authorized_extensions}})."
+        image_upload_not_allowed_for_new_user: "Rất tiếc, tài khoản mới không thể tải ảnh lên."
+        attachment_upload_not_allowed_for_new_user: "Rất tiếc, tài khoản mới không thể tải lên file đính kèm."
+        attachment_download_requires_login: "Rất tiếc, bạn cần đăng nhập để tải về file đính kèm."
+      
       abandon:
         confirm: "Bạn có chắc muốn bỏ bài viết của bạn?"
         no_value: "Không, giữ lại"
-        yes_value: "Đồng ý, bỏ"
+        yes_value: "Có, bỏ bài viết"
+      
       via_email: "bài viết này đăng qua email"
-      whisper: "bài viết này là lời nhắn từ điều hành viên"
+      via_auto_generated_email: "bài viết này đăng qua email tự động"
+      whisper: "bài viết này là lời nhắn cho điều hành viên"
+      
       wiki:
         about: "bài viết này là wiki"
+      
       archetypes:
-        save: 'Lưu lựa chọn'
-      few_likes_left: "Cám ơn bạn đã chia sẻ cảm nhận! Bạn chỉ còn lại vài lượt like cho ngày hôm nay."
+        save: 'Lưu tùy chọn'
+      
+      few_likes_left: "Cám ơn bạn đã chia sẻ cảm nhận! Bạn chỉ còn lại vài lượt Like cho ngày hôm nay."
+      
       controls:
-        reply: "bắt đầu soản trả lời cho bài viết này"
-        like: "like bài viết này"
-        has_liked: "bạn đã like bài viết này"
-        undo_like: "hủy like"
-        edit: "sửa bài viết này"
-        edit_anonymous: "Xin lỗi, nhưng bạn cần đăng nhập để sửa bài viết này."
-        flag: "đánh dấu bài viết này để tạo chú ý hoặc gửi một thông báo riêng về nó"
-        delete: "xóa bài viết này"
-        undelete: "hủy xóa bài viết này"
-        share: "chia sẻ liên kết đến bài viết này"
-        more: "Thêm"
+        reply: "Bắt đầu soạn trả lời cho bài viết này"
+        like: "Like bài viết này"
+        has_liked: "Bạn đã Like bài viết này"
+        undo_like: "Hủy like"
+        edit: "Sửa bài viết này"
+        edit_anonymous: "Rất tiếc, bạn cần đăng nhập để chỉnh sửa bài viết này."
+        flag: "Flag bài viết này để chú ý hoặc gửi thông báo riêng về nó"
+        delete: "Xóa bài viết này"
+        undelete: "Hủy xóa bài viết này"
+        share: "Chia sẻ Link đến bài viết này"
+        more: "Xem thêm"
         delete_replies:
           confirm:
+            one: "Bạn muốn xóa trả lời cho bài viết này?"
             other: "Bạn muốn xóa {{count}} trả lời cho bài viết này?"
-          yes_value: "Đồng ý, xóa những trả lời"
-          no_value: "Không, chỉ xóa chủ đề"
-        admin: "quản lý bài viết"
+          yes_value: "Có, xóa trả lời"
+          no_value: "Không, chỉ bài này"
+        admin: "Quản lý bài viết"
         wiki: "Tạo Wiki"
         unwiki: "Xóa Wiki"
         convert_to_moderator: "Thêm màu Nhân viên"
         revert_to_regular: "Xóa màu Nhân viên"
         rebake: "Tạo lại HTML"
         unhide: "Bỏ ẩn"
-        change_owner: "Đổi chủ sở hữu"
+        change_owner: "thay đổi chủ sở hữu"
+        
       actions:
-        flag: 'Gắn cờ'
+        flag: 'Flag'
         defer_flags:
-          other: "Đánh dấu hoãn"
+          one: "Hoãn flag"
+          other: "Hoãn flag"
         undo:
-          off_topic: "Hủy gắn cờ"
-          spam: "Hủy gắn cờ"
-          inappropriate: "Hủy gắn cờ"
+          off_topic: "Hủy flag"
+          spam: "Hủy flag"
+          inappropriate: "Hủy flag"
           bookmark: "Hủy đánh dấu"
           like: "Hủy like"
           vote: "Hủy bình chọn"
         people:
-          off_topic: "đánh dấu là chủ đề đóng"
-          spam: "đánh dấu là spam"
-          inappropriate: "đánh dấu là không phù hợp"
-          notify_moderators: "đã thông báo với BQT"
+          off_topic: "Flag là chủ đề đóng"
+          spam: "Flag là spam"
+          inappropriate: "Flag là không phù hợp"
+          notify_moderators: "đã thông báo với ban quản trị"
           notify_user: "đã gửi tin nhắn"
-          bookmark: "đã đánh dấu bài này"
-          like: "đã like bài này"
-          vote: "đã bầu cho bài này"
+          bookmark: "đã đánh dấu bài viết này"
+          like: "đã like bài viết này"
+          vote: "đã bầu chọn bài viết này"
         by_you:
-          off_topic: "Bạn đã đánh dấu cái nfay là chủ đề đóng"
-          spam: "Bạn đã đánh dấu cái này là rác"
-          inappropriate: "Bạn đã đánh dấu cái này là không phù hợp"
-          notify_moderators: "Bạn đã đánh dấu cái này cho điều tiết"
-          notify_user: "Bạn đã gửi một tin nhắn đến người dùng này"
+          off_topic: "Bạn flag là chủ đề đóng"
+          spam: "Bạn flag là spam"
+          inappropriate: "Bạn flag là không phù hợp"
+          notify_moderators: "Bạn flag cho ban quản trị"
+          notify_user: "Bạn đã gửi tin nhắn đến người dùng này"
           bookmark: "Bạn đã đánh dấu bài viết này"
-          like: "Bạn đã thích cái này"
-          vote: "Bạn đã bình chọn cho bài viết này"
+          like: "Bạn đã thích bài này"
+          vote: "Bạn đã bầu chọn cho bài viết này"
         by_you_and_others:
           off_topic:
+            one: "You and 1 other flagged this as off-topic"
             other: "Bạn và  {{count}}  người khác đã đánh dấu đây là chủ đề đóng"
           spam:
+            one: "You and 1 other flagged this as spam"
             other: "Bạn và {{count}} người khác gắn cờ nó là rác"
           inappropriate:
+            one: "You and 1 other flagged this as inappropriate"
             other: "Bạn và {{count}} other người khác đã đánh dấu nó là không phù hợp"
           notify_moderators:
+            one: "You and 1 other flagged this for moderation"
             other: "Bạn và {{count}} người khác gắn cờ nó là điều tiết"
           notify_user:
+            one: "You and 1 other sent a message to this user"
             other: "Bạn và {{count}} người khác đã gửi một tin nhắn đến người dùng này"
           bookmark:
+            one: "You and 1 other bookmarked this post"
             other: "Bạn và {{count}} người khác đã đánh dấu bài viết này"
           like:
+            one: "You and 1 other liked this"
             other: "Bạn và {{count}} người khác đã thích cái này"
           vote:
+            one: "You and 1 other voted for this post"
             other: "Bạn và {{count}} nười khác đã bình chọn cho bài viết này"
         by_others:
           off_topic:
+            one: "1 person flagged this as off-topic"
             other: "{{count}} người đã đánh dấu nó là chủ đề đóng"
           spam:
+            one: "1 person flagged this as spam"
             other: "{{count}} người khác đánh dấu là rác"
           inappropriate:
+            one: "1 person flagged this as inappropriate"
             other: "{{count}} người khác đã đánh dấu là không phù hợp"
           notify_moderators:
+            one: "1 person flagged this for moderation"
             other: "{{count}} người đã đánh dấu để chờ duyệt"
           notify_user:
+            one: "1 person sent a message to this user"
             other: "{{count}} gửi tin nhắn đến người dùng này"
           bookmark:
+            one: "1 person bookmarked this post"
             other: "{{count}} người đã đánh dấu bài viết này"
           like:
+            one: "1 person liked this"
             other: "{count}} người đã thích cái này"
           vote:
+            one: "1 person voted for this post"
             other: "{{count}} người đã bình chọn cho bài viết này"
+      
       delete:
         confirm:
           other: "Bạn muốn xóa những bài viết này?"
