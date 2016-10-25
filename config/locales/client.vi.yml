@@ -535,6 +535,7 @@ vi:
           Chủ đề không theo dõi và danh mục không bao gồm trong email.
         daily: "Gửi cập nhật hằng ngày"
         individual: "Gửi email khi có bài viết mới"
+        individual_no_echo: "Gửi email cho bài viết mới trừ của tôi"
         many_per_day: "Gửi email khi có bài viết mới (khoảng {{dailyEmailEstimate}} lần mỗi ngày)"
         few_per_day: "Gửi email khi có bài viết mới (khoảng 2 lần mỗi ngày)"
       tag_settings: "Tag"
@@ -902,10 +903,10 @@ vi:
     mute: Không theo dõi
     unmute: Bỏ không theo dõi
     last_post: Bài viết cuối cùng
-    last_reply_lowercase: trả lời cuối cùng
+    last_reply_lowercase: Trả lời
     replies_lowercase:
-      one: trả lời
-      other: trả lời
+      one: Trả lời
+      other: Trả lời
       
     signup_cta:
       sign_up: "Đăng ký"
@@ -1562,60 +1563,78 @@ vi:
         to_username: "Nhập tên đăng nhập của người mà bạn muốn mời, hệ thống sẽ gửi thông báo với link lời tham gia chủ đề này."
         
         email_placeholder: 'name@example.com'
-        success_email: "Website vừa gửi lời mời tới <b>{{emailOrUsername}}</b> và sẽ thông báo cho bạn khi lời mời đó được chấp nhận. Kiểm tra tab lời mời trên trang tài khoản để theo dõi lời mời của bạn."
-        success_username: "Website đã mời người đó tham gia thảo luận này."
-        error: "Xin lỗi, chúng tôi không thể mời người đó. Có lẽ họ đã được mời? (giới hạn lời mời)"
+        success_email: "Hệ thống đã gửi lời mời tới <b>{{emailOrUsername}}</b> và sẽ thông báo cho bạn khi lời mời đó được chấp nhận. Kiểm tra tab lời mời trên trang tài khoản để theo dõi lời mời của bạn."
+        success_username: "Hệ thống đã mời người đó tham gia chủ đề này."
+        error: "Rất tiếc, chúng tôi không thể mời người đó. Có thể họ đã được mời? (giới hạn lời mời)"
+      
       login_reply: 'Đăng nhập để trả lời'
+      
       filters:
         n_posts:
+          one: "1 bài viết"
           other: "{{count}} bài viết"
-        cancel: "Bỏ đièu kiện lọc"
+        cancel: "Bỏ bộ lọc"
+        
       split_topic:
-        title: "Di chuyển tới Chủ đề mới"
-        action: "di chuyển tới chủ đề mới"
+        title: "Di chuyển đến Chủ đề mới"
+        action: "Di chuyển đến chủ đề mới"
         topic_name: "Tên chủ đề mới"
-        error: "Có lỗi khi di chuyển bài viết tới chủ đề mới."
+        error: "Có lỗi khi di chuyển bài viết đến chủ đề mới."
         instructions:
-          other: "Bạn muốn tạo chủ đề mới và phổ biến nó với <b>{{count}}</b> bài viết đã chọn."
+          one: "Bạn muốn tạo chủ đề mới và gắn với bài viết bạn đã chọn."
+          other: "Bạn muốn tạo chủ đề mới và gắn với <b>{{count}}</b> bài viết đã chọn."
+      
       merge_topic:
-        title: "Di chuyển tới chủ đề đang tồn tại"
-        action: "di chuyển tới chủ đề đang tồn tại"
-        error: "Có lỗi khi di chuyển bài viết đến chủ đề này."
+        title: "Di chuyển đến chủ đề hiện có"
+        action: "Di chuyển đến chủ đề hiện có"
+        error: "Có lỗi khi di chuyển bài viết đến chủ đề mới."
         instructions:
+          one: "Hãy chọn chủ đề bạn muốn di chuyển bài viết này tới."
           other: "Hãy chọn chủ đề bạn muốn di chuyển <b>{{count}}</b> bài viết này tới."
+      
+      merge_posts:
+        title: "Hợp nhất bài viết đã chọn"
+        action: "Hợp nhất bài viết đã chọn"
+        error: "Có lỗi khi hợp nhất các bài viết được chọn."
+
       change_owner:
-        title: "Chuyển chủ sở hữu bài viết"
-        action: "chuyển chủ sở hữu"
-        error: "Có lỗi xảy ra khi thay đổi quyền sở hữu của các bài viết."
-        label: "Chủ sở hữ mới của Bài viết"
+        title: "Thay đổi người sở hữu bài viết"
+        action: "Thay đổi quyền sở hữu"
+        error: "Có lỗi khi thay đổi quyền sở hữu bài viết."
+        label: "Chủ sở hữu mới của Bài viết"
         placeholder: "tên đăng nhập của chủ sở hữu mới"
         instructions:
+          one: "Hãy chọn chủ sở hữu mới cho bài viết của <b>{{old_user}}</b>."
           other: "Hãy chọn chủ sở hữu mới cho {{count}} bài viết của <b>{{old_user}}</b>."
-        instructions_warn: "Lưu ý rằng bất kỳ thông báo nào về bài viết này sẽ không được chuyển giao cho thành viên mới trở về trước.<br>Cảnh báo: Hiện không có dữ liệu bài viết phụ thuộc được chuyển giao cho thành viên mới. Hãy thận trọng!"
+        instructions_warn: "Lưu ý rằng bất kỳ thông báo cũ nào của bài viết này sẽ không được chuyển đến cho thành viên mới.<br>Cảnh báo: Hiện không có dữ liệu bài viết phụ thuộc được chuyển giao cho thành viên mới. Sử dụng thận trọng!"
+      
       change_timestamp:
-        title: "Đổi Timestamp"
-        action: "đổi timestamp"
-        invalid_timestamp: "Timestamp không thể trong tương lai."
-        error: "Có lỗi khi thay đổi timestamp của chủ đề."
-        instructions: "Hãy chọn dòng thời gian mới cho chủ đề, các bài viết trong chủ đề sẽ được cập nhật để có sự khác biệt cùng một lúc."
+        title: "Đổi dấu thời gian"
+        action: "Đổi dấu thời gian"
+        invalid_timestamp: "Dấu thời gian không thể là trong tương lai."
+        error: "Có lỗi khi thay đổi dấu thời gian của chủ đề."
+        instructions: "Vui lòng chọn dấu thời gian mới cho chủ đề. Bài viết trong chủ đề sẽ được cập nhật."
+      
       multi_select:
         select: 'chọn'
         selected: 'đã chọn ({{count}})'
         select_replies: 'chọn + trả lời'
-        delete: xóa lựa chọn
-        cancel: hủy lựa chọn
+        delete: xóa đã chọn
+        cancel: hủy bỏ chọn
         select_all: chọn tất cả
         deselect_all: bỏ chọn tất cả
         description:
+          one: Bạn đã chọn <b>1</b> bài viết.
           other: Bạn đã chọn <b>{{count}}</b> bài viết.
+    
     post:
       reply: "<i class='fa fa-mail-forward'></i> {{replyAvatar}} {{usernameLink}}"
       reply_topic: "<i class='fa fa-mail-forward'></i> {{link}}"
-      quote_reply: "trả lời trích dẫn"
-      edit: "Đang sửa {{link}} {{replyAvatar}} {{username}}"
+      quote_reply: "Trả lời trích dẫn"
+      edit: "Chỉnh sửa {{link}} {{replyAvatar}} {{username}}"
       edit_reason: "Lý do: "
-      post_number: "bài viết {{number}}"
-      last_edited_on: "đã sửa bài viết lần cuối lúc"
+      post_number: "bài đăng {{number}}"
+      last_edited_on: "bài đăng cuối chỉnh sửa trên"
       reply_as_new_topic: "Trả lời như là liên kết đến Chủ đề"
       continue_discussion: "Tiếp tục thảo luận từ {{postLink}}:"
       follow_quote: "đến bài viết trích dẫn"
