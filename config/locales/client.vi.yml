@@ -1635,16 +1635,19 @@ vi:
       edit_reason: "Lý do: "
       post_number: "bài đăng {{number}}"
       last_edited_on: "bài đăng cuối chỉnh sửa trên"
-      reply_as_new_topic: "Trả lời như là liên kết đến Chủ đề"
+      reply_as_new_topic: "Trả lời như là chủ đề liên quan"
       continue_discussion: "Tiếp tục thảo luận từ {{postLink}}:"
       follow_quote: "đến bài viết trích dẫn"
-      show_full: "Hiển thị đầy đủ bài viết"
-      show_hidden: 'Xem nội dung ẩn'
+      show_full: "Hiện toàn bài"
+      show_hidden: 'Xem nội dung ẩn.'
       deleted_by_author:
-        other: "(bài viết theo tác giả sẽ được xóa tự động sau %{count} giờ, trừ khi đã đánh dấu)"
-      expand_collapse: "mở/đóng"
+        one: "(tác giả đã rút lại bài viết, sẽ tự động xóa trong %{count} giờ, trừ khi gắn Flag)"
+        other: "(tác giả đã rút lại bài viết, sẽ tự động xóa trong %{count} giờ, trừ khi gắn Flag)"
+      expand_collapse: "mở rộng/đóng"
       gap:
-        other: "xem {{count}} trả lời bị ẩn"
+        one: "Xem 1 trả lời ẩn"
+        other: "Xem {{count}} trả lời ẩn"
+        
       unread: "Bài viết chưa đọc"
       has_replies:
         other: "{{count}} Trả lời"
