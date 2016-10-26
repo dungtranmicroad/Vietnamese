@@ -2986,72 +2986,85 @@ vi:
         delete_forbidden_because_staff: "Admin và điều hành viên không thể xóa."
         delete_posts_forbidden_because_staff: "Không thể xóa tất cả bài viết của admin và điều hành viên."
         delete_forbidden:
-          one: "Users can't be deleted if they have posts. Delete all posts before trying to delete a user. (Posts older than %{count} day old can't be deleted.)"
-          other: "Không thể xóa tài khoản nếu họ có bài viết, hãy xóa tất cả các bài viết trước khi xóa tài khoản. (Không thể xóa các bài viết cũ hơn %{count} ngày.)"
+          one: "Không thể xóa tài khoản nếu họ có bài viết. Hãy xóa tất cả các bài viết trước khi xóa tài khoản. (Không thể xóa các bài viết cũ hơn %{count} ngày.)"
+          other: "Không thể xóa tài khoản nếu họ có bài viết. Hãy xóa tất cả các bài viết trước khi xóa tài khoản. (Không thể xóa các bài viết cũ hơn %{count} ngày.)"
         cant_delete_all_posts:
-          one: "Can't delete all posts. Some posts are older than %{count} day old. (The delete_user_max_post_age setting.)"
-          other: "Không thể xóa tất cả các bài viết, một số bài viết cũ hơn %{count} ngày. (Thiết lập delete_user_max_post_age.)"
+          one: "Không thể xóa tất cả các bài viết. Một số bài viết cũ hơn %{count} ngày. (The delete_user_max_post_age setting.)"
+          other: "Không thể xóa tất cả các bài viết. Một số bài viết cũ hơn %{count} ngày. (The delete_user_max_post_age setting.)"
         cant_delete_all_too_many_posts:
-          one: "Can't delete all posts because the user has more than 1 post. (delete_all_posts_max)"
+          one: "Không thể xóa tất cả các bài viết do tài khoản có hơn 1 bài viết. (delete_all_posts_max)"
           other: "Không thể xóa tất cả các bài viết do tài khoản có hơn %{count} bài viết. (delete_all_posts_max)"
-        delete_confirm: "Bạn CHẮC CHẮN muốn xóa thành viên này? Nó là vĩnh viễn!"
-        delete_and_block: "Xóa và <b>khóa</b> email này và địa chỉ IP"
+        delete_confirm: "Bạn có chắc chắn muốn xóa tài khoản này? Xóa vĩnh viễn!"
+        delete_and_block: "Xóa và <b>chặn</b> email này và địa chỉ IP"
         delete_dont_block: "Chỉ xóa"
-        deleted: "Thành viên này đã bị xóa"
-        delete_failed: "Có lỗi trong quá trình xóa thành viên này. Chắc chắn rằng tất cả bài viết đã được xóa trước khi xóa thành viên."
+        deleted: "Tài khoản đã bị xóa."
+        delete_failed: "Có lỗi khi xóa tài khoản này. Đảm bảo rằng tất cả bài viết đã được xóa trước khi xóa tài khoản."
         send_activation_email: "Gửi email kích hoạt"
-        activation_email_sent: "Email kích hoạt đã được gửi."
-        send_activation_email_failed: "Có vấn đề khi gửi lại email kích hoạt. %{error}"
+        activation_email_sent: "Email kích hoạt đã được gửi đi."
+        send_activation_email_failed: "Có lỗi khi gửi email kích hoạt. %{error}"
         activate: "Kích hoạt tài khoản"
-        activate_failed: "Có vấn đề khi kích hoạt thành viên này."
+        activate_failed: "Có lỗi khi kích hoạt tài khoản này."
         deactivate_account: "Vô hiệu hóa Tài khoản"
-        deactivate_failed: "Có vấn đề khi bỏ kích hoạt thành viên này."
-        unblock_failed: 'Có vẫn đề khi gỡ khóa thành viên này.'
-        block_failed: 'Có vấn đề khi khóa thành viên này.'
-        block_confirm: 'Bạn có chắc chắn muốn chặn người dùng này? Họ sẽ không thể tạo bất kỳ chủ đề hoặc bài viết mới nào.'
-        block_accept: 'Có, chặn người dùng này'
-        deactivate_explanation: "Tài khoản chờ kích hoạt phải xác thực email của họ."
+        deactivate_failed: "Có lỗi khi vô hiệu hóa tài khoản này."
+        unblock_failed: 'Có lỗi khi bỏ chặn tài khoản này.'
+        block_failed: 'Có lỗi khi chặn tài khoản này.'
+        block_confirm: 'Bạn có chắc chắn muốn chặn tài khoản này? Người dùng sẽ không thể tạo bất kỳ chủ đề hoặc bài viết mới nào.'
+        block_accept: 'Có, chặn tài khoản này'
+        bounce_score: "Bounce Score"
+        reset_bounce_score:
+          label: "Thiết lập lại"
+          title: "Thiết lập lại bounce score trở về 0"
+        deactivate_explanation: "Tài khoản bị vô hiệu hóa phải xác thực email."
         suspended_explanation: "Tài khoản tạm khóa không thể đăng nhập."
-        block_explanation: "Tài khoản bị khóa không thể đăng bài hoặc tạo chủ đề."
-        trust_level_change_failed: "Có lỗi xảy ra khi thay đổi mức độ tin tưởng của tài khoản."
-        suspend_modal_title: "Tạm khóa Thành viên"
-        trust_level_2_users: "Độ tin cậy tài khoản mức 2"
-        trust_level_3_requirements: "Độ tin cậy bắt buộc mức 3"
-        trust_level_locked_tip: "mức độ tin cậy đang khóa, hệ thống sẽ không thể thăng hoặc giáng chức người dùng"
-        trust_level_unlocked_tip: "độ tin cậy đang được mở, hệ thống có thể thăng hoặc giáng chức người dùng"
-        lock_trust_level: "Khóa Cấp độ Tin tưởng"
-        unlock_trust_level: "Mở khóa độ tin cậy"
+        block_explanation: "Tài khoản bị chặn không thể đăng bài hoặc tạo chủ đề."
+        staged_explanation: "Tài khoản staged chỉ có thể đăng qua email trong chủ đề cụ thể."
+        bounce_score_explanation:
+          none: "No bounces were received recently from that email."
+          some: "Some bounces were received recently from that email."
+          threshold_reached: "Received too many bounces from that email."
+        trust_level_change_failed: "Có lỗi xảy ra khi thay đổi cấp độ tin tưởng của tài khoản."
+        suspend_modal_title: "Tạm khóa tài khoản"
+        trust_level_2_users: "Cấp độ tin tưởng tài khoản mức 2"
+        trust_level_3_requirements: "Cấp độ tin tưởng yêu cầu mức 3"
+        trust_level_locked_tip: "cấp độ tin tưởng đang khóa, hệ thống sẽ không thể thăng hoặc giáng cấp người dùng"
+        trust_level_unlocked_tip: "cấp độ tin tưởng đang được mở, hệ thống có thể thăng hoặc giáng cấp người dùng"
+        lock_trust_level: "Khóa cấp độ tin tưởng"
+        unlock_trust_level: "Mở khóa cấp độ tin tưởng"
         tl3_requirements:
           title: "Yêu cầu Cấp độ tin tưởng 3"
+          table_title:
+            one: "Trong ngày cuối:"
+            other: "Trong %{count} ngày cuối:"
           value_heading: "Giá trị"
           requirement_heading: "Yêu cầu"
-          visits: "Lượt xem"
+          visits: "Lượt truy cập"
           days: "ngày"
-          topics_replied_to: "Topics Replied To"
+          topics_replied_to: "Chủ đề trả lời đến"
           topics_viewed: "Đã xem chủ đề"
-          topics_viewed_all_time: "Đã xem chủ đề (mọi lúc)"
-          posts_read: "Đọc bài viết"
-          posts_read_all_time: "Đọc bài viết (mọi lúc)"
-          flagged_posts: "Đã gắn cờ Bài viết"
-          flagged_by_users: "Users Who Flagged"
-          likes_given: "Lượt Likes"
-          likes_received: "Likes Đã Nhận"
-          likes_received_days: "Like nhận được: ngày độc nhất"
-          likes_received_users: "Like nhận được: tài khoản độc nhất"
-          qualifies: "Đủ điều kiện cho độ tin cậy mức 3."
-          does_not_qualify: "Không đủ điều kiện cho độ tin cậy mức 3."
-          will_be_promoted: "Sẽ sớm được thăng chức."
-          will_be_demoted: "Sẽ sớm bị giáng chức."
-          on_grace_period: "Hiện đang trong khoảng thời gian gia hạn thăng chức, sẽ không thể giáng chức."
-          locked_will_not_be_promoted: "Mức độ tin cậy đang khóa, sẽ không thể thăng chức."
-          locked_will_not_be_demoted: "Mức độ tin cậy đang khóa, sẽ không thể giáng chức."
+          topics_viewed_all_time: "Đã xem chủ đề (tất cả thời gian)"
+          posts_read: "Đã đọc bài viết"
+          posts_read_all_time: "Đã đọc bài viết (tất cả thời gian)"
+          flagged_posts: "Đã gắn Flag Bài viết"
+          flagged_by_users: "Flag bởi Tài khoản"
+          likes_given: "Đã cho Like"
+          likes_received: "Đã nhận Like"
+          likes_received_days: "Like nhận được: ngày duy nhất"
+          likes_received_users: "Like nhận được: tài khoản duy nhất"
+          qualifies: "Đủ điều kiện cho cấp độ tin tưởng 3."
+          does_not_qualify: "Không đủ điều kiện cho cấp độ tin tưởng 3."
+          will_be_promoted: "Sẽ sớm được thăng cấp."
+          will_be_demoted: "Sẽ sớm bị giáng cấp."
+          on_grace_period: "Hiện đang trong khoảng thời gian gia hạn, sẽ không thể giáng cấp."
+          locked_will_not_be_promoted: "Cấp độ tin tưởng đang khóa, sẽ không thể thăng cấp."
+          locked_will_not_be_demoted: "Cấp độ tin tưởng đang khóa, sẽ không thể giáng cấp."
         sso:
-          title: "Single Sign On"
+          title: "Dấu Hiệu Duy Nhất Trên"
           external_id: "ID Bên ngoài"
           external_username: "Tên đăng nhập"
           external_name: "Tên"
           external_email: "Email"
           external_avatar_url: "URL Ảnh đại diện"
+      
       user_fields:
         title: "Trường tài khoản"
         help: "Thêm trường dữ liệu cho người dùng nhập."
@@ -3060,12 +3073,12 @@ vi:
         name: "Tên Trường"
         type: "Loại Trường"
         description: "Trường mô tả"
-        save: "Lưu"
-        edit: "Sửa"
-        delete: "Xoá"
-        cancel: "Hủy"
-        delete_confirm: "Bạn muốn xóa trường thành viên?"
-        options: "Lựa chọn"
+        save: "Lưu lại"
+        edit: "Chỉnh sửa"
+        delete: "Xoá bỏ"
+        cancel: "Hủy bỏ"
+        delete_confirm: "Bạn có chắc muốn xóa trường tài khoản?"
+        options: "Tùy chọn"
         required:
           title: "Bắt buộc lúc đăng ký?"
           enabled: "bắt buộc"
@@ -3075,32 +3088,35 @@ vi:
           enabled: "có thể chỉnh sửa"
           disabled: "không thể chỉnh sửa"
         show_on_profile:
-          title: "Hiển thị trong hồ sơ công khai"
-          enabled: "hiển thị trong hồ sơ"
-          disabled: "không hiển thị trong hồ sơ"
+          title: "Hiển thị trên profile công khai?"
+          enabled: "hiển thị trên profile"
+          disabled: "không hiển thị trên profile"
         show_on_user_card:
-          title: "Hiện trên thẻ người dùng?"
-          enabled: "hiển trên thẻ người dùng"
-          disabled: "không hiện trên thẻ người dùng"
+          title: "Hiển thị trên thẻ người dùng?"
+          enabled: "hiển thị trên thẻ người dùng"
+          disabled: "không hiển thị trên thẻ người dùng"
+        
         field_types:
-          text: 'Nội dung chữ'
+          text: 'Trường Văn bản'
           confirm: 'Xác nhận'
           dropdown: "Xổ xuống"
+          
       site_text:
         description: "Bạn có thể tùy chỉnh bất kỳ nội dung nào trên diễn đàn. Hãy bắt đầu bằng cách tìm kiếm dưới đây:"
         search: "Tìm kiếm nội dung bạn muốn sửa"
         title: 'Nội Dung Chữ'
-        edit: 'sửa'
-        revert: "Hoàn nguyên thay đổi"
-        revert_confirm: "Bạn có chắc chắn muốn hoàn nguyên các thay đổi?"
+        edit: 'Chỉnh sửa'
+        revert: "Phục hồi thay đổi"
+        revert_confirm: "Bạn có chắc chắn muốn phục hồi các thay đổi?"
         go_back: "Quay lại tìm kiếm"
-        recommended: "Bạn nên tùy biến các nội dung sau đây cho phù hợp với nhu cầu:"
-        show_overriden: 'Chỉ hiển thị chỗ ghi đè'
+        recommended: "Bạn nên tùy biến các nội dung sau phù hợp với nhu cầu:"
+        show_overriden: 'Chỉ hiển thị ghi đè'
+        
       site_settings:
-        show_overriden: 'Chỉ hiện thị đã ghi đè'
-        title: 'Xác lập'
-        reset: 'trạng thái đầu'
-        none: 'không có gì'
+        show_overriden: 'Chỉ hiển thị ghi đè'
+        title: 'Cài đặt'
+        reset: 'thiết lập lại'
+        none: 'none'
         no_results: "Không tìm thấy kết quả."
         clear_filter: "Xóa"
         add_url: "thêm URL"
@@ -3109,27 +3125,31 @@ vi:
           all_results: 'Tất cả'
           required: 'Bắt buộc'
           basic: 'Cài đặt cơ bản'
-          users: 'Thành viên'
-          posting: 'Đang đăng bài'
+          users: 'Tài khoản'
+          posting: 'Bài đăng'
           email: 'Email'
           files: 'Tập tin'
-          trust: 'Độ tin tưởng'
+          trust: 'Cấp độ tin tưởng'
           security: 'Bảo mật'
           onebox: "Onebox"
           seo: 'SEO'
-          spam: 'Rác'
-          rate_limits: 'Rate Limits'
-          developer: 'Nhà phát triển'
+          spam: 'Spam'
+          rate_limits: 'Tỷ lệ giới hạn'
+          developer: 'Developer'
           embedding: "Embedding"
           legal: "Legal"
+          user_api: 'API Tài khoản'
           uncategorized: 'Khác'
           backups: "Sao lưu"
           login: "Đăng nhập"
-          plugins: "Plugins"
-          user_preferences: "Tùy chỉnh Tài khoản"
+          plugins: "Plugin"
+          user_preferences: "Thiết lập Tài khoản"
+          tags: "Tag"
+          search: "Tìm kiếm"
+
       badges:
         title: Huy hiệu
-        new_badge: Thêm huy hiệu
+        new_badge: Huy hiệu mới
         new: Mới
         name: Tên
         badge: Huy hiệu
@@ -3142,9 +3162,9 @@ vi:
           modal_title: Nhóm huy hiệu
         granted_by: Cấp bởi
         granted_at: Cấp lúc
-        reason_help: (Liên kết đến bài viết hoặc chủ đề)
-        save: Lưu
-        delete: Xóa
+        reason_help: (Link đến bài viết hoặc chủ đề)
+        save: Lưu lại
+        delete: Xóa bỏ
         delete_confirm: Bạn có chắc chắn muốn xóa huy hiệu này?
         revoke: Thu hồi
         reason: Lý do
@@ -3152,48 +3172,50 @@ vi:
         revoke_confirm: Bạn có chắc chắn muốn thu hồi huy hiệu này?
         edit_badges: Sửa huy hiệu
         grant_badge: Cấp huy hiệu
-        granted_badges: Cấp huy hiệu
+        granted_badges: Đã cấp huy hiệu
         grant: Cấp
         no_user_badges: "%{name} chưa được cấp bất kỳ huy hiệu nào."
         no_badges: Không có huy hiệu có thể được cấp.
         none_selected: "Chọn một huy hiệu để bắt đầu"
-        allow_title: Cho phép huy hiệu được sử dụng như là tên
+        allow_title: Cho phép huy hiệu được sử dụng như là tiêu đề
         multiple_grant: Có thể được cấp nhiều lần
         listable: Hiện huy hiệu trên trang huy hiệu công khai
         enabled: Bật huy hiệu
-        icon: Biểu tượng
+        icon: Icon
         image: Hình ảnh
-        icon_help: "Sử dụng Font Awesome class hoặc URL của ảnh"
+        icon_help: "Sử dụng Font Awesome class hoặc URL hình ảnh"
         query: Truy vấn huy hiệu (SQL)
-        target_posts: Truy vấn bài viết mục tiêu
-        auto_revoke: Chạy truy vấn hủy bỏ hàng ngày
+        target_posts: Truy vấn mục tiêu bài viết
+        auto_revoke: Chạy truy vấn thu hồi hàng ngày
         show_posts: Hiện bài viết được cấp huy hiệu trên trang huy hiệu
-        trigger: Phát động
+        trigger: Kích hoạt
         trigger_type:
           none: "Cập nhật hàng ngày"
           post_action: "Khi người dùng hoạt động trên bài viết"
           post_revision: "Khi người dùng sửa hoặc tạo bài viết"
-          trust_level_change: "Khi người dùng thay đổi mức độ tin cậy"
-          user_change: "Khi người dùng được sửa hoặc được tạo"
+          trust_level_change: "Khi người dùng thay đổi cấp độ tin tưởng"
+          user_change: "Khi người dùng chỉnh sửa hoặc tạo"
           post_processed: "Sau khi bài viết được đăng"
         preview:
           link_text: "Xem trước cấp huy hiệu"
           plan_text: "Xem trước kế hoạch truy vấn"
           modal_title: "Xem trước truy vấn huy hiệu"
           sql_error_header: "Có lỗi xảy ra với truy vấn."
-          error_help: "Xem các liên kết sau đây để trợ giúp các truy vấn huy hiệu."
+          error_help: "Xem các link trợ giúp sau với truy vấn huy hiệu."
           bad_count_warning:
             header: "CẢNH BÁO!"
-            text: "Thiếu mẫu cấp độ huy hiệu, điều này xảy ra khi truy vấn huy hiệu trả về IDs tài khoản hoặc IDs bài viết không tồn tại. Điều này có thể gây ra kết quả bất ngờ sau này - hãy kiểm tra lại truy vấn của bạn lần nữa."
+            text: "Thiếu mẫu cấp độ huy hiệu, điều này xảy ra khi truy vấn huy hiệu trả về ID tài khoản hoặc ID bài viết không tồn tại. Điều này có thể gây ra kết quả không mong muốn sau này - hãy kiểm tra lại truy vấn của bạn lần nữa."
           no_grant_count: "Không có huy hiệu nào được gán."
           grant_count:
+            one: "<b>1</b> huy hiệu đã được gán."
             other: "<b>%{count}</b> huy hiệu đã được gán."
-          sample: "Ví dụ:"
+          sample: "Mẫu:"
           grant:
             with: <span class="username">%{username}</span>
-            with_post: <span class="username">%{username}</span> for post in %{link}
-            with_post_time: <span class="username">%{username}</span> viết bài trong %{link} lúc <span class="time">%{time}</span>
+            with_post: <span class="username">%{username}</span> cho bài viết trong %{link}
+            with_post_time: <span class="username">%{username}</span> cho bài viết trong %{link} lúc <span class="time">%{time}</span>
             with_time: <span class="username">%{username}</span> lúc <span class="time">%{time}</span>
+      
       emoji:
         title: "Emoji"
         help: "Thêm emoji mới có sẵn cho tất cả mọi người. (MẸO: kéo & thả nhiều file cùng lúc)"
@@ -3201,31 +3223,37 @@ vi:
         name: "Tên"
         image: "Hình ảnh"
         delete_confirm: "Bạn có chắc chắn muốn xóa emoji :%{name}:?"
+      
       embedding:
-        get_started: "Nếu bạn muốn nhúng Discourse trên một website khác, bắt đầu bằng cách thêm host."
-        confirm_delete: "Bạn muốn xóa host này?"
-        sample: "Sử dụng mã HTML sau vào website để tạo và nhúng các chủ đề. Thay thế <b>REPLACE_ME</b> với Canonical URL của trang bạn muốn nhúng."
+        get_started: "Nếu bạn muốn nhúng Disrum trên một website khác, bắt đầu bằng cách thêm host."
+        confirm_delete: "Bạn có chắc chắn muốn xóa host?"
+        sample: "Sử dụng code HTML sau vào website để tạo và nhúng các chủ đề. Thay thế <b>REPLACE_ME</b> với Canonical URL của trang bạn muốn nhúng."
         title: "Nhúng"
         host: "Cho phép Host"
-        edit: "sửa"
+        path_whitelist: "Path Whitelist"
+        edit: "Chỉnh sửa"
         category: "Đăng vào Danh mục"
         add_host: "Thêm Host"
         settings: "Thiết lập nhúng"
-        feed_settings: "Cấu hình Feed"
-        feed_description: "Cung cấp RSS/ATOM cho website để cải thiện khả năng Discourse import nội dung của bạn."
-        crawling_settings: "Cấu hình Crawler"
-        crawling_description: "Khi Discourse tạo chủ đề cho các bài viết của bạn, nếu không có RSS/ATOM thì hệ thống sẽ thử phân tích nội dung HTML. Đôi khi có thể gặp khó khăn khi trích xuất nội dung, vì vậy hệ thống cung cấp khả năng chỉ định quy tắc CSS để giúp quá trình trích xuất dễ dàng hơn."
-        embed_by_username: "Tên thành viên để tạo chủ đề"
+        feed_settings: "Thiết lập Feed"
+        feed_description: "Cung cấp RSS/ATOM cho website để cải thiện khả năng Disrum import nội dung của bạn."
+        crawling_settings: "Thiết lập Crawler"
+        crawling_description: "Khi Disrum tạo chủ đề cho các bài viết của bạn, nếu không có RSS/ATOM thì hệ thống sẽ thử phân tích nội dung HTML. Đôi khi có thể gặp khó khăn khi trích xuất nội dung, vì vậy hệ thống cung cấp khả năng chỉ định quy tắc CSS để giúp quá trình trích xuất dễ dàng hơn."
+        
+        embed_by_username: "Tên đăng nhập để tạo chủ đề"
         embed_post_limit: "Số lượng tối đa bài viết được nhúng"
-        embed_username_key_from_feed: "Key to pull discourse username from feed"
-        embed_truncate: "Cắt ngắn các bài viết được nhúng"
-        embed_whitelist_selector: "Bộ chọn các thành phần CSS được hỗ trợ khi nhúng"
-        embed_blacklist_selector: "CSS selector for elements that are removed from embeds"
-        feed_polling_enabled: "Nhập bài viết bằng RSS/ATOM"
-        feed_polling_url: "URL của RSS/ATOM để thu thập"
+        embed_username_key_from_feed: "Key để kéo disrum tên đăng nhập từ feed"
+        embed_title_scrubber: "Regular expression used to scrub the title of posts"
+        embed_truncate: "Cắt ngắn bài nhúng"
+        embed_whitelist_selector: "Chọn các thành phần CSS được cho phép nhúng"
+        embed_blacklist_selector: "Chọn các thành phần CSS được loại bỏ nhúng"
+        embed_classname_whitelist: "Cho phép tên CSS class"
+        feed_polling_enabled: "Nhập bài viết qua RSS/ATOM"
+        feed_polling_url: "URL của RSS/ATOM để crawl"
         save: "Lưu thiết lập nhúng"
+        
       permalink:
-        title: "Liên kết cố định"
+        title: "Permalink"
         url: "URL"
         topic_id: "ID Chủ đề"
         topic_title: "Chủ đề"
@@ -3234,8 +3262,32 @@ vi:
         category_id: "ID Danh mục"
         category_title: "Danh mục"
         external_url: "URL Bên ngoài"
-        delete_confirm: Bạn có chắc chắn muốn xóa liên kết tĩnh này?
+        delete_confirm: Bạn có chắc chắn muốn xóa permalink này?
         form:
           label: "Mới:"
           add: "Thêm"
           filter: "Tìm kiếm (URL hoặc External URL)"
+          
+    wizard_js:
+      wizard:
+        done: "Done"
+        back: "Quay lại"
+        next: "Tiếp theo"
+        step: "%{current} của %{total}"
+        upload: "Tải lên"
+        uploading: "Đang tải lên..."
+        quit: "Có thể để sau"
+
+        staff_count:
+          one: "Cộng đồng của bạn có 1 staff member. "
+          other: "Cộng đồng của bạn có %{count} staff member."
+
+        invites:
+          add_user: "thêm"
+          none_added: "Bạn chưa mời bất kỳ staff nào. Bạn có chắc muốn tiếp tục?"
+          roles:
+            admin: "Admin"
+            moderator: "Người điều hành"
+            regular: "Thành viên"
+
+
