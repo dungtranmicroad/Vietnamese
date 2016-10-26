@@ -1762,55 +1762,55 @@ vi:
             one: "Bạn và 1 người khác flag đây như là không phù hợp"
             other: "Bạn và {{count}} người khác flag đây như là không phù hợp"
           notify_moderators:
-            one: "Bạn và 1 người khác flag đây cho ban quản trị"
-            other: "Bạn và {{count}} người khác gắn cờ nó là điều tiết"
+            one: "Bạn và 1 người khác flag cho ban quản trị"
+            other: "Bạn và {{count}} người khác flag cho ban quản trị"
           notify_user:
-            one: "You and 1 other sent a message to this user"
-            other: "Bạn và {{count}} người khác đã gửi một tin nhắn đến người dùng này"
+            one: "Bạn và 1 người khác đã gửi tin nhắn đến người dùng này"
+            other: "Bạn và {{count}} người khác đã gửi tin nhắn đến người dùng này"
           bookmark:
-            one: "You and 1 other bookmarked this post"
+            one: "Bạn và 1 người khác đã đánh dấu bài viết này"
             other: "Bạn và {{count}} người khác đã đánh dấu bài viết này"
           like:
-            one: "You and 1 other liked this"
-            other: "Bạn và {{count}} người khác đã thích cái này"
+            one: "Bạn và 1 người khác đã Like bài viết này"
+            other: "Bạn và {{count}} người khác đã Like bài viết này"
           vote:
-            one: "You and 1 other voted for this post"
-            other: "Bạn và {{count}} nười khác đã bình chọn cho bài viết này"
+            one: "Bạn và 1 người khác đã bầu chọn cho bài viết này"
+            other: "Bạn và {{count}} người khác đã bầu chọn cho bài viết này"
         by_others:
           off_topic:
-            one: "1 person flagged this as off-topic"
-            other: "{{count}} người đã đánh dấu nó là chủ đề đóng"
+            one: "1 người đã flag đây là chủ đề đóng"
+            other: "{{count}} người đã flag đây là chủ đề đóng"
           spam:
-            one: "1 person flagged this as spam"
-            other: "{{count}} người khác đánh dấu là rác"
+            one: "1 người đã flag đây như là spam"
+            other: "{{count}} người đã flag đây như là spam"
           inappropriate:
-            one: "1 person flagged this as inappropriate"
-            other: "{{count}} người khác đã đánh dấu là không phù hợp"
+            one: "1 người đã flag đây như là không phù hợp"
+            other: "{{count}} người đã flag đây như là không phù hợp"
           notify_moderators:
-            one: "1 person flagged this for moderation"
-            other: "{{count}} người đã đánh dấu để chờ duyệt"
+            one: "1 người đã flag cho ban quản trị"
+            other: "{{count}} người đã flag cho ban quản trị"
           notify_user:
-            one: "1 person sent a message to this user"
-            other: "{{count}} gửi tin nhắn đến người dùng này"
+            one: "1 người đã gửi tin nhắn đến người dùng này"
+            other: "{{count}} người đã gửi tin nhắn đến người dùng này"
           bookmark:
-            one: "1 person bookmarked this post"
+            one: "1 người đã đánh dấu bài viết này"
             other: "{{count}} người đã đánh dấu bài viết này"
           like:
-            one: "1 person liked this"
-            other: "{count}} người đã thích cái này"
+            one: "1 người đã Like bài viết này"
+            other: "{count}} người đã Like bài viết này"
           vote:
-            one: "1 person voted for this post"
-            other: "{{count}} người đã bình chọn cho bài viết này"
+            one: "1 người đã bầu chọn cho bài viết này"
+            other: "{{count}} người đã bầu chọn cho bài viết này"
       
       delete:
         confirm:
-          one: "Are you sure you want to delete that post?"
-          other: "Bạn muốn xóa những bài viết này?"
+          one: "Bạn có chắc chắn muốn xóa bài viết?"
+          other: "Bạn có chắc chắn muốn xóa bài viết?"
       
       merge:
         confirm:
-          one: "Are you sure you want merge those posts?"
-          other: "Are you sure you want to merge those {{count}} posts?"
+          one: "Bạn có chắc chắn muốn hợp nhất bài viết?"
+          other: "Bạn có chắc chắn muốn hợp nhất {{count}} bài viết?"
 
       revisions:
         controls:
@@ -1820,93 +1820,93 @@ vi:
           last: "Sửa đổi gần nhất"
           hide: "Ẩn sửa đổi"
           show: "Hiện sửa đổi"
-          revert: "Hoàn nguyên sửa đổi"
+          revert: "Khôi phục sửa đổi"
           comparing_previous_to_current_out_of_total: "<strong>{{previous}}</strong> <i class='fa fa-arrows-h'></i> <strong>{{current}}</strong> / {{total}}"
         displays:
           inline:
-            title: "Hiển thị dạng xuất kèm theo các bổ sung và loại bỏ nội tuyến"
+            title: "Hiển thị dạng xuất kèm theo các bổ sung và loại bỏ inline"
             button: '<i class="fa fa-square-o"></i> HTML'
           side_by_side:
             title: "Hiển thị dạng xuất với các điểm khác biệt cạnh nhau"
             button: '<i class="fa fa-columns"></i> HTML'
           side_by_side_markdown:
             title: "Hiển thị nguyên bản với các điểm khác biệt cạnh nhau"
-            button: '<i class="fa fa-columns"></i> Thô'
+            button: '<i class="fa fa-columns"></i> Raw'
     
     category:
-      can: 'can&hellip;'
+      can: 'can&hellip; '
       none: '(không danh mục)'
       all: 'Tất cả danh mục'
-      choose: 'Chọn chuyên mục&hellip;'
-      edit: 'sửa'
-      edit_long: "Sửa"
+      choose: 'Chọn một category&hellip;'
+      edit: 'Chỉnh sửa'
+      edit_long: "Chỉnh sửa"
       view: 'Xem Chủ đề trong Danh mục'
       general: 'Chung'
-      settings: 'Cấu hình'
+      settings: 'Cài đặt'
       topic_template: "Mẫu Chủ đề"
-      tags: "Tags"
-      tags_allowed_tags: "Tags that can only be used in this category:"
-      tags_allowed_tag_groups: "Tag groups that can only be used in this category:"
-      tags_placeholder: "(Optional) list of allowed tags"
-      tag_groups_placeholder: "(Optional) list of allowed tag groups"
-      delete: 'Xóa chuyên mục'
-      create: 'Chuyên mục mới'
-      create_long: 'Tạo Chủ đề mới'
-      save: 'Lưu chuyên mục'
-      slug: 'Đường dẫn chuyên mục'
-      slug_placeholder: '(Tùy chọn) các từ sử dụng trong url'
-      creation_error: Có lỗi xảy ra khi tạo chuyên mục
-      save_error: Có lỗi xảy ra khi lưu chuyên mục
-      name: "Tên chuyên mục"
+      tags: "Tag"
+      tags_allowed_tags: "Tag này chỉ được sử dụng trong Danh mục:"
+      tags_allowed_tag_groups: "Tag Nhóm này chỉ được sử dụng trong Danh mục:"
+      tags_placeholder: "(Không bắt buộc) danh sách tag cho phép"
+      tag_groups_placeholder: "(Không bắt buộc) danh sách tag nhóm cho phép"
+      delete: 'Xóa danh mục'
+      create: 'Danh mục mới'
+      create_long: 'Tạo danh mục mới'
+      save: 'Lưu danh mục'
+      slug: 'URL danh mục'
+      slug_placeholder: '(Không bắt buộc) dấu gạch ngang trong url'
+      creation_error: Có lỗi xảy ra khi tạo danh mục.
+      save_error: Có lỗi xảy ra khi lưu danh mục
+      name: "Tên danh mục"
       description: "Mô tả"
-      topic: "chủ đề chuyên mục"
-      logo: "Logo của chuyên mục"
-      background_image: "Ảnh nền của chuyên mục"
+      topic: "Chủ đề danh mục"
+      logo: "Logo của danh mục"
+      background_image: "Ảnh nền của danh mục"
       badge_colors: "Màu huy hiệu"
       background_color: "Màu nền"
       foreground_color: "Màu mặt trước"
       name_placeholder: "Tối đa một hoặc hai từ"
-      color_placeholder: "Bất cứ màu nào"
-      delete_confirm: "Bạn có chắc sẽ xóa chuyên mục này chứ?"
-      delete_error: "Có lỗi xảy ra khi xóa chuyên mục này"
-      list: "Danh sách chuyên mục"
-      no_description: "Hãy thêm mô tả cho chuyên mục này"
+      color_placeholder: "Bất kỳ màu nào"
+      delete_confirm: "Bạn có chắc chắn muốn xóa danh mục này?"
+      delete_error: "Có lỗi xảy ra khi xóa danh mục."
+      list: "Danh sách danh mục"
+      no_description: "Hãy thêm mô tả cho danh mục này"
       change_in_category_topic: "Sửa mô tả"
-      already_used: 'Màu này đã được dùng bởi chuyên mục khác'
+      already_used: 'Màu này đã được sử dụng bởi danh mục khác.'
       security: "Bảo mật"
-      special_warning: "Cảnh báo: Đây là chuyên mục có sẵn nên bạn không thể chỉnh sửa các thiết lập bảo mật. Nếu bạn muốn sử dụng chuyên mục này, hãy xóa nó thay vì tái sử dụng."
+      special_warning: "Lưu ý: Danh mục có sẵn không thể chỉnh sửa các cài đặt bảo mật. Nếu bạn không muốn sử dụng danh mục này, hãy xóa nó thay vì tái sử dụng."
       images: "Hình ảnh"
       auto_close_label: "Tự động khóa chủ đề sau:"
       auto_close_units: "giờ"
-      email_in: "Tùy chỉnh địa chỉ nhận thư điện tử "
-      email_in_allow_strangers: "Nhận thư điện tử từ người gửi vô danh không tài khoản"
-      email_in_disabled: "Tạo chủ đề mới thông qua email đã được tắt trong thiết lập. Để bật tính năng này, "
-      email_in_disabled_click: 'kích hoạt thiết lập thư điện tử'
-      suppress_from_homepage: "Ngăn chặn chuyên mục này hiển thị trên trang chủ."
-      allow_badges_label: "Cho phép thưởng huy hiệu trong chuyên mục này"
+      email_in: "Tùy chỉnh địa chỉ nhận email:"
+      email_in_allow_strangers: "Nhận email từ người gửi vô danh không có tài khoản"
+      email_in_disabled: "Đăng chủ đề mới qua email đã bị vô hiệu hóa trong thiết lập trang web. Để bật tính năng này, "
+      email_in_disabled_click: 'kích hoạt thiết lập "email".'
+      suppress_from_homepage: "Chặn danh mục này từ trang chủ."
+      allow_badges_label: "Cho phép trao tặng huy hiệu trong danh mục này"
       edit_permissions: "Sửa quyền"
       add_permission: "Thêm quyền"
       this_year: "năm nay"
       position: "vị trí"
-      default_position: "vị trí mặc định"
-      position_disabled: "Chuyên mục sẽ được hiển thị theo thứ tự hoạt động. Để kiểm soát thứ tự chuyên mục trong danh sách, "
-      position_disabled_click: 'bật thiết lập "cố định vị trí chuyên mục".'
+      default_position: "Vị trí mặc định"
+      position_disabled: "Danh mục sẽ được hiển thị theo thứ tự hoạt động. Để kiểm soát thứ tự danh mục trong danh sách, "
+      position_disabled_click: 'bật thiết lập "cố định vị trí danh mục".'
       parent: "Danh mục cha"
       notifications:
         watching:
-          title: "Theo dõi"
+          title: "Luôn theo dõi"
           description: "You will automatically watch all topics in these categories. You will be notified of every new post in every topic, and a count of new replies will be shown."
         watching_first_post:
-          title: "Watching First Post"
+          title: "Theo dõi bài đăng đầu tiên"
           description: "You will only be notified of the first post in each new topic in these categories."
         tracking:
-          title: "Đang theo dõi"
+          title: "Theo dõi"
           description: "You will automatically track all topics in these categories. You will be notified if someone mentions your @name or replies to you, and a count of new replies will be shown."
         regular:
           title: "Bình thường"
           description: "Bạn sẽ được thông báo nếu ai đó đề cập đến @tên bạn hoặc trả lời bạn"
         muted:
-          title: "Im lặng"
+          title: "Không theo dõi"
           description: "Bạn sẽ không nhận được thông báo về bất cứ chủ đề mới nào trong các chuyên mục này, và chúng sẽ không hiển thị là mới nhất."
     
     flagging:
