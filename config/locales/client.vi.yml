@@ -2307,135 +2307,158 @@ vi:
         version_check_pending: "Bạn mới nâng cấp, thật tuyệt!"
         installed_version: "Đã cài đặt"
         latest_version: "Mới nhất"
-        problems_found: "Tìm thấy vấn đề với bản cài đặt Discourse của bạn:"
+        problems_found: "Tìm thấy vấn đề với bản cài đặt của bạn:"
         last_checked: "Kiểm tra lần cuối"
         refresh_problems: "Làm mới"
         no_problems: "Không phát hiện vấn đề"
-        moderators: 'Điều hành:'
+        moderators: 'Người điều hành:'
         admins: 'Quản trị:'
-        blocked: 'Đã khóa:'
+        blocked: 'Bị chặn:'
         suspended: 'Đã tạm khóa:'
         private_messages_short: "Tin nhắn"
         private_messages_title: "Tin nhắn"
-        mobile_title: "Điện thoại"
+        mobile_title: "Mobile"
         space_free: "{{size}} trống"
         uploads: "tải lên"
         backups: "sao lưu"
         traffic_short: "Băng thông"
-        traffic: "Application web requests"
-        page_views: "API Requests"
-        page_views_short: "API Requests"
-        show_traffic_report: "Xem chi tiết Báo cáo Lưu lượng"
+        traffic: "Yêu cầu của ứng dụng"
+        page_views: "Yêu cầu API"
+        page_views_short: "Yêu cầu API"
+        show_traffic_report: "Xem chi tiết báo cáo Traffic"
+        
         reports:
           today: "Hôm nay"
           yesterday: "Hôm qua"
-          last_7_days: "7 Ngày gần nhất"
-          last_30_days: "30 Ngày gần nhất"
-          all_time: "Từ trước tới nay"
-          7_days_ago: "7 Ngày trước"
-          30_days_ago: "30 Ngày trước"
+          last_7_days: "7 ngày qua"
+          last_30_days: "30 ngày qua"
+          all_time: "Tất cả thời gian"
+          7_days_ago: "7 ngày trước"
+          30_days_ago: "30 ngày trước"
           all: "Tất cả"
           view_table: "bảng"
+          view_graph: "đồ thị"
           refresh_report: "Làm mới báo cáo"
           start_date: "Từ ngày"
           end_date: "Đến ngày"
-          groups: "Các nhóm"
+          groups: "Tất cả nhóm"
+          
       commits:
-        latest_changes: "Thay đổi cuối: vui lòng cập nhật thường xuyên!"
+        latest_changes: "Thay đổi mới nhất: vui lòng cập nhật thường xuyên!"
         by: "bởi"
+        
       flags:
-        title: "Gắn cờ"
+        title: "Flag"
         old: "Cũ"
-        active: "Kích hoạt"
+        active: "Hoạt động"
+        
         agree: "Đồng ý"
-        agree_title: "Xác nhận đánh dấu này hợp lệ và chính xác"
+        agree_title: "Xác nhận flag này hợp lệ và chính xác"
         agree_flag_modal_title: "Đồng ý và..."
         agree_flag_hide_post: "Đồng ý (ẩn bài viết + gửi PM)"
-        agree_flag_hide_post_title: "Ẩn bài viết này và tự động gửi tin nhắn đến người dùng hối thúc họ sửa nó"
+        agree_flag_hide_post_title: "Ẩn bài viết này và tự động gửi tin nhắn đến người dùng hối thúc họ chỉnh sửa"
         agree_flag_restore_post: "Đồng ý (khôi phục bài viết)"
         agree_flag_restore_post_title: "Khôi phục bài viết này"
-        agree_flag: "Đống ý với cờ này"
-        agree_flag_title: "Đồng ý với cờ này và giữ bài viết không thay đổi"
-        defer_flag: "Hoãn"
-        defer_flag_title: "Xóa cờ này; nó yêu cầu không có hành động nào vào thời điểm này."
-        delete: "Xóa"
-        delete_title: "Xóa bài viết đánh dấu này đề cập đến."
-        delete_post_defer_flag: "Xóa bài viết và Hoãn đánh dấu"
-        delete_post_defer_flag_title: "Xóa bài viết; nếu là bài viết đầu tiên, xóa chủ đề này"
-        delete_post_agree_flag: "Xóa bài viết và Đồng ý với cờ"
-        delete_post_agree_flag_title: "Xóa bài viết; nếu là bài viết đầu tiên, xóa chủ đề này"
+        agree_flag: "Đống ý với flag này"
+        agree_flag_title: "Đồng ý với flag này và giữ bài viết không thay đổi"
+        defer_flag: "Hoãn lại"
+        defer_flag_title: "Xóa flag này, nó yêu cầu không có hành động nào vào thời điểm này."
+        delete: "Xóa bỏ"
+        delete_title: "Xóa bài viết flag này đề cập đến."
+        delete_post_defer_flag: "Xóa bài viết và Hoãn flag"
+        delete_post_defer_flag_title: "Xóa bài viết, nếu là bài viết đầu tiên, xóa chủ đề này"
+        delete_post_agree_flag: "Xóa bài viết và Đồng ý với flag"
+        delete_post_agree_flag_title: "Xóa bài viết, nếu là bài viết đầu tiên, xóa chủ đề này"
         delete_flag_modal_title: "Xóa và..."
         delete_spammer: "Xóa người Spam"
-        delete_spammer_title: "Xóa người dùng này và tất cả bài viết à chủ để của người dùng này."
+        delete_spammer_title: "Xóa người dùng này và tất cả bài viết và chủ để của người dùng này."
         disagree_flag_unhide_post: "Không đồng ý (ẩn bài viết)"
-        disagree_flag_unhide_post_title: "Loại bỏ bất kỳ đánh dấu nào khỏi bài viết này và làm cho bài viết hiển thị trở lại"
+        disagree_flag_unhide_post_title: "Loại bỏ bất kỳ flag nào khỏi bài viết này và làm cho bài viết hiển thị trở lại"
         disagree_flag: "Không đồng ý"
-        disagree_flag_title: "Từ chối đánh dấu này là không hợp lệ hoặc chính xác"
+        disagree_flag_title: "Từ chối flag này là không hợp lệ hoặc không chính xác"
         clear_topic_flags: "Hoàn tất"
-        clear_topic_flags_title: "Chủ đề đã được xem xét vấn đề và giải quyết, click để loại bỏ đánh dấu."
+        clear_topic_flags_title: "Chủ đề đã được xem xét và vấn đề đã được giải quyết, click để loại bỏ flag."
         more: "(thêm trả lời...)"
+        
         dispositions:
           agreed: "đồng ý"
           disagreed: "không đồng ý"
-          deferred: "hoãn"
-        flagged_by: "Gắn cờ bởi"
-        resolved_by: "Xử lý bởi"
-        took_action: "Thực hiện"
+          deferred: "hoãn lại"
+        
+        flagged_by: "Flag bởi"
+        resolved_by: "Giải quyết bởi"
+        took_action: "Đã Thực hiện"
         system: "Hệ thống"
         error: "Có lỗi xảy ra"
         reply_message: "Trả lời "
-        no_results: "Không được gắn cờ"
-        topic_flagged: "<strong>Chủ đề này</strong> đã được đánh dấu."
+        no_results: "Không có Flag."
+        topic_flagged: "<strong>Chủ đề này</strong> đã được gắn flag."
         visit_topic: "Tới chủ đề để thực hiện"
-        was_edited: "Bài viết đã được chỉnh sửa sau khi đánh dấu đầu tiên"
-        previous_flags_count: "Bài viết này đã được đánh dấu {{count}} lần."
+        was_edited: "Bài viết đã được chỉnh sửa sau khi bị gắn flag đầu tiên"
+        previous_flags_count: "Bài viết này đã được gắn flag {{count}} lần."
+        
         summary:
           action_type_3:
-            other: "sai chủ đề x{{count}}"
+            one: "chủ đề đóng"
+            other: "chủ đề đóng x{{count}}"
           action_type_4:
-            other: "Không phù hợp x{{count}}"
+            one: "không phù hợp"
+            other: "không phù hợp x{{count}}"
           action_type_6:
+            one: "tùy chỉnh"
             other: "tùy chỉnh x{{count}}"
           action_type_7:
+            one: "tùy chỉnh"
             other: "tùy chỉnh x{{count}}"
           action_type_8:
+            one: "spam"
             other: "spam x{{count}}"
+            
       groups:
         primary: "Nhóm Chính"
         no_primary: "(không có nhóm chính)"
         title: "Nhóm"
-        edit: "Sửa nhóm"
+        edit: "Chỉnh sửa nhóm"
         refresh: "Làm mới"
         new: "Mới"
-        selector_placeholder: "nhập tên tài khoản"
-        name_placeholder: "Tên nhóm, không khoản trắng, cùng luật với tên tài khoản"
-        about: "Chỉnh sửa nhóm thành viên và tên của bạn ở đây"
-        group_members: "Nhóm thành viên"
-        delete: "Xóa"
+        selector_placeholder: "nhập tên đăng nhập"
+        name_placeholder: "Tên nhóm, không chứa khoảng trắng"
+        about: "Chỉnh sửa thành viên nhóm và tên của bạn ở đây"
+        group_members: "Thành viên nhóm"
+        delete: "Xóa bỏ"
         delete_confirm: "Xóa nhóm này?"
-        delete_failed: "Không thể xóa nhóm. Nếu đây là một nhóm tự động, nó không thể hủy bỏ."
-        delete_member_confirm: "Loại bỏ '%{username}' khỏi nhóm '%{group}'?"
-        delete_owner_confirm: "Loại bỏ quyền sở hữu của '%{username}'?"
+        delete_failed: "Không thể xóa nhóm. Nếu đây là một nhóm tự động, nó không thể xóa bỏ."
+        delete_member_confirm: "Xóa bỏ '%{username}' khỏi nhóm '%{group}'?"
+        delete_owner_confirm: "Xóa bỏ quyền sở hữu của '%{username}'?"
         name: "Tên"
         add: "Thêm"
         add_members: "Thêm thành viên"
-        custom: "Tùy biến"
-        bulk_complete: "Các thành viên đã được thêm vào nhóm."
-        bulk: "Thêm vào nhóm theo lô"
-        bulk_paste: "Dán danh sách username hoặc email, mỗi mục một dòng:"
+        custom: "Tùy chỉnh"
+        bulk_complete: "Thành viên đã được thêm vào nhóm."
+        bulk: "Thêm vào nhóm theo số lượng lớn"
+        bulk_paste: "Dán danh sách tên đăng nhập hoặc email, mỗi mục một dòng:"
         bulk_select: "(chọn nhóm)"
         automatic: "Tự động"
-        automatic_membership_email_domains: "Các thành viên đã đăng ký với đuôi email khớp với một trong danh sách này sẽ được tự động thêm vào nhóm:"
+        automatic_membership_email_domains: "Thành viên đã đăng ký với đuôi email khớp với một trong danh sách này sẽ được tự động thêm vào nhóm:"
         automatic_membership_retroactive: "Áp dụng quy tắc đuôi email tương tự để thêm thành viên đăng ký hiện tại"
-        default_title: "Tên mặc định cho tất cả các thành viên trong nhóm này"
+        default_title: "Tiêu đề mặc định cho tất cả các thành viên trong nhóm này"
         primary_group: "Tự động cài là nhóm chính"
         group_owners: Chủ sở hữu
         add_owners: Thêm chủ sở hữu
         incoming_email: "Tùy chỉnh địa chỉ email đến"
-        incoming_email_placeholder: "điền địa chỉ email"
+        incoming_email_placeholder: "nhập địa chỉ email"
+        flair_url: "Hình ảnh Avatar Flair"
+        flair_url_placeholder: "(Tùy chọn) URL hình ảnh hoặc Font Awesome class"
+        flair_bg_color: "Màu nền Avatar Flair"
+        flair_bg_color_placeholder: "(Tùy chọn) Hex color value"
+        flair_color: "Màu Avatar Flair"
+        flair_color_placeholder: "(Tùy chọn) Hex color value"
+        flair_preview: "Xem trước"
+        flair_note: "Lưu ý: Flair sẽ chỉ hiển thị cho các nhóm chính của người dùng."
+
       api:
         generate_master: "Tạo Master API Key"
-        none: "Không có API keys nào kích hoạt lúc này."
+        none: "Không có API keys nào đang hoạt động."
         user: "Thành viên"
         title: "API"
         key: "API Key"
@@ -2443,28 +2466,100 @@ vi:
         regenerate: "Khởi tạo lại"
         revoke: "Thu hồi"
         confirm_regen: "Bạn muốn thay API Key hiện tại bằng cái mới?"
-        confirm_revoke: "Bạn có chắc chắn muốn hủy bỏ khóa đó?"
-        info_html: "Khóa API cho phép bạn tạo và cập nhật chủ đề sử dụng JSON."
+        confirm_revoke: "Bạn có chắc chắn muốn thu hồi Key đó?"
+        info_html: "API Key cho phép bạn tạo và cập nhật chủ đề sử dụng JSON."
         all_users: "Tất cả Thành viên"
-        note_html: "Giữ khóa nào <strong>bảo mật</strong>, tất cả tài khoản có thể dùng khóa này để tạo bài viết với bất kỳ tài khoản nào."
+        note_html: "Giữ Key này <strong>bí mật</strong>, tất cả tài khoản có thể dùng Key này để tạo bài viết với bất kỳ tài khoản nào."
+      
+      web_hooks:
+        title: "Webhook"
+        none: "Không có webhook ngay bây giờ."
+        instruction: "Webhook cho phép Hệ thống thông báo dịch vụ ngoài khi có sự cố xảy ra trên website. Khi webhook được kích hoạt, một yêu cầu POST sẽ gửi đến URL được cung cấp."
+        detailed_instruction: "Yêu cầu POST request sẽ gửi đến URL được cung cấp khi sự cố xảy ra."
+        new: "Webhook mới"
+        create: "Tạo"
+        save: "Lưu lại"
+        destroy: "Xóa bỏ"
+        description: "Mô tả"
+        controls: "Control"
+        go_back: "Quay lại danh sách"
+        payload_url: "Payload URL"
+        payload_url_placeholder: "https://example.com/postreceive"
+        warn_local_payload_url: "Dường như bạn đang cố gắng để thiết lập các webhook đến một url local. Sự kiện được gửi đến một địa chỉ local có thể gây ra tác động phụ hoặc hành vi bất ngờ. Tiếp tục?"
+        secret_invalid: "Secret không chứa ký tự trống."
+        secret_too_short: "Secret phải có ít nhất 12 ký tự."
+        secret_placeholder: "Một chuỗi tùy chọn, được sử dụng để tạo chữ ký"
+        event_type_missing: "Bạn cần phải thiết lập ít nhất một loại sự kiện."
+        content_type: "Loại nội dung"
+        secret: "Secret"
+        event_chooser: "Sự kiện nào mà bạn muốn kích hoạt webhook này?"
+        wildcard_event: "Gửi cho tôi tất cả mọi thứ."
+        individual_event: "Chọn sự kiện cá nhân."
+        verify_certificate: "Kiểm tra TLS certificate của payload url"
+        active: "Hoạt động"
+        active_notice: "Chúng tôi sẽ cung cấp chi tiết về sự kiện khi nó xảy ra."
+        categories_filter_instructions: "Webhook liên quan sẽ chỉ được kích hoạt nếu các sự kiện có liên quan với các danh mục cụ thể. Để trống để kích hoạt webhooks cho tất cả các danh mục."
+        categories_filter: "Kích hoạt danh mục"
+        groups_filter_instructions: "Webhook liên quan sẽ chỉ được kích hoạt nếu các sự kiện có liên quan với các nhóm cụ thể. Để trống để kích hoạt webhook cho tất cả các nhóm."
+        groups_filter: "Kích hoạt nhóm"
+        delete_confirm: "Xóa bỏ webhook này?"
+        topic_event:
+          name: "Chủ đề sự kiện"
+          details: "Khi có một chủ đề mới, sửa đổi, thay đổi hoặc xóa."
+        post_event:
+          name: "Bài viết sự kiện"
+          details: "Khi có bài trả lời mới, chỉnh sửa, xóa hoặc phục hồi."
+        user_event:
+          name: "Thành viên sự kiện"
+          details: "Khi có người dùng mới hoặc được phê duyệt."
+        delivery_status:
+          title: "Tình trạng phân phối"
+          inactive: "Không hoạt động"
+          failed: "Thất bại"
+          successful: "Thành công"
+        events:
+          none: "Không có sự kiện liên quan."
+          redeliver: "Phân phối lại"
+          incoming:
+            one: "Có một sự kiện mới."
+            other: "Có {{count}} sự kiện mới."
+          completed_in:
+            one: "Hoàn thành trong 1 giây."
+            other: "Hoàn thành trong {{count}} giây."
+          request: "Yêu cầu"
+          response: "Phản hồi"
+          redeliver_confirm: "Bạn có chắc chắn muốn phân phối lại payload như nhau?"
+          headers: "Headers"
+          payload: "Payload"
+          body: "Body"
+          go_list: "Tới danh sách"
+          go_details: "Chỉnh sửa webhook"
+          go_events: "Tới sự kiện"
+          ping: "Ping"
+          status: "Tình trạng Code"
+          event_id: "ID"
+          timestamp: "Đã tạo"
+          completion: "Thời gian hoàn thành"
+          actions: "Hoạt động"
       plugins:
         title: "Plugin"
         installed: "Đã cài Plugin"
         name: "Tên"
         none_installed: "Bạn chưa cài plugin nào."
         version: "Phiên bản"
-        enabled: "Kích hoạt"
+        enabled: "Kích hoạt?"
         is_enabled: "Có"
         not_enabled: "Không"
-        change_settings: "Đổi Cấu hình"
-        change_settings_short: "Cấu hình"
-        howto: "Plugin cài như thế nào?"
+        change_settings: "Thay đổi cài đặt"
+        change_settings_short: "Cài đặt"
+        howto: "Cài đặt Plugin như thế nào?"
+      
       backups:
-        title: "Bản sao lưu"
+        title: "Sao lưu"
         menu:
-          backups: "Bản sao lưu"
+          backups: "Sao lưu"
           logs: "Log"
-        none: "Chưa có bản sao lưu."
+        none: "Sao lưu không có sẵn"
         read_only:
           enable:
             title: "Bật chế độ chỉ đọc"
@@ -2483,127 +2578,131 @@ vi:
           title: "Tải lên bản sao lưu cho phiên bản này"
           uploading: "Đang tải lên..."
           success: "'{{filename}}' đã tải lên thành công."
-          error: "Có lõi trong quá trình tải lên '{{filename}}': {{message}}"
+          error: "Có lỗi trong quá trình tải lên '{{filename}}': {{message}}"
         operations:
-          is_running: "Tác vụ đang chạy..."
-          failed: "{{operation}} Thấy bại. Vui lòng xem log."
+          is_running: "Một tác vụ đang chạy..."
+          failed: "{{operation}} thấy bại. Vui lòng xem log."
           cancel:
-            label: "Hủy"
+            label: "Hủy bỏ"
             title: "Hủy tác vụ hiện tại"
-            confirm: "Bạn muốn hủy tác vụ hiện tại?"
+            confirm: "Bạn có chắc chắn muốn hủy tác vụ hiện tại?"
           backup:
             label: "Sao lưu"
             title: "Tạo bản sao lưu"
-            confirm: "Bạn muốn bắt đầu một bản sao lưu mới?"
+            confirm: "Bạn có muốn bắt đầu một bản sao lưu mới?"
             without_uploads: "Đúng (không bao gồm những tập tin)"
           download:
             label: "Tải xuống"
-            title: "Tải xuống bản sao lưu này"
+            title: "Tải bản sao lưu"
           destroy:
-            title: "Xóa bản sao lưu này"
-            confirm: "Bạn muốn hủy bản sao lưu này?"
+            title: "Xóa bản sao lưu"
+            confirm: "Bạn có chắc chắn muốn xóa bản sao lưu này?"
           restore:
-            is_disabled: "Khôi phục đã bị cấm sử dụng trong cấu hình trang."
+            is_disabled: "Khôi phục đã bị vô hiệu hóa trong cài đặt trang web."
             label: "Khôi phục"
-            title: "Khôi phục lại sao lưu này"
-            confirm: "Bạn có chắc chắn muón phục hồi bản sao lưu này?"
+            title: "Khôi phục sao lưu"
+            confirm: "Bạn có chắc chắn muốn khôi phục bản sao lưu này?"
           rollback:
-            label: "Rollback"
-            title: "Đưa csdl về trạng thái làm việc trước"
-            confirm: "Bạn có chắc chắn muốn phục hồi csdl về trạng thái làm việc trước?"
+            label: "Phục hồi"
+            title: "Phục hồi CSDL về trạng thái làm việc trước"
+            confirm: "Bạn có chắc chắn muốn phục hồi CSDL về trạng thái làm việc trước?"
+            
       export_csv:
-        user_archive_confirm: "Bạn có chắc chắn muốn download các bài viết của mình?"
-        success: "Export đang được khởi tạo, bạn sẽ nhận được tin nhắn thông báo khi quá trình hoàn tất."
-        failed: "Xuất lỗi. Vui lòng kiểm tra log."
-        rate_limit_error: "Bài viết có thể tải về 1 lần mỗi này, vui lòng thử lại vào ngày mai."
-        button_text: "Xuất"
+        user_archive_confirm: "Bạn có chắc chắn muốn tải về các bài viết của mình?"
+        success: "Export ra đã được khởi tạo, bạn sẽ được thông báo khi quá trình hoàn tất."
+        failed: "Export ra thất bại. Vui lòng kiểm tra log."
+        rate_limit_error: "Bài viết được tải về một lần mỗi ngày, hãy thử lại vào ngày mai."
+        button_text: "Export"
         button_title:
-          user: "Xuất danh sách người dùng đầy đủ với định dạng CSV."
-          staff_action: "Xuất đầy đủ log hành động của nhân viên với định dạng CSV."
-          screened_email: "Export danh sách email theo định dạng CSV."
-          screened_ip: "Export danh sách IP theo định dạng CSV."
-          screened_url: "Export danh sách URL theo định dạng CSV."
+          user: "Export ra danh sách người dùng đầy đủ ở định dạng CSV."
+          staff_action: "Export ra log hành động của nhân viên đầy đủ ở định dạng CSV."
+          screened_email: "Export ra danh sách email đầy đủ ở định dạng CSV."
+          screened_ip: "Export ra danh sách IP đầy đủ ở định dạng CSV."
+          screened_url: "Export ra danh sách URL đầy đủ ở định dạng CSV."
       export_json:
-        button_text: "Xuất"
+        button_text: "Export"
+        
       invite:
-        button_text: "Gửi Lời Mời"
-        button_title: "Gửi Lời Mời"
+        button_text: "Gửi lời mời"
+        button_title: "Gửi lời mời"
+      
       customize:
-        title: "Tùy biến"
-        long_title: "Tùy biến trang"
+        title: "Tùy chỉnh"
+        long_title: "Tùy chỉnh trang"
         css: "CSS"
         header: "Header"
-        top: "Trên"
+        top: "Top"
         footer: "Footer"
         embedded_css: "Nhúng CSS"
         head_tag:
           text: "</head>"
-          title: "HTML sẻ thêm trước thẻ </head>"
+          title: "HTML sẽ được chèn vào trước </head> tag"
         body_tag:
           text: "</body>"
-          title: "HTML sẽ thêm trước thẻ </body>"
+          title: "HTML sẽ được chèn vào trước </body> tag"
         override_default: "Không bao gồm style sheet chuẩn"
-        enabled: "Cho phép?"
-        preview: "xem trước"
-        undo_preview: "xóa xem trước"
-        rescue_preview: "default style"
+        enabled: "Kích hoạt?"
+        preview: "Xem trước"
+        undo_preview: "Xóa xem trước"
+        rescue_preview: "style mặc định"
         explain_preview: "Xem website với stylesheet tùy chỉnh"
         explain_undo_preview: "Quay trở lại với kiểu tùy chỉnh stylesheet hiện tại"
         explain_rescue_preview: "Xem website với stylesheet mặc định"
-        save: "Lưu"
+        save: "Lưu lại"
         new: "Mới"
         new_style: "Style mới"
-        import: "Nhập"
-        import_title: "Chọn một file hoặc paste chữ."
-        delete: "Xóa"
-        delete_confirm: "Xóa tùy biến này?"
-        about: "Chỉnh sửa CSS  và HTML header trên trang. Thêm tùy biến để bắt đầu."
+        import: "Import"
+        import_title: "Chọn một file hoặc dán văn bản."
+        delete: "Xóa bỏ"
+        delete_confirm: "Xóa tùy chỉnh này?"
+        about: "Chỉnh sửa CSS và HTML header trên trang. Thêm tùy biến để bắt đầu."
         color: "Màu sắc"
         opacity: "Độ mờ"
         copy: "Sao chép"
         email_templates:
-          title: "Email Templates"
+          title: "Mẫu Email"
           subject: "Chủ đề"
-          multiple_subjects: "Email template này có nhiều chủ đề."
+          multiple_subjects: "Mẫu Email này có nhiều chủ đề."
           body: "Nội dung"
-          none_selected: "Chọn email template để bắt đầu chỉnh sửa."
-          revert: "Hoàn nguyên thay đổi"
-          revert_confirm: "Bạn có chắc chắn muốn hoàn nguyên các thay đổi?"
+          none_selected: "Chọn mẫu email để bắt đầu chỉnh sửa."
+          revert: "Phục hồi thay đổi"
+          revert_confirm: "Bạn có chắc chắn muốn phục hồi các thay đổi?"
+          
         css_html:
           title: "CSS/HTML"
-          long_title: "Tùy biến CSS và HTML"
+          long_title: "Tùy chỉnh CSS và HTML"
         colors:
           title: "Màu sắc"
           long_title: "Bảng màu"
-          about: "Chỉnh "
-          new_name: "Bản màu mới"
+          about: "Sửa đổi màu sắc trên trang web mà không cần viết CSS. Thêm một scheme để bắt đầu."
+          new_name: "Bảng màu mới"
           copy_name_prefix: "Bản sao của"
           delete_confirm: "Xóa bảng màu này?"
-          undo: "hoàn tác"
-          undo_title: "Hoàn tác thay đổi của bạn vơ"
-          revert: "phục hồi"
-          revert_title: "Thiết lập lại màu về mặc định của Discourse."
+          undo: "hủy bỏ"
+          undo_title: "Hủy bỏ thay đổi với màu sắc này kể từ lần cuối nó được lưu."
+          revert: "Phục hồi"
+          revert_title: "Thiết lập lại màu mặc định của Disrum."
           primary:
             name: 'chính'
-            description: 'Hầu hết chữ, biểu tượng, và viền.'
+            description: 'Hầu hết chữ, icon, và viền.'
           secondary:
             name: 'cấp hai'
-            description: 'Màu nền, và màu chữ của một vài nút.'
+            description: 'Màu nền chính, và màu sắc text của một số button.'
           tertiary:
             name: 'cấp ba'
-            description: 'Liên kết, một và nút, thông báo, và màu nhấn.'
+            description: 'Liên kết, một số button, thông báo, và màu nhấn.'
           quaternary:
             name: "chia bốn"
             description: "Liên kết điều hướng."
           header_background:
             name: "nền header"
-            description: "Màu nền header của trang."
+            description: "Màu nền header của trang web."
           header_primary:
             name: "header chính"
             description: "Chữ và icon trong header của website."
           highlight:
             name: 'highlight'
-            description: 'Màu nền của các thành phần được đánh dấu trên trang, như là bài viết và chủ đề.'
+            description: 'Màu nền của các yếu tố nổi bật trên trang web, chẳng hạn như bài viết và chủ đề.'
           danger:
             name: 'nguy hiểm'
             description: 'Màu đánh dấu cho thao tác xóa bài viết và chủ đề.'
@@ -2613,18 +2712,20 @@ vi:
           love:
             name: 'đáng yêu'
             description: "Màu của nút like"
+      
       email:
-        title: "Emails"
-        settings: "Cấu hình"
-        templates: "Templates"
-        preview_digest: "Xem trước tập san"
+        title: "Email"
+        settings: "Cài đặt"
+        templates: "Mẫu"
+        preview_digest: "Xem trước Digest"
         sending_test: "Đang gửi Email test..."
         error: "<b>LỖI</b> - %{server_error}"
         test_error: "Có vấn đề khi gửi email test. Vui lòng kiểm tra lại cấu hình email của bạn, chắc chắn host mail của bạn không bị khóa kết nối, và thử lại."
         sent: "Đã gửi"
         skipped: "Đã bỏ qua"
+        bounced: "Bị trả về"
         received: "Đã nhận"
-        rejected: "Từ chối"
+        rejected: "Đã từ chối"
         sent_at: "Đã gửi vào lúc"
         time: "Thời gian"
         user: "Thành viên"
@@ -2634,25 +2735,25 @@ vi:
         send_test: "Gửi Email test"
         sent_test: "đã gửi!"
         delivery_method: "Phương thức chuyển giao"
-        preview_digest_desc: "Xem trước nội dung của tập san email đã gửi cho các thành viên không hoạt động."
+        preview_digest_desc: "Xem trước nội dung digest email đã gửi cho các thành viên không hoạt động."
         refresh: "Tải lại"
         format: "Định dạng"
         html: "html"
         text: "text"
-        last_seen_user: "Người dùng cuối:"
-        reply_key: "Key phản hồi"
-        skipped_reason: "Bỏ qua Lý do"
+        last_seen_user: "Người dùng xem lần cuối:"
+        reply_key: "Key trả lời"
+        skipped_reason: "Bỏ qua lý do"
         incoming_emails:
           from_address: "Từ"
-          to_addresses: "Tới"
+          to_addresses: "Đến"
           cc_addresses: "Cc"
           subject: "Chủ đề"
           error: "Lỗi"
-          none: "Không tìm tháy các email đến."
+          none: "Không tìm thấy email đến."
           modal:
-            title: "Chi Tiết Email Đến"
+            title: "Chi tiết Email đến"
             error: "Lỗi"
-            headers: "Tên"
+            headers: "Header"
             subject: "Tiêu đề"
             body: "Nội dung"
             rejection_message: "Từ Chối Thư"
@@ -2666,31 +2767,32 @@ vi:
           none: "Không tìm thấy log."
           filters:
             title: "Lọc"
-            user_placeholder: "tên người dùng"
+            user_placeholder: "tên đăng nhập"
             address_placeholder: "name@example.com"
-            type_placeholder: "tập san, đăng ký..."
-            reply_key_placeholder: "key phản hồi"
+            type_placeholder: "digest, đăng ký..."
+            reply_key_placeholder: "key trả lời"
             skipped_reason_placeholder: "lý do"
+      
       logs:
         title: "Log"
-        action: "Hành động"
+        action: "Hoạt động"
         created_at: "Đã tạo"
-        last_match_at: "Khớp lần cuối"
-        match_count: "Khớp"
+        last_match_at: "Đã khớp lần cuối"
+        match_count: "Trùng khớp"
         ip_address: "IP"
         topic_id: "ID Chủ đề"
         post_id: "ID Bài viết"
         category_id: "ID Danh mục"
-        delete: 'Xoá'
-        edit: 'Sửa'
-        save: 'Lưu'
+        delete: 'Xoá bỏ'
+        edit: 'Chỉnh sửa'
+        save: 'Lưu lại'
         screened_actions:
-          block: "khóa"
+          block: "chặn"
           do_nothing: "không làm gì"
         staff_actions:
-          title: "Staff Actions"
-          instructions: "Click username và thực hiện lọc danh sách, click ảnh hồ sơ để đến trang thành viên."
-          clear_filters: "Hiện thị mọi thứ"
+          title: "Hoạt động nhân viên"
+          instructions: "Click tên đăng nhập và hoạt động để lọc danh sách, click ảnh đại diện để đến trang thành viên."
+          clear_filters: "Hiển thị mọi thứ"
           staff_user: "Tài khoản Nhân viên"
           target_user: "Target User"
           subject: "Chủ đề"
@@ -2699,61 +2801,64 @@ vi:
           details: "Chi tiết"
           previous_value: "Trước"
           new_value: "Mới"
-          diff: "So sánh"
+          diff: "Diff"
           show: "Hiển thị"
           modal_title: "Chi tiết"
           no_previous: "Không có giá trị trước đó."
           deleted: "Không có giá trị mới, bản ghi đã được xóa."
           actions:
             delete_user: "xóa người dùng"
-            change_trust_level: "thay đổi cấp tin cậy"
-            change_username: "thay đổi username"
-            change_site_setting: "thay đổi cấu hình trang"
-            change_site_customization: "thay đổi tùy biến trang"
-            delete_site_customization: "xóa tùy biến trang"
-            change_site_text: "thay đổi chữ trên website"
-            suspend_user: "tạm khóa thành viên"
-            unsuspend_user: "hủy tạm khóa thành viên"
+            change_trust_level: "thay đổi cấp độ tin tưởng"
+            change_username: "thay đổi tên đăng nhập"
+            change_site_setting: "thay đổi cài đặt website"
+            change_site_customization: "thay đổi tùy chỉnh website"
+            delete_site_customization: "xóa tùy chỉnh website"
+            change_site_text: "thay đổi text trên website"
+            suspend_user: "suspend thành viên"
+            unsuspend_user: "hủy suspend thành viên"
             grant_badge: "cấp huy hiệu"
-            revoke_badge: "hủy bỏ huy hiệu"
+            revoke_badge: "thu hồi huy hiệu"
             check_email: "kiểm tra email"
             delete_topic: "xóa chủ đề"
             delete_post: "xóa bài viết"
             impersonate: "mạo danh"
             anonymize_user: "thành viên ẩn danh"
-            roll_up: "cuộn lên khối IP"
+            roll_up: "roll up IP blocks"
             change_category_settings: "thay đổi cấu hình danh mục"
             delete_category: "xóa danh mục"
             create_category: "tạo danh mục"
-            block_user: "khóa tài khoản"
-            unblock_user: "mở khóa tài khoản"
-            grant_admin: "cấp quản trị"
-            revoke_admin: "hủy bỏ quản trị"
+            block_user: "chặn tài khoản"
+            unblock_user: "bỏ chặn tài khoản"
+            grant_admin: "Cấp admin"
+            revoke_admin: "hủy bỏ admin"
             grant_moderation: "cấp điều hành"
             revoke_moderation: "hủy bỏ điều hành"
             backup_operation: "hoạt động sao lưu"
+            deleted_tag: "đã xóa tag"
+            renamed_tag: "đã đổi tên tag"
+            revoke_email: "hủy bỏ email"           
         screened_emails:
-          title: "Screened Emails"
-          description: "Khi ai đó cố gắng tạo tài khoản mới, các địa chỉ email sau sẽ được kiểm tra và đăng ký sẽ bị chặn, hoặc một số hành động khác được thực hiện."
+          title: "Kiểm tra Email"
+          description: "Khi ai đó cố gắng tạo tài khoản mới, địa chỉ email sẽ được kiểm tra và đăng ký sẽ bị chặn, hoặc một số hành động khác được thực hiện."
           email: "Địa chỉ Email"
           actions:
             allow: "Cho phép"
         screened_urls:
-          title: "Screened URLs"
-          description: "Các URL được liệt kê ở đây được sử dụng trong các bài viết của người dùng đã được xác định là spammer."
+          title: "Kiểm tra URL"
+          description: "Các URL được liệt kê ở đây được sử dụng trong các bài viết của người dùng đã được xác định là người spam."
           url: "URL"
           domain: "Tên miền"
         screened_ips:
-          title: "Screened IPs"
-          description: 'Các địa chỉ IP đã được xem, sử dụng "Cho phép" để tạo danh sách trắng các địa chỉ.'
+          title: "Kiểm tra IP"
+          description: 'Các địa chỉ IP đã được xem xét, sử dụng "Cho phép" để tạo whitelist các địa chỉ IP.'
           delete_confirm: "Bạn có chắc chắn muốn xóa quy tắc cho %{ip_address}?"
           roll_up_confirm: "Bạn có chắc chắn muốn cuộn các địa chỉ IP thông thường vào các mạng con?"
           rolled_up_some_subnets: "Cuộn thành công các IP cấm vào các mạng con: %{subnets}."
           rolled_up_no_subnet: "Không có gì để cuộn lên."
           actions:
-            block: "Khóa"
+            block: "Chặn"
             do_nothing: "Cho phép"
-            allow_admin: "Cho phép Quản trị"
+            allow_admin: "Cho phép admin"
           form:
             label: "Mới:"
             ip_address: "Địa chỉ IP"
@@ -2764,117 +2869,130 @@ vi:
             title: "Tạo mạng con mới các entry cấm nếu có ít nhất 'min_ban_entries_for_roll_up' entry."
         logster:
           title: "Log lỗi"
+          
       impersonate:
         title: "Mạo danh"
-        help: "Sử dụng công cụ này để mạo danh một tài khoản thành viên cho mục đích gỡ lỗi, bạn sẽ phải đăng xuất sau khi hoàn tất."
+        help: "Sử dụng công cụ này để mạo danh một tài khoản cho mục đích sữa lỗi, bạn sẽ phải đăng xuất sau khi hoàn tất."
         not_found: "Không tìm thấy người dùng này."
         invalid: "Xin lỗi, bạn không thể mạo danh tài khoản đó."
+      
       users:
         title: 'Tài khoản'
-        create: 'Thêm tài khoản Quản trị'
+        create: 'Thêm tài khoản admin'
         last_emailed: "Email trước đây"
-        not_found: "Xin lỗi, username không tồn tại trong hệ thống."
-        id_not_found: "Xin lỗi, id người dùng không tồn tại trong hệ thống."
+        not_found: "Rất tiếc, tên đăng nhập không tồn tại trong hệ thống."
+        id_not_found: "Rất tiếc, id người dùng không tồn tại trong hệ thống."
         active: "Kích hoạt"
-        show_emails: "Hiện địa chỉ Email"
+        show_emails: "Hiện Email"
         nav:
           new: "Mới"
           active: "Kích hoạt"
-          pending: "Đang chờ xử lý"
+          pending: "Chờ xử lý"
           staff: 'Nhân viên'
           suspended: 'Đã tạm khóa'
-          blocked: 'Đã khóa'
+          blocked: 'Đã chặn'
           suspect: 'Nghi ngờ'
         approved: "Đã duyệt?"
         approved_selected:
+          one: "duyệt tài khoản"
           other: "duyệt tài khoản ({{count}})"
         reject_selected:
+          one: "từ chối tài khoản"
           other: "từ chối tài khoản ({{count}})"
         titles:
-          active: 'Thành viên kích hoạt'
-          new: 'Thành viên mới'
-          pending: 'Hoãn Xem xét Tài khoản'
-          newuser: 'Tài khoản ở Cấp độ Tin tưởng 0 (Tài khoản mới)'
-          basic: 'Tài khoản ở Cấp độ Tin tưởng 1 (Tài khoản Cơ bản)'
-          member: 'Tài khoản ở Độ tin cậy mức 2 (Member)'
-          regular: 'Tài khoản ở Độ tin cậy mức 3 (Regular)'
-          leader: 'Tài khoản ở Độ tin cậy mức 4 (Leader)'
+          active: 'Tài khoản kích hoạt'
+          new: 'Tài khoản mới'
+          pending: 'Tài khoản chờ xử lý'
+          newuser: 'Tài khoản ở Cấp độ Tin tưởng 0 (New User)'
+          basic: 'Tài khoản ở Cấp độ Tin tưởng 1 (Basic User)'
+          member: 'Tài khoản ở Cấp độ Tin tưởng 2 (Member)'
+          regular: 'Tài khoản ở Cấp độ Tin tưởng 3 (Regular)'
+          leader: 'Tài khoản ở Cấp độ Tin tưởng 4 (Leader)'
           staff: "Nhân viên"
-          admins: 'Tài khoản Quản trị'
+          admins: 'Tài khoản admin'
           moderators: 'Điều hành viên'
-          blocked: 'Tài khoản Khóa'
-          suspended: 'Tài khoản Tạm khóa'
-          suspect: 'Tài khoản đáng ngờ'
+          blocked: 'Tài khoản bị chặn'
+          suspended: 'Tài khoản tạm khóa'
+          suspect: 'Tài khoản nghi ngờ'
         reject_successful:
+          one: "Từ chối thành công 1 tài khoản."
           other: "Từ chối thành công %{count} tài khoản."
         reject_failures:
+          one: "Từ chối thất bại 1 tài khoản."
           other: "Từ chối thất bại %{count} tài khoản."
-        not_verified: "Chưa xác thực"
+        not_verified: "Chưa xác minh"
         check_email:
-          title: "Khám phá email của tài khoản này"
+          title: "Tiết lộ email của tài khoản này"
           text: "Hiển thị"
+      
       user:
-        suspend_failed: "Có gì đó đã sai khi đình chỉ tài khoản này {{error}}"
-        unsuspend_failed: "Có gì đó sai khi gỡ bỏ đình chỉ tài khoản này {{error}}"
-        suspend_duration: "Tài khoản này sẽ bị đình chỉ bao lâu?"
+        suspend_failed: "Có lỗi khi tạm khóa tài khoản này {{error}}"
+        unsuspend_failed: "Có lỗi khi gỡ bỏ tạm khóa tài khoản này {{error}}"
+        suspend_duration: "Tài khoản này sẽ bị tạm khóa bao lâu?"
         suspend_duration_units: "(ngày)"
-        suspend_reason_label: "Tại sao bạn bị đình chỉ? Dòng chữ <b>hiển thị cho tất cả mọi người</b> sẽ hiển thị trên trang hồ sơ tài khoản của người dùng này, và sẽ hiển thị cho thành viên khi họ đăng nhập, hãy viết ngắn."
+        suspend_reason_label: "Tại sao bạn bị tạm khóa? Dòng chữ <b>hiển thị cho tất cả mọi người</b> sẽ hiển thị trên trang profile của người dùng này, và sẽ hiển thị cho thành viên khi họ cố gắng đăng nhập, hãy viết ngắn."
         suspend_reason: "Lý do"
         suspended_by: "Tạm khóa bởi"
         delete_all_posts: "Xóa tất cả bài viết"
+        
+        # keys ending with _MF use message format, see https://meta.discourse.org/t/message-format-support-for-localization/7035 for details
+        delete_all_posts_confirm_MF: "Bạn muốn xóa {POSTS, plural, one {1 bài viết} other {# bài viết}} và {TOPICS, plural, one {1 chủ đề} other {# chủ đề}}. Bạn có chắc không?"
         suspend: "Tạm khóa"
-        unsuspend: "Đã mở khóa"
+        unsuspend: "Bỏ tạm khóa"
         suspended: "Đã tạm khóa?"
-        moderator: "Mod?"
+        moderator: "Người điều hành?"
         admin: "Quản trị?"
-        blocked: "Đã khóa?"
+        blocked: "Đã chặn?"
         staged: "Cấp bậc?"
-        show_admin_profile: "Quản trị"
+        show_admin_profile: "Admin"
         edit_title: "Sửa Tiêu đề"
         save_title: "Lưu Tiêu đề"
         refresh_browsers: "Bắt buộc làm mới trình duyệt"
-        refresh_browsers_message: "Tin nhắn đã gửi cho tất cả người dùng!"
+        refresh_browsers_message: "Tin nhắn đã gửi đến tất cả các người dùng!"
         show_public_profile: "Hiển thị hồ sơ công khai"
         impersonate: 'Mạo danh'
-        ip_lookup: "Tìm kiếm địa chỉ IP"
+        ip_lookup: "IP Lookup"
         log_out: "Đăng xuất"
-        logged_out: "Thành viên đã đăng xuất trên tất cả thiết bị"
-        revoke_admin: 'Thu hồi quản trị'
-        grant_admin: 'Cấp quản trị'
+        logged_out: "Người dùng đã đăng xuất trên tất cả thiết bị"
+        revoke_admin: 'Thu hồi admin'
+        grant_admin: 'Cấp admin'
         revoke_moderation: 'Thu hồi điều hành'
         grant_moderation: 'Cấp điều hành'
-        unblock: 'Mở khóa'
-        block: 'Khóa'
-        reputation: Danh tiếng
-        permissions: Quyền
+        unblock: 'Bỏ chặn'
+        block: 'Chặn'
+        reputation: Uy tín
+        permissions: Quyền hạn
         activity: Hoạt động
-        like_count: Đã like / Nhận
+        like_count: Cho / Nhận Like
         last_100_days: 'trong 100 ngày gần đây'
         private_topics_count: Chủ đề riêng tư
-        posts_read_count: Đọc bài viết
-        post_count: Bài đăng đã được tạo
-        topics_entered: Chủ để đã xem
-        flags_given_count: Đã đánh dấu
-        flags_received_count: Flags Received
-        warnings_received_count: Đã nhận Cảnh báo
-        flags_given_received_count: 'Đã đánh dấu / Nhận'
+        posts_read_count: Đã đọc bài viết
+        post_count: Bài viết đã tạo
+        topics_entered: Chủ đề đã xem
+        flags_given_count: Đã cho Flag
+        flags_received_count: Flag đã nhận
+        warnings_received_count: Đã nhận cảnh báo
+        flags_given_received_count: 'Cho / Nhận Flag'
         approve: 'Duyệt'
         approved_by: "duyệt  bởi"
-        approve_success: "Thành viên được duyệt và đã gửi email hướng đẫn kích hoạt."
-        approve_bulk_success: "Thành công! Tất cả thành viên đã chọn được duyệt và thông báo."
+        approve_success: "Tài khoản đã được duyệt và đã gửi email hướng đẫn kích hoạt."
+        approve_bulk_success: "Thành công! Tất cả tài khoản đã được được duyệt và thông báo."
         time_read: "Thời gian đọc"
-        anonymize: "Tài khoản Nặc danh"
-        anonymize_confirm: "Bạn CHĂC CHẮN muốn xóa tài khoản nặc danh này? Nó sẽ thay đổi tên đăng nhập và email, và xóa tất cả thông tin trong hồ sơ."
+        anonymize: "Tài khoản nặc danh"
+        anonymize_confirm: "Bạn chắc chắn muốn xóa tài khoản nặc danh này? Nó sẽ thay đổi tên đăng nhập và email, và thiết lập lại tất cả thông tin trong hồ sơ."
         anonymize_yes: "Đồng ý, đây là tài khoản nặc danh."
-        anonymize_failed: "Có vấn đề với những tài khoản nặc danh."
+        anonymize_failed: "Có vấn đề với tài khoản nặc danh."
         delete: "Xóa thành viên"
-        delete_forbidden_because_staff: "Admin và mod không thể xóa."
-        delete_posts_forbidden_because_staff: "Không thể xóa tất cả bài viết của quản trị và điều hành viên."
+        delete_forbidden_because_staff: "Admin và điều hành viên không thể xóa."
+        delete_posts_forbidden_because_staff: "Không thể xóa tất cả bài viết của admin và điều hành viên."
         delete_forbidden:
+          one: "Users can't be deleted if they have posts. Delete all posts before trying to delete a user. (Posts older than %{count} day old can't be deleted.)"
           other: "Không thể xóa tài khoản nếu họ có bài viết, hãy xóa tất cả các bài viết trước khi xóa tài khoản. (Không thể xóa các bài viết cũ hơn %{count} ngày.)"
         cant_delete_all_posts:
+          one: "Can't delete all posts. Some posts are older than %{count} day old. (The delete_user_max_post_age setting.)"
           other: "Không thể xóa tất cả các bài viết, một số bài viết cũ hơn %{count} ngày. (Thiết lập delete_user_max_post_age.)"
         cant_delete_all_too_many_posts:
+          one: "Can't delete all posts because the user has more than 1 post. (delete_all_posts_max)"
           other: "Không thể xóa tất cả các bài viết do tài khoản có hơn %{count} bài viết. (delete_all_posts_max)"
         delete_confirm: "Bạn CHẮC CHẮN muốn xóa thành viên này? Nó là vĩnh viễn!"
         delete_and_block: "Xóa và <b>khóa</b> email này và địa chỉ IP"
