@@ -4,12 +4,14 @@ Day Laters
 2100: https://disrum.com/faq/#browser
 Check Redirect www to non-www
 
-2988
+server
 https://github.com/discourse/discourse/blob/master/config/locales/client.en.yml
 http://newmaterial.trydiscourse.com
 https://meta.discourse.org/t/material-design-stock-theme/47142
 
 
-chưa dịch: 
+chưa dịch Client: 
 2804: diff: "Diff"
 2826: roll_up: "roll up IP blocks"
+3021: bounce_score_explanation:
+3246: embed_title_scrubber:
