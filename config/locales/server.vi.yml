@@ -261,77 +261,86 @@ vi:
 
       - Sử dụng từ ngữ phổ biến để người khác dễ tìm thấy chủ đề của bạn. Để nhóm chủ đề của bạn với các chủ đề liên quan khác, hãy chọn chuyên mục cho chủ đề của mình.
 
-      Để biết thêm, [xem hướng dẫn](/guidelines). Bảng điều khiển này sẽ chỉ xuất hiện vào lần đầu %{education_posts_text}.
+      Để biết thêm, [xem hướng dẫn](/guidelines). Bảng điều khiển này chỉ xuất hiện một lần %{education_posts_text}.
     
     'new-reply': |
       Chào mừng bạn đến với %{site_name} &mdash; **cám ơn vì đóng góp!**
 
-      - Trả lời của bạn có làm cuộc thảo tích cực hơn?
+      - Trả lời của bạn có làm cuộc thảo luận tích cực hơn?
 
-      - Hãy tôn trọng với các thành viên khác trong cộng đồng.
+      - Hãy tử tế với các thành viên khác trong cộng đồng.
 
-      - Lời phê bình mang tính đóng góp cũng được chào đón, nhưng bạn nên phê bình *ý tưởng* chứ không phải con người.
+      - Lời phê bình mang tính đóng góp cũng được chào đón, nên phê bình *ý tưởng* chứ không phải thành viên.
 
-      [Đọc hướng dẫn cộng đồng](/guidelines) để có thêm thông tin. Bảng này chỉ xuất hiện cho bài viết đầu tiên của bạn %{education_posts_text}.
+      Để biết thêm, [xem hướng dẫn](/guidelines). Bảng điều khiển này chỉ xuất hiện một lần %{education_posts_text}.
+    
     avatar: |
-      ### How about a picture for your account?
+      ### Thêm Avatar cho tài khoản của bạn?
 
-      You've posted a few topics and replies, but your profile picture isn't as unique as you are -- it's just a letter.
+      Bạn đã trả lời và đăng một vài chủ đề, nhưng ảnh profile của bạn chưa cập nhật -- đây chỉ là tin nhắn.
 
-      Have you considered **[visiting your user profile](%{profile_path})** and uploading a picture that represents you?
+      Bạn đã xem **[truy cập vào profile của bạn](%{profile_path})** và tải lên ảnh đại diện của bạn?
 
-      It's easier to follow discussions and find interesting people in conversations when everyone has a unique profile picture!
+      Dễ dàng theo dõi các cuộc thảo luận và tìm những người thú vị trong cuộc trò chuyện khi mọi người đều có ảnh đại diện độc đáo!
+      
     sequential_replies: |
-      ### Xem xét việc trả lời nhiều bài viết cùng lúc
+      ### Xem xét trả lời nhiều bài viết cùng lúc
 
-      Thay vì trả lời nhiều tuần tự đến từng chủ đề, xin vui lòng xem xét một bài trả lời duy nhất mà bao gồm các trích dẫn từ bài viết trước hoặc dùng tham chiếu @name.
+      Thay vì trả lời nhiều tuần tự đến từng chủ đề, hãy xem xét một bài trả lời duy nhất mà bao gồm các trích dẫn từ bài viết trước hoặc dùng tham chiếu @name.
 
-      Bạn có thể sửa bài trả lời trước đó của bạn để thêm một trích dẫn bằng cách bôi đen và nhấn chọn nút <b>quote reply</b> vừa xuất hiện.
+      Bạn có thể sửa bài trả lời trước đó của bạn để thêm một trích dẫn bằng cách bôi đen và nhấn chọn nút <b>trả lời trích dẫn</b> vừa xuất hiện.
 
       Sẽ dễ dàng hơn cho tất cả mọi người để đọc chủ đề mà có ít câu trả lời sâu với nhiều cấp, trả lời cá nhân
+    
     dominating_topic: |
       ### Hãy để người khác tham gia vào cuộc thảo luận
 
-      Chủ đề này rõ ràng là quan trọng với bạn & ndash; bạn đã đăng nhiều hơn% %{percent}% của các câu trả lời tại đây.
+      Chủ đề này rõ ràng là quan trọng với bạn &ndash; bạn đã đăng nhiều hơn %{percent}% của các câu trả lời tại đây.
 
-      Bạn có chắc chắn bạn đang cung cấp đủ thời gian cho những người khác để chia sẻ quan điểm của mình?
+      Bạn có chắc chắn cung cấp đủ thời gian cho những người khác để chia sẻ quan điểm của mình?
+    
     too_many_replies: |
       ### Bạn đã đạt đến giới hạn trả lời cho chủ đề này
 
-      Chúng tôi xin lỗi, nhưng người dùng mới bị giới hạn %{newuser_max_replies_per_topic} trả lời trong cùng một chủ đề.
+      Chúng tôi rất tiếc, nhưng người dùng mới bị giới hạn %{newuser_max_replies_per_topic} trả lời trong cùng một chủ đề.
 
-      Thay vì thêm một câu trả lời khác, xin vui lòng xem xét chỉnh sửa trả lời trước đó của bạn, hoặc truy cập vào các chủ đề khác.
+      Thay vì thêm trả lời khác, xin vui lòng xem xét chỉnh sửa trả lời trước đó của bạn, hoặc truy cập vào các chủ đề khác.
+    
     reviving_old_topic: |
       ### Xem lại chủ đề này?
 
-      Câu trả lời cuối cùng cho chủ đề này đã hơn hơn %{days} ngày. Trả lời của bạn sẽ đẩy chủ đề đó lên đầu danh sách và thông báo cho bất cứ ai liên quan đến cuộc thảo luận.
+      Trả lời cuối cùng cho chủ đề này đã hơn hơn %{days} ngày. Trả lời của bạn sẽ đẩy chủ đề đó lên đầu danh sách và thông báo cho bất cứ ai liên quan đến cuộc thảo luận.
 
       Bạn có chắc chắn bạn muốn tiếp tục cuộc trò chuyện cũ này?
+      
   activerecord:
     attributes:
       category:
-        name: "Tên chuyên mục"
+        name: "Tên danh mục"
       topic:
         title: 'Tiêu đề'
       post:
-        raw: "Thân"
+        raw: "Body"
       user_profile:
-        bio_raw: "GIới thiệu bản thân"
+        bio_raw: "Giới thiệu bản thân"
+      user:
+        ip_address: ""
     errors:
+      <<: *errors
       models:
         topic:
           attributes:
             base:
-              warning_requires_pm: "Bạn chỉ có thể đính kèm cảnh báo qua tin nhắn cá nhân"
-              too_many_users: "Bạn chỉ có thể gửi một cảnh báo tới một người dùng mỗi lần."
-              cant_send_pm: "Xin lỗi, bạn không thể gửi tin nhắn tới thành viên này"
-              no_user_selected: "Bạn phải chọn một thành viên phù hợp."
+              warning_requires_pm: "Bạn chỉ có thể đính kèm cảnh báo qua tin nhắn cá nhân."
+              too_many_users: "Bạn chỉ có thể gửi cảnh báo tới một thành viên mỗi lần."
+              cant_send_pm: "Rất tiếc, bạn không thể gửi tin nhắn tới thành viên này."
+              no_user_selected: "Bạn phải chọn một thành viên hợp lệ."
         user:
           attributes:
             password:
-              common: "là một trong 10000 mật khẩu được sử dụng nhiều nhất. Vui lòng sử dụng một mật khẩu an toàn hơn."
-              same_as_username: "giống với tên đăng nhập của bạn. Vui lòng sử dụng mật khẩu bảo mật hơn."
-              same_as_email: "giống với email của bạn. Vui lòng sử dụng mật khẩu bảo mật hơn"
+              common: "là một trong 10000 mật khẩu phổ biến nhất. Hãy sử dụng một mật khẩu an toàn hơn."
+              same_as_username: "giống với tên đăng nhập của bạn. Hãy sử dụng một mật khẩu an toàn hơn."
+              same_as_email: "giống với email của bạn. Hãy sử dụng một mật khẩu an toàn hơn."
             ip_address:
               signup_not_allowed: "Đăng ký không cho phép tài khoản này"
         color_scheme_color:
