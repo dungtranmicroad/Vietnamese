@@ -405,7 +405,7 @@ vi:
       self_parent: "Mẹ của danh mục con không thể là chính nó"
       depth: "Bạn không thể để một danh mục con trong một danh mục con khác."
       invalid_email_in: "'%{email}' không phải là email hợp lệ."
-      email_al ready_used_in_group: "'%{email}' đã được sử dụng trong nhóm '%{group_name}'."
+      email_al�ready_used_in_group: "'%{email}' đã được sử dụng trong nhóm '%{group_name}'."
       email_already_used_in_category: "'%{email}' đã được sử dụng trong danh mục '%{category_name}'."
     cannot_delete:
       uncategorized: "Không thể xoá mục Chưa phân loại"
@@ -426,99 +426,131 @@ vi:
       title: "thường xuyên"
     leader:
       title: "người đứng đầu"
-    change_failed_explanation: "Bạn đã cố để giảm hạng %{user_name} xuống '%{new_trust_level}'. Tuy nhiên cấp độ tin tưởng hiện tại của họ đã là '%{current_trust_level}'. %{user_name} sẽ được giữ lại ở cấp độ '%{current_trust_level}' - nếu bạn muốn giảm hạng thành viên, trước tiên hãy khóa cấp độ tin cậy"
+    change_failed_explanation: "Bạn cố để giảm hạng %{user_name} xuống '%{new_trust_level}'. Tuy nhiên cấp độ tin tưởng hiện tại của họ là '%{current_trust_level}'. %{user_name} sẽ được giữ lại cấp độ '%{current_trust_level}' - nếu bạn muốn giảm hạng thành viên, trước tiên hãy khóa cấp độ tin cậy"
+  
   
   rate_limiter:
-    slow_down: "Hành động này đã được thực hiện quá nhiều lần. Bạn vui lòng thử lại sau."
-    too_many_requests: "Hành động bạn vừa thực hiện bị giới hạn theo ngày. Hãy chờ %{time_left} và thử lại."
+    slow_down: "Bạn đã thực hiện hành động này quá nhiều lần, hãy thử lại sau."
+    too_many_requests: "Hành động bạn vừa thực hiện bị giới hạn theo ngày. Xin hãy chờ %{time_left} và thử lại."
     by_type:
-      first_day_replies_per_day: "Bạn vừa vượt quá số lần trả lời tối đa trong ngày đầu của thành viên mới. Xin hãy chờ %{time_left} và thử lại sau."
-      first_day_topics_per_day: "Bạn vừa đạt tới số lần mở topic tối đa cho thành viên mới. Xin vui lòng chờ %{time_left} trước khi thử lại."
-      create_topic: "Bạn đang tạo topic quá nhanh. Vui lòng chờ %{time_left} trước khi thử lại."
+      first_day_replies_per_day: "Bạn vừa vượt quá số lần trả lời tối đa trong ngày đầu là thành viên mới. Xin vui lòng chờ %{time_left} trước khi thử lại."
+      first_day_topics_per_day: "Bạn vừa đạt tối đa số lần tạo chủ đề cho thành viên mới. Xin vui lòng chờ %{time_left} trước khi thử lại."
+      create_topic: "Bạn đang tạo chủ đề quá nhanh. Xin vui lòng chờ %{time_left} trước khi thử lại."
       create_post: "Bạn đang trả lời quá nhanh. Xin vui lòng chờ %{time_left} trước khi thử lại."
-      delete_post: "Bạn đang xóa bài viết quá nhanh, hãy đợi %{time_left} trước khi thử lại."
-      topics_per_day: "Bạn vừa đạt tới số lần mở topic mới tối đa trong ngày hôm nay. Vui lòng chờ %{time_left} trước khi thử lại."
-      pms_per_day: "Bạn vừa đạt tới số lần gửi tin nhắn tối đa trong ngày. Xin vui lòng chờ %{time_left} trước khi thử lại."
-      create_like: "Bạn vừa đạt tới số lần tối đa được Like trong ngày. Xin vui lòng chờ %{time_left} trước khi thử lại."
-      create_bookmark: "Bạn vừa đạt tới số lần đánh dấu tối đa trong ngày. Xin vui lòng chờ %{time_left} trước khi thử lại."
-      edit_post: "Bạn vừa đạt tới số lần chỉnh sửa tối đa trong ngày. Xin vui lòng chờ %{time_left} trước khi thử lại."
-      live_post_counts: "Bạn đang yêu cầu bộ đếm bài viết quá nhanh, hãy đợi %{time_left} trước khi thử lại."
-      unsubscribe_via_email: "Bạn đã vượt quá số lần hủy nhận tin qua email của ngày hôm nay, hãy đợi %{time_left} trước khi thử lại."
-      topic_invitations_per_day: "Bạn đã vượt quá số lần mời chủ đề của ngày hôm nay, hãy đợi %{time_left} trước khi thử lại."
+      delete_post: "Bạn đang xóa bài viết quá nhanh. Xin vui lòng chờ %{time_left} trước khi thử lại."
+      topics_per_day: "Bạn vừa đạt tối đa số lần tạo chủ đề mới trong ngày. Xin vui lòng chờ %{time_left} trước khi thử lại."
+      pms_per_day: "Bạn vừa đạt tối đa số lần gửi tin nhắn trong ngày. Xin vui lòng chờ %{time_left} trước khi thử lại."
+      create_like: "Bạn vừa đạt tối đa số lần Like trong ngày. Xin vui lòng chờ %{time_left} trước khi thử lại."
+      create_bookmark: "Bạn vừa đạt tối đa số lần đánh dấu trong ngày. Xin vui lòng chờ %{time_left} trước khi thử lại."
+      edit_post: "Bạn vừa đạt tối đa số lần chỉnh sửa trong ngày. Xin vui lòng chờ %{time_left} trước khi thử lại."
+      live_post_counts: "Bạn đang yêu cầu bộ đếm bài viết quá nhanh. Xin vui lòng chờ %{time_left} trước khi thử lại."
+      unsubscribe_via_email: "Bạn vừa đạt tối đa số lần hủy nhận tin qua email trong ngày. Xin vui lòng chờ %{time_left} trước khi thử lại."
+      topic_invitations_per_day: "Bạn vừa đạt tối đa số lần mời chủ đề của ngày hôm nay. Xin vui lòng chờ %{time_left} trước khi thử lại."
+    
     hours:
+      one: "1 giờ"
       other: "%{count} giờ"
     minutes:
+      one: "1 phút"
       other: "%{count} phút"
     seconds:
+      one: "1 giây"
       other: "%{count} giây"
+  
   datetime:
     distance_in_words:
       half_a_minute: "< 1 phút"
       less_than_x_seconds:
+        one: "< 1 giây"
         other: "< %{count} giây"
       x_seconds:
+        one: "1 giây"
         other: "%{count} giây"
       less_than_x_minutes:
+        one: "< 1 phút"
         other: "< %{count} phút"
       x_minutes:
+        one: "1 phút"
         other: "%{count} phút"
       about_x_hours:
+        one: "1 giờ"
         other: "%{count} giờ"
       x_days:
+        one: "1 ngày"
         other: "%{count} ngày"
       about_x_months:
+        one: "1 tháng"
         other: "%{count} tháng"
       x_months:
+        one: "1 tháng"
         other: "%{count} tháng"
       about_x_years:
+        one: "1 năm"
         other: "%{count} năm"
       over_x_years:
+        one: "> 1 năm"
         other: "> %{count} năm"
       almost_x_years:
+        one: "1 năm"
         other: "%{count} năm"
+    
     distance_in_words_verbose:
-      half_a_minute: "ngay bây giờ"
+      half_a_minute: "vừa xong"
       less_than_x_seconds:
-        other: "ngay bây giờ"
+        one: "vừa xong"
+        other: "vừa xong"
       x_seconds:
+        one: "1 giây trước"
         other: "%{count} giây trước"
       less_than_x_minutes:
-        other: "ít hơn %{count} phút trước"
+        one: "< 1 phút trước"
+        other: "< %{count} phút trước"
       x_minutes:
+        one: "1 phút trước"
         other: "%{count} phút trước"
       about_x_hours:
+        one: "1 giờ trước"
         other: "%{count} giờ trước"
       x_days:
+        one: "1 ngày trước"
         other: "%{count} ngày trước"
       about_x_months:
+        one: "khoảng 1 tháng trước"
         other: "khoảng %{count} tháng trước"
       x_months:
-        other: " %{count} tháng trước"
+        one: "1 tháng trước"
+        other: "%{count} tháng trước"
       about_x_years:
+        one: "khoảng 1 năm trước"
         other: "khoảng %{count} năm trước"
       over_x_years:
+        one: "hơn 1 năm trước"
         other: "hơn %{count} năm trước"
       almost_x_years:
+        one: "gần 1 năm trước"
         other: "gần %{count} năm trước"
+  
   password_reset:
-    no_token: "Xin lỗi, liên kết đổi mật khẩu đã cũ. Chọn \"Đăng nhập\" và sử dụng chức năng \"Quên mật khẩu\" để lấy liên kết mới."
+    no_token: "Rất tiếc, Link đổi mật khẩu đã cũ. Chọn Đăng nhập và sử dụng chức năng 'Quên mật khẩu' để lấy link mới."
     choose_new: "Vui lòng chọn mật khẩu mới"
-    choose: "Bạn phải nhập mật khẩu"
+    choose: "Vui lòng chọn khẩu mới"
     update: 'Cập nhật mật khẩu'
-    save: 'Nhập mật khẩu'
-    title: 'Thiết lập lại mật khẩu'
-    success: "Bạn đã thay đổi mật khẩu thành công và đã được đăng nhập."
+    save: 'Đặt mật khẩu'
+    title: 'Đặt lại mật khẩu'
+    success: "Bạn đã thay đổi mật khẩu thành công và hiện đang đăng nhập."
     success_unapproved: "Bạn đã thay đổi mật khẩu thành công."
     continue: "Tiếp tục đến %{site_name}"
+  
   change_email:
     confirmed: "Email của bạn đã được cập nhật."
     please_continue: "Tiếp tục đến %{site_name}"
-    error: "Có một lỗi khi thay đổi địa chỉ email của bạn. Có lẽ email này đã được sử dụng rồi?"
-    error_staged: "Có lỗi khi thay đổi địa chỉ email của bạn, email đã được người khác sử dụng."
-    already_done: "Xin lỗi, liên kết xác nhận này không còn giá trị. Có lẽ email của bạn đã được thay đổi?"
+    error: "Có lỗi khi thay đổi địa chỉ email. Có thể email này đã được sử dụng?"
+    error_staged: "Có lỗi khi thay đổi địa chỉ email. Email đã được người khác sử dụng."
+    already_done: "Rất tiếc, Link xác nhận này đã không còn hợp lệ. Có thể email của bạn đã được thay đổi?"
     authorizing_old:
       title: "Cám ơn bạn đã xác nhận địa chỉ email."
       description: "Chúng tôi sẽ không gửi email tới địa chỉ mới của bạn để xác nhận."
+  
   activation:
     action: "Nhấn vào đây để kích hoạt tài khoản của bạn"
     already_done: "Xin lỗi, liên kết để xác nhận tài khoản này không còn hợp lệ. Có thể tài khoản của bạn được kích hoạt?"
