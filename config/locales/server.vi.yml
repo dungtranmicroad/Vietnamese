@@ -548,13 +548,13 @@ vi:
     error_staged: "Có lỗi khi thay đổi địa chỉ email. Email đã được người khác sử dụng."
     already_done: "Rất tiếc, Link xác nhận này đã không còn hợp lệ. Có thể email của bạn đã được thay đổi?"
     authorizing_old:
-      title: "Cám ơn bạn đã xác nhận địa chỉ email."
-      description: "Chúng tôi sẽ không gửi email tới địa chỉ mới của bạn để xác nhận."
+      title: "Cám ơn bạn đã xác nhận email."
+      description: "Email đang gửi tới địa chỉ mới của bạn để xác nhận."
   
   activation:
     action: "Nhấn vào đây để kích hoạt tài khoản của bạn"
-    already_done: "Xin lỗi, liên kết để xác nhận tài khoản này không còn hợp lệ. Có thể tài khoản của bạn được kích hoạt?"
-    please_continue: "Tài khoản của bạn đã được xác nhận; bạn sẽ được chuyển đến trang chủ."
+    already_done: "Rất tiếc, Link xác nhận tài khoản này không còn hợp lệ. Có thể tài khoản của bạn được kích hoạt?"
+    please_continue: "Tài khoản của bạn đã được xác nhận, bạn sẽ được chuyển đến Trang chủ."
     continue_button: "Tiếp tục tới %{site_name}"
     welcome_to: "Chào mừng bạn đến với %{site_name}!"
     approval_required: "Một điều hành viên phải duyệt tài khoản của bạn trước khi bạn có thể đăng nhập diễn đàn này. Bạn sẽ nhận được email khi tài khoản của bạn được duyệt!"
