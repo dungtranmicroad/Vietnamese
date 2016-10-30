@@ -558,6 +558,7 @@ vi:
     continue_button: "Tiếp tục tới %{site_name}"
     welcome_to: "Chào mừng bạn đến với %{site_name}!"
     approval_required: "Một điều hành viên phải duyệt tài khoản của bạn trước khi bạn có thể đăng nhập diễn đàn này. Bạn sẽ nhận được email khi tài khoản của bạn được duyệt!"
+    missing_session: "We cannot detect if your account was created, please ensure you have cookies enabled."
   post_action_types:
     off_topic:
       title: 'Không-đúng-chủ-đề'
@@ -597,6 +598,7 @@ vi:
       title: 'Bầu chọn'
       description: 'Bầu cho bài viết này'
       long_form: 'bầu cho bài viết này'
+  
   topic_flag_types:
     spam:
       title: 'Rác'
@@ -612,9 +614,11 @@ vi:
       long_form: 'đã đánh dấu cho điều hành viên xem xét'
       email_title: 'Chủ đề "%{title}" cần được ban điều hành quan tâm'
       email_body: "%{link}\n\n%{message}"
+  
   flagging:
     you_must_edit: '<p>Bài viết của bạn đã được gắn cờ bở cộng đồng. Vui lòng<a href="/my/messages">xem tin nhắn của bạn</a>.</p>'
     user_must_edit: '<p>Bài viết này đã bị đánh dấu bởi cộng đồng và đang được ẩn tạm thời.</p>'
+  
   archetypes:
     regular:
       title: "Chủ đề thường"
@@ -623,11 +627,40 @@ vi:
       message:
         make: "Chủ đề này trở thành một banner. Nó sẽ hiện ở đầu mọi trang tới khi nó được tắt bởi thành viên."
         remove: "Chủ đề này không còn là một banner. Nó sẽ không hiện ở đầu mọi trang nữa."
+  
   unsubscribed:
     title: "Đã hủy đăng ký!"
+    description: "You have been unsubscribed. To change your email settings <a href='%{url}'>visit your user preferences</a>."
+    topic_description: "To re-subscribe to %{link}, use the notification control at the bottom or right of the topic."
+
   unsubscribe:
     title: "Hủy đăng ký"
+    stop_watching_topic: "Stop watching this topic, %{link}"
+    mute_topic: "Mute all notifications for this topic, %{link}"
+    unwatch_category: "Stop watching all topics in %{category}"
+    mailing_list_mode: "Turn off mailing list mode"
+    disable_digest_emails: "Stop sending me summary emails"
+    all: "Don't send me any mail from %{sitename}"
+    different_user_description: "You are currently logged in as a different user than the one we emailed. Please log out, or enter anonymous mode, and try again."
+    not_found_description: "Sorry, we couldn't find this unsubscribe. It's possible the link in your email has expired?"
     log_out: "Đăng Xuất"
+  
+  user_api_key:
+    title: "Authorize application access"
+    authorize: "Authorize"
+    read: "read"
+    read_write: "read/write"
+    description: "\"%{application_name}\" is requesting the following access to your account:"
+    no_trust_level: "Sorry, you do not have the required trust level to access the user API"
+    generic_error: "Sorry, we are unable to issue user API keys, this feature may be disabled by the site admin"
+    scopes:
+      message_bus: "Live updates"
+      notifications: "Read and clear notifications"
+      push: "Push notifications to external services"
+      session_info: "Read user session info"
+      read: "Read all"
+      write: "Write all"
+
   reports:
     visits:
       title: "Các thành viên truy cập"
@@ -711,20 +744,27 @@ vi:
     page_view_anon_reqs:
       title: "Ẩn danh"
       xaxis: "Ngày"
+      yaxis: "Anonymous Pageviews"
     page_view_logged_in_reqs:
       title: "Đã đăng nhập"
       xaxis: "Ngày"
+      yaxis: "Logged In Pageviews"
     page_view_crawler_reqs:
       title: "Thu thập thông tin web"
       xaxis: "Ngày"
+      yaxis: "Web Crawler Pageviews"
     page_view_total_reqs:
       title: "Tổng số"
       xaxis: "Ngày"
       yaxis: "Tổng lượt xem trang"
     page_view_logged_in_mobile_reqs:
+      title: "Logged In Pageviews"
       xaxis: "Ngày"
+      yaxis: "Mobile Logged In Pageviews"
     page_view_anon_mobile_reqs:
+      title: "Anon Pageviews"
       xaxis: "Ngày"
+      yaxis: "Mobile Anon Pageviews"
     http_background_reqs:
       title: "Hình nền"
       xaxis: "Ngày"
@@ -761,6 +801,7 @@ vi:
       title: "Các thành viên truy cập"
       xaxis: "Ngày"
       yaxis: "Số lần truy cập"
+  
   dashboard:
     rails_env_warning: "Máy chủ của bạn đang chạy trong chế độ %{env}."
     host_names_warning: "Cài đặt của bạn config/database.yml đang sử dụng hostname mặc định. Cập nhật lại để sử dụng hostname của bạn"
@@ -776,13 +817,15 @@ vi:
     s3_backup_config_warning: 'Máy chủ được cấu hình để upload các bản sao lưu dữ liệu lên s3, tuy nhiên ít nhất một trong các tùy chỉnh sau đây không được thiết lập: s3_access_key_id, s3_secret_access_key hoặc s3_backup_bucket. Truy cập <a href="/admin/site_settings">Thiết lập Site</a> và  bổ sung các thiết lập đó. <a href="http://meta.discourse.org/t/how-to-set-up-image-uploads-to-s3/7229" target="_blank">Xem bài viết "How to set up image uploads to S3?" để biết thêm chi tiết</a>.'
     image_magick_warning: 'Máy chủ đã cấu hình để tạo hình đại diện nhỏ từ những hình lới, nhưng ImageMagick chưa được cài đặt. Cài ImageMagick sử dụng trình quản lý package yêu thích của bạn hoặc <a href="http://www.imagemagick.org/script/binary-releases.php" target="_blank">tải về phiên bản mới nhất</a>.'
     failing_emails_warning: 'Có %{num_failed_jobs} email jobs thấ bại. Kiểm tra app.yml và chắc chắn rằng cấu hình máy chủ email đúng. <a href="/sidekiq/retries" target="_blank">Xem jobs thất bại ở Sidekiq</a>.'
-    consumer_email_warning: "Trang web của bạn được cài đặt sử dụng Gmail (hoặc một dịch vụ email khác) để gửi email. <a href='http://support.google.com/a/bin/answer.py?hl=en&answer=166852' target='_blank'>Gmail có giới hạn số lượng email bạn có thể gửi</a>. Hãy xem xét sử dụng một dịch vụ email khác như mandrill.com để đảm bảo khả năng vận chuyển tất cả các email."
     subfolder_ends_in_slash: "Thư mục con của bạn được thiết lập không đúng, DISCOURSE_RELATIVE_URL_ROOT phải được kết thúc bằng dấu gạch chéo."
     email_polling_errored_recently:
+      one: "Email polling has generated an error in the past 24 hours. Look at <a href='/logs' target='_blank'>the logs</a> for more details."
       other: "Email đã tạo %{count} lỗi trong 24 giờ qua, xem <a href='/logs' target='_blank'>nhật ký</a> để biết thêm chi tiết."
+    missing_mailgun_api_key: "The server is configured to send emails via mailgun but you haven't provided an API key used the verify the webhook messages."
     bad_favicon_url: "Favicon không tải được, bạn hãy kiểm tra lại favicon_url trong <a href='/admin/site_settings'>Thiết Lập Website</a>."
     poll_pop3_timeout: "Không thể kết nối với POP3 server, sẽ không nhận được email gửi đến. Bạn hãy kiểm tra <a href='/admin/site_settings/category/email'>thiết lập POP3</a> và nhà cung cấp dịch vụ."
     poll_pop3_auth_error: "Không thể kết nối với POP3 server do lỗi chứng thực. Bạn hãy kiểm tra <a href='/admin/site_settings/category/email'>thiết lập POP3</a>."
+  
   site_settings:
     censored_words: "Từ sẽ tự động thay thế bằng &#9632;&#9632;&#9632;&#9632;"
     delete_old_hidden_posts: "Tự động ẩn bất kỳ bài viết ở ẩn hơn 30 ngày."
