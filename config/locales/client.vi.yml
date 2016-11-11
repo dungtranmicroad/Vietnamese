@@ -269,8 +269,8 @@ vi:
       confirm_clear: "Bạn có chắc muốn xóa tất cả các đánh dấu ở chủ đề này?"
       
     topic_count_latest:
-      one: "{{count}} chủ đề mới hoặc đã được cập nhật."
-      other: "{{count}} chủ đề mới hoặc đã được cập nhật."
+      one: "có {{count}} chủ đề mới hoặc mới cập nhật."
+      other: "có {{count}} chủ đề mới hoặc mới cập nhật."
       
     topic_count_unread:
       one: "{{count}} chủ đề chưa đọc."
