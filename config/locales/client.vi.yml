@@ -115,6 +115,12 @@ vi:
         x_days:
           one: "1 ngày trước"
           other: "%{count} ngày trước"
+        x_months:
+          one: "1 tháng trước"
+          other: "%{count} tháng trước"
+        x_years:
+          one: "1 năm trước"
+          other: "%{count} năm trước"
       later:
         x_days:
           one: "1 ngày sau"
@@ -123,7 +129,7 @@ vi:
           one: "1 tháng sau"
           other: "%{count} tháng sau"
         x_years:
-          one: "1 năm sau
+          one: "1 năm sau"
           other: "%{count} năm sau"
       previous_month: 'Tháng Trước'
       next_month: 'Tháng Sau'
