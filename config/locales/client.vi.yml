@@ -117,51 +117,51 @@ vi:
           other: "%{count} ngày trước"
       later:
         x_days:
-          one: "còn 1 ngày"
-          other: "còn %{count} ngày"
+          one: "1 ngày sau"
+          other: "%{count} ngày sau"
         x_months:
-          one: "còn 1 tháng"
-          other: "còn %{count} tháng"
+          one: "1 tháng sau"
+          other: "%{count} tháng sau"
         x_years:
-          one: "còn 1 năm"
-          other: "còn %{count} năm"
+          one: "1 năm sau
+          other: "%{count} năm sau"
       previous_month: 'Tháng Trước'
       next_month: 'Tháng Sau'
     share:
-      topic: 'Chia sẻ chủ đề này'
-      post: 'Bài đăng số %{postNumber}'
-      close: 'Đóng lại'
-      twitter: 'Chia sẻ lên Twitter'
-      facebook: 'Chia sẻ lên Facebook'
-      google+: 'Chia sẻ lên Google+'
-      email: 'Gửi Email cho bạn bè'
+      topic: 'chia sẻ link chủ đề này'
+      post: 'bài #%{postNumber}'
+      close: 'đóng lại'
+      twitter: 'chia sẻ lên Twitter'
+      facebook: 'chia sẻ lên Facebook'
+      google+: 'chia sẻ lên Google+'
+      email: 'gửi Email cho bạn bè'
       
     action_codes:
-      public_topic: "Tạo chủ đề công khai lúc %{when}"
-      private_topic: "Tạo chủ đề riêng tư lúc %{when}"
-      split_topic: "Chia chủ đề này lúc %{when}"
-      invited_user: "Được mời bởi %{who} %{when}"
-      invited_group: "Được mời bởi %{who} %{when}"
-      removed_user: "Loại bỏ bởi %{who} %{when}"
-      removed_group: "Loại bỏ bởi %{who} %{when}"
+      public_topic: "tạo chủ đề công khai lúc %{when}"
+      private_topic: "tạo chủ đề riêng tư lúc %{when}"
+      split_topic: "chia chủ đề này lúc %{when}"
+      invited_user: "được mời bởi %{who} lúc %{when}"
+      invited_group: "được mời bởi %{who} lúc %{when}"
+      removed_user: "loại bỏ bởi %{who} lúc %{when}"
+      removed_group: "loại bỏ bởi %{who} lúc %{when}"
       autoclosed:
-        enabled: 'Đóng lúc %{when}'
-        disabled: 'Mở lúc %{when}'
+        enabled: 'đóng lúc %{when}'
+        disabled: 'mở lúc %{when}'
       closed:
-        enabled: 'Đóng lúc %{when}'
-        disabled: 'Mở lúc %{when}'
+        enabled: 'đóng lúc %{when}'
+        disabled: 'mở lúc %{when}'
       archived:
-        enabled: 'Lưu trữ lúc %{when}'
-        disabled: 'Bỏ lưu trữ lúc %{when}'
+        enabled: 'lưu trữ lúc %{when}'
+        disabled: 'bỏ lưu trữ lúc %{when}'
       pinned:
-        enabled: 'Ghim lúc %{when}'
-        disabled: 'Gỡ bỏ ghim lúc %{when}'
+        enabled: 'ghim lúc %{when}'
+        disabled: 'gỡ bỏ ghim lúc %{when}'
       pinned_globally:
-        enabled: 'Ghim toàn trang lúc %{when}'
-        disabled: 'Gỡ bỏ ghim lúc %{when}'
+        enabled: 'ghim toàn trang lúc %{when}'
+        disabled: 'gỡ bỏ ghim lúc %{when}'
       visible:
-        enabled: 'Đã lưu lúc %{when}'
-        disabled: 'Bỏ lưu lúc %{when}'
+        enabled: 'đã lưu lúc %{when}'
+        disabled: 'bỏ lưu lúc %{when}'
         
     topic_admin_menu: "quản lí chủ đề."
     
@@ -187,8 +187,8 @@ vi:
         sa_east_1: "South America (Sao Paulo)"
         cn_north_1: "China (Beijing)"
         
-    edit: 'Chỉnh sửa tiêu đề và chuyên mục của chủ đề'
-    not_implemented: "Tính năng này chưa được thực hiện, xin lỗi!"
+    edit: 'chỉnh sửa tiêu đề và chuyên mục chủ đề'
+    not_implemented: "Tính năng này chưa được thực hiện, rất tiếc!"
     no_value: "Không"
     yes_value: "Có"
     generic_error: "Rất tiếc, đã có lỗi xảy ra."
@@ -198,24 +198,24 @@ vi:
     age: "Tuổi"
     joined: "Đã tham gia"
     admin_title: "Quản trị"
-    flags_title: "Flag"
+    flags_title: "Báo cáo"
     show_more: "hiện thêm"
-    show_help: "lựa chọn"
-    links: "Liên kết"
+    show_help: "tùy chọn"
+    links: "Link"
     links_lowercase:
-      one: "liên kết"
-      other: "liên kết"
+      one: "Link"
+      other: "Link"
     faq: "FAQ"
     guidelines: "Hướng dẫn"
     privacy_policy: "Chính sách riêng tư"
     privacy: "Riêng tư"
     terms_of_service: "Điều khoản và dịch vụ"
-    mobile_view: "Mobile View"
-    desktop_view: "Desktop View"
+    mobile_view: "Xem Mobile"
+    desktop_view: "Xem Desktop"
     you: "Bạn"
     or: "hoặc"
     now: "ngay bây giờ"
-    read_more: 'đọc thêm'
+    read_more: 'xem thêm'
     more: "Nhiều hơn"
     less: "Ít hơn"
     never: "không bao giờ"
@@ -237,40 +237,40 @@ vi:
       
     about:
       simple_title: "Giới thiệu"
-      title: "Giới thiệu về %{title}"
-      stats: "Thống kê của trang"
+      title: "Giới thiệu %{title}"
+      stats: "Thống kê trang"
       our_admins: "Quản trị viên"
       our_moderators: "Điều hành viên"
       stat:
         all_time: "Từ trước tới nay"
         last_7_days: "7 ngày qua"
         last_30_days: "30 ngày qua"
-      like_count: "Lượt thích"
+      like_count: "Thích"
       topic_count: "Chủ đề"
       post_count: "Bài viết"
       user_count: "Thành viên mới"
-      active_user_count: "Thành viên tích cực"
-      contact: "Liên hệ với chúng tôi"
-      contact_info: "Trong trường hợp quan trọng hoặc khẩn cấp ảnh hưởng đến trang web, xin vui lòng liên hệ với chúng tôi theo địa chỉ %{contact_info}."
+      active_user_count: "Thành viên hoạt động"
+      contact: "Liên hệ chúng tôi"
+      contact_info: "Trong trường hợp quan trọng hoặc khẩn cấp, ảnh hưởng đến trang web, xin vui lòng liên hệ với chúng tôi theo địa chỉ %{contact_info}."
     
     bookmarked:
       title: "Đánh dấu"
       clear_bookmarks: "Xóa đánh dấu"
       help:
         bookmark: "Chọn để đánh đấu bài viết đầu tiên trong chủ đề này"
-        unbookmark: "Chọn để xoá toàn bộ đánh dấu trong chủ đề này"
+        unbookmark: "Chọn để xoá tất cả đánh dấu trong chủ đề này"
         
     bookmarks:
       not_logged_in: "Rất tiếc, bạn phải đăng nhập để đánh dấu bài viết"
       created: "Bạn đã đánh dấu bài viết này"
-      not_bookmarked: "Bạn đã đọc bài viết, nhấp chuột để đánh dấu"
-      last_read: "Đây là bài viết cuối cùng bạn đã đọc, nhấp chuột để đánh dấu"
+      not_bookmarked: "Bạn đã đọc bài viết, click để đánh dấu"
+      last_read: "Đây là bài viết cuối bạn đã đọc, click để đánh dấu"
       remove: "Xóa đánh dấu"
       confirm_clear: "Bạn có chắc muốn xóa tất cả các đánh dấu ở chủ đề này?"
       
     topic_count_latest:
-      one: "có {{count}} chủ đề mới hoặc mới cập nhật."
-      other: "có {{count}} chủ đề mới hoặc mới cập nhật."
+      one: "{{count}} chủ đề mới hoặc mới cập nhật."
+      other: "{{count}} chủ đề mới hoặc mới cập nhật."
       
     topic_count_unread:
       one: "{{count}} chủ đề chưa đọc."
@@ -285,7 +285,7 @@ vi:
     cancel: "hủy"
     
     save: "Lưu thay đổi"
-    saving: "Đang lưu ..."
+    saving: "Đang lưu..."
     saved: "Đã lưu!"
     
     upload: "Tải lên"
@@ -318,10 +318,10 @@ vi:
       reject: 'Từ chối'
       delete_user: 'Xóa tài khoản'
       title: "Cần phê duyệt"
-      none: "Không có bài viết nào để xem xét"
+      none: "Không có bài nào để xem xét"
       edit: "Chỉnh sửa"
       cancel: "Hủy bỏ"
-      view_pending: "xem bài viết đang chờ xử lý"
+      view_pending: "xem bài viết đang pending"
       has_pending_posts:
         one: "Chủ đề này có <b>1</b> bài viết đang chờ duyệt"
         other: "Chủ đề này có <b>{{count}}</b> bài viết đang chờ duyệt"
@@ -357,23 +357,23 @@ vi:
     directory:
       filter_name: "lọc theo username"
       title: "Thành viên"
-      likes_given: "Đưa ra"
+      likes_given: "Đã cho"
       likes_received: "Đã nhận"
       topics_entered: "Đã xem"
-      topics_entered_long: "Đã xem chủ đề"
+      topics_entered_long: "Chủ đề đã xem"
       time_read: "Thời gian đọc"
       topic_count: "Chủ đề"
-      topic_count_long: "Chủ đề đã được tạo"
+      topic_count_long: "Chủ đề đã tạo"
       post_count: "Trả lời"
-      post_count_long: "Trả lời đã được đăng"
+      post_count_long: "Trả lời đã đăng"
       no_results: "Không tìm thấy kết quả."
       days_visited: "Ghé thăm"
       days_visited_long: "Ngày ghé thăm"
       posts_read: "Đọc"
       posts_read_long: "Đọc bài viết"
       total_rows:
-        one: "1 người dùng"
-        other: "%{count} người dùng"
+        one: "1 thành viên"
+        other: "%{count} thành viên"
         
     groups:
       empty:
@@ -384,7 +384,7 @@ vi:
         topics: "Không có chủ đề bởi thành viên trong nhóm."
       add: "Thêm"
       selector_placeholder: "Thêm thành viên"
-      owner: "chủ sở hữu"
+      owner: "người sở hữu"
       visible: "Nhóm được hiển thị cho tất cả người dùng"
       index: "Nhóm"
       title:
@@ -398,9 +398,9 @@ vi:
       alias_levels:
         title: "Ai có thể nhắn tin và @đề cập trong nhóm này?"
         nobody: "Không ai cả"
-        only_admins: "Chỉ quản trị viên"
-        mods_and_admins: "Chỉ có người điều hành và quản trị viên"
-        members_mods_and_admins: "Chỉ có thành viên trong nhóm, người điều hành, và quản trị viên"
+        only_admins: "Quản trị viên"
+        mods_and_admins: "Người điều hành và quản trị viên"
+        members_mods_and_admins: "Thành viên trong nhóm, người điều hành, và quản trị viên"
         everyone: "Mọi người"
       trust_levels:
         title: "Cấp độ tin tưởng tự động tăng cho thành viên khi họ được thêm vào:"
