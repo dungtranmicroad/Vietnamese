@@ -2634,7 +2634,6 @@ vi:
             confirm: "Bạn có chắc chắn muốn phục hồi CSDL về trạng thái làm việc trước?"
             
       export_csv:
-        user_archive_confirm: "Bạn có chắc chắn muốn tải về các bài viết của mình?"
         success: "Export ra đã được khởi tạo, bạn sẽ được thông báo khi quá trình hoàn tất."
         failed: "Export ra thất bại. Vui lòng kiểm tra log."
         rate_limit_error: "Bài viết được tải về một lần mỗi ngày, hãy thử lại vào ngày mai."
