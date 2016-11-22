@@ -40,7 +40,7 @@ vi:
       # Use Moment.js format string: http://momentjs.com/docs/#/displaying/format/
       time: "h:mm a"
       # Use Moment.js format string: http://momentjs.com/docs/#/displaying/format/
-      timeline_date: "MMM YYYY"
+      timeline_date: "MMMM YYYY"
       # Use Moment.js format string: http://momentjs.com/docs/#/displaying/format/
       long_no_year: "MMM D h:mm a"
       # Use Moment.js format string: http://momentjs.com/docs/#/displaying/format/
@@ -67,33 +67,33 @@ vi:
       wrap_ago: "%{date} trước"
       
       tiny:
-        half_a_minute: "< 1m"
+        half_a_minute: "< 1 phút"
         less_than_x_seconds:
-          one: "< 1s"
-          other: "< %{count}s"
+          one: "< 1 giây"
+          other: "< %{count} giây"
         x_seconds:
-          one: "1s"
-          other: "%{count}s"
+          one: "1 giây"
+          other: "%{count} giây"
         x_minutes:
-          one: "1m"
-          other: "%{count}m"
+          one: "1 phút"
+          other: "%{count} phút"
         about_x_hours:
-          one: "1h"
-          other: "%{count}h"
+          one: "1 giờ"
+          other: "%{count} giờ"
         x_days:
-          one: "1d"
-          other: "%{count}d"
+          one: "1 ngày"
+          other: "%{count} ngày"
         about_x_years:
-          one: "1y"
-          other: "%{count}y"
+          one: "1 năm"
+          other: "%{count} năm"
         over_x_years:
-          one: "> 1y"
-          other: "> %{count}y"
+          one: "> 1 năm"
+          other: "> %{count} năm"
         almost_x_years:
-          one: "1y"
-          other: "%{count}y"
-        date_month: "MMM D"
-        date_year: "MMM 'YY"
+          one: "gần 1 năm"
+          other: "gần %{count} năm"
+        date_month: "D MMMM"
+        date_year: "MMMM 'YYYY"
       medium:
         x_minutes:
           one: "1 phút"
@@ -104,7 +104,7 @@ vi:
         x_days:
           one: "1 ngày"
           other: "%{count} ngày"
-        date_year: "MMM D, 'YY"
+        date_year: "D MMMM, 'YYYY"
       medium_with_ago:
         x_minutes:
           one: "1 phút trước"
