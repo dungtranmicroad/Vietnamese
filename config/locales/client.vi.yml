@@ -1996,13 +1996,13 @@ vi:
       locked_and_archived:
         help: "Chủ đề này đã đóng và lưu trữ, không thể trả lời mới và thay đổi"
       unpinned:
-        title: "Hủy ghim"
-        help: "Chủ đề này không còn ghim nữa, nó sẽ hiển thị như thông thường"
+        title: "Bỏ ghim"
+        help: "Chủ đề này đã bỏ ghim, nó sẽ hiển thị như thông thường"
       pinned_globally:
         title: "Ghim toàn trang"
         help: "Chủ đề này được ghim toàn trang, nó sẽ luôn được hiển thị ở trên cùng của trang"
       pinned:
-        title: "Ghim"
+        title: "Đã ghim"
         help: "Chủ đề này đã được ghim, nó sẽ hiển thị trên cùng của danh mục"
       invisible:
         help: "Chủ đề này ẩn, nó sẽ không hiển thị trong danh sách chủ đề, và chỉ có thể truy cập thông qua liên kết trực tiếp"
@@ -2032,8 +2032,8 @@ vi:
     likes_long: "Có {{number}} like trong chủ đề này"
     users: "Người dùng"
     users_lowercase:
-      one: "người dùng"
-      other: "người dùng"
+      one: "thành viên"
+      other: "thành viên"
     category_title: "Danh mục"
     history: "Lịch sử"
     changed_by: "bởi {{author}}"
@@ -2099,7 +2099,7 @@ vi:
         help: "chủ đề mới nhất trong danh mục {{categoryName}}"
       top:
         title: "Top"
-        help: "Chủ đề tích cực nhất trong năm, tháng, tuần, hoặc ngày"
+        help: "chủ đề tích cực nhất trong năm, tháng, tuần, hoặc ngày"
         all:
           title: "Tất cả thời gian"
         yearly:
@@ -2118,9 +2118,9 @@ vi:
         this_month: "Tháng"
         this_week: "Tuần"
         today: "Hôm nay"
-        other_periods: "Xem Top"
+        other_periods: "xem top"
     
-    browser_update: 'Rất tiếc, <a href="https://disrum.com/faq/#browser">trình duyệt của bạn quá cũ để website hoạt động</a>. Hãy <a href="http://browsehappy.com">nâng cấp trình duyệt</a> của bạn.'
+    browser_update: 'Rất tiếc, <a href="https://wee.vn/faq/#browser">trình duyệt của bạn quá cũ để website hoạt động</a>. Hãy <a href="http://browsehappy.com">nâng cấp trình duyệt</a> của bạn.'
     
     permission_types:
       full: "Tạo / Trả lời / Xem"
@@ -2141,7 +2141,7 @@ vi:
         categories: '<b>g</b>, <b>c</b> Danh mục'
         top: '<b>g</b>, <b>t</b> Top'
         bookmarks: '<b>g</b>, <b>b</b> Đánh dấu'
-        profile: '<b>g</b>, <b>p</b> Thông tin cá nhân'
+        profile: '<b>g</b>, <b>p</b> Hồ sơ'
         messages: '<b>g</b>, <b>m</b> Tin nhắn'
       navigation:
         title: 'Điều hướng'
@@ -2177,10 +2177,10 @@ vi:
         bookmark: '<b>b</b> Đánh dấu bài viết'
         edit: '<b>e</b> Chỉnh sửa bài viết'
         delete: '<b>d</b> Xóa bài viết'
-        mark_muted: '<b>m</b>, <b>m</b> Không theo dõi chủ đề'
+        mark_muted: '<b>m</b>, <b>m</b> Im lặng chủ đề'
         mark_regular: '<b>m</b>, <b>r</b> Bình thường (mặc định) chủ đề'
         mark_tracking: '<b>m</b>, <b>t</b> Theo dõi chủ đề'
-        mark_watching: '<b>m</b>, <b>w</b> Luôn theo dõi chủ đề'
+        mark_watching: '<b>m</b>, <b>w</b> Xem chủ đề'
         print: '<b>ctrl</b>+<b>p</b> In chủ đề'
 
     badges:
@@ -2250,19 +2250,19 @@ vi:
 
       notifications:
         watching:
-          title: "Luôn theo dõi"
-          description: "Bạn sẽ luôn theo dõi, được thông báo tất cả chủ đề trong tag này. Và đếm số bài viết chưa đọc, hiện bên cạnh chủ đề"
+          title: "Xem"
+          description: "Bạn sẽ tự động theo dõi, được thông báo tất cả chủ đề với tag này. Và đếm số bài viết chưa đọc, hiện bên cạnh chủ đề"
         watching_first_post:
-          title: "Theo dõi bài viết đầu tiên"
-          description: "Bạn sẽ được thông báo về bài viết đầu tiên trong mỗi chủ đề mới trong tag này."
+          title: "Theo dõi bài đầu tiên"
+          description: "Bạn sẽ được thông báo về bài viết đầu tiên trong mỗi chủ đề mới với tag này."
         tracking:
           title: "Theo dõi"
-          description: "Bạn sẽ luôn theo dõi tất cả chủ đề trong tag này. Đếm số bài viết mới chưa đọc hiện bên cạch chủ đề."
+          description: "Bạn sẽ tự động theo dõi tất cả chủ đề với tag này. Đếm số bài viết mới chưa đọc hiện bên cạch chủ đề."
         regular:
           title: "Bình thường"
           description: "Bạn sẽ được thông báo nếu ai đó đề cập đến @tên bạn hoặc trả lời."
         muted:
-          title: "Không theo dõi"
+          title: "Im lặng"
           description: "Bạn sẽ không nhận được bất kỳ thông báo nào về chủ đề với những tag này."
 
       groups:
@@ -2306,15 +2306,19 @@ vi:
       custom_message_link: "tùy chỉnh tin nhắn"
       custom_message_placeholder: "Nhập tùy chỉnh tin nhắn"
       custom_message_template_forum: "Hi, bạn nên tham gia cộng đồng này!"
-      custom_message_template_topic: "Hi, I nghĩ bạn có thể quan tâm đến chủ đề này!"
-  
+      custom_message_template_topic: "Hi, tôi nghĩ bạn có thể quan tâm đến chủ đề này!"
+   
+    safe_mode:
+      enabled: "Chế độ an toàn đã được bật, để thoát khỏi chế độ an toàn, vui lòng đóng cửa sổ trình duyệt này"
+
+
   # This section is exported to the javascript for i18n in the admin section
   admin_js:
     type_to_filter: "gõ để lọc..."
     
     admin:
-      title: 'Quản trị Disrum'
-      moderator: 'Người điều hành'
+      title: 'Quản trị Wee'
+      moderator: 'Điều hành viên'
       
       dashboard:
         title: "Dashboard"
@@ -2333,7 +2337,7 @@ vi:
         last_checked: "Kiểm tra lần cuối"
         refresh_problems: "Làm mới"
         no_problems: "Không phát hiện vấn đề"
-        moderators: 'Người điều hành:'
+        moderators: 'Điều hành viên:'
         admins: 'Quản trị:'
         blocked: 'Bị chặn:'
         suspended: 'Đã tạm khóa:'
@@ -2392,7 +2396,7 @@ vi:
         delete_post_agree_flag: "Xóa bài viết và Đồng ý với flag"
         delete_post_agree_flag_title: "Xóa bài viết, nếu là bài viết đầu tiên, xóa chủ đề này"
         delete_flag_modal_title: "Xóa và..."
-        delete_spammer: "Xóa người Spam"
+        delete_spammer: "Xóa Spammer"
         delete_spammer_title: "Xóa người dùng này và tất cả bài viết và chủ để của người dùng này."
         disagree_flag_unhide_post: "Không đồng ý (ẩn bài viết)"
         disagree_flag_unhide_post_title: "Loại bỏ bất kỳ flag nào khỏi bài viết này và làm cho bài viết hiển thị trở lại"
@@ -3311,5 +3315,3 @@ vi:
             admin: "Admin"
             moderator: "Người điều hành"
             regular: "Thành viên"
-
-
