@@ -357,8 +357,8 @@ vi:
     directory:
       filter_name: "lọc theo username"
       title: "Thành viên"
-      likes_given: "Đã cho"
-      likes_received: "Đã nhận"
+      likes_given: "Đã"
+      likes_received: "Được"
       topics_entered: "Đã xem"
       topics_entered_long: "Chủ đề đã xem"
       time_read: "Thời gian đọc"
@@ -423,8 +423,8 @@ vi:
           description: "Bạn sẽ không nhận được bất kỳ thông báo nào về chủ đề này."
     
     user_action_groups:
-      '1': "Cho Like"
-      '2': "Nhận Like"
+      '1': "Đã thích"
+      '2': "Được thích"
       '3': "Đánh dấu"
       '4': "Chủ đề"
       '5': "Trả lời"
@@ -691,10 +691,10 @@ vi:
       website: "Website"
       email_settings: "Email"
       like_notification_frequency:
-        title: "Thông báo khi Like"
+        title: "Thông báo khi Thích"
         always: "Luôn luôn"
-        first_time_and_daily: "Like bài đầu tiên và hàng ngày"
-        first_time: "Like bài đầu tiên"
+        first_time_and_daily: "Thích bài đầu tiên và hàng ngày"
+        first_time: "Thích bài đầu tiên"
         never: "Không bao giờ"
       email_previous_replies:
         title: "Bao gồm trả lời trước đó, nằm ở dưới cùng email"
@@ -801,11 +801,11 @@ vi:
           one: "bài viết đã tạo"
           other: "bài viết đã tạo"
         likes_given:
-          one: "<i class='fa fa-heart'></i> cho Like"
-          other: "<i class='fa fa-heart'></i> cho Like"
+          one: "<i class='fa fa-heart'></i> đã Thích"
+          other: "<i class='fa fa-heart'></i> đã Thích"
         likes_received:
-          one: "<i class='fa fa-heart'></i> nhận Like"
-          other: "<i class='fa fa-heart'></i> nhận Like"
+          one: "<i class='fa fa-heart'></i> được Thích"
+          other: "<i class='fa fa-heart'></i> được Thích"
         days_visited:
           one: "ngày ghé thăm"
           other: "ngày ghé thăm"
@@ -826,10 +826,10 @@ vi:
         more_badges: "Xem thêm huy hiệu"
         top_links: "Top link"
         no_links: "Chưa có link."
-        most_liked_by: "Like nhiều nhất bởi"
-        most_liked_users: "Like nhiều nhất"
+        most_liked_by: "Thích nhiều nhất bởi"
+        most_liked_users: "Thích nhiều nhất"
         most_replied_to_users: "Trả lời nhiều nhất đến"
-        no_likes: "Chưa có Like."
+        no_likes: "Chưa có Thích."
 
 
       associated_accounts: "Đăng nhập"
@@ -917,7 +917,7 @@ vi:
       hide_forever: "không, cảm ơn"
       hidden_for_session: "OK, Tôi sẽ hỏi bạn vào ngày mai. Bạn có thể sử dụng chức năng đăng nhập để tạo tài khoản."
       intro: "Hi! :heart_eyes: Bạn có thể tham gia thảo luận bằng cách đăng ký tài khoản (nó miễn phí) hoặc đăng nhập để thảo luận."
-      value_prop: "Khi tạo tài khoản, hệ thống nhớ chính xác những gì bạn đã xem, và sẽ đưa bạn trở lại đúng nơi đã rời đi. Bạn có thể nhận thông báo ở đây hoặc qua email mỗi khi có bài viết mới. Bạn cũng có thể like bài viết để chia sẻ cảm xúc của mình. :heartbeat:"
+      value_prop: "Khi tạo tài khoản, hệ thống nhớ chính xác những gì bạn đã xem, và sẽ đưa bạn trở lại đúng nơi đã rời đi. Bạn có thể nhận thông báo ở đây hoặc qua email mỗi khi có bài viết mới. Bạn cũng có thể Thích bài viết để chia sẻ cảm xúc của mình. :heartbeat:"
     
     summary:
       enabled_description: "Bạn đang xem bản tóm tắt chủ đề này: những bài viết hay nhất được cộng đồng bình chọn."
@@ -1166,7 +1166,7 @@ vi:
         replied: "Trả lời"
         posted: "Đăng bởi"
         edited: "Bài viết được sửa bởi"
-        liked: "Bạn đã Like bài viết"
+        liked: "Bạn đã Thích bài viết"
         private_message: "Tin nhắn riêng từ"
         invited_to_private_message: "Mời tin nhắn riêng từ"
         invited_to_topic: "Mời tham gia chủ đề từ"
@@ -1205,7 +1205,7 @@ vi:
       relevance: "Độ liên quan"
       latest_post: "Bài mới nhất"
       most_viewed: "Xem nhiều nhất"
-      most_liked: "Like nhiều nhất"
+      most_liked: "Thích nhiều nhất"
       select_all: "Chọn tất cả"
       clear_all: "Bỏ chọn tất cả"
       too_short: "Từ khóa tìm kiếm quá ngắn."
@@ -1238,7 +1238,7 @@ vi:
           label: Với Tag
         filters:
           label: Chỉ quay lại chủ đề/bài đăng đó...
-          likes: Tôi đã Like
+          likes: Tôi đã Thích
           posted: Tôi đã đăng trong
           watching: Tôi đang theo dõi
           tracking: Tôi đang theo dấu
@@ -1369,8 +1369,8 @@ vi:
         one: "có 1 bài viết mới trong chủ đề này"
         other: "có {{count}} bài viết mới trong chủ đề này"
       likes:
-        one: "có 1 Like trong chủ đề này"
-        other: "có {{count}} Like trong chủ đề này"
+        one: "có 1 Thích trong chủ đề này"
+        other: "có {{count}} Thích trong chủ đề này"
       back_to_list: "Quay lại danh sách chủ đề"
       options: "Tùy chọn chủ đề"
       show_links: "hiện link trong chủ đề này"
@@ -1662,17 +1662,17 @@ vi:
         one: "{{count}} Trả lời"
         other: "{{count}} Trả lời"
       has_likes:
-        one: "{{count}} Like"
-        other: "{{count}} Like"
+        one: "{{count}} Thích"
+        other: "{{count}} Thích"
       
       has_likes_title:
-        one: "1 người Like bài viết này"
-        other: "{{count}} người Like bài viết này"
+        one: "1 người Thích bài viết này"
+        other: "{{count}} người Thích bài viết này"
       
-      has_likes_title_only_you: "Bạn đã Like bài viết này"
+      has_likes_title_only_you: "Bạn đã Thích bài viết này"
       has_likes_title_you:
-        one: "Bạn và 1 người khác đã Like bài viết này"
-        other: "Bạn và {{count}} người khác đã Like bài viết này"
+        one: "Bạn và 1 người khác đã Thích bài viết này"
+        other: "Bạn và {{count}} người khác đã Thích bài viết này"
       
       errors:
         create: "Rất tiếc, có lỗi khi tạo bài viết. Vui lòng thử lại."
@@ -1701,13 +1701,13 @@ vi:
       archetypes:
         save: 'Lưu tùy chọn'
       
-      few_likes_left: "Cám ơn bạn đã chia sẻ cảm nhận! Bạn chỉ còn lại vài lượt Like cho ngày hôm nay."
+      few_likes_left: "Cám ơn bạn đã chia sẻ cảm nhận! Bạn chỉ còn lại vài lượt Thích cho ngày hôm nay."
       
       controls:
         reply: "bắt đầu soạn trả lời cho bài viết này"
-        like: "like bài viết này"
-        has_liked: "bạn đã Like bài viết này"
-        undo_like: "hủy like"
+        like: "thích bài viết này"
+        has_liked: "bạn đã Thích bài viết này"
+        undo_like: "hủy thích"
         edit: "sửa bài viết này"
         edit_anonymous: "Rất tiếc, bạn cần đăng nhập để chỉnh sửa bài viết này."
         flag: "Flag bài viết này để chú ý hoặc gửi thông báo riêng về nó"
@@ -1740,7 +1740,7 @@ vi:
           spam: "Hủy flag"
           inappropriate: "Hủy flag"
           bookmark: "Hủy đánh dấu"
-          like: "Hủy like"
+          like: "Hủy thích"
           vote: "Hủy bình chọn"
         people:
           off_topic: "Flag là chủ đề đóng"
@@ -1749,7 +1749,7 @@ vi:
           notify_moderators: "đã thông báo với ban quản trị"
           notify_user: "đã gửi tin nhắn"
           bookmark: "đã đánh dấu bài này"
-          like: "đã like bài này"
+          like: "đã thích bài này"
           vote: "đã bầu chọn bài này"
         by_you:
           off_topic: "Bạn flag là chủ đề đóng"
@@ -1758,7 +1758,7 @@ vi:
           notify_moderators: "Bạn flag cho ban quản trị"
           notify_user: "Bạn đã gửi tin nhắn đến người dùng này"
           bookmark: "Bạn đã đánh dấu bài này"
-          like: "Bạn đã like bài này"
+          like: "Bạn đã thích bài này"
           vote: "Bạn đã bầu chọn cho bài này"
         by_you_and_others:
           off_topic:
@@ -1780,8 +1780,8 @@ vi:
             one: "Bạn và 1 người khác đã đánh dấu bài này"
             other: "Bạn và {{count}} người khác đã đánh dấu bài này"
           like:
-            one: "Bạn và 1 người khác đã Like bài này"
-            other: "Bạn và {{count}} người khác đã Like bài vnày"
+            one: "Bạn và 1 người khác đã Thích bài này"
+            other: "Bạn và {{count}} người khác đã Thích bài vnày"
           vote:
             one: "Bạn và 1 người khác đã bầu chọn cho bài này"
             other: "Bạn và {{count}} người khác đã bầu chọn cho bài này"
@@ -1805,8 +1805,8 @@ vi:
             one: "1 người đã đánh dấu bài này"
             other: "{{count}} người đã đánh dấu bài này"
           like:
-            one: "1 người đã Like bài viết này"
-            other: "{count}} người đã Like bài này"
+            one: "1 người đã Thích bài viết này"
+            other: "{count}} người đã Thích bài này"
           vote:
             one: "1 người đã bầu chọn cho bài này"
             other: "{{count}} người đã bầu chọn cho bài này"
@@ -1920,8 +1920,8 @@ vi:
           description: "Bạn sẽ không nhận được bất kỳ thông báo nào về chủ đề trong danh mục này."
         sort_options:
           default: "mặc định"
-          likes: "Like"
-          op_likes: "Like bài viết gốc"
+          likes: "Thích"
+          op_likes: "Thích bài viết gốc"
           views: "Lượt xem"
           posts: "Bài viết"
           activity: "Hoạt động"
@@ -2013,9 +2013,9 @@ vi:
     # keys ending with _MF use message format, see https://meta.discourse.org/t/message-format-support-for-localization/7035 for details
     posts_likes_MF: |
       Chủ đề này có {count, plural, one {1 trả lời} other {# trả lời}} {ratio, select,
-        low {với tỷ lệ like bài viết cao}
-        med {với tỷ lệ like bài viết rất cao}
-        high {với tỷ lệ like bài viết cực kỳ cao}
+        low {với tỷ lệ thích bài viết cao}
+        med {với tỷ lệ thích bài viết rất cao}
+        high {với tỷ lệ thích bài viết cực kỳ cao}
         other {}}      
     original_post: "Bài viết gốc"
     views: "Lượt xem"
@@ -2025,11 +2025,11 @@ vi:
     replies: "Trả lời"
     views_long: "chủ đề đã được xem {{number}} lần"
     activity: "Hoạt động"
-    likes: "Like"
+    likes: "Thích"
     likes_lowercase:
-      one: "like"
-      other: "like"
-    likes_long: "Có {{number}} like trong chủ đề này"
+      one: "thích"
+      other: "thích"
+    likes_long: "Có {{number}} thích trong chủ đề này"
     users: "Người dùng"
     users_lowercase:
       one: "thành viên"
@@ -2172,7 +2172,7 @@ vi:
         reply_topic: '<b>shift</b>+<b>r</b> Trả lời chủ đề'
         reply_post: '<b>r</b> Trả lời bài viết'
         quote_post: '<b>q</b> Trích dẫn bài viết'
-        like: '<b>l</b> Like bài viết'
+        like: '<b>l</b> Thích bài viết'
         flag: '<b>!</b> Flag bài viết'
         bookmark: '<b>b</b> Đánh dấu bài viết'
         edit: '<b>e</b> Chỉnh sửa bài viết'
@@ -2736,7 +2736,7 @@ vi:
             description: 'Sử dụng để chỉ một thao tác đã thành công.'
           love:
             name: 'đáng yêu'
-            description: "Màu của nút like"
+            description: "Màu của nút thích"
       
       email:
         title: "Email"
@@ -2988,7 +2988,7 @@ vi:
         reputation: Uy tín
         permissions: Quyền hạn
         activity: Hoạt động
-        like_count: Cho / Nhận Like
+        like_count: Đã / Được Thích
         last_100_days: 'trong 100 ngày gần đây'
         private_topics_count: Chủ đề riêng tư
         posts_read_count: Đã đọc bài viết
@@ -3071,10 +3071,10 @@ vi:
           posts_read_all_time: "Đã đọc bài viết (tất cả thời gian)"
           flagged_posts: "Đã gắn Flag Bài viết"
           flagged_by_users: "Flag bởi Tài khoản"
-          likes_given: "Đã cho Like"
-          likes_received: "Đã nhận Like"
-          likes_received_days: "Like nhận được: ngày duy nhất"
-          likes_received_users: "Like nhận được: tài khoản duy nhất"
+          likes_given: "Đã Thích"
+          likes_received: "Được Thích"
+          likes_received_days: "Thích nhận được: ngày duy nhất"
+          likes_received_users: "Thích nhận được: tài khoản duy nhất"
           qualifies: "Đủ điều kiện cho cấp độ tin tưởng 3."
           does_not_qualify: "Không đủ điều kiện cho cấp độ tin tưởng 3."
           will_be_promoted: "Sẽ sớm được thăng cấp."
