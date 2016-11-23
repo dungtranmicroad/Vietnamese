@@ -17,11 +17,11 @@
 vi:
   dates:
     # Use Moment.js format string: http://momentjs.com/docs/#/displaying/format/
-    short_date_no_year: "D MMM"
+    short_date_no_year: "DD MMM"
     # Use Moment.js format string: http://momentjs.com/docs/#/displaying/format/
-    short_date: "D MMM, YYYY"
+    short_date: "DD MMM, YYYY"
     # Use Moment.js format string: http://momentjs.com/docs/#/displaying/format/
-    long_date: "MMMM D, YYYY h:mma"
+    long_date: "DD/MM/YYYY | h:mma"
   
   datetime_formats: &datetime_formats
     formats:
@@ -561,12 +561,12 @@ vi:
     missing_session: "Hệ thống không thể tìm ra nếu tài khoản của bạn đã được tạo, vui lòng đảm bảo cookies đã bật."
   post_action_types:
     off_topic:
-      title: 'Chủ đề đóng'
-      description: 'Bài này không liên quan đến cuộc thảo luận hiện tại theo quy định của tiêu đề và bài đầu tiên, và có lẽ nó nên được di chuyển đến những nơi khác.'
+      title: 'Là chủ đề đóng'
+      description: 'Bài này không liên quan đến cuộc thảo luận hiện tại, và nó nên được di chuyển đến nơi khác.'
       long_form: 'flag là chủ đề đóng'
     spam:
-      title: 'Spam'
-      description: 'Bài viết này là một bài quảng cáo. Nó không bổ ích hoặc liên quan tới chủ đề hiện tại, chỉ nhằm mục đích quảng cáo.'
+      title: 'Đây là Spam'
+      description: 'Bài viết này là quảng cáo, không hữu ích và không thích hợp với cộng đồng.'
       long_form: 'đã flag là spam'
       email_title: '"%{title}" đã bị flag là spam'
       email_body: "%{link}\n\n%{message}"
@@ -601,7 +601,7 @@ vi:
   
   topic_flag_types:
     spam:
-      title: 'Spam'
+      title: 'Đây là Spam'
       description: 'Chủ đề này là quảng cáo, không hữu ích và không thích hợp với cộng đồng.'
       long_form: 'đã flag là spam'
     inappropriate:
@@ -610,7 +610,7 @@ vi:
       long_form: 'đã flag là không phù hợp'
     notify_moderators:
       title: "Vấn đề khác"
-      description: 'Bài viết này cần Ban quản trị chú ý, dựa trên <a href="/guidelines">nguyên tắc cộng đồng</a> và <a href="%{tos_url}">TOS</a>, hoặc lý do khác không được liệt kê ở trên.'
+      description: 'Bài viết này cần Ban quản trị chú ý, dựa trên <a href="/guidelines">nguyên tắc cộng đồng</a> và <a href="%{tos_url}">Điều khoản dịch vụ</a>, hoặc lý do khác không được liệt kê ở trên.'
       long_form: 'đã flag cho ban quản trị'
       email_title: 'Chủ đề "%{title}" cần được ban điều hành chú ý'
       email_body: "%{link}\n\n%{message}"
