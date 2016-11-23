@@ -64,35 +64,35 @@ vi:
       # Use Moment.js format string: http://momentjs.com/docs/#/displaying/format/
       long_date_with_year_with_linebreak: "DD/MM/YYYY <br/>LT a"
       
-      wrap_ago: "%{date} trước"
+      wrap_ago: "%{date}"
       
       tiny:
-        half_a_minute: "< 1p"
+        half_a_minute: "< 1 phút trước"
         less_than_x_seconds:
-          one: "< 1s"
-          other: "< %{count}s"
+          one: "< 1 giây trước"
+          other: "< %{count} giây trước"
         x_seconds:
-          one: "1s"
-          other: "%{count}s"
+          one: "1 giây trước"
+          other: "%{count} giây trước"
         x_minutes:
-          one: "1p"
-          other: "%{count}p"
+          one: "1 phút trước"
+          other: "%{count} phút trước"
         about_x_hours:
-          one: "1h"
-          other: "%{count}h"
+          one: "1 giờ trước"
+          other: "%{count} giờ trước"
         x_days:
-          one: "1d"
-          other: "%{count}d"
+          one: "1 ngày trước"
+          other: "%{count} ngày trước"
         about_x_years:
-          one: "1y"
-          other: "%{count}y"
+          one: "1 năm trước"
+          other: "%{count} năm trước"
         over_x_years:
-          one: "> 1 năm"
-          other: "> %{count}y"
+          one: "> 1 năm trước"
+          other: "> %{count} năm trước"
         almost_x_years:
-          one: "1y"
-          other: "%{count}y"
-        date_month: "DD/MM/YYYY"
+          one: "1 năm trước"
+          other: "%{count} năm trước"
+        date_month: "D MMM"
         date_year: "DD/MM/YYYY"
       medium:
         x_minutes:
