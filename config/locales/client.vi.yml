@@ -1392,7 +1392,7 @@ vi:
             =0 {}
             one { {BOTH, select, true{and } false {is } other{}} <a href='/new'>1 chủ đề mới</a>}
             other { {BOTH, select, true{and } false {are } other{}} <a href='/new'># chủ đề mới</a>}
-        } còn lại, hoặc {CATEGORY, select, true {xem chủ đề khác trong {catLink}} false {{latestLink}} other {}}"
+        }, hoặc {CATEGORY, select, true {xem chủ đề khác trong {catLink}} false {{latestLink}} other {}}"
         
       browse_all_categories: Duyệt tất cả Danh mục
       
