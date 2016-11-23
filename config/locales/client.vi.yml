@@ -40,60 +40,60 @@ vi:
       # Use Moment.js format string: http://momentjs.com/docs/#/displaying/format/
       time: "h:mm a"
       # Use Moment.js format string: http://momentjs.com/docs/#/displaying/format/
-      timeline_date: "MMMM YYYY"
+      timeline_date: "MM/YYYY"
       # Use Moment.js format string: http://momentjs.com/docs/#/displaying/format/
-      long_no_year: "MMM D h:mm a"
+      long_no_year: "DD MMMM - h:mm a"
       # Use Moment.js format string: http://momentjs.com/docs/#/displaying/format/
-      long_no_year_no_time: "MMM D"
+      long_no_year_no_time: "DD MMMM"
       # Use Moment.js format string: http://momentjs.com/docs/#/displaying/format/
-      full_no_year_no_time: "MMMM Do"
+      full_no_year_no_time: "DD MMMM"
       # Use Moment.js format string: http://momentjs.com/docs/#/displaying/format/
-      long_with_year: "MMM D, YYYY h:mm a"
+      long_with_year: "DD/MM/YYYY h:mm a"
       # Use Moment.js format string: http://momentjs.com/docs/#/displaying/format/
-      long_with_year_no_time: "MMM D, YYYY"
+      long_with_year_no_time: "DD/MM/YYYY"
       # Use Moment.js format string: http://momentjs.com/docs/#/displaying/format/
-      full_with_year_no_time: "MMMM Do, YYYY"
+      full_with_year_no_time: "DD/MM/YYYY"
       # Use Moment.js format string: http://momentjs.com/docs/#/displaying/format/
-      long_date_with_year: "MMM D, 'YY LT"
+      long_date_with_year: "DD/MM/YYYY | LT"
       # Use Moment.js format string: http://momentjs.com/docs/#/displaying/format/
-      long_date_without_year: "MMM D, LT"
+      long_date_without_year: "DD MMMM | LT"
       # Use Moment.js format string: http://momentjs.com/docs/#/displaying/format/
-      long_date_with_year_without_time: "MMM D, 'YY"
+      long_date_with_year_without_time: "DD/MM/YYYY"
       # Use Moment.js format string: http://momentjs.com/docs/#/displaying/format/
-      long_date_without_year_with_linebreak: "MMM D <br/>LT"
+      long_date_without_year_with_linebreak: "DD MMMM <br/>LT"
       # Use Moment.js format string: http://momentjs.com/docs/#/displaying/format/
-      long_date_with_year_with_linebreak: "MMM D, 'YY <br/>LT"
+      long_date_with_year_with_linebreak: "DD/MM/YYYY <br/>LT"
       
       wrap_ago: "%{date} trước"
       
       tiny:
-        half_a_minute: "< 1 phút"
+        half_a_minute: "< 1p"
         less_than_x_seconds:
-          one: "< 1 giây"
-          other: "< %{count} giây"
+          one: "< 1s"
+          other: "< %{count}s"
         x_seconds:
-          one: "1 giây"
-          other: "%{count} giây"
+          one: "1s"
+          other: "%{count}s"
         x_minutes:
-          one: "1 phút"
-          other: "%{count} phút"
+          one: "1p"
+          other: "%{count}p"
         about_x_hours:
-          one: "1 giờ"
-          other: "%{count} giờ"
+          one: "1h"
+          other: "%{count}h"
         x_days:
-          one: "1 ngày"
-          other: "%{count} ngày"
+          one: "1d"
+          other: "%{count}d"
         about_x_years:
-          one: "1 năm"
-          other: "%{count} năm"
+          one: "1y"
+          other: "%{count}y"
         over_x_years:
-          one: "> 1 năm"
-          other: "> %{count} năm"
+          one: "> 1y"
+          other: "> %{count}y"
         almost_x_years:
-          one: "gần 1 năm"
-          other: "gần %{count} năm"
-        date_month: "D MMMM"
-        date_year: "MMMM 'YYYY"
+          one: "1y"
+          other: "%{count}y"
+        date_month: "DD MMMM"
+        date_year: "MMMM YYYY"
       medium:
         x_minutes:
           one: "1 phút"
@@ -104,7 +104,7 @@ vi:
         x_days:
           one: "1 ngày"
           other: "%{count} ngày"
-        date_year: "D MMMM, 'YYYY"
+        date_year: "DD/MM/YYYY"
       medium_with_ago:
         x_minutes:
           one: "1 phút trước"
