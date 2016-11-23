@@ -42,11 +42,11 @@ vi:
       # Use Moment.js format string: http://momentjs.com/docs/#/displaying/format/
       timeline_date: "MM/YYYY"
       # Use Moment.js format string: http://momentjs.com/docs/#/displaying/format/
-      long_no_year: "DD/MMM | h:mm a"
+      long_no_year: "D MMM | h:mm a"
       # Use Moment.js format string: http://momentjs.com/docs/#/displaying/format/
-      long_no_year_no_time: "DD MMM"
+      long_no_year_no_time: "D MMM"
       # Use Moment.js format string: http://momentjs.com/docs/#/displaying/format/
-      full_no_year_no_time: "DD MMMM"
+      full_no_year_no_time: "Do MMMM"
       # Use Moment.js format string: http://momentjs.com/docs/#/displaying/format/
       long_with_year: "DD/MM/YYYY | h:mm a"
       # Use Moment.js format string: http://momentjs.com/docs/#/displaying/format/
