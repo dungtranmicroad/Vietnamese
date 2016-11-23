@@ -92,8 +92,8 @@ vi:
         almost_x_years:
           one: "1y"
           other: "%{count}y"
-        date_month: "DD MMMM"
-        date_year: "MMMM YYYY"
+        date_month: "DD/MM/YYYY"
+        date_year: "DD/MM/YYYY"
       medium:
         x_minutes:
           one: "1 phút"
