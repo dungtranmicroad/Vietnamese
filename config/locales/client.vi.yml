@@ -67,31 +67,31 @@ vi:
       wrap_ago: "%{date} trước"
       
       tiny:
-        half_a_minute: "< 1 phút"
+        half_a_minute: "< 1p"
         less_than_x_seconds:
-          one: "< 1 giây"
-          other: "< %{count} giây"
+          one: "< 1s"
+          other: "< %{count}s"
         x_seconds:
-          one: "1 giây"
-          other: "%{count} giây"
+          one: "1s"
+          other: "%{count}s"
         x_minutes:
-          one: "1phút"
-          other: "%{count}phút"
+          one: "1p"
+          other: "%{count}p"
         about_x_hours:
-          one: "1 giờ"
-          other: "%{count} giờ"
+          one: "1h"
+          other: "%{count}h"
         x_days:
-          one: "1 ngày"
-          other: "%{count}ngày"
+          one: "1d"
+          other: "%{count}d"
         about_x_years:
-          one: "1 năm"
-          other: "%{count} năm"
+          one: "1y"
+          other: "%{count}y"
         over_x_years:
           one: "> 1 năm"
-          other: "> %{count} năm"
+          other: "> %{count}y"
         almost_x_years:
-          one: "1 năm"
-          other: "%{count} năm"
+          one: "1y"
+          other: "%{count}y"
         date_month: "DD/MM/YYYY"
         date_year: "DD/MM/YYYY"
       medium:
