@@ -42,9 +42,9 @@ vi:
       # Use Moment.js format string: http://momentjs.com/docs/#/displaying/format/
       timeline_date: "MM/YYYY"
       # Use Moment.js format string: http://momentjs.com/docs/#/displaying/format/
-      long_no_year: "DD MMMM - h:mm a"
+      long_no_year: "DD/MMM - h:mm a"
       # Use Moment.js format string: http://momentjs.com/docs/#/displaying/format/
-      long_no_year_no_time: "DD MMMM"
+      long_no_year_no_time: "DD MMM"
       # Use Moment.js format string: http://momentjs.com/docs/#/displaying/format/
       full_no_year_no_time: "DD MMMM"
       # Use Moment.js format string: http://momentjs.com/docs/#/displaying/format/
@@ -56,11 +56,11 @@ vi:
       # Use Moment.js format string: http://momentjs.com/docs/#/displaying/format/
       long_date_with_year: "DD/MM/YYYY | LT"
       # Use Moment.js format string: http://momentjs.com/docs/#/displaying/format/
-      long_date_without_year: "DD MMMM | LT"
+      long_date_without_year: "DD MMM | LT"
       # Use Moment.js format string: http://momentjs.com/docs/#/displaying/format/
       long_date_with_year_without_time: "DD/MM/YYYY"
       # Use Moment.js format string: http://momentjs.com/docs/#/displaying/format/
-      long_date_without_year_with_linebreak: "DD MMMM <br/>LT"
+      long_date_without_year_with_linebreak: "DD MMM <br/>LT"
       # Use Moment.js format string: http://momentjs.com/docs/#/displaying/format/
       long_date_with_year_with_linebreak: "DD/MM/YYYY <br/>LT"
       
