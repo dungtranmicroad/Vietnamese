@@ -64,36 +64,34 @@ vi:
       # Use Moment.js format string: http://momentjs.com/docs/#/displaying/format/
       long_date_with_year_with_linebreak: "DD/MM/YYYY <br/>LT a"
       
-      wrap_ago: "%{date}"
+      wrap_ago: "%{date} trước"
       
       tiny:
-        half_a_minute: "< 1 phút trước"
+        half_a_minute: "< 1m"
         less_than_x_seconds:
-          one: "< 1 giây trước"
-          other: "< %{count} giây trước"
+          one: "< 1s"
+          other: "< %{count}s"
         x_seconds:
-          one: "1 giây trước"
-          other: "%{count} giây trước"
+          one: "1s"
+          other: "%{count}s"
         x_minutes:
-          one: "1 phút trước"
-          other: "%{count} phút trước"
+          one: "1m"
+          other: "%{count}m"
         about_x_hours:
-          one: "1 giờ trước"
-          other: "%{count} giờ trước"
+          one: "1h"
+          other: "%{count}h"
         x_days:
-          one: "1 ngày trước"
-          other: "%{count} ngày trước"
+          one: "1d"
+          other: "%{count}d"
         about_x_years:
-          one: "1 năm trước"
-          other: "%{count} năm trước"
+          one: "1y"
+          other: "%{count}y"
         over_x_years:
-          one: "> 1 năm trước"
-          other: "> %{count} năm trước"
+          one: "> 1y"
+          other: "> %{count}y"
         almost_x_years:
-          one: "1 năm trước"
-          other: "%{count} năm trước"
-        date_month: "D MMM"
-        date_year: "DD/MM/YYYY"
+          one: "1y"
+          other: "%{count}y"
       medium:
         x_minutes:
           one: "1 phút"
@@ -115,6 +113,8 @@ vi:
         x_days:
           one: "1 ngày trước"
           other: "%{count} ngày trước"
+        date_month: "DD/MM/YYYY"
+        date_year: "DD/MM/YYYY"
       later:
         x_days:
           one: "1 ngày sau"
