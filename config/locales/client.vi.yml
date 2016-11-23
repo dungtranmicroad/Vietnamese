@@ -548,7 +548,7 @@ vi:
       muted_tags: "Im lặng"
       muted_tags_instructions: "Bạn sẽ không nhận được thông báo về bài viết và chủ đề mới với những tag này, và không xuất hiện trong phần Mới nhất."
       watched_categories: "Xem"
-      watched_categories_instructions: "Bạn sẽ tự động theo dõi chủ đề với những danh mục này. Bạn sẽ được thông báo khi có bài viết hoặc chủ đề mới và được hiện ỏ cạnh chủ đề."
+      watched_categories_instructions: "Bạn sẽ tự động theo dõi chủ đề với những danh mục này. Bạn sẽ được thông báo khi có bài viết hoặc chủ đề mới và được hiện ở cạnh chủ đề."
       tracked_categories: "Theo dõi"
       tracked_categories_instructions: "Bạn sẽ tự động theo dõi các chủ đề với những danh mục này. Bài viết mới được hiện ở cạnh chủ đề."
       watched_first_post_categories: "Theo dõi bài đầu tiên"
@@ -721,8 +721,8 @@ vi:
       
       new_topic_duration:
         label: "Xem xét chủ đề mới khi"
-        not_viewed: "Tôi chưa từng xem họ"
-        last_here: "Tạo kể từ lần cuối tôi ở đây"
+        not_viewed: "Tôi chưa từng xem"
+        last_here: "Kể từ lần cuối tôi truy cập"
         after_1_day: "đã tạo ngày hôm qua"
         after_2_days: "đã tạo 2 ngày trước"
         after_1_week: "đã tạo tuần trước"
