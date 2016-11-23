@@ -203,8 +203,8 @@ vi:
     show_help: "tùy chọn"
     links: "Link"
     links_lowercase:
-      one: "Link"
-      other: "Link"
+      one: "link"
+      other: "link"
     faq: "FAQ"
     guidelines: "Hướng dẫn"
     privacy_policy: "Chính sách riêng tư"
