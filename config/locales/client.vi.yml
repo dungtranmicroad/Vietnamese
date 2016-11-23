@@ -1713,7 +1713,7 @@ vi:
         flag: "Flag bài viết này để chú ý hoặc gửi thông báo riêng về nó"
         delete: "xóa bài viết này"
         undelete: "hủy xóa bài viết này"
-        share: "chia sẻ link đến bài viết này"
+        share: "chia sẻ link bài viết này"
         more: "Xem thêm"
         delete_replies:
           confirm:
