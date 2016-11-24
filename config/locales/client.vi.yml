@@ -102,6 +102,7 @@ vi:
         x_days:
           one: "1 ngày"
           other: "%{count} ngày"
+        date_month: "DD/MM/YYYY"
         date_year: "DD/MM/YYYY"
       medium_with_ago:
         x_minutes:
@@ -113,7 +114,6 @@ vi:
         x_days:
           one: "1 ngày trước"
           other: "%{count} ngày trước"
-        date_month: "DD/MM/YYYY"
         date_year: "DD/MM/YYYY"
       later:
         x_days:
