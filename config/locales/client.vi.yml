@@ -67,7 +67,7 @@ vi:
       wrap_ago: "%{date} trước"
       
       tiny:
-        half_a_minute: "< 1m"
+        half_a_minute: "< 1p"
         less_than_x_seconds:
           one: "< 1s"
           other: "< %{count}s"
@@ -75,14 +75,14 @@ vi:
           one: "1s"
           other: "%{count}s"
         x_minutes:
-          one: "1m"
-          other: "%{count}m"
+          one: "1p"
+          other: "%{count}p"
         about_x_hours:
           one: "1h"
           other: "%{count}h"
         x_days:
-          one: "1d"
-          other: "%{count}d"
+          one: "1n"
+          other: "%{count}n"
         about_x_years:
           one: "1y"
           other: "%{count}y"
@@ -198,7 +198,7 @@ vi:
     age: "Tuổi"
     joined: "Đã tham gia"
     admin_title: "Quản trị"
-    flags_title: "Flag"
+    flags_title: "Báo cáo"
     show_more: "hiện thêm"
     show_help: "tùy chọn"
     links: "Link"
@@ -576,8 +576,8 @@ vi:
       api_approved: "Đã duyệt:"
       
       staff_counters:
-        flags_given: "Flag hữu ích"
-        flagged_posts: "bài viết gắn Flag"
+        flags_given: "Báo cáo hữu ích"
+        flagged_posts: "bài báo cáo"
         deleted_posts: "bài viết bị xoá"
         suspensions: "đình chỉ"
         warnings_received: "cảnh báo"
@@ -1134,7 +1134,7 @@ vi:
       none: "Không thể tải thông báo tại thời điểm này."
       empty: "Không tìm thấy thông báo."
       more: "xem thông báo cũ hơn"
-      total_flagged: "tổng số bài gắn Flag"
+      total_flagged: "tổng số bài báo cáo"
       mentioned: "<i title='đề cập' class='fa fa-at'></i><p><span>{{username}}</span> {{description}}</p>"
       group_mentioned: "<i title='đề cập nhóm' class='fa fa-at'></i><p><span>{{username}}</span> {{description}}</p>"
       quoted: "<i title='trích dẫn' class='fa fa-quote-right'></i><p><span>{{username}}</span> {{description}}</p>"
@@ -1513,9 +1513,9 @@ vi:
         help: 'In ra chủ đề này'
 
       flag_topic:
-        title: 'Flag'
-        help: 'Flag riêng tư chủ đề này để chú ý hoặc gửi thông báo về nó'
-        success_message: 'Bạn đã gắn Flag thành công chủ đề này.'
+        title: 'Báo cáo'
+        help: 'Báo cáo riêng tư chủ đề này để chú ý hoặc gửi thông báo về nó'
+        success_message: 'Bạn đã báo cáo thành công chủ đề này.'
         
       feature_topic:
         title: "Nổi bật chủ đề này"
@@ -1650,8 +1650,8 @@ vi:
       show_full: "Hiện toàn bài"
       show_hidden: 'Xem nội dung ẩn.'
       deleted_by_author:
-        one: "(tác giả đã rút lại bài viết, sẽ tự động xóa trong %{count} giờ, trừ khi gắn Flag)"
-        other: "(tác giả đã rút lại bài viết, sẽ tự động xóa trong %{count} giờ, trừ khi gắn Flag)"
+        one: "(tác giả đã rút lại bài viết, sẽ tự động xóa trong %{count} giờ, trừ khi báo cáo)"
+        other: "(tác giả đã rút lại bài viết, sẽ tự động xóa trong %{count} giờ, trừ khi báo cáo)"
       expand_collapse: "mở rộng/đóng lại"
       gap:
         one: "Xem 1 trả lời ẩn"
@@ -1710,7 +1710,7 @@ vi:
         undo_like: "hủy thích"
         edit: "sửa bài viết này"
         edit_anonymous: "Rất tiếc, bạn cần đăng nhập để chỉnh sửa bài viết này."
-        flag: "Flag bài viết này để chú ý hoặc gửi thông báo riêng về nó"
+        flag: "Báo cáo bài viết này để chú ý hoặc gửi thông báo riêng về nó"
         delete: "xóa bài viết này"
         undelete: "hủy xóa bài viết này"
         share: "chia sẻ link bài viết này"
@@ -1731,48 +1731,48 @@ vi:
         change_owner: "thay đổi chủ sở hữu"
         
       actions:
-        flag: 'Flag'
+        flag: 'Báo cáo'
         defer_flags:
-          one: "Hoãn flag"
-          other: "Hoãn flag"
+          one: "Hoãn báo cáo"
+          other: "Hoãn báo cáo"
         undo:
-          off_topic: "Hủy flag"
-          spam: "Hủy flag"
-          inappropriate: "Hủy flag"
+          off_topic: "Hủy báo cáo"
+          spam: "Hủy báo cáo"
+          inappropriate: "Hủy báo cáo"
           bookmark: "Hủy đánh dấu"
           like: "Hủy thích"
           vote: "Hủy bình chọn"
         people:
-          off_topic: "Flag là chủ đề đóng"
-          spam: "Flag là spam"
-          inappropriate: "Flag là không phù hợp"
+          off_topic: "Báo cáo là chủ đề đóng"
+          spam: "Báo cáo là spam"
+          inappropriate: "Báo cáo là không phù hợp"
           notify_moderators: "đã thông báo với ban quản trị"
           notify_user: "đã gửi tin nhắn"
           bookmark: "đã đánh dấu bài này"
           like: "đã thích bài này"
           vote: "đã bầu chọn bài này"
         by_you:
-          off_topic: "Bạn flag là chủ đề đóng"
-          spam: "Bạn flag là spam"
-          inappropriate: "Bạn flag là không phù hợp"
-          notify_moderators: "Bạn flag cho ban quản trị"
+          off_topic: "Bạn báo cáo là chủ đề đóng"
+          spam: "Bạn báo cáo là spam"
+          inappropriate: "Bạn báo cáo là không phù hợp"
+          notify_moderators: "Bạn báo cáo cho ban quản trị"
           notify_user: "Bạn đã gửi tin nhắn đến người dùng này"
           bookmark: "Bạn đã đánh dấu bài này"
           like: "Bạn đã thích bài này"
           vote: "Bạn đã bầu chọn cho bài này"
         by_you_and_others:
           off_topic:
-            one: "Bạn và 1 người khác đã flag đây là chủ đề đóng"
-            other: "Bạn và {{count}} người khác đã đánh dấu đây là chủ đề đóng"
+            one: "Bạn và 1 người khác đã báo cáo là chủ đề đóng"
+            other: "Bạn và {{count}} người khác đã báo cáo là chủ đề đóng"
           spam:
-            one: "Bạn và 1 người khác flag đây như là spam"
-            other: "Bạn và {{count}} người flag đây như là spam"
+            one: "Bạn và 1 người khác báo cáo là spam"
+            other: "Bạn và {{count}} người báo cáo là spam"
           inappropriate:
-            one: "Bạn và 1 người khác flag đây như là không phù hợp"
-            other: "Bạn và {{count}} người khác flag đây như là không phù hợp"
+            one: "Bạn và 1 người khác báo cáo là không phù hợp"
+            other: "Bạn và {{count}} người khác báo cáo là không phù hợp"
           notify_moderators:
-            one: "Bạn và 1 người khác flag cho ban quản trị"
-            other: "Bạn và {{count}} người khác flag cho ban quản trị"
+            one: "Bạn và 1 người khác báo cáo cho ban quản trị"
+            other: "Bạn và {{count}} người khác báo cáo cho ban quản trị"
           notify_user:
             one: "Bạn và 1 người khác đã gửi tin nhắn đến người dùng này"
             other: "Bạn và {{count}} người khác đã gửi tin nhắn đến người dùng này"
@@ -1787,17 +1787,17 @@ vi:
             other: "Bạn và {{count}} người khác đã bầu chọn cho bài này"
         by_others:
           off_topic:
-            one: "1 người đã flag đây là chủ đề đóng"
-            other: "{{count}} người đã flag đây là chủ đề đóng"
+            one: "1 người đã báo cáo là chủ đề đóng"
+            other: "{{count}} người đã báo cáo là chủ đề đóng"
           spam:
-            one: "1 người đã flag đây như là spam"
-            other: "{{count}} người đã flag đây như là spam"
+            one: "1 người đã báo cáo là spam"
+            other: "{{count}} người đã báo cáo là spam"
           inappropriate:
-            one: "1 người đã flag đây như là không phù hợp"
-            other: "{{count}} người đã flag đây như là không phù hợp"
+            one: "1 người đã báo cáo là không phù hợp"
+            other: "{{count}} người đã báo cáo là không phù hợp"
           notify_moderators:
-            one: "1 người đã flag cho ban quản trị"
-            other: "{{count}} người đã flag cho ban quản trị"
+            one: "1 người đã báo cáo cho ban quản trị"
+            other: "{{count}} người đã báo cáo cho ban quản trị"
           notify_user:
             one: "1 người đã gửi tin nhắn đến người dùng này"
             other: "{{count}} người đã gửi tin nhắn đến người dùng này"
@@ -1933,7 +1933,7 @@ vi:
     
     flagging:
       title: 'Cám ơn bạn đã giúp phát triển cộng đồng Wee.vn!'
-      action: 'Flag bài viết'
+      action: 'Báo cáo bài viết'
       take_action: "Thực hiện"
       notify_action: 'Tin nhắn'
       official_warning: 'Cảnh báo chính thức'
@@ -1944,9 +1944,9 @@ vi:
       yes_delete_spammer: "Có, Xóa Spammer"
       ip_address_missing: "(N/A)"
       hidden_email_address: "(ẩn)"
-      submit_tooltip: "Gửi flag riêng tư"
-      take_action_tooltip: "Tiếp cận ngưỡng flag ngay lập tức, thay vì đợi nhiều flag từ cộng đồng"
-      cant: "Rất tiếc, bạn không thể flag bài viết vào lúc này."
+      submit_tooltip: "Gửi báo cáo riêng tư"
+      take_action_tooltip: "Tiếp cận ngưỡng báo cáo ngay lập tức, thay vì đợi nhiều báo cáo từ cộng đồng"
+      cant: "Rất tiếc, bạn không thể báo cáo bài viết vào lúc này."
       notify_staff: 'Thông báo cho ban quản trị'
       formatted_name:
         off_topic: "Là chủ đề đóng"
@@ -1967,7 +1967,7 @@ vi:
     
     flagging_topic:
       title: "Cám ơn bạn đã giúp phát triển cộng đồng Wee.vn!"
-      action: "Flag Chủ đề"
+      action: "Báo cáo Chủ đề"
       notify_action: "Tin nhắn"
     
     topic_map:
@@ -2173,7 +2173,7 @@ vi:
         reply_post: '<b>r</b> Trả lời bài viết'
         quote_post: '<b>q</b> Trích dẫn bài viết'
         like: '<b>l</b> Thích bài viết'
-        flag: '<b>!</b> Flag bài viết'
+        flag: '<b>!</b> Báo cáo bài viết'
         bookmark: '<b>b</b> Đánh dấu bài viết'
         edit: '<b>e</b> Chỉnh sửa bài viết'
         delete: '<b>d</b> Xóa bài viết'
@@ -2374,36 +2374,36 @@ vi:
         by: "bởi"
         
       flags:
-        title: "Flag"
+        title: "Báo cáo"
         old: "Cũ"
         active: "Hoạt động"
         
         agree: "Đồng ý"
-        agree_title: "Xác nhận flag này hợp lệ và chính xác"
+        agree_title: "Xác nhận báo cáo này hợp lệ và chính xác"
         agree_flag_modal_title: "Đồng ý và..."
         agree_flag_hide_post: "Đồng ý (ẩn bài viết + gửi PM)"
         agree_flag_hide_post_title: "Ẩn bài viết này và tự động gửi tin nhắn đến người dùng hối thúc họ chỉnh sửa"
         agree_flag_restore_post: "Đồng ý (khôi phục bài viết)"
         agree_flag_restore_post_title: "Khôi phục bài viết này"
-        agree_flag: "Đống ý với flag này"
-        agree_flag_title: "Đồng ý với flag này và giữ bài viết không thay đổi"
+        agree_flag: "Đống ý với báo cáo này"
+        agree_flag_title: "Đồng ý với báo cáo này và giữ bài viết không thay đổi"
         defer_flag: "Hoãn lại"
-        defer_flag_title: "Xóa flag này, nó yêu cầu không có hành động nào vào thời điểm này."
+        defer_flag_title: "Xóa báo cáo này, không yêu cầu có hành động vào thời điểm này."
         delete: "Xóa bỏ"
-        delete_title: "Xóa bài viết flag này đề cập đến."
-        delete_post_defer_flag: "Xóa bài viết và Hoãn flag"
+        delete_title: "Xóa bài viết báo cáo này được đề cập đến."
+        delete_post_defer_flag: "Xóa bài viết và Hoãn báo cáo"
         delete_post_defer_flag_title: "Xóa bài viết, nếu là bài viết đầu tiên, xóa chủ đề này"
-        delete_post_agree_flag: "Xóa bài viết và Đồng ý với flag"
+        delete_post_agree_flag: "Xóa bài viết và Đồng ý với báo cáo"
         delete_post_agree_flag_title: "Xóa bài viết, nếu là bài viết đầu tiên, xóa chủ đề này"
         delete_flag_modal_title: "Xóa và..."
         delete_spammer: "Xóa Spammer"
         delete_spammer_title: "Xóa người dùng này và tất cả bài viết và chủ để của người dùng này."
         disagree_flag_unhide_post: "Không đồng ý (ẩn bài viết)"
-        disagree_flag_unhide_post_title: "Loại bỏ bất kỳ flag nào khỏi bài viết này và làm cho bài viết hiển thị trở lại"
+        disagree_flag_unhide_post_title: "Loại bỏ bất kỳ báo cáo nào khỏi bài viết này và làm cho bài viết hiển thị trở lại"
         disagree_flag: "Không đồng ý"
-        disagree_flag_title: "Từ chối flag này là không hợp lệ hoặc không chính xác"
+        disagree_flag_title: "Từ chối báo cáo này là không hợp lệ hoặc không chính xác"
         clear_topic_flags: "Hoàn tất"
-        clear_topic_flags_title: "Chủ đề đã được xem xét và vấn đề đã được giải quyết, click để loại bỏ flag."
+        clear_topic_flags_title: "Chủ đề đã được xem xét và vấn đề đã được giải quyết, click để loại bỏ báo cáo."
         more: "(thêm trả lời...)"
         
         dispositions:
@@ -2411,17 +2411,17 @@ vi:
           disagreed: "không đồng ý"
           deferred: "hoãn lại"
         
-        flagged_by: "Flag bởi"
+        flagged_by: "Báo cáo bởi"
         resolved_by: "Giải quyết bởi"
         took_action: "Đã Thực hiện"
         system: "Hệ thống"
         error: "Có lỗi xảy ra"
         reply_message: "Trả lời "
-        no_results: "Không có Flag."
-        topic_flagged: "<strong>Chủ đề này</strong> đã được gắn flag."
+        no_results: "Không có báo cáo."
+        topic_flagged: "<strong>Chủ đề này</strong> đã được báo cáo."
         visit_topic: "Tới chủ đề để thực hiện"
-        was_edited: "Bài viết đã được chỉnh sửa sau khi bị gắn flag đầu tiên"
-        previous_flags_count: "Bài viết này đã được gắn flag {{count}} lần."
+        was_edited: "Bài viết đã được chỉnh sửa sau khi bị báo cáo đầu tiên"
+        previous_flags_count: "Bài viết này đã được báo cáo {{count}} lần."
         
         summary:
           action_type_3:
@@ -2994,10 +2994,10 @@ vi:
         posts_read_count: Đã đọc bài viết
         post_count: Bài viết đã tạo
         topics_entered: Chủ đề đã xem
-        flags_given_count: Đã cho Flag
-        flags_received_count: Flag đã nhận
+        flags_given_count: Đã báo cáo
+        flags_received_count: Đã nhận báo cáo
         warnings_received_count: Đã nhận cảnh báo
-        flags_given_received_count: 'Cho / Nhận Flag'
+        flags_given_received_count: 'Cho / Nhận Báo cáo'
         approve: 'Duyệt'
         approved_by: "duyệt  bởi"
         approve_success: "Tài khoản đã được duyệt và đã gửi email hướng đẫn kích hoạt."
@@ -3069,8 +3069,8 @@ vi:
           topics_viewed_all_time: "Đã xem chủ đề (tất cả thời gian)"
           posts_read: "Đã đọc bài viết"
           posts_read_all_time: "Đã đọc bài viết (tất cả thời gian)"
-          flagged_posts: "Đã gắn Flag Bài viết"
-          flagged_by_users: "Flag bởi Tài khoản"
+          flagged_posts: "Đã báo cáo bài viết"
+          flagged_by_users: "Báo cáo bởi tài khoản"
           likes_given: "Đã Thích"
           likes_received: "Được Thích"
           likes_received_days: "Thích nhận được: ngày duy nhất"
