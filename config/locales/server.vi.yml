@@ -17,11 +17,11 @@
 vi:
   dates:
     # Use Moment.js format string: http://momentjs.com/docs/#/displaying/format/
-    short_date_no_year: "DD MMM"
+    short_date_no_year: "D MMM"
     # Use Moment.js format string: http://momentjs.com/docs/#/displaying/format/
-    short_date: "DD MMM, YYYY"
+    short_date: "D MMM, YYYY"
     # Use Moment.js format string: http://momentjs.com/docs/#/displaying/format/
-    long_date: "DD/MM/YYYY | h:mma"
+    long_date: "MMMM D, YYYY h:mma"
   
   datetime_formats: &datetime_formats
     formats:
