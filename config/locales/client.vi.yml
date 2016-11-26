@@ -1387,7 +1387,7 @@ vi:
         } other {
           <a href='/unread'># chủ đề chưa đọc</a>
         }
-        } và {
+        } {
           NEW, plural,
             =0 {}
             one { {BOTH, select, true{and } false {is } other{}} <a href='/new'>1 chủ đề mới</a>}
