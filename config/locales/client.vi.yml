@@ -916,8 +916,8 @@ vi:
       hide_session: "Nhắc tôi vào ngày mai"
       hide_forever: "không, cảm ơn"
       hidden_for_session: "OK, Tôi sẽ hỏi bạn vào ngày mai. Bạn có thể sử dụng chức năng đăng nhập để tạo tài khoản."
-      intro: "Hi! :heart_eyes: Bạn có thể tham gia thảo luận bằng cách đăng ký tài khoản (nó miễn phí) hoặc đăng nhập để thảo luận."
-      value_prop: "Khi tạo tài khoản, hệ thống nhớ chính xác những gì bạn đã xem, và sẽ đưa bạn trở lại đúng nơi đã rời đi. Bạn có thể nhận thông báo ở đây hoặc qua email mỗi khi có bài viết mới. Bạn cũng có thể Thích bài viết để chia sẻ cảm xúc của mình. :heartbeat:"
+      intro: "Hi! :heart_eyes: Bạn có thể tham gia thảo luận bằng cách đăng ký tài khoản hoặc đăng nhập để thảo luận."
+      value_prop: "Khi tạo tài khoản, hệ thống sẽ nhớ chính xác những gì bạn đã xem, và sẽ đưa bạn trở lại đúng nơi bạn đã rời đi. Bạn có thể nhận thông báo trên trang web hoặc qua email mỗi khi có bài viết mới. "
     
     summary:
       enabled_description: "Bạn đang xem bản tóm tắt chủ đề này: những bài viết hay nhất được cộng đồng bình chọn."
