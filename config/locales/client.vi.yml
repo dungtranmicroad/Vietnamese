@@ -1379,13 +1379,13 @@ vi:
       read_more: "Bạn có muốn xem thêm? {{catLink}} hoặc {{latestLink}}."
       
       # keys ending with _MF use message format, see https://meta.discourse.org/t/message-format-support-for-localization/7035 for details
-      read_more_MF: "Có {
+      read_more_MF: "Hiện {
         UNREAD, plural,
         =0 {}
         one {
-          <a href='/unread'>1 chủ đề chưa đọc</a>
+          có <a href='/unread'>1 chủ đề chưa đọc</a>
         } other {
-          <a href='/unread'># chủ đề chưa đọc</a>
+          có <a href='/unread'># chủ đề chưa đọc</a>
         }
         } {
           NEW, plural,
