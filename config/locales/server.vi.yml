@@ -19,24 +19,24 @@ vi:
     # Use Moment.js format string: http://momentjs.com/docs/#/displaying/format/
     short_date_no_year: "D MMM"
     # Use Moment.js format string: http://momentjs.com/docs/#/displaying/format/
-    short_date: "D MMM, YYYY"
+    short_date: "DD/MM/YYYY"
     # Use Moment.js format string: http://momentjs.com/docs/#/displaying/format/
-    long_date: "MMMM D, YYYY h:mma"
+    long_date: "DD/MM/YYYY | h:mma"
   
   datetime_formats: &datetime_formats
     formats:
       # Format directives: http://ruby-doc.org/core-2.3.1/Time.html#method-i-strftime
-      short: "%m-%d-%Y"
+      short: "%d/%m/%Y"
       # Format directives: http://ruby-doc.org/core-2.3.1/Time.html#method-i-strftime
-      short_no_year: "%B %-d"
+      short_no_year: "%d %B"
       # Format directives: http://ruby-doc.org/core-2.3.1/Time.html#method-i-strftime
-      date_only: "%B %-d, %Y"
+      date_only: "%d/%m/%Y"
       # Format directives: http://ruby-doc.org/core-2.3.1/Time.html#method-i-strftime
-      long: "%B %-d, %Y, %l:%M%P"
+      long: "%d/%m/%Y | %l:%M%P"
   date:
     # Do not remove the brackets and commas and do not translate the first month name. It should be "null".
     month_names:
-      [null, Tháng Một, Tháng Hai, Tháng Ba, Tháng Tư, Tháng Năm, Tháng Sáu, Tháng Bảy, Tháng Tám, Tháng Chín, Tháng Mười, Tháng Mười Một, Tháng Mười Hai]
+      [null, Tháng 1, Tháng 2, Tháng 3, Tháng 4, Tháng 5, Tháng 6, Tháng 7, Tháng 8, Tháng 9, Tháng 10, Tháng 11, Tháng 12]
     <<: *datetime_formats
   time:
     <<: *datetime_formats
