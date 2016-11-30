@@ -599,6 +599,14 @@ vi:
       description: 'Bầu cho bài này'
       long_form: 'đã bầu cho bài này'
   
+  user_activity:
+    no_bookmarks:
+      self: "Bạn không có bài đánh dấu, bài viết đánh dấu cho phép bạn dễ dàng truy cập chúng sau này."
+      others: "Không có đánh dấu."
+    no_likes_given:
+      self: "Bạn chưa thích bài viết nào."
+      others: "không có thích bài nào."
+ 
   topic_flag_types:
     spam:
       title: 'Đây là Spam'
@@ -2113,6 +2121,7 @@ vi:
         
         The Post Action was not recognized. Please try again, or post via the website if this continues.
     
+    
     email_reject_reply_key:
       subject_template: "[%{site_name}] Email issue -- Unknown Reply Key"
       text_body_template: |
@@ -2156,7 +2165,6 @@ vi:
         Please make sure you have properly configured the POP credentials in [the site settings](%{base_url}/admin/site_settings/category/email).
         
         If there is a web UI for the POP email account, you may need to log in on the web and check your settings there.
-    
     too_many_spam_flags:
       subject_template: "New account on hold"
       text_body_template: |
@@ -2166,8 +2174,7 @@ vi:
         
         As a precautionary measure, your new account has been blocked from creating new replies or topics until a staff member can review your account. We apologize for the inconvenience.
         
-        For additional guidance, please refer to our [community guidelines](%{base_url}/guidelines).
-    
+        For additional guidance, please refer to our [community guidelines](%{base_url}/guidelines).    
     too_many_tl3_flags:
       subject_template: "New account on hold"
       text_body_template: |
@@ -2188,6 +2195,7 @@ vi:
         Please do continue to browse, but you won't be able to reply or create topics until a [staff member](%{base_url}/about) reviews your most recent posts. We apologize for the inconvenience.
         
         For additional guidance, refer to our [community guidelines](%{base_url}/guidelines).    
+        
     user_automatically_blocked:
       subject_template: "New user %{username} blocked by community flags"
       text_body_template: |
@@ -2432,6 +2440,8 @@ vi:
       new_topics: "Chủ đề mới"
       unread_messages: "Tin nhắn chưa đọc"
       unread_notifications: "Thông báo mới"
+      new_posts: "Bài viết mới"
+      new_users: "Thành viên mới"
       popular_topics: "Chủ đề phổ biến"
       follow_topic: "Theo dõi chủ đề này"
       join_the_discussion: "Xem thêm"
