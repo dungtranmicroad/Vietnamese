@@ -487,8 +487,11 @@ vi:
       profile: "Tiểu sử"
       mute: "Im lặng"
       edit: "Chỉnh sửa cài đặt"
-      download_archive: "Download bài viết"
-      download_archive_confirm: "Bạn có chắc chắn muốn tải về bài viết của bạn?"
+      download_archive:
+        button_text: "Download bài viết"
+        confirm: "Bạn có chắc chắn muốn tải bài viết của mình?"
+        success: "Tải về bắt đầu, bạn sẽ được thông báo qua tin nhắn khi quá trình hoàn tất."
+        rate_limit_error: "Bài viết chỉ thể được tải về một lần mỗi ngày, hãy thử lại vào ngày mai."
       new_private_message: "Tin nhắn mới"
       private_message: "Tin nhắn"
       private_messages: "Tin nhắn"
@@ -2636,7 +2639,6 @@ vi:
       export_csv:
         success: "Export ra đã được khởi tạo, bạn sẽ được thông báo khi quá trình hoàn tất."
         failed: "Export ra thất bại. Vui lòng kiểm tra log."
-        rate_limit_error: "Bài viết được tải về một lần mỗi ngày, hãy thử lại vào ngày mai."
         button_text: "Export"
         button_title:
           user: "Export ra danh sách người dùng đầy đủ ở định dạng CSV."
