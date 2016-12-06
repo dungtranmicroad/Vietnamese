@@ -135,6 +135,7 @@ vi:
 
   bulk_invite:
     file_should_be_csv: "Tập tin tải lên nên là định dạng CSV hoặc txt."
+    error: "Có lỗi khi đang tải file lên. Vui lòng thử lại sau."
     
   backup:
     operation_already_running: "Một hoạt động hiện đang chạy. Không thể bắt đầu một tiến trình mới ngay bây giờ."
@@ -319,6 +320,7 @@ vi:
         name: "Tên danh mục"
       topic:
         title: 'Tiêu đề'
+        featured_link: 'Link nổi bật'
       post:
         raw: "Body"
       user_profile:
@@ -335,6 +337,9 @@ vi:
               too_many_users: "Bạn chỉ có thể gửi cảnh báo tới một thành viên mỗi lần."
               cant_send_pm: "Rất tiếc, bạn không thể gửi tin nhắn tới thành viên này."
               no_user_selected: "Bạn phải chọn một thành viên hợp lệ."
+            featured_link:
+              invalid: "không hợp lệ. URL phải bao gồm http:// hoặc https://."
+              invalid_category: "không thể chỉnh sửa trong danh mục này."
         user:
           attributes:
             password:
@@ -845,6 +850,10 @@ vi:
     min_first_post_length: "Minimum allowed first post (topic body) length in characters"
     min_private_message_post_length: "Minimum allowed post length in characters for messages"
     max_post_length: "Maximum allowed post length in characters"
+    topic_featured_link_enabled: "Enable posting a link with topics."
+    topic_featured_link_onebox: "Show an onebox in the post body if possible and prevent editing post content."
+    open_topic_featured_link_in_external_window: "Open topic featured link in a external window."
+    show_topic_featured_link_in_digest: "Show the topic featured link in the digest email."
     min_topic_title_length: "Minimum allowed topic title length in characters"
     max_topic_title_length: "Maximum allowed topic title length in characters"
     min_private_message_title_length: "Minimum allowed title length for a message in characters"
