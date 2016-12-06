@@ -1227,43 +1227,43 @@ vi:
         private_messages: "Tìm kiếm tin nhắn"
     
     advanced:
-        title: Tìm kiếm nâng cao
+        title: Advanced Search
         posted_by:
-          label: Đăng bởi
+          label: Posted by
         in_category:
-          label: Trong danh mục
+          label: In Category
         in_group:
-          label: Trong nhóm
+          label: In Group
         with_badge:
-          label: Với huy hiệu
+          label: With Badge
         with_tags:
-          label: Với Tag
+          label: With Tags
         filters:
-          label: Chỉ quay lại chủ đề/bài đăng đó...
-          likes: Tôi đã Thích
-          posted: Tôi đã đăng trong
-          watching: Tôi đang theo dõi
-          tracking: Tôi đang theo dấu
-          private: trong tin nhắn của tôi
-          bookmarks: Tôi đã đánh dấu
-          first: những bài đầu tiên
-          pinned: đã ghim
-          unpinned: chưa ghim
-          wiki: là Wiki
+          label: Only return topics/posts that...
+          likes: I liked
+          posted: I posted in
+          watching: I'm watching
+          tracking: I'm tracking
+          private: are in my messages
+          bookmarks: I've bookmarked
+          first: are the very first post
+          pinned: are pinned
+          unpinned: are not pinned
+          wiki: are wiki
         statuses:
-          label: Nơi chủ đề
-          open: đang mở
-          closed: đã đóng
-          archived: đã lưu trữ
-          noreplies: không có trả lời nào
-          single_user: chứa một thành viên
+          label: Where topics
+          open: are open
+          closed: are closed
+          archived: are archived
+          noreplies: have zero replies
+          single_user: contain a single user
         post:
           count:
-            label: Số bài đăng tối thiểu
+            label: Minimum Post Count
           time:
-            label: Đã đăng
-            before: trước
-            after: sau
+            label: Posted
+            before: before
+            after: after
 
     hamburger_menu: "đi đến danh sách chủ đề hoặc danh mục khác"
     new_item: "mới"
