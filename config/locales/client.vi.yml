@@ -1226,7 +1226,7 @@ vi:
         topic: "Tìm trong chủ đề này"
         private_messages: "Tìm kiếm tin nhắn"
     
-    advanced:
+      advanced:
         title: Advanced Search
         posted_by:
           label: Posted by
