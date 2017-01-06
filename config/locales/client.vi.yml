@@ -104,6 +104,7 @@ vi:
         x_days:
           one: "1 ngày"
           other: "%{count} ngày"
+        date_year: "DD/MM/YYYY"
       medium_with_ago:
         x_minutes:
           one: "1 phút trước"
@@ -113,8 +114,7 @@ vi:
           other: "%{count} giờ trước"
         x_days:
           one: "1 ngày trước"
-          other: "%{count} ngày trước"
-        date_year: "DD/MM/YYYY"
+          other: "%{count} ngày trước" 
       later:
         x_days:
           one: "1 ngày sau"
@@ -375,21 +375,64 @@ vi:
         one: "1 thành viên"
         other: "%{count} thành viên"
         
+    group_histories:
+      actions:
+        change_group_setting: "Thay đổi thiết lập nhóm"
+        add_user_to_group: "Thêm thành viên"
+        remove_user_from_group: "Xóa thành viên"
+        make_user_group_owner: "Tạo chủ sở hữu"
+        remove_user_as_group_owner: "Thu hồi chủ sở hữu"
+
     groups:
+      logs:
+        title: "Logs"
+        when: "Khi"
+        action: "Hoạt động"
+        acting_user: "Quyền sử dụng"
+        target_user: "Mục tiêu người dùng"
+        subject: "Chủ đề"
+        details: "Chi tiết"
+        from: "Từ"
+        to: "Đến"
+      edit:
+        title: 'Chỉnh sửa nhóm'
+        full_name: 'Tên đầy đủ'
+        add_members: "Thêm thành viên"
+        delete_member_confirm: "Xóa '%{username}' từ '%{group}' nhóm?"
+      request_membership_pm:
+        title: "Yêu cầu thành viên"
+        body: "Tôi muốn tham gia thành viên trong nhóm @%{groupName}."
+      name_placeholder: "Tên nhóm, không cách, giống như định dạng username"
+      public: "Cho phép người dùng tham gia/rời nhóm tự do (Yêu cầu nhóm phải công khai)"
       empty:
         posts: "Không có bài viết của thành viên trong nhóm."
         members: "Không có thành viên nào trong nhóm."
         mentions: "Không có đề cập nào đến nhóm."
         messages: "Không có tin nhắn nào cho nhóm."
         topics: "Không có chủ đề bởi thành viên trong nhóm."
+        logs: "Không có bản ghi cho nhóm này."
       add: "Thêm"
+      join: "Tham gia nhóm"
+      leave: "Rời khỏi nhóm"
+      request: "Yêu cầu tham gia nhóm"
+      automatic_group: Nhóm tự động
+      closed_group: Nhóm đóng
+      is_group_user: "Bạn là thành viên của nhóm này"
+      allow_membership_requests: "Cho phép người dùng gửi yêu cầu thành viên đến admin nhóm (Yêu cầu tất cả mọi người có thể đề cập đến nhóm)"
+      membership: "Thành viên"
+      name: "Tên"
+      user_count: "Số thành viên"
+      bio: "Giới thiệu nhóm"
       selector_placeholder: "Thêm thành viên"
       owner: "người sở hữu"
       visible: "Nhóm được hiển thị cho tất cả người dùng"
-      index: "Nhóm"
+      index:
+        title: "Nhóm"
+        empty: "Không có nhóm được công khai."
       title:
         one: "nhóm"
         other: "nhóm"
+      activity: "Hoạt động"
       members: "Thành viên"
       topics: "Chủ đề"
       posts: "Bài viết"
@@ -421,6 +464,15 @@ vi:
         muted:
           title: "Im lặng"
           description: "Bạn sẽ không nhận được bất kỳ thông báo nào về chủ đề này."
+      flair_url: "Ảnh Avatar Flair"
+      flair_url_placeholder: "(Tùy chọn) URL Ảnh hoặc Font Awesome class"
+      flair_bg_color: "Màu nền Avatar Flair"
+      flair_bg_color_placeholder: "(Tùy chọn) giá trị Hex color"
+      flair_color: "Màu Avatar Flair"
+      flair_color_placeholder: "(Tùy chọn) giá trị Hex color"
+      flair_preview_icon: "Xem trước icon"
+      flair_preview_image: "Xem trước ảnh"
+      flair_note: "Chú ý: Flair sẽ chỉ hiện cho các thành viên chính của nhóm."
     
     user_action_groups:
       '1': "Đã thích"
@@ -1072,6 +1124,7 @@ vi:
       
       users_placeholder: "Thêm thành viên"
       title_placeholder: "Nhập tiêu đề bài viết tại đây..."
+      title_or_link_placeholder: "Nhập tiêu đề, hoặc dán link vào đây"
       edit_reason_placeholder: "Tại sao bạn lại chỉnh sửa?"
       show_edit_reason: "(thêm lý do chỉnh sửa)"
       topic_featured_link_placeholder: "Nhập link hiển thị với tiêu đề."
@@ -1425,6 +1478,7 @@ vi:
         go: "tới"
         jump_bottom: "nhảy tới bài viết cuối"
         jump_prompt: "nhảy bài"
+        jump_prompt_of: "của %{count} bài"
         jump_prompt_long: "Bạn muốn nhảy tới bài nào?"
         jump_bottom_with_number: "nhảy tới bài viết %{post_number}"
         total: tổng số bài viết
@@ -1844,22 +1898,6 @@ vi:
             title: "Hiển thị nguyên bản với các điểm khác biệt cạnh nhau"
             button: '<i class="fa fa-columns"></i> Raw'
         
-    group:
-      edit:
-        title: 'Chỉnh sửa nhóm'
-      name: "Tên"
-      bio: "Về nhóm"
-      name_placeholder: "Tên nhóm, không có dấu cách, giống như tên đăng nhập"
-      flair_url: "Ảnh Avatar Flair"
-      flair_url_placeholder: "(Tùy chọn) Ảnh URL hoặc Font Awesome"
-      flair_bg_color: "Màu ảnh nền Avatar Flair"
-      flair_bg_color_placeholder: "(Tùy chọn) giá trị Hex color"
-      flair_color: "Màu Avatar Flair"
-      flair_color_placeholder: "(Tùy chọn) giá trị Hex color"
-      flair_preview_icon: "Xem trước Icon"
-      flair_preview_image: "Xem trước ảnh"
-      flair_note: "Lưu ý: Flair sẽ chỉ hiện cho thành viên chính của nhóm."
-
     category:
       can: 'can&hellip; '
       none: '(không danh mục)'
@@ -1876,7 +1914,7 @@ vi:
       tags_allowed_tag_groups: "Tag nhóm này chỉ được sử dụng trong Danh mục:"
       tags_placeholder: "(Không bắt buộc) danh sách tag cho phép"
       tag_groups_placeholder: "(Không bắt buộc) danh sách tag nhóm cho phép"
-      topic_featured_link_allowed: "Hạn chế chỉnh sửa link tiêu đề nổi bật trong danh mục này. Yêu cầu site thiết lập topic_featured_link_enabled được đánh dấu."
+      topic_featured_link_allowed: "Cho phép link nổi bật trong danh mục này"
       delete: 'Xóa danh mục'
       create: 'Danh mục mới'
       create_long: 'Tạo danh mục mới'
@@ -1911,6 +1949,7 @@ vi:
       email_in_disabled: "Đăng chủ đề mới qua email đã bị vô hiệu hóa trong thiết lập trang web. Để bật tính năng này, "
       email_in_disabled_click: 'kích hoạt thiết lập "email".'
       suppress_from_homepage: "Chặn danh mục này từ trang chủ."
+      all_topics_wiki: "Mặc định chủ đề mới là Wiki."
       sort_order: "Mặc định sắp sếp:"
       allow_badges_label: "Cho phép trao tặng huy hiệu trong danh mục này"
       edit_permissions: "Sửa quyền"
@@ -1947,7 +1986,7 @@ vi:
           posters: "Người đăng"
           category: "Danh mục"
           created: "Tạo bởi"
-          sort_ascending: 'Tăng dần'
+        sort_ascending: 'Tăng dần'
         sort_descending: 'Giảm dần'
     
     flagging:
@@ -2471,8 +2510,7 @@ vi:
         group_members: "Thành viên nhóm"
         delete: "Xóa bỏ"
         delete_confirm: "Xóa nhóm này?"
-        delete_failed: "Không thể xóa nhóm. Nếu đây là một nhóm tự động, nó không thể xóa bỏ."
-        delete_member_confirm: "Xóa bỏ '%{username}' khỏi nhóm '%{group}'?"
+        delete_failed: "Không thể xóa nhóm. Nếu đây là một nhóm tự động, nó không thể xóa bỏ."        
         delete_owner_confirm: "Xóa bỏ quyền sở hữu của '%{username}'?"        
         add: "Thêm"
         add_members: "Thêm thành viên"
@@ -3183,6 +3221,7 @@ vi:
           user_preferences: "Thiết lập Tài khoản"
           tags: "Tag"
           search: "Tìm kiếm"
+          groups: "Nhóm"
 
       badges:
         title: Huy hiệu
