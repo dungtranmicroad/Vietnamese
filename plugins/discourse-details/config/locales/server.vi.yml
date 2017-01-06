@@ -1,0 +1,3 @@
+en:
+  site_settings:
+    details_enabled: "Bật details plugin. Nếu bạn thay đổi điều này, bạn phải rebake tất cả các bài viết với: \"rake posts:rebake\"."
