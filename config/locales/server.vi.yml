@@ -158,6 +158,11 @@ vi:
   embed:
     start_discussion: "Bắt đầu thảo luận"
     continue: "Tiếp tục thảo luận"
+    error: "Lỗi Nhúng"
+    referer: "Referer:"
+    mismatch: "Referer không phù hợp với bất kỳ các máy chủ sau:"
+    no_hosts: "Không có máy chủ nào được thiết lập để nhúng."
+    configure: "Cấu hình Nhúng"
     more_replies:
       one: "1 trả lời khác"
       other: "%{count} trả lời khác"
@@ -194,6 +199,7 @@ vi:
   spamming_host: "Xin lỗi bạn không thể đăng link tới trang đó."
   user_is_suspended: "Thành viên đang bị treo không được phép đăng bài."
   topic_not_found: "Có gì đó đã sai. Có thể chủ đề này đã đóng hoặc đã xóa trong khi bạn đang xem?"
+  not_accepting_pms: "Rất tiếc, %{username} không nhận tin nhắn vào lúc này."
   
   just_posted_that: "quá giống với những gì bạn vừa đăng"
   invalid_characters: "chứa các ký tự không hợp lệ"
@@ -370,12 +376,31 @@ vi:
   
   meta_category_name: "Phản hồi"
   meta_category_description: "Thảo luận về website này, cách tổ chức hoạt động của Wee, báo cáo sai phạm và phát triển ý tưởng để cải tiến tốt hơn."
-  
+      
   staff_category_name: "Nhân viên"
-  staff_category_description: "Chuyên mục riêng dành cho nhân viên. Các chủ đề chỉ hiển thị với quản trị viên và điều hành viên."
-  
+  staff_category_description: "Danh mục riêng dành cho nhân viên thảo luận. Chủ đề chỉ hiển thị cho admin và điều hành viên."
+
+  assets_topic_title: "Nơi lưu trữ cho việc thiết kế trang web"
   assets_topic_body: "Chủ đề này tồn tại vĩnh viễn, chỉ xem được bởi nhân viên, dùng để chứa ảnh và file dành cho việc thiết kế. Vui lòng không xóa!\n\n\nHướng dẫn:\n\n\n1. Trả lời chủ đề này.\n2. Tải lên tất cả ảnh dùng cho logo, favicon, và các file khác. (Dùng nút tải lên trong công cụ viết bài, hoặc kéo và thả hoặc dán ảnh vào)\n3. Gửi trả lời của bạn để đăng lên.\n4. Bấm chuột phải lên ảnh trong bài đăng mới để chép đường dẫn của ảnh đã được tải lên, hoặc sửa bài viết của bạn để lấy đường dẫn của ảnh. Copy đường dẫn này.\n5. Dán các đường dẫn này vào [thiết lập chung](/admin/site_settings/category/required).\n\n\nNếu bạn cần tải lên các loại file khác, chỉnh sửa `authorized_extensions` trong [thiết lập file](/admin/site_settings/category/files)."
   
+  discourse_welcome_topic:
+    title: "Chào mừng đến với Discourse"
+    body: |
+      
+      The first paragraph of this pinned topic will be visible as a welcome message to all new visitors on your homepage. It's important!
+      
+      **Edit this** into a brief description of your community:
+      
+      - Who is it for?
+      - What can they find here?
+      - Why should they come here?
+      - Where can they read more (links, resources, etc)?
+      
+      <img src="/images/welcome/discourse-edit-post-animated.gif" width="508" height="106">
+      
+      You may want to close this topic via the admin :wrench: (at the upper right and bottom), so that replies don't pile up on an announcement.
+      
+      
   lounge_welcome:
     title: "Chào mừng bạn đến với Phòng chờ"
     body: |
@@ -443,6 +468,7 @@ vi:
       create_topic: "Bạn đang tạo chủ đề quá nhanh. Xin vui lòng chờ %{time_left} trước khi thử lại."
       create_post: "Bạn đang trả lời quá nhanh. Xin vui lòng chờ %{time_left} trước khi thử lại."
       delete_post: "Bạn đang xóa bài viết quá nhanh. Xin vui lòng chờ %{time_left} trước khi thử lại."
+      public_group_membership: "Bạn tham gia/rời nhóm quá thường xuyên. Vui lòng đợi %{time_left} trước khi thử lại."
       topics_per_day: "Bạn vừa đạt tối đa số lần tạo chủ đề mới trong ngày. Xin vui lòng chờ %{time_left} trước khi thử lại."
       pms_per_day: "Bạn vừa đạt tối đa số lần gửi tin nhắn trong ngày. Xin vui lòng chờ %{time_left} trước khi thử lại."
       create_like: "Bạn vừa đạt tối đa số lần Like trong ngày. Xin vui lòng chờ %{time_left} trước khi thử lại."
@@ -850,9 +876,7 @@ vi:
     min_first_post_length: "Minimum allowed first post (topic body) length in characters"
     min_private_message_post_length: "Minimum allowed post length in characters for messages"
     max_post_length: "Maximum allowed post length in characters"
-    topic_featured_link_enabled: "Enable posting a link with topics."
-    topic_featured_link_onebox: "Show an onebox in the post body if possible and prevent editing post content."
-    open_topic_featured_link_in_external_window: "Open topic featured link in a external window."
+    topic_featured_link_enabled: "Enable posting a link with topics."    
     show_topic_featured_link_in_digest: "Show the topic featured link in the digest email."
     min_topic_title_length: "Minimum allowed topic title length in characters"
     max_topic_title_length: "Maximum allowed topic title length in characters"
@@ -1297,22 +1321,29 @@ vi:
     automatically_download_gravatars: "Download Gravatars for users upon account creation or email change."
     digest_topics: "The maximum number of topics to display in the email summary."
     digest_posts: "The maximum number of popular posts to display in the email summary."
+    digest_other_topics: "The maximum number of topics to show in the 'New in topics and categories you follow' section of the email summary."
     digest_min_excerpt_length: "Minimum post excerpt in the email summary, in characters."
     delete_digest_email_after_days: "Suppress summary emails for users not seen on the site for more than (n) days."
     digest_suppress_categories: "Suppress these categories from summary emails."
     disable_digest_emails: "Disable summary emails for all users."
+    email_accent_bg_color: "The accent color to be used as the background of some elements in HTML emails. Enter a color name ('red') or hex value ('#FF000')."
+    email_accent_fg_color: "The color of text rendered on the email bg color in HTML emails. Enter a color name ('white') or hex value ('#FFFFFF')."
+    email_link_color: "The color of links in HTML emails. Enter a color name ('blue') or hex value ('#0000FF')."
 
     detect_custom_avatars: "Whether or not to check that users have uploaded custom profile pictures."
     max_daily_gravatar_crawls: "Maximum number of times Discourse will check Gravatar for custom avatars in a day"
     public_user_custom_fields: "A whitelist of custom fields for a user that can be shown publicly."
     staff_user_custom_fields: "A whitelist of custom fields for a user that can be shown to staff."
     enable_user_directory: "Provide a directory of users for browsing"
+    enable_group_directory: "Provide a directory of groups for browsing"
     allow_anonymous_posting: "Allow users to switch to anonymous mode"
     anonymous_posting_min_trust_level: "Minimum trust level required to enable anonymous posting"
     anonymous_account_duration_minutes: "To protect anonymity create a new anonymous account every N minutes for each user. Example: if set to 600, as soon as 600 minutes elapse from last post AND user switches to anon, a new anonymous account is created."
 
     hide_user_profiles_from_public: "Disable user cards, user profiles and user directory for anonymous users."
 
+    user_website_domains_whitelist: "User website will be verified against these domains. Pipe-delimited list." 
+    
     allow_profile_backgrounds: "Allow users to upload profile backgrounds."
 
     sequential_replies_threshold: "Number of posts a user has to make in a row in a topic before being reminded about too many sequential replies."
@@ -1337,6 +1368,8 @@ vi:
 
     topic_page_title_includes_category: "Topic page title includes the category name."
 
+    native_app_install_banner: "Asks recurring visitors to install Discourse native app."
+    
     max_prints_per_hour_per_user: "Maximum number of /print page impressions (set to 0 to disable)"
 
     full_name_required: "Full name is a required field of a user's profile."
@@ -1362,7 +1395,6 @@ vi:
     embed_whitelist_selector: "CSS selector for elements that are allowed in embeds."
     embed_blacklist_selector: "CSS selector for elements that are removed from embeds."
     notify_about_flags_after: "If there are flags that haven't been handled after this many hours, send an email to the contact_email. Set to 0 to disable."
-    enable_cdn_js_debugging: "Allow /logs to display proper errors by adding crossorigin permissions on all js includes."
     show_create_topics_notice: "If the site has fewer than 5 public topics, show a notice asking admins to create some topics."
 
     delete_drafts_older_than_n_days: Delete drafts older than (n) days.
@@ -1598,7 +1630,9 @@ vi:
     ip_address:
       blocked: "New registrations are not allowed from your IP address."
       max_new_accounts_per_registration_ip: "New registrations are not allowed from your IP address (maximum limit reached). Contact a staff member."
-
+    website:
+      domain_not_allowed: "Website is invalid. Allowed domains are: %{domains}"
+      
   flags_reminder:
     flags_were_submitted:
       one: "Flags were submitted over 1 hour ago. Please review them."
@@ -1608,6 +1642,7 @@ vi:
       other: "%{count} flags waiting to be handled"
 
   unsubscribe_mailer:
+    title: "Unsubscribe Mailer"
     subject_template: "Confirm you no longer want to receive email updates from %{site_title}"
     text_body_template: |
       Someone (possibly you?) requested to no longer send email updates from %{site_domain_name} to this address.
@@ -1619,6 +1654,7 @@ vi:
       If you want to continue receiving email updates, you may ignore this email.
       
   invite_mailer:
+    title: "Invite Mailer"
     subject_template: "%{invitee_name} invited you to '%{topic_title}' on %{site_domain_name}"
     text_body_template: |
       %{invitee_name} invited you to a discussion
@@ -1638,6 +1674,7 @@ vi:
       This invitation is from a trusted user, so you can reply to the discussion immediately.
       
   custom_invite_mailer:
+    title: "Custom Invite Mailer"
     subject_template: "%{invitee_name} invited you to '%{topic_title}' on %{site_domain_name}"
     text_body_template: |
       %{invitee_name} invited you to a discussion
@@ -1661,6 +1698,7 @@ vi:
       This invitation is from a trusted user, so you can reply to the discussion immediately.
       
   invite_forum_mailer:
+    title: "Invite Forum Mailer"
     subject_template: "%{invitee_name} invited you to join %{site_domain_name}"
     text_body_template: |
       %{invitee_name} invited you to join
@@ -1676,6 +1714,7 @@ vi:
       This invitation is from a trusted user, so an account will be created for you automatically.
       
   custom_invite_forum_mailer:
+    title: "Invite Forum Mailer"
     subject_template: "%{invitee_name} invited you to join %{site_domain_name}"
     text_body_template: |
       %{invitee_name} invited you to join
@@ -1695,6 +1734,7 @@ vi:
       This invitation is from a trusted user, so an account will be created for you automatically.
       
   invite_password_instructions:
+    title: "Invite Password Instructions"
     subject_template: "Set password for your %{site_name} account"
     text_body_template: |
       Thanks for accepting your invitation to %{site_name} -- welcome!
@@ -1705,6 +1745,7 @@ vi:
       (If the link above has expired, choose "I forgot my password" when logging in with your email address.)
       
   test_mailer:
+    title: "Test Mailer"
     subject_template: "[%{site_name}] Email Deliverability Test"
     text_body_template: |
       This is a test email from
@@ -1749,6 +1790,7 @@ vi:
       [mt]: http://www.mail-tester.com/
   
   new_version_mailer:
+    title: "New Version Mailer"
     subject_template: "[%{site_name}] New Discourse version, update available"
     text_body_template: |
       Hooray, a new version of [Discourse](http://www.discourse.org) is available!
@@ -1763,6 +1805,7 @@ vi:
       - Visit [meta.discourse.org](https://meta.discourse.org) for news, discussion, and support for Discourse
   
   new_version_mailer_with_notes:
+    title: "New Version Mailer with Notes"
     subject_template: "[%{site_name}] update available"
     text_body_template: |
       Hooray, a new version of [Discourse](http://www.discourse.org) is available!
@@ -1781,6 +1824,7 @@ vi:
       %{notes}
   
   queued_posts_reminder:
+    title: "Queued Posts Reminder"
     subject_template:
       one: "[%{site_name}] 1 post waiting to be reviewed"
       other: "[%{site_name}] %{count} posts waiting to be reviewed"
@@ -1806,6 +1850,7 @@ vi:
 
   system_messages:
     post_hidden:
+      title: "Post Hidden"
       subject_template: "Post hidden by community flags"
       text_body_template: |
         Hello,
@@ -1824,99 +1869,12 @@ vi:
     
     usage_tips:
       text_body_template: |
-        Here are a few quick tips to get you started:
+        For a few quick tips on getting started as a new user, [check out this blog post](http://blog.discourse.org/2016/12/discourse-new-user-tips-and-tricks/).
         
-        ## Reading
-        
-        To read more, **just keep scrolling down!**
-        
-        As new replies or new topics arrive, they will appear automatically – no need to refresh the page.
-        
-        ## Navigation
-        
-        - For search, your user page, or the <kbd>☰</kbd> menu, use the **icon buttons at upper right**.
-        
-        - Selecting a topic title will always take you to your **next unread reply** in the topic. To enter at the top or bottom instead, select the reply count or last reply date.
-            
-            <img src="%{base_url}/images/welcome/topic-list-select-areas-2x.png" width="593" height="59">
-        
-        - While reading a topic, use the timeline on the right to jump to the top, bottom, or your last read position. On smaller screens, select the progress bar at bottom right to expand it:
-            
-            <img src="%{base_url}/images/welcome/progress-bar-2x.png" width="153" height="181">
-            
-            You can also press <kbd>?</kbd> on your keyboard for a list of super-speedy keyboard shortcuts.
-        
-        ## Replying
-        
-        To insert a quote, select the text you wish to quote, then press any <img src="%{base_url}/images/welcome/reply-post-2x.png" width="25" height="23"> Reply button to open the editor. Repeat for multiple quotes.
-        
-        <img src="%{base_url}/images/welcome/quote-reply-2x.png" width="326" height="128">
-        
-        You can always continue reading while you compose your reply, and we automatically save drafts as you write.
-        
-        To notify someone about your reply, mention their name. Type `@` to begin selecting a username.
-        
-        <img src="%{base_url}/images/welcome/username-completion-2x.png" width="191" height="125">
-        
-        To use [standard Emoji](http://www.emoji.codes/), just type `:` to match by name, or use the traditional smileys `;)`
-        
-        <img src="%{base_url}/images/welcome/emoji-completion-2x.png" width="144" height="153">
-        
-        To generate a summary for a link, paste it on a line by itself:
-        
-        <img src="%{base_url}/images/welcome/link-oneboxing-animation.gif" width="480" height="228">
-        
-        Your reply can be formatted using simple HTML, BBCode, or [Markdown](http://commonmark.org/help/):
-            
-            This is <b>bold</b>.
-            This is [b]bold[/b].
-            This is **bold**.
-        
-        For more formatting tips, [try our fun 10 minute interactive tutorial!](http://commonmark.org/help/tutorial/)
-        
-        ## Actions
-        
-        There are action buttons at the bottom of each post:
-        
-        <img src="%{base_url}/images/welcome/like-link-flag-bookmark-2x.png" width="162" height="42">
-        
-        - To let someone know that you enjoyed and appreciated their post, use the **like** button. Share the love!
-        
-        - Grab a copy-pasteable link to any reply or topic via the **link** button.
-        
-        - Use the <kbd>&hellip;</kbd> show more button to reveal more actions. **Flag** to privately let the author, or [our staff](%{base_url}/about), know about a problem. **Bookmark** to find this post later on your profile page.
-        
-        ## Notifications
-        
-        When someone replies to you, quotes your post, mentions your `@username`, or even links to your post, a number will immediately appear at the top right of the page. Select it to access your **notifications**.
-        
-        <img src="%{base_url}/images/welcome/notification-panel-2x.png" width="160" height="54">
-        
-        Don't worry about missing a reply – you'll be emailed any notifications that arrive when you are away.
-        
-        ## Preferences
-          
-          - All topics less than **two days old** are considered new.
-          
-          - Any topic you've **actively participated in** (by creating it, replying to it, or reading it for an extended period) will be automatically tracked on your behalf.
-        
-        You will see the new and unread number indicators next to these topics:
-        
-        <img src="%{base_url}/images/welcome/topics-new-unread-2x.png" width="341" height="106">
-        
-        You can change your notifications for any topic via the notification control at the bottom, and right hand side, of each topic.
-        
-        <img src="%{base_url}/images/welcome/topic-notification-control-2x.png" width="608" height="312">
-        
-        You can also set notification state per category, if you want to watch or mute every new topic in a specific category.
-        
-        To change any of these settings, see [your user preferences](%{base_url}/my/preferences).
-        
-        ## Community Trust
-        
-        It's great to meet you! As you participate here, over time we'll get to know you, and your temporary new user limitations will be lifted. Keep participating, and over time you'll gain new [trust levels](https://meta.discourse.org/t/what-do-user-trust-levels-do/4924) that include special abilities to help us manage our community together.
+        As you participate here, we’ll get to know you, and temporary new user limitations will be lifted. Over time you’ll gain [trust levels](https://meta.discourse.org/t/what-do-user-trust-levels-do/4924) that include special abilities to help us manage our community together.
     
     welcome_user:
+      title: "Welcome User"
       subject_template: "Welcome to %{site_name}!"
       text_body_template: |
         Thanks for joining %{site_name}, and welcome!
@@ -1930,17 +1888,14 @@ vi:
         (If you need to communicate with [staff members](%{base_url}/about) as a new user, just reply to this message.)
     
     welcome_invite:
+      title: "Welcome Invite"
       subject_template: "Welcome to %{site_name}!"
       text_body_template: |
         Thanks for accepting your invitation to %{site_name} -- welcome!
         
-        We've created a new account **%{username}** for you, and you are logged in. You can change your name by visiting [your user profile][prefs].
+        - We've created this new account **%{username}** for you. Change your name or password by visiting [your user profile][prefs].
         
-        To log in again later:
-        
-        1. Always **use the same email address from your original invitation** when logging in. Otherwise we won't be able to tell it's you!
-        
-        2. Create a unique password for [your user profile][prefs], and use it to log in.
+        - When you log in, please **use the same email address from your original invitation** — otherwise we won't be able to tell it's you!
         
         %{new_user_tips}
         
@@ -1953,6 +1908,7 @@ vi:
         [prefs]: %{user_preferences_url}
     
     backup_succeeded:
+      title: "Backup Succeeded"
       subject_template: "Backup completed successfully"
       text_body_template: |
         The backup was successful.
@@ -1966,6 +1922,7 @@ vi:
         ```
     
     backup_failed:
+      title: "Backup Failed"
       subject_template: "Backup failed"
       text_body_template: |
         The backup has failed.
@@ -1977,6 +1934,7 @@ vi:
         ```
         
     restore_succeeded:
+      title: "Restore Succeeded"
       subject_template: "Restore completed successfully"
       text_body_template: |
         The restore was successful.
@@ -1988,6 +1946,7 @@ vi:
         ```
         
     restore_failed:
+      title: "Restore Failed"
       subject_template: "Restore failed"
       text_body_template: |
         The restore has failed.
@@ -1999,10 +1958,12 @@ vi:
         ```
         
     bulk_invite_succeeded:
+      title: "Bulk Invite Succeeded"
       subject_template: "Bulk user invite processed successfully"
       text_body_template: "Your bulk user invite file was processed, %{sent} invites mailed."
 
     bulk_invite_failed:
+      title: "Bulk Invite Failed"
       subject_template: "Bulk user invite processed with errors"
       text_body_template: |
         Your bulk user invite file was processed, %{sent} invites mailed with %{failed} error(s).
@@ -2014,6 +1975,7 @@ vi:
         ```
         
     csv_export_succeeded:
+      title: "CSV Export Succeeded"
       subject_template: "Data export complete"
       text_body_template: |
         Your data export was successful! :dvd:
@@ -2023,10 +1985,12 @@ vi:
         The above download link will be valid for 48 hours.
     
     csv_export_failed:
+      title: "CSV Export Failed"
       subject_template: "Data export failed"
       text_body_template: "We're sorry, but your data export failed. Please check the logs or contact a staff member."
 
     email_reject_insufficient_trust_level:
+      title: "Email Reject insufficient Trust Level"
       subject_template: "[%{site_name}] Email issue -- Insufficient Trust Level"
       text_body_template: |
         We're sorry, but your email message to %{destination} (titled %{former_title}) didn't work.
@@ -2034,6 +1998,7 @@ vi:
         Your account does not have the required trust level to post new topics to this email address. If you believe this is an error, contact a staff member.
     
     email_reject_user_not_found:
+      title: "Email Reject User Not Found"
       subject_template: "[%{site_name}] Email issue -- User Not Found"
       text_body_template: |
         We're sorry, but your email message to %{destination} (titled %{former_title}) didn't work.
@@ -2041,6 +2006,7 @@ vi:
         Your reply was sent from an unknown email address. Try sending from another email address, or contact a staff member.
     
     email_reject_screened_email:
+      title: "Email Reject Screened Email"
       subject_template: "[%{site_name}] Email issue -- Blocked Email"
       text_body_template: |
         We're sorry, but your email message to %{destination} (titled %{former_title}) didn't work.
@@ -2048,6 +2014,7 @@ vi:
         Your reply was sent from a blocked email address. Try sending from another email address, or contact a staff member.
     
     email_reject_inactive_user:
+      title: "Email Reject Inactive User"
       subject_template: "[%{site_name}] Email issue -- Inactive User"
       text_body_template: |
         We're sorry, but your email message to %{destination} (titled %{former_title}) didn't work.
@@ -2055,6 +2022,7 @@ vi:
         Your account associated with this email address is not activated. Please activate your account before sending emails in.
     
     email_reject_blocked_user:
+      title: "Email Reject Blocked User"
       subject_template: "[%{site_name}] Email issue -- Blocked User"
       text_body_template: |
         We're sorry, but your email message to %{destination} (titled %{former_title}) didn't work.
@@ -2062,6 +2030,7 @@ vi:
         Your account associated with this email address has been blocked.
     
     email_reject_reply_user_not_matching:
+      title: "Email Reject User Not Matching"
       subject_template: "[%{site_name}] Email issue -- Unexpected Reply Address"
       text_body_template: |
         We're sorry, but your email message to %{destination} (titled %{former_title}) didn't work.
@@ -2069,6 +2038,7 @@ vi:
         Your reply was sent from a different email address than the one we expected, so we're not sure if this is the same person. Try sending from another email address, or contact a staff member.
     
     email_reject_no_account:
+      title: "Email Reject No Account"
       subject_template: "[%{site_name}] Email issue -- Unknown Account"
       text_body_template: |
         We're sorry, but your email message to %{destination} (titled %{former_title}) didn't work.
@@ -2076,6 +2046,7 @@ vi:
         We can't find any accounts that match your email address. Try sending from a different email address, or contact a staff member.
     
     email_reject_empty:
+      title: "Email Reject Empty"
       subject_template: "[%{site_name}] Email issue -- No Content"
       text_body_template: |
         We're sorry, but your email message to %{destination} (titled %{former_title}) didn't work.
@@ -2085,6 +2056,7 @@ vi:
         If you're getting this and you _did_ include a reply, try again with simpler formatting.
     
     email_reject_parsing:
+      title: "Email Reject Parsing"
       subject_template: "[%{site_name}] Email issue -- Content Unrecognized"
       text_body_template: |
         We're sorry, but your email message to %{destination} (titled %{former_title}) didn't work.
@@ -2092,6 +2064,7 @@ vi:
         We couldn't find your reply in the email. **Make sure your reply is at the top of the email** -- we can't process inline replies.
     
     email_reject_invalid_access:
+      title: "Email Reject Invalid Access"
       subject_template: "[%{site_name}] Email issue -- Invalid Access"
       text_body_template: |
         We're sorry, but your email message to %{destination} (titled %{former_title}) didn't work.
@@ -2099,6 +2072,7 @@ vi:
         Your account does not have the privileges to post new topics in that category. If you believe this is an error, contact a staff member.
    
     email_reject_strangers_not_allowed:
+      title: "Email Reject Strangers Not Allowed"
       subject_template: "[%{site_name}] Email issue -- Invalid Access"
       text_body_template: |
         We're sorry, but your email message to %{destination} (titled %{former_title}) didn't work.
@@ -2106,6 +2080,7 @@ vi:
         The category you sent this email to only allows replies from users with valid accounts and known email addresses. If you believe this is an error, contact a staff member.
     
     email_reject_invalid_post:
+      title: "Email Reject Invalid Post"
       subject_template: "[%{site_name}] Email issue -- Posting error"
       text_body_template: |
         We're sorry, but your email message to %{destination} (titled %{former_title}) didn't work.
@@ -2113,6 +2088,7 @@ vi:
         Some possible causes are: complex formatting, message too large, message too small. Please try again, or post via the website if this continues.
     
     email_reject_invalid_post_specified:
+      title: "Email Reject Invalid Post Specified"
       subject_template: "[%{site_name}] Email issue -- Posting error"
       text_body_template: |
         We're sorry, but your email message to %{destination} (titled %{former_title}) didn't work.
@@ -2124,6 +2100,7 @@ vi:
         If you can correct the problem, please try again.
     
     email_reject_invalid_post_action:
+      title: "Email Reject Invalid Post Action"
       subject_template: "[%{site_name}] Email issue -- Invalid Post Action"
       text_body_template: |
         We're sorry, but your email message to %{destination} (titled %{former_title}) didn't work.
@@ -2132,6 +2109,7 @@ vi:
     
     
     email_reject_reply_key:
+      title: "Email Reject Reply Key"
       subject_template: "[%{site_name}] Email issue -- Unknown Reply Key"
       text_body_template: |
         We're sorry, but your email message to %{destination} (titled %{former_title}) didn't work.
@@ -2139,6 +2117,7 @@ vi:
         The reply key in the email is invalid or unknown, so we can't figure out what this email is in reply to. Contact a staff member.
     
     email_reject_bad_destination_address:
+      title: "Email Reject Bad Destination Address"
       subject_template: "[%{site_name}] Email issue -- Unknown To: Address"
       text_body_template: |
         We're sorry, but your email message to %{destination} (titled %{former_title}) didn't work.
@@ -2146,6 +2125,7 @@ vi:
         None of the destination email addresses are recognized. Please make sure that you are sending to the correct email address provided by staff.
     
     email_reject_topic_not_found:
+      title: "Email Reject Topic Not Found"
       subject_template: "[%{site_name}] Email issue -- Topic Not Found"
       text_body_template: |
         We're sorry, but your email message to %{destination} (titled %{former_title}) didn't work.
@@ -2153,6 +2133,7 @@ vi:
         The topic you are replying to no longer exists -- perhaps it was deleted? If you believe this is an error, contact a staff member.
     
     email_reject_topic_closed:
+      title: "Email Reject Topic Closed"
       subject_template: "[%{site_name}] Email issue -- Topic Closed"
       text_body_template: |
         We're sorry, but your email message to %{destination} (titled %{former_title}) didn't work.
@@ -2160,6 +2141,7 @@ vi:
         The topic you are replying to is currently closed and no longer accepting replies. If you believe this is an error, contact a staff member.
     
     email_reject_auto_generated:
+      title: "Email Reject Auto Generated"
       subject_template: "[%{site_name}] Email issue -- Auto Generated Reply"
       text_body_template: |
         We're sorry, but your email message to %{destination} (titled %{former_title}) didn't work.
@@ -2167,6 +2149,7 @@ vi:
         Your email was marked as "auto generated", which means it was automatically created by a computer instead of being typed by a human; we can't accept those kinds of emails. If you believe this is an error, contact a staff member.
     
     email_error_notification:
+      title: "Email Error Notification"
       subject_template: "[%{site_name}] Email issue -- POP authentication error"
       text_body_template: |
         Unfortunately, there was an authentication error while polling mails from the POP server.
@@ -2175,6 +2158,7 @@ vi:
         
         If there is a web UI for the POP email account, you may need to log in on the web and check your settings there.
     too_many_spam_flags:
+      title: "Too Many Spam Flags"
       subject_template: "New account on hold"
       text_body_template: |
         Hello,
@@ -2185,6 +2169,7 @@ vi:
         
         For additional guidance, please refer to our [community guidelines](%{base_url}/guidelines).    
     too_many_tl3_flags:
+      title: "Too Many TL3 Flags"
       subject_template: "New account on hold"
       text_body_template: |
         Hello,
@@ -2195,6 +2180,7 @@ vi:
         
         For additional guidance, please refer to our [community guidelines](%{base_url}/guidelines).    
     blocked_by_staff:
+      title: "Blocked by Staff"
       subject_template: "Account temporarily on hold"
       text_body_template: |
         Hello,
@@ -2206,6 +2192,7 @@ vi:
         For additional guidance, refer to our [community guidelines](%{base_url}/guidelines).    
         
     user_automatically_blocked:
+      title: "User Automatically Blocked"
       subject_template: "New user %{username} blocked by community flags"
       text_body_template: |
         This is an automated message.
@@ -2217,6 +2204,7 @@ vi:
         This threshold can be changed via the `block_new_user` site settings.
     
     spam_post_blocked:
+      title: "Spam Post Blocked"
       subject_template: "New user %{username} posts blocked due to repeated links"
       text_body_template: |
         This is an automated message.
@@ -2228,6 +2216,7 @@ vi:
         This can be modified via the `newuser_spam_host_threshold` and `white_listed_spam_host_domains` site settings.
     
     unblocked:
+      title: "Unblocked"
       subject_template: "Account no longer on hold"
       text_body_template: |
         Hello,
@@ -2237,6 +2226,7 @@ vi:
         You can now create new replies and topics again. Thank you for your patience.
     
     pending_users_reminder:
+      title: "Pending Users Reminder"
       subject_template:
         one: "1 user waiting for approval"
         other: "%{count} users waiting for approval"
@@ -2246,10 +2236,12 @@ vi:
         [Please review them in the admin section](%{base_url}/admin/users/list/pending).
     
     download_remote_images_disabled:
+      title: "Download Remote Images Disabled"
       subject_template: "Downloading remote images disabled"
       text_body_template: "The `download_remote_images_to_local` setting was disabled because the disk space limit at `download_remote_images_threshold` was reached."
 
     dashboard_problems:
+      title: "Dashboard Problems"
       subject_template: "Problems have been found"
       text_body_template: |
         Some problems are being reported on your admin dashboard.
@@ -2312,6 +2304,7 @@ vi:
       > %{site_title} -- %{site_description}
       
     user_invited_to_private_message_pm:
+      title: "User Invited to PM"
       subject_template: "[%{site_name}] %{username} invited you to a message '%{topic_title}'"
       text_body_template: |
         %{header_instructions}
@@ -2321,6 +2314,7 @@ vi:
         %{respond_instructions}
     
     user_invited_to_private_message_pm_staged:
+      title: "User Invited to PM Staged"
       subject_template: "[%{site_name}] %{username} invited you to a message '%{topic_title}'"
       text_body_template: |
         %{header_instructions}
@@ -2330,6 +2324,7 @@ vi:
         %{respond_instructions}
     
     user_invited_to_topic:
+      title: "User Invited to Topic"
       subject_template: "[%{site_name}] %{username} invited you to '%{topic_title}'"
       text_body_template: |
         %{header_instructions}
@@ -2339,6 +2334,7 @@ vi:
         %{respond_instructions}
     
     user_replied:
+      title: "User Replied"
       subject_template: "[%{site_name}] %{topic_title}"
       text_body_template: |
         %{header_instructions}
@@ -2350,6 +2346,7 @@ vi:
         %{respond_instructions}
     
     user_replied_pm:
+      title: "User Replied PM"
       subject_template: "[%{site_name}] [PM] %{topic_title}"
       text_body_template: |
         %{header_instructions}
@@ -2361,6 +2358,7 @@ vi:
         %{respond_instructions}
     
     user_quoted:
+      title: "User Quoted"
       subject_template: "[%{site_name}] %{topic_title}"
       text_body_template: |
         %{header_instructions}
@@ -2372,6 +2370,7 @@ vi:
         %{respond_instructions}
     
     user_linked:
+      title: "User Quoted"
       subject_template: "[%{site_name}] %{topic_title}"
       text_body_template: |
         %{header_instructions}
@@ -2383,6 +2382,7 @@ vi:
         %{respond_instructions}
     
     user_mentioned:
+      title: "User Mentioned"
       subject_template: "[%{site_name}] %{topic_title}"
       text_body_template: |
         %{header_instructions}
@@ -2394,6 +2394,7 @@ vi:
         %{respond_instructions}
     
     user_group_mentioned:
+      title: "User Group Mentioned"
       subject_template: "[%{site_name}] %{topic_title}"
       text_body_template: |
         %{header_instructions}
@@ -2405,6 +2406,7 @@ vi:
         %{respond_instructions}
     
     user_posted:
+      title: "User Posted"
       subject_template: "[%{site_name}] %{topic_title}"
       text_body_template: |
         %{header_instructions}
@@ -2416,6 +2418,7 @@ vi:
         %{respond_instructions}
     
     user_watching_first_post:
+      title: "User Watching First Post"
       subject_template: "[%{site_name}] %{topic_title}"
       text_body_template: |
         %{header_instructions}
@@ -2427,6 +2430,7 @@ vi:
         %{respond_instructions}
     
     user_posted_pm:
+      title: "User Posted PM"
       subject_template: "[%{site_name}] [PM] %{topic_title}"
       text_body_template: |
         %{header_instructions}
@@ -2438,6 +2442,7 @@ vi:
         %{respond_instructions}
     
     user_posted_pm_staged:
+      title: "User Posted PM Staged"
       subject_template: "%{optional_re}%{topic_title}"
       text_body_template: |
         
@@ -2449,6 +2454,7 @@ vi:
       new_topics: "Chủ đề mới"
       unread_messages: "Tin nhắn chưa đọc"
       unread_notifications: "Thông báo mới"
+      liked_received: "Đã được thích"
       new_posts: "Bài viết mới"
       new_users: "Thành viên mới"
       popular_topics: "Chủ đề phổ biến"
@@ -2460,7 +2466,7 @@ vi:
       subject_template: "Tóm tắt - [%{site_name}]"
       unsubscribe: "Bản tóm tắt này được gửi từ %{site_link} khi chúng tôi không thấy bạn trong một thời gian. Để hủy đăng ký %{unsubscribe_link}."
       click_here: "click vào đây"
-      from: "Wee.vn - Tóm tắt"
+      from: "Discuss.vn - Tóm tắt"
       preheader: "Một bản tóm tắt ngắn gọn kể từ lần cuối bạn truy cập trên %{last_seen_at}"
       custom:
         html:
@@ -2495,6 +2501,7 @@ vi:
       view_this_topic: "View this topic"
       back_to_top: "Back to top"
     forgot_password:
+      title: "Forgot Password"
       subject_template: "[%{site_name}] Password reset"
       text_body_template: |
         Somebody asked to reset your password on [%{site_name}](%{base_url}).
@@ -2505,6 +2512,7 @@ vi:
         %{base_url}/users/password-reset/%{email_token}
     
     set_password:
+      title: "Set Password"
       subject_template: "[%{site_name}] Set Password"
       text_body_template: |
         Somebody asked to add a password to your account on [%{site_name}](%{base_url}). Alternatively, you can log in using any supported online service (Google, Facebook, etc) that is associated with this validated email address.
@@ -2515,6 +2523,7 @@ vi:
         %{base_url}/users/password-reset/%{email_token}
     
     admin_login:
+      title: "Admin Login"
       subject_template: "[%{site_name}] Login"
       text_body_template: |
         Somebody asked to login to your account on [%{site_name}](%{base_url}).
@@ -2525,6 +2534,7 @@ vi:
         %{base_url}/users/admin-login/%{email_token}
     
     account_created:
+      title: "Account Created"
       subject_template: "[%{site_name}] Your New Account"
       text_body_template: |
         A new account was created for you at %{site_name}
@@ -2533,6 +2543,7 @@ vi:
         %{base_url}/users/password-reset/%{email_token}
     
     confirm_new_email:
+      title: "Confirm New Email"
       subject_template: "[%{site_name}] Confirm your new email address"
       text_body_template: |
         Confirm your new email address for %{site_name} by clicking on the following link:
@@ -2540,6 +2551,7 @@ vi:
         %{base_url}/users/authorize-email/%{email_token}
     
     confirm_old_email:
+      title: "Confirm Old Email"
       subject_template: "[%{site_name}] Confirm your current email address"
       text_body_template: |
         Before we can change your email address, we need you to confirm that you control        
@@ -2551,6 +2563,7 @@ vi:
         %{base_url}/users/authorize-email/%{email_token}
     
     notify_old_email:
+      title: "Notify Old Email"
       subject_template: "[%{site_name}] Your email address has been changed"
       text_body_template: |
         This is an automated message to let you know that your email address for
@@ -2562,6 +2575,7 @@ vi:
         %{new_email}
     
     signup_after_approval:
+      title: "Signup After Approval"
       subject_template: "You've been approved on %{site_name}!"
       text_body_template: |
         Welcome to %{site_name}!
@@ -2582,6 +2596,7 @@ vi:
         (If you need to communicate with [staff members](%{base_url}/about) as a new user, just reply to this message.)
     
     signup:
+      title: "Signup"
       subject_template: "[%{site_name}] Confirm your new account"
       text_body_template: |
         Welcome to %{site_name}!
