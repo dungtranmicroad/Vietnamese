@@ -43,16 +43,17 @@ vi:
     am: "sa"
     pm: "ch"
     
-  title: "Wee.vn"
+  title: "VnGeek.net"
   topics: "Chủ đề"
   posts: "bài viết"
   loading: "Đang tải"
-  powered_by_html: 'Phát triển bởi <a href="https://wee.vn">Wee.vn</a>, xem tốt nhất khi JavaScript được kích hoạt'
+  powered_by_html: 'Phát triển bởi <a href="https://vngeek.net">VnGeek.net</a>, xem tốt nhất khi JavaScript được kích hoạt'
   log_in: "Đăng nhập"
   
   purge_reason: "Tự động xóa bỏ, vô hiệu hóa tài khoản"
   disable_remote_images_download_reason: "Không thể tải ảnh về máy chủ vì thiếu dung lượng."
   anonymous: "Ẩn danh"
+  remove_posts_deleted_by_author: "Tác giả đã xóa"
   
   emails:
     incoming:
@@ -95,6 +96,8 @@ vi:
       inclusion: không được bao gồm trong danh sách
       invalid: là không hợp lệ
       is_invalid: "không hợp lệ, cố gắng cụ thể hơn một chút"
+      contains_censored_words: "chứa các từ bị kiểm duyệt sau: %{censored_words}"
+      matches_censored_pattern: "hệ thống thấy chứa những từ bị kiểm duyệt sau đây: %{censored_words}"
       less_than: phải nhỏ hơn %{count}
       less_than_or_equal_to: phải nhỏ hơn hoặc bằng %{count}
       not_a_number: không phải là số
@@ -133,10 +136,17 @@ vi:
     errors:
       <<: *errors
 
+  invite:
+    accept_invite: "Chấp nhận lời mời"
+    not_found: "Mã lời mời của bạn không hợp lệ. Vui lòng liên hệ điều hành viên."
+
   bulk_invite:
     file_should_be_csv: "Tập tin tải lên nên là định dạng CSV hoặc txt."
     error: "Có lỗi khi đang tải file lên. Vui lòng thử lại sau."
     
+  topic_invite:
+    user_exists: "Rất tiếc, thành viên đó đã được mời. Bạn chỉ có thể mời thành viên đến chủ đề một lần."
+
   backup:
     operation_already_running: "Một hoạt động hiện đang chạy. Không thể bắt đầu một tiến trình mới ngay bây giờ."
     backup_file_should_be_tar_gz: "Tập tin sao lưu nên ở dạng .tar.gz."
@@ -306,6 +316,15 @@ vi:
 
       Bạn có chắc chắn cung cấp đủ thời gian cho những người khác để chia sẻ quan điểm của mình?
     
+    get_a_room: |
+      ### Hãy xem xét trả lời cho nhiều người
+      
+      Bạn đã trả lời %{count} lần đến @%{reply_username} trong chủ đề này.
+      
+      Bạn đã có xem xét trả lời đến *nhiều người khác* trong cuộc thảo luận chưa? Một cuộc thảo luận tuyệt vời khi có nhiều người cùng tham gia, sẽ có nhiều ý kiến và quan điểm khác nhau.
+      
+      Nếu bạn muốn tiếp tục thảo luận với người dùng cụ thể này, [bạn có thể gửi cho họ bằng tin nhắn cá nhân](/users/%{reply_username}).
+      
     too_many_replies: |
       ### Bạn đã đạt đến giới hạn trả lời cho chủ đề này
 
@@ -569,8 +588,7 @@ vi:
     save: 'Đặt mật khẩu'
     title: 'Đặt lại mật khẩu'
     success: "Bạn đã thay đổi mật khẩu thành công và hiện đang đăng nhập."
-    success_unapproved: "Bạn đã thay đổi mật khẩu thành công."
-    continue: "Tiếp tục đến %{site_name}"
+    success_unapproved: "Bạn đã thay đổi mật khẩu thành công."    
   
   change_email:
     confirmed: "Email của bạn đã được cập nhật."
@@ -997,7 +1015,6 @@ vi:
     prioritize_username_in_ux: "Show username first on user page, user card and posts (when disabled name is shown first)"
 
     email_token_valid_hours: "Forgot password / activate account tokens are valid for (n) hours."
-    email_token_grace_period_hours: "Forgot password / activate account tokens are still valid for a grace period of (n) hours after being redeemed."
 
     enable_badges: "Enable the badge system"
     enable_whispers: "Allow staff private communication within topic. (experimental)"
@@ -1040,6 +1057,7 @@ vi:
     sso_overrides_name: "Overrides local full name with external site full name from SSO payload on every login, and prevent local changes."
     sso_overrides_avatar: "Overrides user avatar with external site avatar from SSO payload. If enabled, disabling allow_uploaded_avatars is highly recommended"
     sso_not_approved_url: "Redirect unapproved SSO accounts to this URL"
+    sso_allows_all_return_paths: "Do not restrict the domain for return_paths provided by SSO (by default return path must be on current site)"
 
     enable_local_logins: "Enable local username and password login based accounts. (Note: this must be enabled for invites to work)"
     allow_new_registrations: "Allow new user registrations. Uncheck this to prevent anyone from creating a new account."
@@ -1210,6 +1228,8 @@ vi:
     authorized_extensions: "A list of file extensions allowed for upload (use '*' to enable all file types)"
     max_similar_results: "How many similar topics to show above the editor when composing a new topic. Comparison is based on title and body."
 
+    max_image_megapixels: "Maximum number of megapixels allowed for an image."
+    
     title_prettify: "Prevent common title typos and errors, including all caps, lowercase first character, multiple ! and ?, extra . at end, etc."
 
     topic_views_heat_low: "After this many views, the views field is slightly highlighted."
@@ -1348,6 +1368,8 @@ vi:
 
     sequential_replies_threshold: "Number of posts a user has to make in a row in a topic before being reminded about too many sequential replies."
 
+    get_a_room_threshold: "Number of posts a user has to make to the same person in the same topic before being warned."
+    
     enable_mobile_theme: "Mobile devices use a mobile-friendly theme, with the ability to switch to the full site. Disable this if you want to use a custom stylesheet that is fully responsive."
 
     dominating_topic_minimum_percent: "What percentage of posts a user has to make in a topic before being reminded about overly dominating a topic."
@@ -1613,6 +1635,8 @@ vi:
   user:
     no_accounts_associated: "No accounts associated"
     deactivated: "Was deactivated due to too many bounced emails to '%{email}'."
+    deactivated_by_staff: "Deactivated by staff"
+    activated_by_staff: "Activated by staff"
     username:
       short: "must be at least %{min} characters"
       long: "must be no more than %{max} characters"
@@ -1983,6 +2007,8 @@ vi:
         <a class="attachment" href="%{download_link}">%{file_name}</a> (%{file_size})
         
         The above download link will be valid for 48 hours.
+        
+        The data is compressed as a gzip archive. If the archive does not extract itself when you open it, use the tools recommended here: http://www.gzip.org/#faq4
     
     csv_export_failed:
       title: "CSV Export Failed"
@@ -2635,6 +2661,7 @@ vi:
       too_large: "Sorry, the file you are trying to upload is too big (maximum size is %{max_size_kb}KB)."
     images:
       too_large: "Sorry, the image you are trying to upload is too big (maximum size is %{max_size_kb}KB), please resize it and try again."
+      larger_than_x_megapixels: "Sorry, the image you are trying to upload is too large (maximum dimension is %{max_image_megapixels}-megapixels), please resize it and try again."
       size_not_found: "Sorry, but we couldn't determine the size of the image. Maybe your image is corrupted?"
 
   avatar:
@@ -3232,9 +3259,6 @@ vi:
   performance_report:
     initial_post_raw: This topic includes daily performance reports for your site.
     initial_topic_title: Website performance reports
-
-  topic_invite:
-    user_exists: "Sorry, that user has already been invited. You may only invite a user to a topic once."
 
   tags:
     title: "Tags"
