@@ -655,6 +655,8 @@ vi:
         error: "(lỗi)"
         action: "Gửi lại mật khẩu qua email"
         set_password: "Đặt mật khẩu"
+        choose_new: "Chọn mật khẩu mới"
+        choose: "Chọn mật khẩu"
         
       change_about:
         title: "Thay đổi giới thiệu bản thân"
@@ -832,7 +834,8 @@ vi:
         bulk_invite:
           none: "Bạn chưa mời ai. Bạn có thể gửi lời mời cá nhân hoặc nhóm, xem cách <a href='https://wee.vn/t/gui-hang-loat-thu-moi/24'>tải lên hàng loạt thư mời</a>."
           text: "Tải lên File Mời"          
-          success: "Tải lên thành công, bạn sẽ được thông báo qua tin nhắn khi quá trình hoàn tất."      
+          success: "Tải lên thành công, bạn sẽ được thông báo qua tin nhắn khi quá trình hoàn tất."
+          error: "Xin lỗi, file phải là định dạng csv."
           
       password:
         title: "Mật khẩu"
@@ -1040,6 +1043,7 @@ vi:
       to_continue: "Vui lòng đăng nhập"
       preferences: "Bạn cần phải đăng nhập để thay đổi cài đặt tài khoản."
       forgot: "Tôi không nhớ chi tiết tài khoản của tôi"
+      not_approved: "Tài khoản của bạn chưa được phê duyệt. Bạn sẽ được thông báo bằng email khi bạn sẵn sàng đăng nhập."
       google:
         title: "với Google "
         message: "Đang xác thực với Google (Bạn hãy chắc chắn là không bật Chặn Popup)"
@@ -1062,6 +1066,9 @@ vi:
         title: "với GitHub"
         message: "Đang xác thực với GitHub (Bạn hãy chắc chắn là không bật Chặn Popup)"
         
+    password_reset:
+      continue: "Tiếp tục đến %{site_name}"
+
     emoji_set:
       apple_international: "Apple/Quốc tế"
       google: "Google"
@@ -1699,8 +1706,10 @@ vi:
       edit: "Chỉnh sửa {{link}} {{replyAvatar}} {{username}}"
       edit_reason: "Lý do: "
       post_number: "bài viết {{number}}"
-      last_edited_on: "bài viết cuối chỉnh sửa trên"
+      wiki_last_edited_on: "wiki chỉnh sửa lần cuối lúc"
+      last_edited_on: "bài viết chỉnh sửa lần cuối lúc"
       reply_as_new_topic: "Trả lời như chủ đề liên quan"
+      reply_as_new_private_message: "Trả lời như tin nhắn đến cùng người nhận"
       continue_discussion: "Tiếp tục thảo luận từ {{postLink}}:"
       follow_quote: "đến bài viết trích dẫn"
       show_full: "Hiện toàn bài"
@@ -1886,6 +1895,8 @@ vi:
           hide: "Ẩn sửa đổi"
           show: "Hiện sửa đổi"
           revert: "Khôi phục sửa đổi"
+          edit_wiki: "Chỉnh sửa Wiki"
+          edit_post: "Chỉnh sửa bài viết"
           comparing_previous_to_current_out_of_total: "<strong>{{previous}}</strong> <i class='fa fa-arrows-h'></i> <strong>{{current}}</strong> / {{total}}"
         displays:
           inline:
@@ -2081,7 +2092,9 @@ vi:
       one: "lượt xem"
       other: "lượt xem"
     replies: "Trả lời"
-    views_long: "chủ đề đã được xem {{number}} lần"
+    views_long:
+      one: "chủ đề đã được xem 1 lần"
+      other: "chủ đề đã được xem {{number}} lần"
     activity: "Hoạt động"
     likes: "Thích"
     likes_lowercase:
@@ -2911,7 +2924,14 @@ vi:
             backup_operation: "hoạt động sao lưu"
             deleted_tag: "đã xóa tag"
             renamed_tag: "đã đổi tên tag"
-            revoke_email: "hủy bỏ email"           
+            revoke_email: "hủy bỏ email"
+            lock_trust_level: "khóa cấp độ tin tưởng"
+            unlock_trust_level: "bỏ khóa cấp độ tin tưởng"
+            activate_user: "kích hoạt người dùng"
+            deactivate_user: "khóa người dùng"
+            change_readonly_mode: "thay đổi chế độ chỉ đọc"
+            backup_download: "tải về sao lưu"
+            backup_destroy: "hủy sao lưu"
         screened_emails:
           title: "Kiểm tra Email"
           description: "Khi ai đó cố gắng tạo tài khoản mới, địa chỉ email sẽ được kiểm tra và đăng ký sẽ bị chặn, hoặc một số hành động khác được thực hiện."
