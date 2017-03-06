@@ -717,14 +717,12 @@ vi:
         title: "Tên đăng nhập"
         instructions: "Độc đáo, ngắn, không chứa khoảng trắng"
         short_instructions: "Mọi người có thể đề cập đến bạn bằng @{{username}}"
-        available: "Tên đăng nhập của bạn có sẵn"
-        global_match: "Email phù hợp với tên đăng ký."
-        global_mismatch: "Đã đăng ký. Thử {{suggestion}}?"
+        available: "Tên đăng nhập của bạn có sẵn"        
         not_available: "Không có sẵn. Thử {{suggestion}}?"
+        not_available_no_suggestion: "Không có sẵn"
         too_short: "Tên đăng nhập của bạn quá ngắn"
         too_long: "Tên đăng nhập của bạn quá dài"
-        checking: "Đang kiểm tra tính sẵn sàng..."
-        enter_email: 'Tìm thấy tên đăng nhập, nhập email phù hợp.'
+        checking: "Đang kiểm tra tính sẵn sàng..."        
         prefilled: "Email phù hợp với tên đăng ký này."
         
       locale:
@@ -1065,6 +1063,15 @@ vi:
       github:
         title: "với GitHub"
         message: "Đang xác thực với GitHub (Bạn hãy chắc chắn là không bật Chặn Popup)"
+    invites:
+      accept_title: "Lời mời"
+      welcome_to: "Chào mừng bạn đến %{site_name}!"
+      invited_by: "Bạn đã được mời bởi:"
+      social_login_available: "Bạn cũng có thể đăng nhập bằng tài khoản mạng xã hội sử dụng email đó."
+      your_email: "Địa chỉ email tài khoản của bạn là <b>%{email}</b>."
+      accept_invite: "Chấp nhận lời mời"
+      success: "Tài khoản của bạn đã được tạo bây giờ bạn đang đăng nhập."
+      password_label: "Đặt mật khẩu (tùy chọn)"
         
     password_reset:
       continue: "Tiếp tục đến %{site_name}"
@@ -1356,7 +1363,9 @@ vi:
           one: "Bạn đã chọn <b>1</b> chủ đề."
           other: "Bạn đã chọn <b>{{count}}</b> chủ đề."
         change_tags: "Thay đổi tag"
+        append_tags: "Nối tag"
         choose_new_tags: "Chọn tag mới cho chủ đề này:"
+        choose_append_tags: "Chọn tag mới để thêm cho những chủ đề này:"
         changed_tags: "Tag mới của chủ đề đã được thay đổi."
 
       none:
@@ -1960,8 +1969,12 @@ vi:
       email_in_disabled: "Đăng chủ đề mới qua email đã bị vô hiệu hóa trong thiết lập trang web. Để bật tính năng này, "
       email_in_disabled_click: 'kích hoạt thiết lập "email".'
       suppress_from_homepage: "Chặn danh mục này từ trang chủ."
+      show_subcategory_list: "Hiện danh sách danh mục con trên chủ đề trong danh mục này."
+      num_featured_topics: "Số chủ đề hiện trên trang danh mục:"
+      subcategory_num_featured_topics: "Số chủ đề nổi bật trên trang danh mục mẹ:"
       all_topics_wiki: "Mặc định chủ đề mới là Wiki."
       sort_order: "Mặc định sắp sếp:"
+      default_view: "Mặc định Xem:"
       allow_badges_label: "Cho phép trao tặng huy hiệu trong danh mục này"
       edit_permissions: "Sửa quyền"
       add_permission: "Thêm quyền"
@@ -2680,6 +2693,7 @@ vi:
           download:
             label: "Tải xuống"
             title: "Tải bản sao lưu"
+            alert: "Link tải về sao lưu này đã được gửi đến email của bạn."
           destroy:
             title: "Xóa bản sao lưu"
             confirm: "Bạn có chắc chắn muốn xóa bản sao lưu này?"
@@ -3046,6 +3060,7 @@ vi:
         refresh_browsers_message: "Tin nhắn đã gửi đến tất cả các người dùng!"
         show_public_profile: "Hiển thị hồ sơ công khai"
         impersonate: 'Mạo danh'
+        action_logs: "Bản Log"
         ip_lookup: "IP Lookup"
         log_out: "Đăng xuất"
         logged_out: "Người dùng đã đăng xuất trên tất cả thiết bị"
