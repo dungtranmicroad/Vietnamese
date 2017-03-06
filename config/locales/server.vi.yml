@@ -47,7 +47,7 @@ vi:
   topics: "Chủ đề"
   posts: "bài viết"
   loading: "Đang tải"
-  powered_by_html: 'Phát triển bởi <a href="https://vngeek.net">VnGeek.net</a>, xem tốt nhất khi JavaScript được kích hoạt'
+  powered_by_html: 'Phát triển bởi <a href="https://tinz.vn">Tinz.vn</a>, xem tốt nhất khi JavaScript được kích hoạt'
   log_in: "Đăng nhập"
   
   purge_reason: "Tự động xóa bỏ, vô hiệu hóa tài khoản"
@@ -136,8 +136,7 @@ vi:
     errors:
       <<: *errors
 
-  invite:
-    accept_invite: "Chấp nhận lời mời"
+  invite:    
     not_found: "Mã lời mời của bạn không hợp lệ. Vui lòng liên hệ điều hành viên."
 
   bulk_invite:
@@ -372,6 +371,7 @@ vi:
               same_as_username: "giống với tên đăng nhập của bạn. Hãy sử dụng một mật khẩu an toàn hơn."
               same_as_email: "giống với email của bạn. Hãy sử dụng một mật khẩu an toàn hơn."
               same_as_current: "giống với mật khẩu hiện tại của bạn."
+              unique_characters: "có nhiều ký tự lặp lại. Vui lòng sử dụng mật khẩu an toàn hơn."
             ip_address:
               signup_not_allowed: "Không được phép Đăng ký từ tài khoản này."
         color_scheme_color:
@@ -442,7 +442,7 @@ vi:
 
       (Để biết thêm chi tiết về cấp độ tin tưởng, [xem chủ đề này][trust]. Hãy nhớ rằng bạn phải tiếp tục đạt được các yêu cầu để duy trì bậc tin tưởng của mình.)
 
-      [trust]: https://wee.vn/
+      [trust]: https://tinz.vn/
       
       
   category:
@@ -1119,6 +1119,9 @@ vi:
     max_private_messages_per_day: "Maximum number of messages users can create per day."
     max_invites_per_day: "Maximum number of invites a user can send per day."
     max_topic_invitations_per_day: "Maximum number of topic invitations a user can send per day."
+    
+    max_logins_per_ip_per_hour: "Maximum number of logins allowed per IP address per hour"
+    max_logins_per_ip_per_minute: "Maximum number of logins allowed per IP address per minute"
 
     alert_admins_if_errors_per_minute: "Number of errors per minute in order to trigger an admin alert. A value of 0 disables this feature. NOTE: requires restart."
     alert_admins_if_errors_per_hour: "Number of errors per hour in order to trigger an admin alert. A value of 0 disables this feature. NOTE: requires restart."
@@ -1421,9 +1424,7 @@ vi:
 
     delete_drafts_older_than_n_days: Delete drafts older than (n) days.
 
-    bootstrap_mode_min_users: "Minimum number of users required to disable bootstrap mode (set to 0 to disable)"
-
-    vacuum_db_days: "Run VACUUM ANALYZE to reclaim DB space after migrations (set to 0 to disable)"
+    bootstrap_mode_min_users: "Minimum number of users required to disable bootstrap mode (set to 0 to disable)"    
 
     prevent_anons_from_downloading_files: "Prevent anonymous users from downloading attachments. WARNING: this will prevent any non-image site assets posted as attachments from working."
 
@@ -1695,8 +1696,6 @@ vi:
       
       %{invite_link}
       
-      This invitation is from a trusted user, so you can reply to the discussion immediately.
-      
   custom_invite_mailer:
     title: "Custom Invite Mailer"
     subject_template: "%{invitee_name} invited you to '%{topic_title}' on %{site_domain_name}"
@@ -1711,15 +1710,13 @@ vi:
       
       > %{site_title} -- %{site_description}
       
-      Message from %{invitee_name}:
+      With this note
       
-      %{user_custom_message}
+      > %{user_custom_message}
       
       If you're interested, click the link below:
       
       %{invite_link}
-      
-      This invitation is from a trusted user, so you can reply to the discussion immediately.
       
   invite_forum_mailer:
     title: "Invite Forum Mailer"
@@ -1735,8 +1732,6 @@ vi:
       
       %{invite_link}
       
-      This invitation is from a trusted user, so an account will be created for you automatically.
-      
   custom_invite_forum_mailer:
     title: "Invite Forum Mailer"
     subject_template: "%{invitee_name} invited you to join %{site_domain_name}"
@@ -1747,15 +1742,13 @@ vi:
       >
       > %{site_description}
       
-      Message from %{invitee_name}:
+      With this note
       
-      %{user_custom_message}
+      > %{user_custom_message}
       
       If you're interested, click the link below:
       
-      %{invite_link}
-      
-      This invitation is from a trusted user, so an account will be created for you automatically.
+      %{invite_link}      
       
   invite_password_instructions:
     title: "Invite Password Instructions"
@@ -1767,6 +1760,18 @@ vi:
       %{base_url}/users/password-reset/%{email_token}
       
       (If the link above has expired, choose "I forgot my password" when logging in with your email address.)
+      
+  download_backup_mailer:
+    title: "Download Backup Mailer"
+    subject_template: "[%{site_name}] Site Backup Download"
+    text_body_template: |      
+      Here's the [site backup download](%{backup_file_path}) you requested.
+      
+      We sent this download link to your validated email address for security reasons.
+      
+      (If you *didn't* request this download, you should be seriously concerned -- someone has admin access to your site.)
+    no_token: |
+      Sorry, this backup download link has already been used or has expired.
       
   test_mailer:
     title: "Test Mailer"
@@ -2486,13 +2491,12 @@ vi:
       popular_topics: "Chủ đề phổ biến"
       follow_topic: "Theo dõi chủ đề này"
       join_the_discussion: "Xem thêm"
-      popular_posts: "Bài viết phổ biến"
-      from_topic_label: "Từ"
+      popular_posts: "Bài viết phổ biến"      
       more_new: "Tin mới từ chủ đề và danh mục bạn theo dõi"
       subject_template: "Tóm tắt - [%{site_name}]"
       unsubscribe: "Bản tóm tắt này được gửi từ %{site_link} khi chúng tôi không thấy bạn trong một thời gian. Để hủy đăng ký %{unsubscribe_link}."
       click_here: "click vào đây"
-      from: "Discuss.vn - Tóm tắt"
+      from: "Tinz - Tóm tắt"
       preheader: "Một bản tóm tắt ngắn gọn kể từ lần cuối bạn truy cập trên %{last_seen_at}"
       custom:
         html:
