@@ -138,6 +138,7 @@ vi:
 
   invite:    
     not_found: "Mã lời mời của bạn không hợp lệ. Vui lòng liên hệ điều hành viên."
+    user_exists: "Bạn không cần phải mời <b>%{email}</b>, họ <a href='/u/%{username}/summary'>đã có tài khoản!</a>"
 
   bulk_invite:
     file_should_be_csv: "Tập tin tải lên nên là định dạng CSV hoặc txt."
@@ -229,6 +230,12 @@ vi:
     latest: "Chủ đề mới nhất"
     hot: "Chủ đề Hot"
     top: "Top chủ đề"
+    top_all: "Top chủ đề tất cả thời gian"
+    top_yearly: "Top chủ đề hằng năm"
+    top_quarterly: "Top chủ để hằng quý"
+    top_monthly: "Top chủ đề hằng tháng"
+    top_weekly: "Top chủ đề hằng tuần"
+    top_daily: "Top chủ đề hằng tuần"
     posts: "Bài viết mới nhất"
     private_posts: "Tin nhắn riêng mới nhất"
     group_posts: "Bài viết mới nhất từ %{group_name}"
@@ -385,6 +392,14 @@ vi:
           attributes:
             payload_url:
               invalid: "URL không hợp lệ. URL phải bao gồm http:// hoặc https://. Và không được để trống."
+        custom_emoji:
+          attributes:
+            name:
+              taken: đã được sử dụng bởi một emoji khác
+        topic_status_update:
+          attributes:
+            execute_at:
+              in_the_past: "phải trong tương lai."
   
   user_profile:
     no_info_me: "<div class='missing-profile'> mục Giới Thiệu Bản Thân trong profile hiện đang trống, <a href='/users/%{username_lower}/preferences/about-me'>bạn có muốn thêm thông tin vào đó?</a></div>"
@@ -438,11 +453,11 @@ vi:
 
       Đây là danh sách [của các thành viên thường xuyên](/badges/3/regular). Bạn có thể làm quen.
 
-      Cảm ơn vì đã trở thành một phần quan trọng với cộng đồng Wee.vn.
+      Cảm ơn vì đã trở thành một phần quan trọng với cộng đồng.
 
       (Để biết thêm chi tiết về cấp độ tin tưởng, [xem chủ đề này][trust]. Hãy nhớ rằng bạn phải tiếp tục đạt được các yêu cầu để duy trì bậc tin tưởng của mình.)
 
-      [trust]: https://tinz.vn/
+      [trust]: https://thaoluan.net/
       
       
   category:
@@ -608,6 +623,7 @@ vi:
     welcome_to: "Chào mừng bạn đến với %{site_name}!"
     approval_required: "Điều hành viên phải duyệt tài khoản của bạn trước khi bạn có thể đăng nhập diễn đàn này. Bạn sẽ nhận được email khi tài khoản của bạn được duyệt!"
     missing_session: "Hệ thống không thể tìm ra nếu tài khoản của bạn đã được tạo, vui lòng đảm bảo cookies đã bật."
+    activated: "Rất tiếc, tài khoản này đã được kích hoạt."
   post_action_types:
     off_topic:
       title: 'Là chủ đề đóng'
@@ -1395,6 +1411,8 @@ vi:
 
     native_app_install_banner: "Asks recurring visitors to install Discourse native app."
     
+    share_anonymized_statistics: "Share anonymized usage statistics."
+    
     max_prints_per_hour_per_user: "Maximum number of /print page impressions (set to 0 to disable)"
 
     full_name_required: "Full name is a required field of a user's profile."
@@ -1531,10 +1549,13 @@ vi:
       user: 'Users'
 
   sso:
+    login_error: "Login Error"
     not_found: "Your account couldn't be found. Please contact the site's administrator."
     account_not_approved: "Your account is pending approval. You will receive an email notification when you are approved."
     unknown_error: "There is a problem with your account. Please contact the site's administrator."
     timeout_expired: "Account login timed out, please try logging in again."
+    no_email: "No email address was provided. Please contact the site's administrator."
+    email_error: "An account could not be registered with the email address <b>%{email}</b>. Please contact the site's administrator."
 
   original_poster: "Original Poster"
   most_posts: "Most Posts"
@@ -1565,11 +1586,6 @@ vi:
     post_revision_text: "Ownership transferred from %{old_user} to %{new_user}"
     deleted_user: "a deleted user"
 
-  emoji:
-    errors:
-      name_already_exists: "Sorry, the name '%{name}' is already used by another emoji."
-      error_while_storing_emoji: "Sorry, there has been an error while storing the emoji."
-
   topic_statuses:
     archived_enabled: "This topic is now archived. It is frozen and cannot be changed in any way."
     archived_disabled: "This topic is now unarchived. It is no longer frozen, and can be changed."
@@ -1599,6 +1615,26 @@ vi:
     autoclosed_enabled_lastpost_minutes:
       one: "This topic was automatically closed 1 minute after the last reply. New replies are no longer allowed."
       other: "This topic was automatically closed %{count} minutes after the last reply. New replies are no longer allowed."
+    
+    autoclosed_disabled_days:
+      one: "This topic was automatically opened after 1 day."
+      other: "This topic was automatically opened after %{count} days."
+    autoclosed_disabled_hours:
+      one: "This topic was automatically opened after 1 hour."
+      other: "This topic was automatically opened after %{count} hours."
+    autoclosed_disabled_minutes:
+      one: "This topic was automatically opened after 1 minute."
+      other: "This topic was automatically opened after %{count} minutes."
+    autoclosed_disabled_lastpost_days:
+      one: "This topic was automatically opened 1 day after the last reply."
+      other: "This topic was automatically opened %{count} days after the last reply."
+    autoclosed_disabled_lastpost_hours:
+      one: "This topic was automatically opened 1 hour after the last reply."
+      other: "This topic was automatically opened %{count} hours after the last reply."
+    autoclosed_disabled_lastpost_minutes:
+      one: "This topic was automatically opened 1 minute after the last reply."
+      other: "This topic was automatically opened %{count} minutes after the last reply."
+
     autoclosed_disabled: "This topic is now opened. New replies are allowed."
     autoclosed_disabled_lastpost: "This topic is now opened. New replies are allowed."
     pinned_enabled: "This topic is now pinned. It will appear at the top of its category until it is unpinned by staff for everyone, or by individual users for themselves."
@@ -1638,6 +1674,8 @@ vi:
     deactivated: "Was deactivated due to too many bounced emails to '%{email}'."
     deactivated_by_staff: "Deactivated by staff"
     activated_by_staff: "Activated by staff"
+    new_user_typed_too_fast: "New user typed too fast"
+    content_matches_auto_block_regex: "Content matches auto block regex"
     username:
       short: "must be at least %{min} characters"
       long: "must be no more than %{max} characters"
@@ -1875,7 +1913,9 @@ vi:
     deferred: "Thanks for letting us know. We're looking into it."
     deferred_and_deleted: "Thanks for letting us know. We've removed the post."
 
-  temporarily_closed_due_to_flags: "This topic is temporarily closed due to a large number of community flags."
+  temporarily_closed_due_to_flags:
+    one: "This topic is temporarily closed for 1 hour due to a large number of community flags."
+    other: "This topic is temporarily closed for %{count} hours due to a large number of community flags."
 
   system_messages:
     post_hidden:
@@ -2278,7 +2318,19 @@ vi:
         Some problems are being reported on your admin dashboard.
         
         [Please review and fix them](%{base_url}/admin).
-  
+    
+    new_user_of_the_month:
+      title: "You're a New User of the Month!"
+      subject_template: "You're a New User of the Month!"
+      text_body_template: |
+        Congratulations, you've been awarded the **New User of the Month award for %{month_year}**. :trophy:
+
+        You've quickly become a valuable member of our community and everyone is really enjoying your posts.
+
+        This award will be permanently visible as a badge on [your user page](/my/badges).
+
+        Thanks, and keep up the great work!
+        
   unsubscribe_link: |
     To unsubscribe from these emails, [click here](%{unsubscribe_url}).
   
@@ -3250,6 +3302,11 @@ vi:
       description: Replied to a Post via email
       long_description: |
         This badge is granted the first time you reply to a post via email :e-mail:.
+    new_user_of_the_month:
+      name: "New User of the Month"
+      description: Outstanding contributions in their first month
+      long_description: |
+        This badge is granted to congratulate two new users each month for their excellent overall contributions, as measured by how often their posts were liked, and by whom.
   
   admin_login:
     success: "Email Sent"
