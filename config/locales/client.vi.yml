@@ -162,6 +162,9 @@ vi:
       visible:
         enabled: 'đã lưu lúc %{when}'
         disabled: 'bỏ lưu lúc %{when}'
+      banner:
+        enabled: 'tạo banner này %{when}. Nó sẽ xuất hiện ở mỗi đầu trang cho đến khi người dùng gỡ bỏ.'
+        disabled: 'bỏ banner này %{when}. Nó sẽ không còn xuất hiện ở đầu mỗi trang.'
         
     topic_admin_menu: "quản lí chủ đề."
     
@@ -1186,17 +1189,7 @@ vi:
         title: "Bạn có quên thêm người nhận?"
         body: "Ngay bây giờ, tin nhắn chỉ được gửi cho chính bạn!"
 
-      admin_options_title: "Tùy chọn thiết lập điều hành viên cho chủ đề này"
-      auto_close:
-        label: "Tự đóng chủ đề lúc:"
-        error: "Vui lòng nhập giá trị hợp lệ."
-        based_on_last_post: "Không đóng cho đến khi bài viết cuối cùng trong chủ đề này đã cũ"
-        all:
-          units: ""
-          examples: 'Nhập số giờ (24), thời gian chính xác (17:30) hoặc ngày tháng kèm với thời gian (2016-11-22 14:00).'
-        limited:
-          units: "(# giờ)"
-          examples: 'Nhập số giờ (24).'
+      admin_options_title: "Tùy chọn thiết lập điều hành viên cho chủ đề này"      
           
     notifications:
       title: "thông báo của @name đề cập, trả lời bài viết, nhắn tin, v.v...."
@@ -1273,6 +1266,7 @@ vi:
       sort_by: "Sắp xếp theo"
       relevance: "Độ liên quan"
       latest_post: "Bài mới nhất"
+      latest_topic: "Chủ đề mới nhất"
       most_viewed: "Xem nhiều nhất"
       most_liked: "Thích nhiều nhất"
       select_all: "Chọn tất cả"
@@ -1294,43 +1288,45 @@ vi:
         private_messages: "Tìm kiếm tin nhắn"
     
       advanced:
-        title: Advanced Search
+        title: Tìm kiếm nâng cao
         posted_by:
-          label: Posted by
+          label: Đăng bởi
         in_category:
-          label: In Category
+          label: Trong danh mục
         in_group:
-          label: In Group
+          label: Trong nhóm
         with_badge:
-          label: With Badge
+          label: Với huy hiệu
         with_tags:
-          label: With Tags
+          label: Với tag
         filters:
-          label: Only return topics/posts that...
-          likes: I liked
-          posted: I posted in
-          watching: I'm watching
-          tracking: I'm tracking
-          private: are in my messages
-          bookmarks: I've bookmarked
-          first: are the very first post
-          pinned: are pinned
-          unpinned: are not pinned
-          wiki: are wiki
+          label: Là chủ đề/bài viết mà...
+          likes: Tôi thích
+          posted: Tôi đăng trong
+          watching: Tôi xem
+          tracking: Tôi theo dõi
+          private: trong tin nhắn của tôi
+          bookmarks: Tôi đã đánh dấu
+          first: là bài viết đầu tiên
+          pinned: được ghim
+          unpinned: không được ghim
+          seen: Tôi đã đọc
+          unseen: Tôi chưa đọc
+          wiki: là wiki
         statuses:
-          label: Where topics
-          open: are open
-          closed: are closed
-          archived: are archived
-          noreplies: have zero replies
-          single_user: contain a single user
+          label: Chủ đề
+          open: là mở
+          closed: đã đóng
+          archived: Đã lưu trữ
+          noreplies: chưa có trả lời
+          single_user: chỉ chứa 1 thành viên
         post:
           count:
-            label: Minimum Post Count
+            label: Số bài đăng tối thiểu
           time:
-            label: Posted
-            before: before
-            after: after
+            label: Đã đăng
+            before: trước
+            after: sau
 
     hamburger_menu: "đi đến danh sách chủ đề hoặc danh mục khác"
     new_item: "mới"
@@ -1473,11 +1469,39 @@ vi:
       jump_reply_down: nhảy tới trả lời kế tiếp
       deleted: "Chủ đề này đã bị xóa"
       
-      auto_close_notice: "Chủ đề này sẽ tự động đóng trong %{timeLeft}."
-      auto_close_notice_based_on_last_post: "Chủ đề này sẽ đóng trong %{duration} sau trả lời cuối cùng."
+      topic_status_update:
+        title: "Đặt hẹn giờ chủ đề"
+        save: "Đặt hẹn giờ"
+        time: "Thời gian:"
+        remove: "Xóa hẹn giờ"
+        publish_to: "Đăng đến:"
+      auto_update_input:
+        limited:
+          units: "(# giờ)"
+          examples: 'Nhập số giờ (24).'
+        all:
+          units: ""
+          examples: 'Nhập số giờ (24), thời gian chính xác (17:30) hoặc dấu thời gian (2013-11-22 14:00).'
+      publish_to_category:
+        title: "Lịch đăng"
+      temp_open:
+        title: "Mở tạm thời"
+      auto_reopen:
+        title: "Tự động đóng chủ đề"
+      temp_close:
+        title: "Đóng tạm thời"
+      auto_close:
+        title: "Tự động đóng chủ đề"
+        label: "Thời gian tự động đóng chủ đề:"
+        error: "Vui lòng nhập một giá trị hợp lệ."
+        based_on_last_post: "Không đóng cho đến khi bài viết cuối cùng trong chủ đề này đã cũ."
+
+      status_update_notice:
+        auto_open: "Chủ đề này sẽ tự động mở trong %{timeLeft}."
+        auto_close: "Chủ đề này sẽ tự động đóng trong %{timeLeft}."
+        auto_publish_to_category: "Chủ đề này sẽ được đăng đến <a href=%{categoryUrl}>#%{categoryName}</a> %{timeLeft}."
+        auto_close_based_on_last_post: "Chủ đề này sẽ đóng trong %{duration} sau trả lời cuối cùng."
       auto_close_title: 'Cài đặt Tự Động Đóng'
-      auto_close_save: "Lưu"
-      auto_close_remove: "Không Tự Động Đóng Chủ Đề Này"      
       auto_close_immediate:
         one: "Bài viết cuối trong chủ đề đã được 1 giờ, do đó chủ đề sẽ được đóng lại ngay lập tức."
         other: "Bài viết cuối trong chủ đề đã được %{count} giờ, do đó chủ đề sẽ được đóng lại ngay lập tức."
@@ -1918,6 +1942,18 @@ vi:
             title: "Hiển thị nguyên bản với các điểm khác biệt cạnh nhau"
             button: '<i class="fa fa-columns"></i> Raw'
         
+    raw_email:
+        displays:
+          raw:
+            title: "Hiện bản raw email"
+            button: 'Raw'
+          text_part:
+            title: "Hiện phần text của email"
+            button: 'Text'
+          html_part:
+            title: "Hiện phần html của email"
+            button: 'HTML'
+    
     category:
       can: 'can&hellip; '
       none: '(không danh mục)'
@@ -1973,8 +2009,10 @@ vi:
       num_featured_topics: "Số chủ đề hiện trên trang danh mục:"
       subcategory_num_featured_topics: "Số chủ đề nổi bật trên trang danh mục mẹ:"
       all_topics_wiki: "Mặc định chủ đề mới là Wiki."
+      subcategory_list_style: "Kiểu danh mục phục:"
       sort_order: "Mặc định sắp sếp:"
       default_view: "Mặc định Xem:"
+      default_top_period: "Mặc định giai đoạn Top:"
       allow_badges_label: "Cho phép trao tặng huy hiệu trong danh mục này"
       edit_permissions: "Sửa quyền"
       add_permission: "Thêm quyền"
@@ -2012,6 +2050,11 @@ vi:
           created: "Tạo bởi"
         sort_ascending: 'Tăng dần'
         sort_descending: 'Giảm dần'
+        subcategory_list_styles:
+          rows: "Hàng"
+          rows_with_featured_topics: "Các hàng với chủ đề nổi bật"
+          boxes: "Hộp"
+          boxes_with_featured_topics: "Các hộp với chủ đề nổi bật"
     
     flagging:
       title: 'Cám ơn bạn đã giúp phát triển cộng đồng Wee.vn!'
@@ -2554,6 +2597,8 @@ vi:
         add_owners: Thêm chủ sở hữu
         incoming_email: "Tùy chỉnh địa chỉ email đến"
         incoming_email_placeholder: "nhập địa chỉ email"
+        none_selected: "Chọn một nhóm để bắt đầu"
+        no_custom_groups: "Tạo một nhóm tùy chỉnh mới"
  
       api:
         generate_master: "Tạo Master API Key"
